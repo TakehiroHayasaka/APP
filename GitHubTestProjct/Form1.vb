@@ -11,7 +11,9 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
         _count += 1
         Me.Text = _count.ToString
+
     End Sub
 End Class
