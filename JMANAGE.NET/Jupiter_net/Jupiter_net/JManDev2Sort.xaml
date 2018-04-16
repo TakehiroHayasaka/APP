@@ -1,0 +1,145 @@
+﻿<Window x:Class="JManDev2Sort"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:metro="http://schemas.codeplex.com/elysium"
+    Title="JupiterManager [部材展開～分類処理]" Height="700" Width="450" x:Name="JManDev2Sort" ResizeMode="NoResize" Background="#FFB4B4B4" ShowInTaskbar="False" Foreground="Black" >
+    <Grid x:Name="GridDev2Sort">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="117.5"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="175"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="92.5"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="102.5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="実行する機能を選択" Grid.Column="1" Grid.Row="1" />
+        <GroupBox x:Name="GroupBoxDevelop" Grid.Column="1" Header="展開関連" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="CheckBoxDevelop" Content="部  材  展  開 :" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                <CheckBox x:Name="CheckBoxWeldStage" Content="溶接時期変更 :" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,5,0,0" />
+                <TextBlock Text="3Dモデルを2Dに展開します。" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center"/>
+                <TextBlock Text="3Dモデル作成時に溶接時期を間違えた場合に変更できます。部材作成の再実行なしで溶接時期を変更できますが、最終手段ですので安易な実行はお勧めしません。" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" Margin="0,5,0,0" TextWrapping="Wrap" />
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="GroupBoxZokusei" Grid.Column="1" Header="属性付加関連" HorizontalAlignment="Stretch" Grid.Row="4" VerticalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="CheckBoxKak" Content="加工代の付加" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxSyu" Content="溶接収縮の付加" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxLot" Content="ロット区分の付加" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxKub" Content="製作区分の付加" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxSpl" Content="実測データの付加" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxAna" Content="孔明け方法の付加" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxKse" Content="罫書・切断方法の付加" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxThc" Content="切断可能板厚設定の付加" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxHsr" Content="表面処理の付加" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxMgk" Content="摩擦面剥離の付加" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxPra" Content="ソーティングパラメータの付加" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"  HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="GroupBoxDeform" Grid.Column="1" Header="変形関連" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="CheckBoxDeform" Content="変 形 処 理 :" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <CheckBox x:Name="CheckBoxPmfHosei" Content="PMFの補正 :" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,5,0,0"  />
+                <TextBlock Text="加工代や収縮を考慮した形状に変形します。" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center"/>
+                <TextBlock Text="縦リブなどの微妙なはらみを直線に補正します。直線展開で部材幅に誤差がでる場合に使用します。" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" Margin="0,5,0,0" TextWrapping="Wrap" />
+            </Grid>
+        </GroupBox>
+        
+        <GroupBox x:Name="GroupBoxSegPmfBzi" Grid.Column="1" Header="鋼製セグメント関連" HorizontalAlignment="Stretch" Grid.Row="8" VerticalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="CheckBoxSegPmfBzi" Content="切抜・罫書配置:" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+                <TextBlock x:Name="TextSegPmfBzi" Text="リング継手BOX切抜きやスタッド罫書を配置します。" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="GroupBoxSort" Grid.Column="1" Header="分類関連" HorizontalAlignment="Stretch" Grid.Row="10" VerticalAlignment="Stretch">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="5"/>
+                </Grid.RowDefinitions>
+                <CheckBox x:Name="CheckBoxPsort" Content="部  材  分  類 :" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                <CheckBox x:Name="CheckBoxBsort" Content="ブロック分類 :" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                <CheckBox x:Name="CheckBoxMarking" Content="見る面の設定 :" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                <TextBlock Text="部材のマーク付けを行います。" Grid.Column="2" Grid.Row="0" VerticalAlignment="Center"/>
+                <TextBlock Text="ブロックのマーク付けを行います。" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center"/>
+                <TextBlock Text="見る面を設定します。" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="ButtonDev2SortSelectStd" Content="標準選択" Grid.Column="1" HorizontalAlignment="Right" Width="60" Grid.Row="1" VerticalAlignment="Stretch" Style="{DynamicResource FlatButtonStyle}" Cursor="Hand" Background="Black" Foreground="White" FontSize="12" Margin="0,0,110,0"/>
+        <Button x:Name="ButtonDev2SortSelectAll" Content="全選択" Grid.Column="1" HorizontalAlignment="Right" Width="50" Grid.Row="1" VerticalAlignment="Stretch" Style="{DynamicResource FlatButtonStyle}" Cursor="Hand" Background="#FF5A5A5A" Foreground="White" FontSize="12" Margin="0,0,55,0"/>
+        <Button x:Name="ButtonDev2SortAllDel" Content="全解除" Grid.Column="1" HorizontalAlignment="Right" Width="50" Grid.Row="1" VerticalAlignment="Stretch" Style="{DynamicResource FlatButtonStyle}" Cursor="Hand" Background="#FF5A5A5A" Foreground="White" FontSize="12" Margin="0,0,0,0"/>
+        <Button x:Name="ButtonDev2SortOk" Content="実行" Grid.Column="1" HorizontalAlignment="Right" Width="75" Grid.Row="13" VerticalAlignment="Top" Height="30" Style="{DynamicResource FlatButtonStyle}" Cursor="Hand" Background="#FF5A5A5A" Foreground="White" FontSize="12" Margin="0,0,80,0"/>
+        <Button x:Name="ButtonDev2SortCansel" Content="CANCEL" Grid.Column="1" HorizontalAlignment="Right" Width="75" Grid.Row="13" VerticalAlignment="Top" Height="30" Style="{DynamicResource FlatButtonStyle}" Cursor="Hand" Background="#FF5A5A5A" Foreground="White" FontSize="12" />
+    </Grid>
+</Window>

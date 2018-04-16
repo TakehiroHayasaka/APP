@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8c623ef5-d8b9-4e0a-9f86-f72058d895c3}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="LIB">
+      <UniqueIdentifier>{0bc1173e-357e-4cb9-a49b-89df3df244ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB\Release">
+      <UniqueIdentifier>{0b01b37c-6070-4211-b9db-2847e2d3ad08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB\Debug">
+      <UniqueIdentifier>{6ec56a39-f530-4364-9d40-9ac9db93b40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e32a1e9a-3b9b-42be-8b1c-9bbea88d11f5}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{73dd1051-9b18-4850-ac3b-75efecc4d35b}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ICAD2016_COMMAND.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="COMMAND.CPP">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\LIB\Stflib_ICAD2016_VS2010D.lib">
+      <Filter>LIB\Debug</Filter>
+    </Library>
+    <Library Include="..\..\LIB\loglib_ICAD2016_VS2010D.lib">
+      <Filter>LIB\Debug</Filter>
+    </Library>
+    <Library Include="..\..\LIB\Geolib_ICAD2016_VS2010D.lib">
+      <Filter>LIB\Debug</Filter>
+    </Library>
+    <Library Include="..\..\LIB\Dlglib_ICAD2016_VS2010D.lib">
+      <Filter>LIB\Debug</Filter>
+    </Library>
+    <Library Include="..\..\LIB\dbaC_ICAD2016_VS2010D.lib">
+      <Filter>LIB\Debug</Filter>
+    </Library>
+    <Library Include="..\..\LIB\ARXWrap_ICAD2016_VS2010D.lib">
+      <Filter>LIB\Debug</Filter>
+    </Library>
+    <Library Include="..\..\LIB\Stflib_ICAD2016_VS2010.lib">
+      <Filter>LIB\Release</Filter>
+    </Library>
+    <Library Include="..\..\LIB\loglib_ICAD2016_VS2010.lib">
+      <Filter>LIB\Release</Filter>
+    </Library>
+    <Library Include="..\..\LIB\Geolib_ICAD2016_VS2010.lib">
+      <Filter>LIB\Release</Filter>
+    </Library>
+    <Library Include="..\..\LIB\Dlglib_ICAD2016_VS2010.lib">
+      <Filter>LIB\Release</Filter>
+    </Library>
+    <Library Include="..\..\LIB\dbaC_ICAD2016_VS2010.lib">
+      <Filter>LIB\Release</Filter>
+    </Library>
+    <Library Include="..\..\LIB\WcMatch_ICAD2016_VS2010D.lib">
+      <Filter>LIB\Debug</Filter>
+    </Library>
+    <Library Include="G:\SRC\LIB\ARXWrap_ICAD2016_VS2010.lib">
+      <Filter>LIB\Release</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
