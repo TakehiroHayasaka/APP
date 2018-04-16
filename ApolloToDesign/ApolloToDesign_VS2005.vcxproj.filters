@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{533db914-463c-4be4-93e7-6b0576d820b4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AlnLinearCoordinateFile">
+      <UniqueIdentifier>{f95d7df4-b783-41eb-ac32-179a0a49c211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d67416f5-b407-4ec1-bf87-da79e2f3613d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{f028804b-ac7e-4217-be2c-8bded9a6a7b8}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApolloToDesign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ApolloToDesign_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ApolloToDesignDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbBaseData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbGrdHstfLap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbGrdPower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbGrdSecPower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbGrdVstfHaichi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbGrdVstfKyori.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputCbeam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputCbeamConnSpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputFillOption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputGrdMen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputGrdSpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputHaraikomiHoko.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputHeight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputKetatanLeng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputStfAki.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbInputUseMaterial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbLineCbeam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbLineGrdCamber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbLineGrdPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbLineGrdZahyo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbRangeHstf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecCbeam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecCbeamKind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecCbeamSec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecCbeamStf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecCbeamVstfNum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecCutData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecGrd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecGrdHeightConstant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecGrdHeightVariable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecGrdKaku.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecGrdKakuVst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecGrdLeng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecHstf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecHstfHaichi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecManhole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecScaleFill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecScaleSpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecSolePl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecStfDir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecVstf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSecVstfHaichi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSplCommon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSplFlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbSplWeb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbStatusHstf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbStructAll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtdDbToCsv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCrossBeam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgGirder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTabCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\AlnBinaryFileReader.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\AlnCrossAngle.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\AlnLinearCoordinateData.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\AlnLinearCoordinateFile.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\AlnMensuration.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\AlnPointData.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\AlnTextFileReader.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\CrcCosumoTextReader.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\errorStack.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\GWDLineTextFileReader.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\GWDSectionTextFileReader.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\JFETextFileReader.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+    <ClCompile Include="AlnLinearCoordinateFile\JIPTextReader.cpp">
+      <Filter>Source Files\AlnLinearCoordinateFile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ApolloToDesign.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AtdCrossBeamCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbBaseData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbGrdHstfLap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbGrdPower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbGrdSecPower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbGrdVstfHaichi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbGrdVstfKyori.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputCbeam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputCbeamConnSpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputFillOption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputGrdMen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputGrdSpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputHaraikomiHoko.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputHeight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputKetatanLeng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputStfAki.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbInputUseMaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbLineCbeam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbLineGrdCamber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbLineGrdPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbLineGrdZahyo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbRangeHstf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecCbeam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecCbeamKind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecCbeamSec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecCbeamStf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecCbeamVstfNum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecCutData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecGrd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecGrdHeightConstant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecGrdHeightVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecGrdKaku.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecGrdKakuVst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecGrdLeng.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecHstf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecHstfHaichi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecManhole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecScaleFill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecScaleSpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecSolePl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecStfDir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecVstf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSecVstfHaichi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSplCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSplFlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbSplWeb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbStatusHstf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdDbStructAll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AtdGirderCommon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ApolloToDesign.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ApolloToDesign.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

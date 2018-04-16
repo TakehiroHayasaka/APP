@@ -1,0 +1,35 @@
+﻿<Window x:Class="JManCntIn"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:metro="http://schemas.codeplex.com/elysium"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="入力データの選択・作成" Height="400" Width="400" ResizeMode="NoResize" x:Name="JManCntIn" WindowStartupLocation="Manual" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="DatGridCntIn" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" AutoGenerateColumns="False"
+                  ItemsSource="{Binding DataContext, Mode=TwoWay, RelativeSource={RelativeSource Self}}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="管理番号" Binding="{Binding Value1}" Width="75"/>
+                <DataGridTextColumn Header="入力データの管理名" Binding="{Binding Value2}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="入力" HorizontalAlignment="Right" Width="80" Name="ButtonCntInput" VerticalAlignment="Stretch" FontSize="12" Grid.Column="1" Grid.Row="5" Style="{DynamicResource FlatButtonStyle}" Cursor="Hand" Background="#FF474747" Foreground="White" Margin="0,0,85,0"/>
+        <Button Content="CANCEL" HorizontalAlignment="Right" Width="80" Name="ButtonCntCansel" VerticalAlignment="Stretch" FontSize="12" Grid.Column="1" Grid.Row="5" Style="{DynamicResource FlatButtonStyle}" Cursor="Hand" Background="#FF474747" Foreground="White"/>
+        <TextBlock Text="※行を削除する場合は、行を選択して[Delete]ボタンをクリックしてください。" Grid.Column="1" Grid.Row="3" TextWrapping="Wrap" />
+    </Grid>
+</Window>

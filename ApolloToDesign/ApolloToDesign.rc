@@ -1,0 +1,383 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ApolloToDesign.rc2""  // Microsoft Visual C++ ?E?O?I?c?[???A?O?W?3?e?????\\?[?X\r\n"
+    "#include ""l.jpn\\afxres.rc""          // ?W???I?R??g?|?[?l??g?g\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ApolloToDesign.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ApolloToDesignのﾊﾞｰｼﾞｮﾝ情報"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ApolloToDesign Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_APOLLOTODESIGN_DIALOG DIALOGEX 0, 0, 611, 439
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "マーク図作成 [Build:160630]"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab2",IDC_MAINTAB,"SysTabControl32",0x0,1,68,610,371
+    EDITTEXT        IDC_MDBFILEPATH,29,11,374,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_CSVFILEPATH,29,42,374,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "参照",IDC_MDBFILEBROWSE,416,8,48,17
+    DEFPUSHBUTTON   "実行",IDOK,486,8,48,17
+    DEFPUSHBUTTON   "キャンセル",IDCANCEL,486,37,48,17
+END
+
+DLG_Girder DIALOGEX 0, 0, 610, 359
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "ジョイントクリアランス",IDC_STATIC,7,4,127,105
+    GROUPBOX        "材端形状",IDC_STATIC,142,3,143,107
+    GROUPBOX        "ソールプレート",IDC_STATIC,292,4,145,105
+    GROUPBOX        "その他",IDC_STATIC,443,4,158,104
+    GROUPBOX        "垂直補剛材",IDC_STATIC,7,116,174,229
+    GROUPBOX        "水平補剛材",IDC_STATIC,191,116,187,229
+    GROUPBOX        "添接板",IDC_STATIC,390,115,211,231
+    LTEXT           "[3]上フランジ：",IDC_STATIC,17,20,59,8
+    LTEXT           "[4]ウェブ：",IDC_STATIC,17,50,41,8
+    LTEXT           "[5]下フランジ：",IDC_STATIC,16,81,58,8
+    LTEXT           "[7]上フランジ：",IDC_STATIC,153,20,44,8
+    LTEXT           "[8]下フランジ：",IDC_STATIC,152,50,45,8
+    LTEXT           "[9]上下フランジ立上げ量：",IDC_STATIC,150,81,77,8
+    LTEXT           "[11]橋直方向空き量：",IDC_STATIC,306,20,71,8
+    LTEXT           "[12]橋軸方向空き量：",IDC_STATIC,306,51,73,8
+    LTEXT           "[6]板継ズレ量：",IDC_STATIC,456,20,49,8
+    LTEXT           "[10]下フランジ拡幅部テーパー：",IDC_STATIC,456,51,95,8
+    LTEXT           "[36]ウェブ孔勾配下限値：",IDC_STATIC,456,82,74,8
+    LTEXT           "[20]支点部溶接辺側上側切欠：",IDC_STATIC,18,135,108,8
+    LTEXT           "[21]支点部溶接辺側下側切欠：",IDC_STATIC,18,159,110,8
+    LTEXT           "[22]支点部上側切欠：",IDC_STATIC,18,183,109,8
+    LTEXT           "[23]格点部溶接辺上側切欠：",IDC_STATIC,18,207,103,8
+    LTEXT           "[24]格点部溶接辺下側切欠：",IDC_STATIC,18,231,108,8
+    LTEXT           "[25]格点部上側切欠：",IDC_STATIC,18,255,103,8
+    LTEXT           "[26]中間部溶接辺側上側切欠：",IDC_STATIC,18,279,103,8
+    LTEXT           "[27]中間部溶接辺側下側切欠：",IDC_STATIC,18,303,96,8
+    LTEXT           "[28]中間部溶接辺側下側切欠：",IDC_STATIC,18,327,104,8
+    LTEXT           "[13]垂直補剛材部,横桁ウェブ部空き量：",IDC_STATIC,203,135,119,8
+    LTEXT           "[14]添接部空き量：",IDC_STATIC,203,159,63,8
+    LTEXT           "[15]横桁フランジ部空き量：",IDC_STATIC,203,183,102,8
+    LTEXT           "[16]横桁フランジからの高さ寸法上限：",IDC_STATIC,203,207,116,8
+    LTEXT           "[17]垂直補剛材部スニップサイズ：",IDC_STATIC,203,231,109,8
+    LTEXT           "[18]添接部スニップサイズ：",IDC_STATIC,203,255,105,8
+    LTEXT           "[19]横桁フランジ部スニップサイズ：",IDC_STATIC,203,279,102,8
+    LTEXT           "[29]上フランジ添接板橋軸方向材端：",IDC_STATIC,403,135,111,8
+    LTEXT           "[30]上フランジ外側添接板橋直方向材端：",IDC_STATIC,403,159,130,8
+    LTEXT           "[31]上フランジ内側添接板橋直方向材端：",IDC_STATIC,403,183,121,8
+    LTEXT           "[32]ウェブ添接板橋軸方向材端：",IDC_STATIC,403,207,108,8
+    LTEXT           "[33]ウェブ添接板高さ方向材端：",IDC_STATIC,403,231,105,8
+    LTEXT           "[34]下フランジ添接板橋軸方向材端：",IDC_STATIC,403,255,110,8
+    LTEXT           "[35]下フランジ添接板橋直方向材端：",IDC_STATIC,403,279,114,8
+    COMBOBOX        IDC_GRD7,226,17,48,103,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_GRD8,226,48,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_GRD3,81,17,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD4,81,48,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD5,81,79,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD6,552,17,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD9,234,79,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD10,552,48,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD11,386,17,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD12,386,48,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD13,324,132,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD14,324,156,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD15,324,180,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD16,324,204,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD17,324,228,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD18,324,252,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD19,324,276,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD20,131,132,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD21,131,156,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD22,131,180,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD23,131,204,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD24,131,228,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD25,131,252,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD26,131,276,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD27,131,300,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD28,131,324,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD29,545,132,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD30,545,156,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD31,545,180,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD32,545,204,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD33,545,228,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD34,545,252,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD35,545,276,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_GRD36,552,79,40,14,ES_RIGHT | ES_AUTOHSCROLL
+END
+
+DLG_CrossBeam DIALOGEX 0, 0, 610, 358
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "ジョイントクリアランス",IDC_STATIC,10,4,159,168
+    GROUPBOX        "コネクションプレート",IDC_STATIC,180,7,192,167
+    GROUPBOX        "垂直補剛材",IDC_STATIC,381,10,152,81
+    GROUPBOX        "その他",IDC_STATIC,381,101,153,73
+    GROUPBOX        "材端形状",IDC_STATIC,10,178,589,168
+    CTEXT           "[1]支点上横桁（BH）上フランジ：",IDC_STATIC,13,22,101,10
+    CTEXT           "[2]支点上横桁（BH）ウェブ：",IDC_STATIC,12,46,91,10
+    CTEXT           "[3]支点上横桁（BH）下フランジ：",IDC_STATIC,16,70,96,10
+    CTEXT           "[4]格点上横桁（H鋼）フランジ：",IDC_STATIC,13,94,96,10
+    CTEXT           "[5]格点上横桁（H鋼）ウェブ：",IDC_STATIC,10,118,98,10
+    CTEXT           "[6]主桁ウェブ付きコネクション（支点上）溶接辺側切欠：",IDC_STATIC,190,21,115,16
+    CTEXT           "[7]主桁ウェブ付きコネクション（支点上）フィレットRサイズ：",IDC_STATIC,189,46,117,16
+    CTEXT           "[8]主桁ウェブ付きコネクション（支点上）溶接辺立上げ量：",IDC_STATIC,189,70,117,16
+    CTEXT           "[9]主桁ウェブ付きコネクション（格点上）溶接辺側切欠：",IDC_STATIC,188,94,119,16
+    CTEXT           "[10]主桁ウェブ付きコネクション（格点上）フィレットRサイズ：",IDC_STATIC,190,118,119,16
+    CTEXT           "[11]主桁ウェブ付きコネクション（格点上）溶接辺立上げ量：",IDC_STATIC,190,143,118,16
+    CTEXT           "[12]横桁付垂直補剛材溶接辺側上側切欠：",IDC_STATIC,390,27,68,18
+    CTEXT           "[13]横桁付垂直補剛材溶接辺側下側切欠：",IDC_STATIC,392,55,66,15
+    CTEXT           "[30]ウェブ孔勾配下限値：",IDC_STATIC,391,121,74,10
+    CTEXT           "[14]支点上横桁上フランジ添接板橋軸方向材端：",IDC_STATIC,15,206,97,17
+    CTEXT           "[31]フランジ切口タイプ：",IDC_STATIC,389,147,74,10
+    CTEXT           "[15]支点上横桁上フランジ添接板橋直方向材端：",IDC_STATIC,13,239,102,17
+    CTEXT           "[16]支点上横桁ウェブ添接板橋直方向材端：",IDC_STATIC,14,272,89,17
+    CTEXT           "[17]支点上横桁ウェブ添接板高さ方向材端：",IDC_STATIC,14,306,89,17
+    CTEXT           "[18]支点上横桁下フランジ添接板橋軸方向材端：",IDC_STATIC,163,206,100,17
+    CTEXT           "[19]支点上横桁下フランジ添接板橋直方向材端：",IDC_STATIC,163,239,99,17
+    CTEXT           "[20]支点上コネクション橋軸方向材端：",IDC_STATIC,163,272,70,17
+    CTEXT           "[21]支点上コネクション橋直方向材端：",IDC_STATIC,163,306,69,17
+    CTEXT           "[22]格点上横桁上フランジ添接板橋軸方向材端：",IDC_STATIC,306,206,99,17
+    CTEXT           "[24]格点上横桁ウェブ添接板橋直方向材端：",IDC_STATIC,306,272,89,17
+    CTEXT           "[25]格点上横桁ウェブ添接板高さ方向材端：",IDC_STATIC,306,306,88,17
+    CTEXT           "[26]格点上横桁下フランジ添接板橋軸方向材端：",IDC_STATIC,453,206,98,17
+    CTEXT           "[27]格点上横桁下フランジ添接板橋直方向材端：",IDC_STATIC,453,239,97,17
+    CTEXT           "[28]格点上コネクション橋軸方向材端：",IDC_STATIC,451,272,72,17
+    CTEXT           "[29]格点上コネクション橋直方向材端：",IDC_STATIC,453,306,73,17
+    EDITTEXT        IDC_CRS1,124,21,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    COMBOBOX        IDC_CRS31,468,144,48,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CRS2,124,45,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS3,124,69,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS4,124,93,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS5,124,117,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS6,314,21,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS7,314,45,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS8,314,69,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS9,314,93,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS10,314,117,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS11,314,141,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS12,468,27,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS13,468,55,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS14,116,206,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS15,116,240,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS16,116,272,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS17,116,308,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS18,263,206,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS19,263,240,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS20,263,272,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS21,263,308,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS22,406,206,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS23,406,240,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS24,406,272,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS25,406,308,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS26,552,206,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS27,552,240,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS28,552,274,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS29,552,308,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CRS30,468,117,40,14,ES_RIGHT | ES_AUTOHSCROLL
+    CTEXT           "[23]格点上横桁上フランジ添接板橋直方向材端：",IDC_STATIC,305,239,102,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,5,27
+ PRODUCTVERSION 1,0,5,27
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "CompanyName", "株式会社　横河技術情報"
+            VALUE "FileDescription", "ApolloToDesign ｱﾌﾟﾘｹｰｼｮﾝ"
+            VALUE "FileVersion", "1, 0, 5, 27"
+            VALUE "InternalName", "ApolloToDesign"
+            VALUE "LegalCopyright", "Copyright (C) 2008-2012"
+            VALUE "OriginalFilename", "ApolloToDesign.EXE"
+            VALUE "ProductName", "APOLLOデータ⇒設計情報属性ファイル"
+            VALUE "ProductVersion", "1, 0, 5, 27"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_APOLLOTODESIGN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 604
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 433
+    END
+
+    DLG_Girder, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 603
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 352
+    END
+
+    DLG_CrossBeam, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 597
+        VERTGUIDE, 17
+        VERTGUIDE, 125
+        VERTGUIDE, 157
+        VERTGUIDE, 272
+        VERTGUIDE, 313
+        VERTGUIDE, 361
+        VERTGUIDE, 411
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 347
+        HORZGUIDE, 44
+        HORZGUIDE, 128
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "ApolloToDesign のﾊﾞｰｼﾞｮﾝ情報(&A)..."
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\ApolloToDesign.rc2"  // Microsoft Visual C++ ?E?O?I?c?[???A?O?W?3?e?????\?[?X
+#include "l.jpn\afxres.rc"          // ?W???I?R??g?|?[?l??g?g
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

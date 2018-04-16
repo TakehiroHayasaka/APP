@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9DD3E972-9B95-4C45-854B-00CBCB8BA5F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>JupCatsBatch.My.MyApplication</StartupObject>
+    <RootNamespace>JupCatsBatch</RootNamespace>
+    <AssemblyName>JupCatsBatch</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>JupCatsBatch.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>JupCatsBatch.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common\JCBFileName.vb" />
+    <Compile Include="common\JCBSetExe.vb" />
+    <Compile Include="common\JCBSetFileExplore.vb" />
+    <Compile Include="common\JCharge.vb" />
+    <Compile Include="common\JJmIni.vb" />
+    <Compile Include="common\JSentinel_net.vb" />
+    <Compile Include="common\JString.vb" />
+    <Compile Include="JCBCommonModule.vb" />
+    <Compile Include="JCBEditConstructionCATS.Designer.vb">
+      <DependentUpon>JCBEditConstructionCATS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBEditConstructionCATS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBFileExplore.Designer.vb">
+      <DependentUpon>JCBFileExplore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBFileExplore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBExecutionLog.Designer.vb">
+      <DependentUpon>JCBExecutionLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBExecutionLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBEditConstruction.Designer.vb">
+      <DependentUpon>JCBEditConstruction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBEditConstruction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBFileExplore3.Designer.vb">
+      <DependentUpon>JCBFileExplore3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBFileExplore3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBMainWindow.en.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JCBMainWindow.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="JCBMainWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBMainWindow.Designer.vb">
+      <DependentUpon>JCBMainWindow.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBNewConstruction.Designer.vb">
+      <DependentUpon>JCBNewConstruction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBNewConstruction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBNewConstructionCATS.Designer.vb">
+      <DependentUpon>JCBNewConstructionCATS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBNewConstructionCATS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JCBOpenConstruction.Designer.vb">
+      <DependentUpon>JCBOpenConstruction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBOpenConstruction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="common\JCBSetMDIButtons.vb" />
+    <Compile Include="JCBSetting.Designer.vb">
+      <DependentUpon>JCBSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="common\JCBGetControls.vb" />
+    <Compile Include="JCBShowSubWindowProgram.Designer.vb">
+      <DependentUpon>JCBShowSubWindowProgram.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JCBShowSubWindowProgram.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="JCBEditConstruction.en.resx">
+      <DependentUpon>JCBEditConstruction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBEditConstructionCATS.resx">
+      <DependentUpon>JCBEditConstructionCATS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBExecutionLog.en.resx">
+      <DependentUpon>JCBExecutionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBFileExplore.resx">
+      <DependentUpon>JCBFileExplore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBExecutionLog.resx">
+      <DependentUpon>JCBExecutionLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBEditConstruction.resx">
+      <DependentUpon>JCBEditConstruction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBFileExplore3.en.resx">
+      <DependentUpon>JCBFileExplore3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBFileExplore3.resx">
+      <DependentUpon>JCBFileExplore3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBMainWindow.en.resx">
+      <DependentUpon>JCBMainWindow.vb</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>JCBMainWindow.en.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBMainWindow.resx">
+      <DependentUpon>JCBMainWindow.vb</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBNewConstruction.en.resx">
+      <DependentUpon>JCBNewConstruction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBNewConstruction.resx">
+      <DependentUpon>JCBNewConstruction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBNewConstructionCATS.resx">
+      <DependentUpon>JCBNewConstructionCATS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBOpenConstruction.en.resx">
+      <DependentUpon>JCBOpenConstruction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBOpenConstruction.resx">
+      <DependentUpon>JCBOpenConstruction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBSetting.en.resx">
+      <DependentUpon>JCBSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBSetting.resx">
+      <DependentUpon>JCBSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JCBShowSubWindowProgram.resx">
+      <DependentUpon>JCBShowSubWindowProgram.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.en.resx" />
+    <EmbeddedResource Include="My Project\Resources.ja-JP.resx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon\01_New.png" />
+    <Content Include="icon\01_New_01.png" />
+    <Content Include="icon\01_New_G.png" />
+    <Content Include="icon\02_Open.png" />
+    <Content Include="icon\02_Open_G.png" />
+    <Content Include="icon\03_KojiEdit.png" />
+    <Content Include="icon\03_KojiEdit_G.png" />
+    <Content Include="icon\04_normal.png" />
+    <Content Include="icon\05_abnormal.png" />
+    <Content Include="icon\06_noExecute.png" />
+    <Content Include="icon\07_warning.png" />
+    <Content Include="icon\07_warning2.png" />
+    <Content Include="icon\08_running.gif" />
+    <Content Include="icon\09_Filter.png" />
+    <Content Include="icon\10_status_ok.png" />
+    <Content Include="icon\11_status_bad.png" />
+    <Content Include="icon\12_status_no.png" />
+    <Content Include="icon\16_SETTING.png" />
+    <Content Include="icon\16_SETTING_G.png" />
+    <Content Include="icon\Y01_LOW_G-OLD.png" />
+    <Content Include="icon\Y02_LOW.png" />
+    <Content Include="icon\Y02_LOW_G.png" />
+    <Content Include="icon\Y03_left.png" />
+    <Content Include="icon\Y03_left_black.png" />
+    <Content Include="icon\Y03_left_black2.png" />
+    <Content Include="icon\Y04_right.png" />
+    <Content Include="icon\Y04_right_black.png" />
+    <Content Include="icon\Y04_right_black2.png" />
+    <Content Include="icon\Y05_diagonal_black.png" />
+    <Content Include="MdiIcon\01_UpperUnderSort.png" />
+    <Content Include="MdiIcon\01_UpperUnderSort_black.png" />
+    <Content Include="MdiIcon\02_leftRightSort.png" />
+    <Content Include="MdiIcon\02_leftRightSort_black.png" />
+    <Content Include="MdiIcon\03_fileExplore.png" />
+    <Content Include="MdiIcon\03_fileExplore_black.png" />
+    <Content Include="MdiIcon\03_fileExplore_color.png" />
+    <Content Include="MdiIcon\04_ExecutionLog.png" />
+    <Content Include="MdiIcon\04_ExecutionLog_black.png" />
+    <Content Include="MdiIcon\05_showProgramList_black2.png" />
+    <Content Include="MdiIcon\memo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\TreeGridViewRebuilt\TreeGridview\TreeGridView\ExpandableGridView.csproj">
+      <Project>{2EFE526F-79B3-49BC-9575-A7B258C59BB5}</Project>
+      <Name>ExpandableGridView</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
