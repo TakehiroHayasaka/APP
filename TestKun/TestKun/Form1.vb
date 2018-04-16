@@ -7,6 +7,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         If _cnt = 100 Then
+            Me.ShowClearMessage()
+            _cnt += 1
             Return
         End If
 
@@ -17,6 +19,8 @@
     End Sub
 
     Private Sub ShowClearMessage()
+
+        Me.Label2.Text = "おめでとうございます！" + vbCrLf + "高橋名人に近づきましたね．．．。"
 
     End Sub
 End Class
