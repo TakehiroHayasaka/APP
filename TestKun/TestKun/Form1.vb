@@ -23,7 +23,7 @@
         Me.Label2.Text = "おめでとうございます！" + vbCrLf + "高橋名人に近づきましたね．．．。"
         Dim a As Integer
 
-        a = 2
+        a = 1
 
     End Sub
 
