@@ -1,0 +1,114 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+YCM_TEST
+</name>
+</assembly>
+<members>
+<member name="M:YCM_TEST.YCM_SunpoTest.GetDist_PlaneToPoint_Test1">
+	<summary>
+GetDist のテスト1
+ 3点P1,P2,P3からなる平面と点P0までの距離
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetDistCircletoPlane_Test1">
+	<summary>
+GetDistCircletoPlane のテスト1
+円と平面の最大距離・最小距離を算出する
+（1）面と平面は平行関係にある（XY平面）－距離はXYZ成分 
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetDistCircletoPlane_Test3">
+	<summary>
+GetDistCircletoPlane のテスト3
+円と平面の最大距離・最小距離を算出する
+（3）円（拡張した平面）と平面が垂直である－距離はXYZ成分
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetDistCircletoPlane_Test5">
+	<summary>
+GetDistCircletoPlane のテスト5
+円と平面の最大距離・最小距離を算出する
+（5）円（拡張した平面）と平面が同一平面上にある
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetDistCircletoPlane_Test6">
+	<summary>
+GetDistCircletoPlane のテスト6
+円と平面の最大距離・最小距離を算出する
+（6）円と平面が直交かつ、円の中心が平面上にある
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.KinjiPlane_PointGroup_Test1">
+	<summary>
+KinjiPlane_PointGroup のテスト1
+ （1）点群はXY平面上に存在
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByKubun_Test2">
+	<summary>
+GetPoint_ByKubun のテスト2
+（2）K1もしくはK2のどちらかをを用いて抽出
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByIndex_Test1">
+	<summary>
+GetPoint_ByIndex のテスト1
+ （1）index1＜index2
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByIndex_Test2">
+	<summary>
+GetPoint_ByIndex のテスト2
+ （2）index1&gt;index2
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByIndex_Test3">
+	<summary>
+GetPoint_ByIndex のテスト3
+ （3）index1 = index2
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPointIntersection_Test1">
+	<summary>
+GetPointIntersection のテスト1
+ （1）平面はXY平面に並行でZ=1の位置。線分は点（5,5,1）で平面と垂直に交わる
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.AddUserLine_Test1">
+	<summary>
+AddUserLine のテスト1
+ 
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.AddUserCircle3P_Test1">
+	<summary>
+AddUserCircle3P のテスト1
+ 
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.AddUserCircle1P_Test1">
+	<summary>
+AddUserCircle1P のテスト1
+ 
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetMinMaxPointCToC_Test1">
+	<summary>
+GetMinMaxPointCToC のテスト1
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetMinMaxPointCToC_Test2">
+	<summary>
+GetMinMaxPointCToC のテスト2
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByOffset_Test1">
+	<summary>
+GetPoint_ByOffset のテスト1
+（1）帰ってくるarrCT_Result()の配列は1つ
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByOffset_Test3">
+	<summary>
+GetPoint_ByOffset のテスト3
+（3）入力arrCT（）にオフセット値（0.0,0.0,0.0）が入っている
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByPlane_Test1">
+	<summary>
+GetPoint_ByPlane のテスト1
+ （1）交点が見つかるケース
+</summary>
+</member><member name="M:YCM_TEST.YCM_SunpoTest.GetPoint_ByPlane_Test2">
+	<summary>
+GetPoint_ByPlane のテスト2
+ （2）交点が見つからないケース
+ →線分を直線に拡張することで交点を得る//
+</summary>
+</member>
+</members>
+</doc>

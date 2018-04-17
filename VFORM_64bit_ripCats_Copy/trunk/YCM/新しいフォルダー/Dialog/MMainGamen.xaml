@@ -1,0 +1,67 @@
+﻿<Window x:Class="MMainGamen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VFORM" Height="673" Width="1124" Icon="/YCM;component/3_1.ico" WindowState="Maximized">
+    <Window.Resources>
+        <Style TargetType="ListViewItem">
+            <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListViewItem">
+                        <Border Height="49">
+                            <Grid x:Name="ItemGrid">
+                                <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                <Border x:Name="ItemImageBorder" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Green">
+                                    <Image x:Name="ItemImage" HorizontalAlignment="Left" Stretch="None" Source="{Binding Img}" />
+                                </Border>
+                                <TextBlock x:Name="ItemText" VerticalAlignment="Center" HorizontalAlignment="Right"  Margin="0,0,10,0"
+                                           TextAlignment="Right" FontSize="18" FontWeight="Bold" 
+                                           Foreground="{StaticResource LightForegroundBrush}" 
+                                           Text="{Binding Text}" />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="ItemText" Property="Foreground">
+                                    <Setter.Value>
+                                        <SolidColorBrush Color="White">
+                                        </SolidColorBrush>
+                                    </Setter.Value>
+                                </Setter>
+                                <Setter TargetName="ItemImageBorder" Property="Background" Value="{StaticResource LightForegroundBrush}" />
+                                <Setter TargetName="ItemImage" Property="Source" Value="{Binding ImgSeleted}" />
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter TargetName="ItemText" Property="Foreground" Value="{StaticResource LightForegroundBrush}" />
+                                <Setter TargetName="ItemImageBorder" Property="Background" Value="{StaticResource LightBackgroundBrush}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <ContextMenu x:Key="menuListBox">
+            <MenuItem Header="システム設定エクスポート" Click="SystemSettingExport"/>
+            <MenuItem Header="システム設定上書きインポート" Click="SystemSettingOverWriteInport"/>
+            <MenuItem Header="システム設定新規インポート" Click="SystemSettingNewInport"/>
+            <MenuItem Header="システム設定削除" Click="SystemSettingSelectItemDelete"/>
+        </ContextMenu>
+
+    </Window.Resources>
+    <Grid Margin="0">
+        <Grid HorizontalAlignment="Left" Margin="12,12,0,7" Name="Grid1" Width="285">
+            <Image Name="PictureBox1" Height="96" HorizontalAlignment="Left" Margin="0" Stretch="Fill" VerticalAlignment="Top" Width="285" Source="/YCM;component/Image2/PictureBox1.Image.jpg" />
+            <Label Content="任意計測" Height="48" HorizontalAlignment="Left" Margin="20,111,0,0" Name="Label1" VerticalAlignment="Top" FontSize="28" Width="159" Foreground="DeepSkyBlue"></Label>
+            <Label Content="専用計測" FontSize="28" Foreground="DeepSkyBlue" Height="48" HorizontalAlignment="Left" Margin="20,330,0,0" Name="Label2" VerticalAlignment="Top" Width="159" />
+            <ListView Height="151" HorizontalAlignment="Left" Margin="27,154,0,0" Name="ListNini" VerticalAlignment="Top" Width="232" ScrollViewer.CanContentScroll="False"></ListView>
+            <ListView HorizontalAlignment="Left" Margin="27,374,0,25" Name="ListSenyou" Width="232" ItemsSource="{Binding}" ItemTemplate="{StaticResource myListViewTemplate}" ContextMenu="{DynamicResource menuListBox}">
+
+            </ListView>
+        </Grid>
+        <Grid Margin="303,12,-2,7" Name="Grid2">
+            <Button Content="新規" Height="60" HorizontalAlignment="Left" Margin="24,18,0,0" Name="ButtonNew" VerticalAlignment="Top" Width="120" />
+            <Button Content="開く" Height="60" HorizontalAlignment="Left" Margin="150,18,0,0" Name="ButtonOpen" VerticalAlignment="Top" Width="120" />
+            <Grid Name="Grid_KojiDataConf"  Margin="0,93,0,7" />
+        </Grid>
+    </Grid>
+</Window>

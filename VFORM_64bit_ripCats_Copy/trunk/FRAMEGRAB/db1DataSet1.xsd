@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db1DataSet1" targetNamespace="http://tempuri.org/db1DataSet1.xsd" xmlns:mstns="http://tempuri.org/db1DataSet1.xsd" xmlns="http://tempuri.org/db1DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="db1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db1ConnectionString (MySettings)" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default.db1ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TTTTableAdapter" GeneratorDataComponentClassName="TTTTableAdapter" Name="TTT" UserDataComponentName="TTTTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db1ConnectionString (MySettings)" DbObjectName="TTT" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Field1, Field2 FROM TTT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Field1" DataSetColumn="Field1" />
+              <Mapping SourceColumn="Field2" DataSetColumn="Field2" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db1DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="db1DataSet1" msprop:Generator_UserDSName="db1DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TTT" msprop:Generator_TableClassName="TTTDataTable" msprop:Generator_TableVarName="tableTTT" msprop:Generator_TablePropName="TTT" msprop:Generator_RowDeletingName="TTTRowDeleting" msprop:Generator_RowChangingName="TTTRowChanging" msprop:Generator_RowEvHandlerName="TTTRowChangeEventHandler" msprop:Generator_RowDeletedName="TTTRowDeleted" msprop:Generator_UserTableName="TTT" msprop:Generator_RowChangedName="TTTRowChanged" msprop:Generator_RowEvArgName="TTTRowChangeEvent" msprop:Generator_RowClassName="TTTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Field1" msprop:Generator_ColumnVarNameInTable="columnField1" msprop:Generator_ColumnPropNameInRow="Field1" msprop:Generator_ColumnPropNameInTable="Field1Column" msprop:Generator_UserColumnName="Field1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Field2" msprop:Generator_ColumnVarNameInTable="columnField2" msprop:Generator_ColumnPropNameInRow="Field2" msprop:Generator_ColumnPropNameInTable="Field2Column" msprop:Generator_UserColumnName="Field2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

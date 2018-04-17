@@ -1,0 +1,41 @@
+﻿Public Class CameraParam
+    Public Cid As Integer '使用カメラID
+    Public CName As String '使用カメラ名
+    Public Cpath As String '使用カメラの内部パラメータのパス
+    Public Camparam As Object '使用カメラの内部パラメータ
+    Public CamParamFirst As Object
+    Public CamParamZero As Object '使用カメラのひずみ係数ゼロの内部パラメータ
+    Public CamSerialNo As String	’20150216 ADD BY Suuri 新キャリブレーション対応機能
+
+    Public Sub New()
+        Cid = -1
+        CName = ""
+        Cpath = ""
+        Camparam = Nothing
+        CamSerialNo = ""	’20150216 ADD BY Suuri 新キャリブレーション対応機能
+    End Sub
+
+    Public Sub New(strCamparamPath As String)
+        Cpath = strCamparamPath
+        ' Op.ReadCamPar(Cpath, Camparam)
+        ReadCamParamFromFile()
+    End Sub
+    Public Sub ReadCamParamFromFile()
+		'20150216 Rep BY Suuri 新キャリブレーション対応機能 Sta--
+        'Op.ReadCamPar(Cpath, Camparam)
+        'Op.ReadCamPar(Cpath, CamParamFirst)
+
+        Try
+            Op.ReadCamPar(Cpath, Camparam)
+            Op.ReadCamPar(Cpath, CamParamFirst)
+        Catch ex As Exception
+            Op.ReadTuple(Cpath, Camparam)
+            Op.ReadTuple(Cpath, CamParamFirst)
+        End Try
+		'20150216 Rep BY Suuri 新キャリブレーション対応機能 End--
+       
+        Dim Zeros As Object
+        Zeros = Tuple.TupleGenConst(5, 0)
+        Op.ChangeRadialDistortionCamPar("fixed", Camparam, Zeros, CamParamZero)
+    End Sub
+End Class

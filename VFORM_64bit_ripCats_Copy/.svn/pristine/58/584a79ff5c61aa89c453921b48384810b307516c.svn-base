@@ -1,0 +1,97 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="db1ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\db1.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\db1.mdb</Value>
+    </Setting>
+    <Setting Name="KoujiRootFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\01_VFORM_Projects\SUEOKI</Value>
+    </Setting>
+    <Setting Name="dbFBMConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\dbFBM.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\dbFBM.mdb</Value>
+    </Setting>
+    <Setting Name="shareFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\01_VFORM_Projects\SUEOKI\shareFolder</Value>
+    </Setting>
+    <Setting Name="localFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\01_VFORM_Projects\SUEOKI\localFolder</Value>
+    </Setting>
+    <Setting Name="BasePointFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\01_VFORM_Projects\SUEOKI\BasePoint.csv</Value>
+    </Setting>
+    <Setting Name="MeasurePointFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\01_VFORM_Projects\SUEOKI\MeasurePoint.csv</Value>
+    </Setting>
+    <Setting Name="BaseCoordFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\01_VFORM_Projects\SUEOKI\BaseCoordinates.csv</Value>
+    </Setting>
+    <Setting Name="MeasPointMove_x" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MeasPointBase_x" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MeasPointMove_y" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MeasPointBase_y" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="AlartGosa" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="YCMFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\VFORM_Sueoki_RipYtisnap01\YCM\bin\Win7_Sueoki_Normal_Release</Value>
+    </Setting>
+    <Setting Name="Dx1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-17</Value>
+    </Setting>
+    <Setting Name="Lx1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7650</Value>
+    </Setting>
+    <Setting Name="Zx1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1400</Value>
+    </Setting>
+    <Setting Name="Dx2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Lx2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="Zx2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Dy1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-11</Value>
+    </Setting>
+    <Setting Name="Ly1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2335</Value>
+    </Setting>
+    <Setting Name="Zy1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3390</Value>
+    </Setting>
+    <Setting Name="Dy2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Ly2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="Zy2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BuildNo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20151111</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

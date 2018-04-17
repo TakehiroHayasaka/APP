@@ -1,0 +1,166 @@
+﻿<Window x:Name="ReconstructionWindow" x:Class="ReconstructionWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Reconstruction" Height="500" Background="WhiteSmoke" Loaded="Window_Loaded" Closed="Window_Closed" WindowState="normal" Width="400">
+
+    <Grid HorizontalAlignment="Stretch" Margin="10,0,10,1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="188*"/>
+            <RowDefinition Height="158*"/>
+            <RowDefinition Height="8*"/>
+  
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="33*"></ColumnDefinition>
+                <ColumnDefinition Width="33*"></ColumnDefinition>
+                <ColumnDefinition Width="33*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <!-- <Button BorderBrush="LightGray"  Grid.Column="0" Grid.Row="0" Margin="10,10,33,10" HorizontalAlignment="Stretch" Click="Button_Run_Click">実行</Button>-->
+            <Button BorderBrush="LightGray"  Grid.Column="0" Grid.Row="0" Margin="10,10,33,10" HorizontalAlignment="Stretch" Click="Button_All_Click">一括実行</Button>
+            <!--<Button BorderBrush="LightGray"  Grid.Column="1" Grid.Row="0" Margin="0,10,44,11" HorizontalAlignment="Right" Click="Button_Trang_Click" Width="55">TR</Button>-->
+            <Button BorderBrush="LightGray" Grid.Row="0" Margin="106,10,60,10" HorizontalAlignment="Stretch" Click="Button_OK_Click" Grid.ColumnSpan="2">再サンプリング</Button>
+            <!-- <Button BorderBrush="LightGray" Grid.Column="2" Grid.Row="0" Margin="40,10,10,10" HorizontalAlignment="Stretch" Width="74" Click="Button_Draw_Region_Click">領域設定</Button>-->
+        </Grid>
+        <GroupBox Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+            <GroupBox.Header>
+                <Label>一般パラメーター</Label>
+            </GroupBox.Header>
+            <Grid Margin="5,5,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Padding="0,8,0,8">画像サイズ</Label>
+                <Label Grid.Column="0" Grid.Row="1" Padding="0,8,0,8">カメラ内部パラメータ</Label>
+                <Label Grid.Column="0" Grid.Row="2" Padding="0,8,0,8">バウンディングボックス(m)</Label>
+                <Label Grid.Column="0" Grid.Row="3" Padding="0,8,0,8">不要点除外指数</Label>
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Name="image_size_width" Grid.Column="0" Margin="0,6,4,6" IsReadOnly="False" Text="{Binding Path=SettingsData.image_size_width, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="1" Margin="4,6,0,6" Text="{Binding Path=SettingsData.image_size_height}" ></TextBox>
+                </Grid>
+                <Grid Grid.Row="1" Grid.Column="1" Margin="0,6,0,6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" Name="camera_param" Text="{Binding Path=SettingsData.camera_param, Mode=TwoWay}"/>
+                    <Button BorderBrush="lightgray" Grid.Column="1" Name="CameraParamSelect" Click="CameraParamSelect_Click" Content="Browse"/>
+                </Grid>
+                <TextBox Grid.Row="2" Grid.Column="1" Margin="0,6,0,6" Text="{Binding Path=SettingsData.bounding_box, Mode=TwoWay}"></TextBox>
+                <TextBox Grid.Row="3" Grid.Column="1" Margin="0,6,0,6" Text="{Binding Path=SettingsData.cleanup_min, Mode=TwoWay}"></TextBox>
+            </Grid>
+        </GroupBox>
+        <GroupBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+            <GroupBox.Header>
+                <Label>表面形状再構築パラメーター</Label>
+            </GroupBox.Header>
+            <Grid Margin="5,5,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Padding="0,8,0,8">補正マップの補間モード</Label>
+                <Label Grid.Column="0" Grid.Row="1" Padding="0,8,0,8">補正マップのファクター</Label>
+                <Label Grid.Column="0" Grid.Row="2" Padding="0,8,0,8">サンプリングステップ(mm)</Label>
+                <ComboBox Grid.Row="0" Grid.Column="1" Margin="0,6,0,6" SelectedValuePath="Content" SelectedValue="{Binding Path=SettingsData.rectif_interpolation, Mode=TwoWay}">
+                    <ComboBoxItem Content="none"/>
+                    <ComboBoxItem Content="bilinear"/>
+                </ComboBox>
+                <TextBox Grid.Row="1" Grid.Column="1" Margin="0,8,0,8" Text="{Binding Path=SettingsData.rectif_sub_sampling, Mode=TwoWay}"></TextBox>
+                <TextBox Grid.Row="2" Grid.Column="1" Margin="0,8,0,8" Text="{Binding Path=SettingsData.sub_sampling_step, Mode=TwoWay}"></TextBox>
+            </Grid>
+
+        </GroupBox>
+        <GroupBox Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Visibility="Hidden" Grid.RowSpan="2"  >
+            <GroupBox.Header>
+                <Label>相対視差を計算用</Label>
+            </GroupBox.Header>
+            <Grid Margin="5,5,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Grid.Row="0">binocular_method</Label>
+                <Label Grid.Column="0" Grid.Row="1">binocular_num_levels</Label>
+                <Label Grid.Column="0" Grid.Row="2">binocular_mask_size</Label>
+                <Label Grid.Column="0" Grid.Row="3">binocular_texture_thresh</Label>
+                <Label Grid.Column="0" Grid.Row="4">binocular_score_thresh</Label>
+                <Label Grid.Column="0" Grid.Row="5">binocular_filter</Label>
+                <Label Grid.Column="0" Grid.Row="6">binocular_sub_disparity</Label>
+                <ComboBox Grid.Row="0" Grid.Column="1" Margin="0,4,0,4" SelectedValuePath="Content" SelectedValue="{Binding Path=SettingsData.binocular_method, Mode=TwoWay}">
+                    <ComboBoxItem>ncc</ComboBoxItem>
+                    <ComboBoxItem>sad</ComboBoxItem>
+                    <ComboBoxItem>ssd</ComboBoxItem>
+                </ComboBox>
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="70*"/>
+                        <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button BorderBrush="LightGray" Grid.Column="0" Name="binocular_num_levels_minus" Click="binocular_num_levels_minus_Click"  Margin="0,6,0,6">
+                        <Button.Background>
+                            <ImageBrush ImageSource="pack://application:,,,/YCM;component/images/back.png"/>
+                        </Button.Background>
+                    </Button>
+                    <TextBox Grid.Column="1" Name="binocular_num_levels"  Margin="0,6,0,6" Text="{Binding Path=SettingsData.binocular_num_levels, Mode=TwoWay}"></TextBox>
+                    <Button BorderBrush="LightGray" Grid.Column="2" Name="binocular_num_levels_plus" Click="binocular_num_levels_plus_Click"  Margin="0,6,0,6">
+                        <Button.Background>
+                            <ImageBrush ImageSource="pack://application:,,,/YCM;component/images/next.png"/>
+                        </Button.Background>
+                    </Button>
+                </Grid>
+                <Grid Grid.Row="2" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="0" Margin="0,6,4,6" Name="binocular_mask_width" LostFocus="binocular_mask_width_LostFocus" Text="{Binding Path=SettingsData.binocular_mask_width, Mode=TwoWay}"></TextBox>
+                    <TextBox Grid.Column="1" Margin="4,6,0,6" Name="binocular_mask_height" LostFocus="binocular_mask_height_LostFocus" Text="{Binding Path=SettingsData.binocular_mask_height, Mode=TwoWay}"></TextBox>
+                </Grid>
+
+                <TextBox Grid.Row="3" Grid.Column="1" Margin="0,6,0,6" Text="{Binding Path=SettingsData.binocular_texture_thresh, Mode=TwoWay}"></TextBox>
+                <TextBox Grid.Row="4" Grid.Column="1" Margin="0,6,0,6" Text="{Binding Path=SettingsData.binocular_score_thresh, Mode=TwoWay}"></TextBox>
+                <ComboBox Grid.Row="5" Grid.Column="1" Margin="0,4,0,4" SelectedValuePath="Content" SelectedValue="{Binding Path=SettingsData.binocular_filter, Mode=TwoWay}">
+                    <ComboBoxItem>none</ComboBoxItem>
+                    <ComboBoxItem>left_right_check</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Grid.Row="6" Grid.Column="1" Margin="0,4,0,4" SelectedValuePath="Content" SelectedValue="{Binding Path=SettingsData.binocular_sub_disparity, Mode=TwoWay}">
+                    <ComboBoxItem>none</ComboBoxItem>
+                    <ComboBoxItem>interpolation</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+
+        </GroupBox>
+    </Grid>
+</Window>

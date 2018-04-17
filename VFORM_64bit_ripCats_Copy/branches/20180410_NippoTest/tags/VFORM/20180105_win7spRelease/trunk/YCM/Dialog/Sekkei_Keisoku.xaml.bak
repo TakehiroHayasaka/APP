@@ -1,0 +1,331 @@
+﻿<Window x:Name="wpfSekkeiKeizoku" x:Class="Sekkei_Keisoku"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="設計値/計測値　比較" Height="760.551" Width="1330" ResizeMode="NoResize" >
+
+
+    <Grid HorizontalAlignment="Stretch" Margin="0,0,0,0">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="258*"/>
+            <RowDefinition Height="434*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="Label_Kijyunset" Content="計測セット" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="28" Width="70"/>
+        <ComboBox x:Name="CmbKeisokuset" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="154" Height="24"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="154" Margin="19,86,0,0" Stroke="Black" VerticalAlignment="Top" Width="384"/>
+        <Label x:Name="Label_KijyunSanten" Content="基準3点合わせ" HorizontalAlignment="Left" Margin="19,58,0,0" VerticalAlignment="Top" Height="28" Width="89"/>
+        <Label Content="ラベリング頭文字" HorizontalAlignment="Left" Margin="73,91,0,0" VerticalAlignment="Top" Height="28" Width="106"/>
+        <TextBox x:Name="LabelingMoji" HorizontalAlignment="Left" Margin="184,91,0,0" VerticalAlignment="Top" Width="200" Height="24"/>
+        <Label x:Name="Label_keisokumei" Content="計測点名" HorizontalAlignment="Left" Margin="19,145,0,0" VerticalAlignment="Top" Height="28" Width="58"/>
+        <Label x:Name="Label_Sekkeimei" Content="設計点名" HorizontalAlignment="Left" Margin="19,173,0,0" VerticalAlignment="Top" Height="28" Width="58"/>
+        <ComboBox x:Name="cmbTen1keisoku" HorizontalAlignment="Left" Height="24" Margin="80,148,0,0" VerticalAlignment="Top" Width="72"/>
+        <Button x:Name="btnKeisokuten1" HorizontalAlignment="Left" Margin="152,148,0,0" VerticalAlignment="Top" Width="24" Height="24" OpacityMask="Black">
+            <Button.Background>
+
+                <ImageBrush ImageSource="/YCM;component/images/ic_hand_default.png"/>
+            </Button.Background>
+
+        </Button>
+        <Label x:Name="Label_Ten1" Content="点1" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,122,0,0" VerticalAlignment="Top" Width="96" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" OpacityMask="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Height="25
+               "/>
+        <ComboBox x:Name="cmbTen1Sekkei" HorizontalAlignment="Left" Height="24" Margin="80,174,0,0" VerticalAlignment="Top" Width="96"/>
+        <!--<Button x:Name="btnSekkeiTen1" HorizontalAlignment="Left" Margin="152,174,0,0" VerticalAlignment="Top" Width="24" Height="24" OpacityMask="Black">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\BYAMBAA_WORK\VFORM-0812\SRC\VFORM_Sueoki\YCM\images\ic_hand_default.png"/>
+            </Button.Background>
+        </Button>-->
+        <ComboBox x:Name="cmbTen2keisoku" HorizontalAlignment="Left" Height="24" Margin="184,148,0,0" VerticalAlignment="Top" Width="72"/>
+        <Button x:Name="btnKeisokuten2" HorizontalAlignment="Left" Margin="256,148,0,0" VerticalAlignment="Top" Width="24" Height="24" OpacityMask="Black">
+            <Button.Background>
+                <ImageBrush ImageSource="/YCM;component/images/ic_hand_default.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Label_Ten2" Content="点2" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="184,122,0,0" VerticalAlignment="Top" Width="96" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" OpacityMask="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Height="25"/>
+        <ComboBox x:Name="cmbTen2sekkei" HorizontalAlignment="Left" Height="24" Margin="184,174,0,0" VerticalAlignment="Top" Width="96"/>
+        <!-- <Button x:Name="btnSekkeiten2" HorizontalAlignment="Left" Margin="256,174,0,0" VerticalAlignment="Top" Width="24" Height="24" OpacityMask="Black">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\BYAMBAA_WORK\VFORM-0812\SRC\VFORM_Sueoki\YCM\images\ic_hand_default.png"/>
+            </Button.Background>
+        </Button>-->
+        <ComboBox x:Name="cmbTen3keisoku" HorizontalAlignment="Left" Height="24" Margin="288,148,0,0" VerticalAlignment="Top" Width="72"/>
+        <Button x:Name="btnKeisokuten3" HorizontalAlignment="Left" Margin="360,148,0,0" VerticalAlignment="Top" Width="24" Height="24" OpacityMask="Black">
+            <Button.Background>
+                <ImageBrush ImageSource="/YCM;component/images/ic_hand_default.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="Label_Ten3" Content="点3" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="288,122,0,0" VerticalAlignment="Top" Width="96" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" OpacityMask="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Height="25"/>
+        <ComboBox x:Name="cmbTen3Sekkei" HorizontalAlignment="Left" Height="24" Margin="288,174,0,0" VerticalAlignment="Top" Width="96"/>
+        <!--  <Button x:Name="btnSekkeiTen3" HorizontalAlignment="Left" Margin="360,174,0,0" VerticalAlignment="Top" Width="24" Height="24" OpacityMask="Black">
+            <Button.Background>
+                <ImageBrush ImageSource="C:\BYAMBAA_WORK\VFORM-0812\SRC\VFORM_Sueoki\YCM\images\ic_hand_default.png"/>
+            </Button.Background>
+        </Button>-->
+        <Button Name ="btn_3tenawase" Content="3点合わせ実行" HorizontalAlignment="Left" Height="24" Margin="264,203,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Label_SekkeiFile" Content="設計値ファイル" HorizontalAlignment="Left" Margin="830,10,0,0" VerticalAlignment="Top" Height="28" Width="94"/>
+        <TextBox x:Name="Txt_SekkeiFile" Height="23" Margin="931,11,0,0" VerticalAlignment="Top" Width="250" HorizontalAlignment="Left"/>
+        <Button x:Name="btnSekkeiFile" HorizontalAlignment="Left" Margin="1186,12,0,0" VerticalAlignment="Top" Width="34" Height="22" OpacityMask="Black" Content="..." RenderTransformOrigin="1.698,0.584">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Label Content="座標値比較" HorizontalAlignment="Left" Margin="19,7,0,0" VerticalAlignment="Top" Grid.Row="1" Height="28" Width="70"/>
+
+
+        <DataGrid x:Name="dataGridZahyo" RowHeaderWidth="0" RowHeight="24" FrozenColumnCount="23" BorderBrush="#FF494848" BorderThickness="0.55" CanUserSortColumns="False" CanUserAddRows= "False"   CanUserResizeColumns="False"  AutoGenerateColumns="False"  CanUserResizeRows="False"  Margin="19,69,37,121" Grid.Row="1" >
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="HorizontalContentAlignment" Value="Center" />
+                    <Setter Property="Background" Value="#FFE0DADA" />
+                    <Setter Property="BorderBrush" Value="#FF494848" />
+                    <Setter Property="BorderThickness" Value="0.55" />
+                    <Setter Property="Foreground" Value="black" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="No" Width="30"  Binding="{Binding No}" IsReadOnly="True">
+
+                </DataGridTextColumn >
+                <!--<DataGridComboBoxColumn Header="設計ラベル" Width="70" IsReadOnly="True"  />-->
+
+                <DataGridTextColumn Header="設計ラベル" Width="70" Binding="{Binding SekkeiLabel1}" IsReadOnly="True"/>
+                <!--<DataGridTemplateColumn Header="設計ラベル" Width="70" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox SelectedItem="{Binding SekkeiLabel1 ,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
+                              VerticalContentAlignment="Center" IsEditable="True" ItemsSource="{Binding SekkeiLabel}">
+                            </ComboBox>
+                            <DataGridTextColumn Header="X" Width="70" Binding="{Binding SekkeiTenX}" IsReadOnly="True"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+
+                <!--   <DataGridComboBoxColumn Header="測点名" Width="46.3" IsReadOnly="True"/> -->
+
+                <DataGridTemplateColumn Header="測点名" Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox SelectedItem="{Binding SokutenMei1 ,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
+                              VerticalContentAlignment="Center" IsEditable="True" ItemsSource="{Binding SokutenMei}" DropDownClosed="ComboBox_DropDownClosed">
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+
+                </DataGridTemplateColumn>
+
+                <!--Icon column-->
+                <!--<DataGridTextColumn Header=" " Width="23.7" IsReadOnly="True" />-->
+                <!--         <Button >
+                                <Image Source="C:\YTI_WORK\Sekkeichi_keisokuchi_hikaku\icon\ic_hand_default.png"/>
+                            </Button>
+-->
+                <DataGridTemplateColumn Header=" " Width="24">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_KeisokuCmb_Click" Width="20" Height="20">
+                                <!--    <Image Source="..\images\ic_hand_default.png"/>-->
+                                <Button.Background >
+                                    <ImageBrush ImageSource="/YCM;component/images/ic_hand_default.png"/>
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
+                <DataGridTextColumn Header="X" Width="70" Binding="{Binding SekkeiTenX}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="Y" Width="70" Binding="{Binding SekkeiTenY}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="Z" Width="70" Binding="{Binding SekkeiTenZ}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="X" Width="70" Binding="{Binding KeisokuTenX}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="Y" Width="70" Binding="{Binding KeisokuTenY}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="Z" Width="70" Binding="{Binding KeisokuTenZ}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+
+                <!--Icon column-->
+                <DataGridTemplateColumn Header=" " Width="24">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click" Width="20" Height="20">
+                                <!-- <Image Source="..\images\back.png"/>-->
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/YCM;component/images/back.png"/>
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--20161128 baluu add start-->
+                <DataGridTemplateColumn Header="Xw" Width="70" CellStyle="{StaticResource DataGrid_Cell_Right}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox TextChanged="Ichiawasew_TextChanged" Text="{Binding IchiAwaseXw, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--20161128 baluu add end-->
+                
+                <!--<DataGridTextColumn Header="Xw" Width="70" Binding="{Binding IchiAwaseXw}"  IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>-->
+
+                <!--Icon column-->
+                <DataGridTemplateColumn Header=" " Width="24">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_1" Width="20" Height="20">
+                                <!-- <Image Source="..\images\next.png"/>-->
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/YCM;component/images/next.png"/>
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+                <!--Icon column-->
+                <DataGridTemplateColumn Header=" " Width="24">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_2" Width="20" Height="20" >
+                                <!-- <Image Source="..\images\back.png"/>-->
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/YCM;component/images/back.png"/>
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <!--20161128 baluu add start-->
+                <DataGridTemplateColumn Header="Yw" Width="70" CellStyle="{StaticResource DataGrid_Cell_Right}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox TextChanged="Ichiawasew_TextChanged" Text="{Binding IchiAwaseYw, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--20161128 baluu add end-->
+                <!--<DataGridTextColumn Header="Yw" Width="70" Binding="{Binding IchiAwaseYw}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>-->
+                <!--Icon column-->
+                <DataGridTemplateColumn Header=" " Width="24">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_3" Width="20" Height="20" >
+                                <!-- <Image Source="..\images\next.png"/>-->
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/YCM;component/images/next.png"/>
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--Icon column-->
+                <DataGridTemplateColumn Header=" " Width="24">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_4" Width="20" Height="20" >
+                                <!-- <Image Source="..\images\back.png"/>-->
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/YCM;component/images/back.png"/>
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--20161128 baluu add start-->
+                <DataGridTemplateColumn Header="Zw" Width="70" CellStyle="{StaticResource DataGrid_Cell_Right}">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox TextChanged="Ichiawasew_TextChanged" Text="{Binding IchiAwaseZw, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <!--20161128 baluu add end-->
+                <!--<DataGridTextColumn Header="Zw" Width="70" Binding="{Binding IchiAwaseZw}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>-->
+                <!--Icon column-->
+                <DataGridTemplateColumn Header=" " Width="24">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_5" Width="20" Height="20" >
+                                <!--  <Image Source="..\images\next.png"/>-->
+                                <Button.Background>
+                                    <ImageBrush ImageSource="/YCM;component/images/next.png"/>
+                                </Button.Background>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="X" Width="70" Binding="{Binding DiffX}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="Y" Width="70" Binding="{Binding DiffY}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="Z" Width="70" Binding="{Binding DiffZ}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                <DataGridTextColumn Header="L" Width="70" Binding="{Binding DiffL}" IsReadOnly="True" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+            </DataGrid.Columns>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="{Binding colorBrush}" />
+                </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
+
+
+
+
+        <Label Content="座標値差分許容値" HorizontalAlignment="Left" Margin="19,321,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="106"/>
+        <Label x:Name="Label_SekkeLabel" Content="設計ラベル捜索範囲" HorizontalAlignment="Left" Margin="19,0,0,0" Grid.Row="2" VerticalAlignment="Top" Height="28" Width="118"/>
+        <TextBox x:Name="Txt_SekkeiLabel" HorizontalAlignment="Left" Height="23" Margin="184,2,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextAlignment="Right"/>
+        <Button x:Name="Btn_OK" Content="OK" HorizontalAlignment="Left" Margin="1020,2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="24"/>
+        <Button x:Name="Btn_CSVoutput" Content="CSV出力" HorizontalAlignment="Left" Margin="1106,2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="24"/>
+        <Button x:Name="btn_End" Content="終了" HorizontalAlignment="Left" Margin="1193,2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Height="24"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="72" Margin="19,349,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="341"/>
+        <Label x:Name="Label_Ten1_Copy" HorizontalContentAlignment="Center" Content="X" HorizontalAlignment="Left" Margin="143,350,0,0" VerticalAlignment="Top" Width="53" Background="#FFE0DADA" BorderBrush="#FF0F0E0E" OpacityMask="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Height="23
+               " Grid.Row="1"/>
+        <Label x:Name="Label_Ten2_Copy" HorizontalContentAlignment="Center" Content="Y" HorizontalAlignment="Left" Margin="197,350,0,0" VerticalAlignment="Top" Width="53" Background="#FFE0DADA" BorderBrush="#FF0F0E0E" OpacityMask="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Height="23" Grid.Row="1"/>
+        <Label x:Name="Label_Ten3_Copy" HorizontalContentAlignment="Center" Content="Z" HorizontalAlignment="Left" Margin="251,350,0,0" VerticalAlignment="Top" Width="53" Background="#FFE0DADA" BorderBrush="#FF0F0E0E" OpacityMask="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Height="23
+               " Grid.Row="1"/>
+        <Label x:Name="Label_Ten3_Copy1" HorizontalContentAlignment="Center" Content="L" HorizontalAlignment="Left" Margin="305,350,0,0" VerticalAlignment="Top" Width="53" Background="#FFE0DADA" BorderBrush="#FF080707" OpacityMask="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" Height="23                " Grid.Row="1"/>
+        <TextBox x:Name="Txt_MaxX" HorizontalAlignment="Left" Height="23" Margin="143,374,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MaxY" HorizontalAlignment="Left" Height="23" Margin="197,374,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MaxZ" HorizontalAlignment="Left" Height="23" Margin="251,374,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MaxL" HorizontalAlignment="Left" Height="23" Margin="305,374,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MinX" HorizontalAlignment="Left" Height="23" Margin="143,395,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MinY" HorizontalAlignment="Left" Height="23" Margin="197,395,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MinZ" HorizontalAlignment="Left" Height="23" Margin="251,395,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MinL" HorizontalAlignment="Left" Height="23" Margin="305,395,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="53" TextAlignment="Right"/>
+        <Label x:Name="Label_Max" Content="上限値" HorizontalAlignment="Left" Margin="91,374,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="46"/>
+        <Label x:Name="Label_Min" Content="下限値" HorizontalAlignment="Left" Margin="91,392,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="46"/>
+        <Label x:Name ="LabelNashi" Content=" " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="19,44,0,0" Grid.Row="1" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" VerticalAlignment="Top" Width="196" Height="25"/>
+        <Label x:Name="Label_Sekkeiten" Content="設計点" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="214,44,0,0" Grid.Row="1" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" VerticalAlignment="Top" Width="211" Height="25"/>
+        <Label x:Name="Label_Keisokuten" Content="計測点" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="424,44,0,0" Grid.Row="1" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" VerticalAlignment="Top" Width="212" Height="25"/>
+        <Label x:Name="Label_Ichiawase" Content="位置合わせの重み" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="634,44,0,0" Grid.Row="1" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" VerticalAlignment="Top" Width="355" Height="25"/>
+        <Label x:Name="Label_Diff" Content="差(計測点-設計点)" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="988,44,0,0" Grid.Row="1" Background="#FFE0DADA" BorderThickness="0.55" BorderBrush="#FF494848" VerticalAlignment="Top" Width="280" Height="25"/>
+        <TextBox x:Name="Txt_MaxX_Omomi" HorizontalAlignment="Left" Height="23" Margin="991,319,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MaxY_Omomi" HorizontalAlignment="Left" Height="23" Margin="1062,319,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MaxZ_Omomi" HorizontalAlignment="Left" Height="23" Margin="1132,319,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MaxL_Omomi" HorizontalAlignment="Left" Height="23" Margin="1202,319,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <Label x:Name="Label_Max_Omomi" Content="最大" HorizontalAlignment="Left" Margin="935,319,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="46"/>
+        <TextBox x:Name="Txt_HeikinX" HorizontalAlignment="Left" Height="23" Margin="991,347,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_HeikinY" HorizontalAlignment="Left" Height="23" Margin="1062,347,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_HeikinZ" HorizontalAlignment="Left" Height="23" Margin="1132,347,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_HeikinL" HorizontalAlignment="Left" Height="23" Margin="1202,347,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <Label x:Name="Label_Avarage" Content="平均" HorizontalAlignment="Left" Margin="935,347,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="46"/>
+        <TextBox x:Name="Txt_MinX_Omomi" HorizontalAlignment="Left" Height="23" Margin="991,375,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MinY_Omomi" HorizontalAlignment="Left" Height="23" Margin="1062,375,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MinZ_Omomi" HorizontalAlignment="Left" Height="23" Margin="1132,375,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_MinL_Omomi" HorizontalAlignment="Left" Height="23" Margin="1202,375,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <Label x:Name="Label_Min_Omomi" Content="最小" HorizontalAlignment="Left" Margin="935,375,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="46"/>
+        <TextBox x:Name="Txt_hyojyunX" HorizontalAlignment="Left" Height="23" Margin="991,402,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_hyojyunY" HorizontalAlignment="Left" Height="23" Margin="1062,402,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_hyojyunZ" HorizontalAlignment="Left" Height="23" Margin="1132,402,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <TextBox x:Name="Txt_hyojyunL" HorizontalAlignment="Left" Height="23" Margin="1202,402,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" TextAlignment="Right"/>
+        <Label x:Name="Label_Hyojyunhensa" Content="標準偏差" HorizontalAlignment="Left" Margin="935,402,0,0" Grid.Row="1" VerticalAlignment="Top" Height="28" Width="46"/>
+        <Button x:Name="btn_OmomiAwase" Content="重みあわせ実行" HorizontalAlignment="Left" Height="26" Margin="763,321,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
+
+    </Grid>
+
+
+
+</Window>
+

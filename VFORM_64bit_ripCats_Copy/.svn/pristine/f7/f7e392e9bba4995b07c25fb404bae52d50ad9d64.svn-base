@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<PointsParam xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SigmaGrad>1</SigmaGrad>
+  <SigmaSmooth>1</SigmaSmooth>
+  <Alpha>0.08</Alpha>
+  <Threshold>100</Threshold>
+</PointsParam>

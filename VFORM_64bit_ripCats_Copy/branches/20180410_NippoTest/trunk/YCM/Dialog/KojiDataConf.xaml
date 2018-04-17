@@ -1,0 +1,26 @@
+﻿<Window x:Class="KojiDataConf"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="工事データ一覧" Height="552" Width="925">
+    <Grid>
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="条件入力" Height="99" HorizontalAlignment="Left" Margin="12,4,0,0" Name="GroupBox1" VerticalAlignment="Top" Width="795">
+            <Grid DataContext="{Binding}">
+                <DataGrid AutoGenerateColumns="True" Height="71" HorizontalAlignment="Left" Margin="0,6,0,0" Name="DataGridView2" VerticalAlignment="Top" Width="783" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="一覧" Height="402" HorizontalAlignment="Left" Margin="11,109,0,0" Name="GroupBox2" VerticalAlignment="Top" Width="796">
+            <Grid>
+                <DataGrid AutoGenerateColumns="True" Height="373" HorizontalAlignment="Left" Margin="1,7,0,0" Name="DataGridView1" VerticalAlignment="Top" Width="783" />
+            </Grid>
+        </GroupBox>
+        <Button Content="絞り込み" Height="32" HorizontalAlignment="Left" Margin="813,61,0,0" Name="Button1" VerticalAlignment="Top" Width="98" />
+        <Button Content="OK" Height="32" HorizontalAlignment="Left" Margin="813,441,0,0" Name="Button2" VerticalAlignment="Top" Width="98" />
+        <Button Content="キャンセル" Height="32" HorizontalAlignment="Left" Margin="813,479,0,0" Name="Button3" VerticalAlignment="Top" Width="98" />
+        <Button Content="条件クリア" Height="32" HorizontalAlignment="Left" Margin="813,22,0,0" Name="Button4" VerticalAlignment="Top" Width="98" />
+        <Button Content="出力" Height="32" HorizontalAlignment="Left" Margin="813,127,0,0" Name="BtnKojiExcelOut" VerticalAlignment="Top" Width="98" Visibility="Hidden" />
+        <Button Content="単品分析" Height="32" HorizontalAlignment="Left" Margin="813,165,0,0" Name="ButtonTanpinKalc" VerticalAlignment="Top" Width="98" Visibility="Hidden" />
+        <Button Content="全体分析" Height="32" HorizontalAlignment="Left" Margin="813,203,0,0" Name="ZentaiBunsekiBtn" VerticalAlignment="Top" Width="98" Visibility="Hidden" />
+    </Grid>
+</Window>

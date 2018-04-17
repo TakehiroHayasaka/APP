@@ -1,0 +1,2 @@
+gain_master,exposure_min,exposure_max,exposure_kankaku,targetthreshold_min,targetthreshold_max,targetthreshold_kankaku
+0,200,20,-40,80,200,40

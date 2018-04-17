@@ -1,0 +1,93 @@
+#
+# INTERNAL CAMERA PARAMETERS
+#
+
+# ===== generic parameter syntax ==========================================
+#
+# Syntax:      ParGroup: <pargroupname>;
+#                        <pargroup_description>;
+#
+#               <name> : <shortname> : <default_value>;
+#                        <type> : <lower_bound> : <upper_bound>;
+#                        <description>;
+#
+#                [ <type> ::= BOOL|XBOOL|INT|FLOAT|DOUBLE|STRING ]
+#
+# =========================================================================
+
+
+
+##############################################################################
+#
+#  Camera : Parameter
+#    >  Focus
+#    >  Poly1
+#    >  Poly2
+#    >  Poly3
+#    >  Poly4
+#    >  Poly5
+#    >  Sx
+#    >  Sy
+#    >  Cx
+#    >  Cy
+#    >  ImageWidth
+#    >  ImageHeight
+#
+##############################################################################
+
+ParGroup: Camera: Parameter;
+	"Internal camera parameters";
+
+Focus:foc:	0.00529938761648639;
+	DOUBLE:0.0:;
+	"Focal length of the lens";
+
+Poly1:poly1:	2909.25164365466;
+	DOUBLE::;
+	"1st polynomial distortion coefficient";
+
+Poly2:poly2:	-108360589.892264;
+	DOUBLE::;
+	"2nd polynomial distortion coefficient";
+
+Poly3:poly3:	688498557363.768;
+	DOUBLE::;
+	"3rd polynomial distortion coefficient";
+
+Poly4:poly4:	-34.2205974424515;
+	DOUBLE::;
+	"4th polynomial distortion coefficient";
+
+Poly5:poly5:	-32.1267518271077;
+	DOUBLE::;
+	"5th polynomial distortion coefficient";
+
+Sx:sx:	1.7e-006;
+	DOUBLE:0.0:;
+	"Width of a cell on the sensor";
+
+Sy:sy:	1.7e-006;
+	DOUBLE:0.0:;
+	"Height of a cell on the sensor";
+
+Cx:cx:	1956.55527193255;
+	DOUBLE::;
+	"X-coordinate of the image center";
+
+Cy:cy:	1310.01013944335;
+	DOUBLE::;
+	"Y-coordinate of the image center";
+
+ImageWidth:imgw:	3840;
+	INT:1:32768;
+	"Width of the images";
+
+ImageHeight:imgh:	2748;
+	INT:1:32768;
+	"Height of the images";
+
+
+#
+# HALCON Version 11.0 --  Tue Jul 11 13:31:48 2017
+
+#

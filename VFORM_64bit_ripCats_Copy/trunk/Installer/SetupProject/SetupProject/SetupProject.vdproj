@@ -1,0 +1,4811 @@
+﻿"DeployProject"
+{
+"VSVersion" = "3:800"
+"ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
+"IsWebType" = "8:FALSE"
+"ProjectName" = "8:SetupProject"
+"LanguageId" = "3:1041"
+"CodePage" = "3:932"
+"UILanguageId" = "3:1041"
+"SccProjectName" = "8:"
+"SccLocalPath" = "8:"
+"SccAuxPath" = "8:"
+"SccProvider" = "8:"
+    "Hierarchy"
+    {
+        "Entry"
+        {
+        "MsmKey" = "8:_00DDB3032FB1452A80A9E80452F68126"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_057CDDEC349A4A6E9A322EE37DD929C0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0D88B469B5DA4528A63F800CA94A4F50"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0E7BEAAC5DE64835920E49A07E141016"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1461F41F681040A0A5394CC0584C1223"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_15315B54BEE0424DA959E9DDB1CE9691"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_170D7B70A41E4894A26621E2E35CC23F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1D8CE736E0A846488E571866232EB634"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1EB60B3A71804D6299235A9A065D3400"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_1FE973B4DEC64A959D382B4069F3B358"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_20A85E230D1A426CBB053E055D86AA8D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_23BB91FF4A75D95D1CC4634936B37D8E"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_24DD01C882F7440EACD22B42F98E98D8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_25E316420F1C4274B1666DF1851FAE18"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2646F576803292F982D7150B2FF6EAFB"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2742F476A121410EA17DF5B5BDFEFE0E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_286614B81AA94FB3BB3BE32CA29E2C15"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_288E3A8F35252CA15395107F5E136C36"
+        "OwnerKey" = "8:_DC57666B88CA46FD8D4566C943569882"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_28DBB3685E5F4E079A29C93A4B851594"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_29197B559F1F4894ABB6A5BA0576FA6E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_2DEBD0219D9A45129728548951D0E16B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3397372A89274DAD829CE46ABF9BE8D2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_33D5F8A5001842F9A5D0DB2838DDB2CF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_377B2709D53FD6EFB95A3489F64D0131"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_388803D74DA147EC9492985761C5B430"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3BAB5F2235204459A0F07A21D39CF7AA"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3C93C9EC46824D19AFB59D733B4E8C2C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3DEA6A7534744BCD97E09C9982B32BBF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_3E917142068A409B806B1F838404B74E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_409873162D7D4B72B640AB47475EA36F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_40D62E467D8F4AE3AF5CEA31DF493032"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_44DBA12574D344DEAB0182EA1861D7AB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_45710971AD7147F98134100EABEF5E1E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4AC846F663FD481F938FBC7C51910D51"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4BEF5EE9F59D4B9995603362053E886F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_512D948577794819BE71677938EB7D68"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_518DDEB05E764613877309869DEA34C6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5363BDC0800440FCB5AB8A30BDA348AF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_56536F66BBF34518A01C902CB303914B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5885EA7BA5764598A3016BCA8FFCEC39"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5A31E568AE8DE343D864307DE1F2452C"
+        "OwnerKey" = "8:_B0C028207F52BC685F9AD9803156CCFB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5FD0B9ECCB464F7BB65CEADA5482EFE4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_61CCDA7BEA104C36B36A9F4DF9DA0562"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_656FF8BF375F4959A6DA4566E69F7E06"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_678DBC0348D34EE4AA7F337F39E62A8B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6925AC232418491CA4B8696CFE846547"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6B3FA886ACEB4535A2A6B59017E26985"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6BAFE84B7460430BB2A28D650B6C616F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6C653DDD9187B944E7B19947E96820F9"
+        "OwnerKey" = "8:_FC6E3A3BD3D2C4C347FBD9682B0B5606"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6C653DDD9187B944E7B19947E96820F9"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6C653DDD9187B944E7B19947E96820F9"
+        "OwnerKey" = "8:_377B2709D53FD6EFB95A3489F64D0131"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6C8D348C349646DC9757FD0C5B056782"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6D6C6AFEBB1DB8CE71E7D6045F3F2DF0"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_6D6C6AFEBB1DB8CE71E7D6045F3F2DF0"
+        "OwnerKey" = "8:_2646F576803292F982D7150B2FF6EAFB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_74633F1881CE4E439FFEAC1BC47DE1EB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7528E6FD61EF4D6996669EDECE44F86E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7AE2172F15987572F9BD00CDC5639A54"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7F48216E5B364F17878E06FCCDCBEF40"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_82D4C3BE95A34842B60A57D571A7C461"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_83E5BF9C5FA145659BD20C6718124889"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_864BC2D65D7342C2979B39C0748AA87E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_87FFBA08A49148BDACB336BD58F7F8E3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8968209382494044AF2FB90CBD11FCC3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8BB0112D63F849DA8C0D98AE55FDC0AC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8BE8012F3E5A43F99AF32EB03E5B9A6A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8FBCBF61C9924481A26AB0B17DC47CF5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_907D8835D8EC420C89A8AAED59221D20"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_91CE671E86C64AAC9CB88CF584C3AB04"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9436F56700E24FAD94F868DF9F121D7D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9502F28B850D49708BFFBB5732E870F0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9630E69AE6AE416CB1D8D0048259710C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_99F2E59457D44E45B9C73C81FC3A0885"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9C02D4FEFC6A4F2A8B6391AB494835D1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9C2E16E010F6415986E4B762CA512C51"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9CF960E22F8445ED9B0A92BD479A3A7E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9D8554DBD00F49C482C7D2CB2BADED47"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A0665FB490C94C67AC333455C9BE4A3F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A2E297C347DB47A6A79866AEDD8613D2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A32544FFA06E4F3881B8CFBF36B479BC"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A3D4EDD4C590473CBAE0D76D94436115"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A4C162EE3CB0442DB1FDA538EF36F565"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A5DC1170F7C94AD6A37C3BE8D3494109"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A658CFBBEB8DF85B630802C5F5C4C1A0"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A7B19A98B58C44A5A86D83B4A82EF71E"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A7CC1FC103AB45909188278D251B3205"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A7DEC42D529B4E59B27840734607A242"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A8C8FD262ACA4B209587034A8C8656F5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_ABA21C5500D14EA6AB7FEAAD47D39C47"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AD11426DF00C4B909804E268DE8B946A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AF0CC8A5500A4CD0BEA11835771DF4AE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AF7265AD4F0D4E62A15B88A074DD700D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_AF93504A020B440681CC73D9D100DB56"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B0C028207F52BC685F9AD9803156CCFB"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B14C4171707C4A7FB9CD52A830B40327"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B167A450E9C748A78BF72C1CDC3BD8FB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B3B502F94665462AA576359E62B0119C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B467AFA6EF5745518044227BF1E9A2CD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B542D9309CA047FC9E1FE5D2E3BEAE48"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B72598130AC84E9C8A2332C6D7826C55"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B7AE9E8BB9324033AD9EBD5EA561CBA0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B9596DA6354247E79D0F01AC23D29B3F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BDACF115F88B444688241C22EB159A5F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BF5C461BF0E84657A962B080F38DA835"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C3499F71E06140D4894D585D6063D436"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C4C17B104FFF4E6A9B4757BF69722536"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C5EEE0E602CBEBFECFD2BAE3EB440C5A"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C762EB515CFF407A899583CBCA2DCA77"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C975D59360A94E698AA027F5982F6ADB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C9C7C62A7DE4880E7E2333DF66B71C27"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CC4711B87255459789E30BDEA53DD6AB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CE553099697A474E8401D017A49AD64B"
+        "OwnerKey" = "8:_23BB91FF4A75D95D1CC4634936B37D8E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D0015239B65F4BAEABF79BE94760BEC6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D33D14A7CC2344B8B8A9CF5AD5F8FD75"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D3B1D5B79BF948B29B1661B28BC02D19"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D929AD7C77144943AB86B083597B3D66"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D9B3BC5791EF976846CAEC68FD760760"
+        "OwnerKey" = "8:_C5EEE0E602CBEBFECFD2BAE3EB440C5A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D9B3BC5791EF976846CAEC68FD760760"
+        "OwnerKey" = "8:_FB790D5EC7E8FE8241AE01CC9A237415"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DB349C7F4102485780E869FA5A282D50"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DC57666B88CA46FD8D4566C943569882"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E03640D218E74214BB5778E9AA5CD781"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E2E5BCB1CF934F6998D78583D0C1F08A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E39C0CE0F2174F4C9D12E4C512FCFF3F"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E845D6C611E843EDBDCB7F0513B2DB7D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_E9F1A0487ADD4C7D948D299169EA52B7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_ECE54A1BC82E433D956F87662B7462B5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EE5269A217F44F28BB8E68CB6CC44598"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F08DF388AEC94B4CBBE61A749F5B1466"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F1E19E509BA148C8A6829D4BEE059EFB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F21D2C53F2404E6885EF10F360BCFCAE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F9A32C2686CD4C06ABF9A9F6450E1AFE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FACA3ADD97114D1998360A5131EEC219"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FB790D5EC7E8FE8241AE01CC9A237415"
+        "OwnerKey" = "8:_C5EEE0E602CBEBFECFD2BAE3EB440C5A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FC6E3A3BD3D2C4C347FBD9682B0B5606"
+        "OwnerKey" = "8:_377B2709D53FD6EFB95A3489F64D0131"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FE149C0DCE814FFE9B434CDB17032D76"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_DC57666B88CA46FD8D4566C943569882"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2646F576803292F982D7150B2FF6EAFB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6D6C6AFEBB1DB8CE71E7D6045F3F2DF0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5A31E568AE8DE343D864307DE1F2452C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B0C028207F52BC685F9AD9803156CCFB"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7AE2172F15987572F9BD00CDC5639A54"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C9C7C62A7DE4880E7E2333DF66B71C27"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_23BB91FF4A75D95D1CC4634936B37D8E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FB790D5EC7E8FE8241AE01CC9A237415"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D9B3BC5791EF976846CAEC68FD760760"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C5EEE0E602CBEBFECFD2BAE3EB440C5A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_6C653DDD9187B944E7B19947E96820F9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FC6E3A3BD3D2C4C347FBD9682B0B5606"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_377B2709D53FD6EFB95A3489F64D0131"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C762EB515CFF407A899583CBCA2DCA77"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A658CFBBEB8DF85B630802C5F5C4C1A0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9C2E16E010F6415986E4B762CA512C51"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7F48216E5B364F17878E06FCCDCBEF40"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_409873162D7D4B72B640AB47475EA36F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3DEA6A7534744BCD97E09C9982B32BBF"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2742F476A121410EA17DF5B5BDFEFE0E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+    }
+    "Configurations"
+    {
+        "Debug"
+        {
+        "DisplayName" = "8:Debug"
+        "IsDebugOnly" = "11:TRUE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:Debug\\SetupProject.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
+        }
+        "Debugx32"
+        {
+        "DisplayName" = "8:Debugx32"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:FALSE"
+        "OutputFilename" = "8:Debugx32\\SetupProject.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
+        }
+        "Release"
+        {
+        "DisplayName" = "8:Release"
+        "IsDebugOnly" = "11:FALSE"
+        "IsReleaseOnly" = "11:TRUE"
+        "OutputFilename" = "8:Release\\SetupProject.msi"
+        "PackageFilesAs" = "3:2"
+        "PackageFileSize" = "3:-2147483648"
+        "CabType" = "3:1"
+        "Compression" = "3:2"
+        "SignOutput" = "11:FALSE"
+        "CertificateFile" = "8:"
+        "PrivateKeyFile" = "8:"
+        "TimeStampServer" = "8:"
+        "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:2"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 および x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows インストーラー 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
+            }
+        }
+    }
+    "Deployable"
+    {
+        "CustomAction"
+        {
+        }
+        "DefaultFeature"
+        {
+        "Name" = "8:DefaultFeature"
+        "Title" = "8:"
+        "Description" = "8:"
+        }
+        "ExternalPersistence"
+        {
+            "LaunchCondition"
+            {
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_EB7464D1D5F345B587F9AD2B83ADBA65"
+                {
+                "Name" = "8:.NET Framework"
+                "Message" = "8:[VSDNETMSG]"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                "AllowLaterVersions" = "11:FALSE"
+                "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=131000"
+                }
+            }
+        }
+        "File"
+        {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_00DDB3032FB1452A80A9E80452F68126"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\Microsoft.Windows.Shell.xml"
+            "TargetName" = "8:Microsoft.Windows.Shell.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_057CDDEC349A4A6E9A322EE37DD929C0"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\angle.JPG"
+            "TargetName" = "8:angle.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0D88B469B5DA4528A63F800CA94A4F50"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\3tenEn.JPG"
+            "TargetName" = "8:3tenEn.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0E7BEAAC5DE64835920E49A07E141016"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\車輪なし.png"
+            "TargetName" = "8:車輪なし.png"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1461F41F681040A0A5394CC0584C1223"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_SwigCore_3.08_9.dll"
+            "TargetName" = "8:TD_SwigCore_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_15315B54BEE0424DA959E9DDB1CE9691"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\GentenKyori.JPG"
+            "TargetName" = "8:GentenKyori.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_170D7B70A41E4894A26621E2E35CC23F"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\KaisekiSetting.txt"
+            "TargetName" = "8:KaisekiSetting.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1D8CE736E0A846488E571866232EB634"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\STtoCTlist.csv"
+            "TargetName" = "8:STtoCTlist.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1EB60B3A71804D6299235A9A065D3400"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\BundleAdjustmentLib.xml"
+            "TargetName" = "8:BundleAdjustmentLib.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1FE973B4DEC64A959D382B4069F3B358"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RealP3D_OffsetMonitor.csv"
+            "TargetName" = "8:RealP3D_OffsetMonitor.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_20A85E230D1A426CBB053E055D86AA8D"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CT_CoordSetting.csv"
+            "TargetName" = "8:CT_CoordSetting.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_23BB91FF4A75D95D1CC4634936B37D8E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.IntelliCAD, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_23BB91FF4A75D95D1CC4634936B37D8E"
+                    {
+                    "Name" = "8:Interop.IntelliCAD.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Interop.IntelliCAD.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_24DD01C882F7440EACD22B42F98E98D8"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20141007検査結果サンプル（自動車計測）.xls"
+            "TargetName" = "8:20141007検査結果サンプル（自動車計測）.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_25E316420F1C4274B1666DF1851FAE18"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CTsize.txt"
+            "TargetName" = "8:CTsize.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2646F576803292F982D7150B2FF6EAFB"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TD_SwigDbMgd, Version=3.8.2.0, Culture=neutral, PublicKeyToken=5ccc28765cdf0a88, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_2646F576803292F982D7150B2FF6EAFB"
+                    {
+                    "Name" = "8:TD_SwigDbMgd.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:TD_SwigDbMgd.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2742F476A121410EA17DF5B5BDFEFE0E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.StdFormat, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_2742F476A121410EA17DF5B5BDFEFE0E"
+                    {
+                    "Name" = "8:Microsoft.StdFormat.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\Microsoft.StdFormat.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_286614B81AA94FB3BB3BE32CA29E2C15"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\Cross.jpg"
+            "TargetName" = "8:Cross.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_288E3A8F35252CA15395107F5E136C36"
+            {
+            "SourcePath" = "8:dao360.dll"
+            "TargetName" = "8:dao360.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_28DBB3685E5F4E079A29C93A4B851594"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\HoseiMode.txt"
+            "TargetName" = "8:HoseiMode.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_29197B559F1F4894ABB6A5BA0576FA6E"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\tempYokoketa.xls"
+            "TargetName" = "8:tempYokoketa.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2DEBD0219D9A45129728548951D0E16B"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\SunpoKekka.csv"
+            "TargetName" = "8:SunpoKekka.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3397372A89274DAD829CE46ABF9BE8D2"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20130524検査結果サンプル（規定値初期設定）-横桁.xls"
+            "TargetName" = "8:20130524検査結果サンプル（規定値初期設定）-横桁.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_33D5F8A5001842F9A5D0DB2838DDB2CF"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\YCM_Sunpo_ErrorFunctionMonitor.txt"
+            "TargetName" = "8:YCM_Sunpo_ErrorFunctionMonitor.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_377B2709D53FD6EFB95A3489F64D0131"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FBMlib, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
+                "ScatterAssemblies"
+                {
+                    "_377B2709D53FD6EFB95A3489F64D0131"
+                    {
+                    "Name" = "8:FBMlib.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FBMlib.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_388803D74DA147EC9492985761C5B430"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\Display.jpg"
+            "TargetName" = "8:Display.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3BAB5F2235204459A0F07A21D39CF7AA"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RecomputeDimBlock_3.08_9.tx"
+            "TargetName" = "8:RecomputeDimBlock_3.08_9.tx"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3C93C9EC46824D19AFB59D733B4E8C2C"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\単品分析用.xls"
+            "TargetName" = "8:単品分析用.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3DEA6A7534744BCD97E09C9982B32BBF"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+                "ScatterAssemblies"
+                {
+                    "_3DEA6A7534744BCD97E09C9982B32BBF"
+                    {
+                    "Name" = "8:System.Xml.Linq.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\System.Xml.Linq.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3E917142068A409B806B1F838404B74E"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RasterProcessor_3.08_9.tx"
+            "TargetName" = "8:RasterProcessor_3.08_9.tx"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_409873162D7D4B72B640AB47475EA36F"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_409873162D7D4B72B640AB47475EA36F"
+                    {
+                    "Name" = "8:System.Core.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\System.Core.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_40D62E467D8F4AE3AF5CEA31DF493032"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20130621台車部品チェックシート（新津車両製作所）.xls"
+            "TargetName" = "8:20130621台車部品チェックシート（新津車両製作所）.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_44DBA12574D344DEAB0182EA1861D7AB"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\dbFBM.mdb"
+            "TargetName" = "8:dbFBM.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_45710971AD7147F98134100EABEF5E1E"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\JikanMonitor.mon"
+            "TargetName" = "8:JikanMonitor.mon"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4AC846F663FD481F938FBC7C51910D51"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_SwigDb_3.08_9.dll"
+            "TargetName" = "8:TD_SwigDb_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4BEF5EE9F59D4B9995603362053E886F"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\CamParam\\ShowaConc_No1_camparamD7500_SxConst.cal"
+            "TargetName" = "8:ShowaConc_No1_camparamD7500_SxConst.cal"
+            "Tag" = "8:"
+            "Folder" = "8:_29937B528373438BA836A316AC6A58D5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_512D948577794819BE71677938EB7D68"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CTMonitor.txt"
+            "TargetName" = "8:CTMonitor.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_518DDEB05E764613877309869DEA34C6"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Alloc_3.08_9.dll"
+            "TargetName" = "8:TD_Alloc_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5363BDC0800440FCB5AB8A30BDA348AF"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\YCM.pdb"
+            "TargetName" = "8:YCM.pdb"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_56536F66BBF34518A01C902CB303914B"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CT_SunpoSetting.csv"
+            "TargetName" = "8:CT_SunpoSetting.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5885EA7BA5764598A3016BCA8FFCEC39"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RealP3D_ScaleSetMonitor.csv"
+            "TargetName" = "8:RealP3D_ScaleSetMonitor.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5A31E568AE8DE343D864307DE1F2452C"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Windows.Shell, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_5A31E568AE8DE343D864307DE1F2452C"
+                    {
+                    "Name" = "8:Microsoft.Windows.Shell.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Windows.Shell.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5FD0B9ECCB464F7BB65CEADA5482EFE4"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\Daisya_TypeM.JPG"
+            "TargetName" = "8:Daisya_TypeM.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_61CCDA7BEA104C36B36A9F4DF9DA0562"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20130603検査結果サンプル（規定値初期設定）- ディスプレイ.xls"
+            "TargetName" = "8:20130603検査結果サンプル（規定値初期設定）- ディスプレイ.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_656FF8BF375F4959A6DA4566E69F7E06"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\1PointCircle.jpg"
+            "TargetName" = "8:1PointCircle.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_678DBC0348D34EE4AA7F337F39E62A8B"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\FBMlib.xml"
+            "TargetName" = "8:FBMlib.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6925AC232418491CA4B8696CFE846547"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\横バリ測定表（Tc）.xls"
+            "TargetName" = "8:横バリ測定表（Tc）.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6B3FA886ACEB4535A2A6B59017E26985"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\Pipe.jpg"
+            "TargetName" = "8:Pipe.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6BAFE84B7460430BB2A28D650B6C616F"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\YCM.xml"
+            "TargetName" = "8:YCM.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6C653DDD9187B944E7B19947E96820F9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:halcondotnet, Version=11.0.2.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_6C653DDD9187B944E7B19947E96820F9"
+                    {
+                    "Name" = "8:halcondotnet.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:halcondotnet.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6C8D348C349646DC9757FD0C5B056782"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\PointsParam.xml"
+            "TargetName" = "8:PointsParam.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6D6C6AFEBB1DB8CE71E7D6045F3F2DF0"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TD_SwigCoreMgd, Version=3.8.2.0, Culture=neutral, PublicKeyToken=8e28356228e490a2, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_6D6C6AFEBB1DB8CE71E7D6045F3F2DF0"
+                    {
+                    "Name" = "8:TD_SwigCoreMgd.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:TD_SwigCoreMgd.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_74633F1881CE4E439FFEAC1BC47DE1EB"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\6Points.jpg"
+            "TargetName" = "8:6Points.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7528E6FD61EF4D6996669EDECE44F86E"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TypeID.txt"
+            "TargetName" = "8:TypeID.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7AE2172F15987572F9BD00CDC5639A54"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:OpenGLLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_7AE2172F15987572F9BD00CDC5639A54"
+                    {
+                    "Name" = "8:OpenGLLib.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:OpenGLLib.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7F48216E5B364F17878E06FCCDCBEF40"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:BundleAdjustmentLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_7F48216E5B364F17878E06FCCDCBEF40"
+                    {
+                    "Name" = "8:BundleAdjustmentLib.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\BundleAdjustmentLib.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_82D4C3BE95A34842B60A57D571A7C461"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\横バリ測定表（M）.xls"
+            "TargetName" = "8:横バリ測定表（M）.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_83E5BF9C5FA145659BD20C6718124889"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Root_3.08_9.dll"
+            "TargetName" = "8:TD_Root_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_864BC2D65D7342C2979B39C0748AA87E"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\LineAngle.jpg"
+            "TargetName" = "8:LineAngle.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_87FFBA08A49148BDACB336BD58F7F8E3"
+            {
+            "SourcePath" = "8:Omomi.dll"
+            "TargetName" = "8:Omomi.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_9D2F07C9532B4949B391A0FAA2ABA523"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8968209382494044AF2FB90CBD11FCC3"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_SpatialIndex_3.08_9.dll"
+            "TargetName" = "8:TD_SpatialIndex_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8BB0112D63F849DA8C0D98AE55FDC0AC"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\横バリ測定表.xls"
+            "TargetName" = "8:横バリ測定表.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8BE8012F3E5A43F99AF32EB03E5B9A6A"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\sisl.dll"
+            "TargetName" = "8:sisl.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8FBCBF61C9924481A26AB0B17DC47CF5"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\BAlib.pdb"
+            "TargetName" = "8:BAlib.pdb"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_907D8835D8EC420C89A8AAED59221D20"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\京浜産業（トレーラフレームチェックシート）.xls"
+            "TargetName" = "8:京浜産業（トレーラフレームチェックシート）.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_91CE671E86C64AAC9CB88CF584C3AB04"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Gi_3.08_9.dll"
+            "TargetName" = "8:TD_Gi_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9436F56700E24FAD94F868DF9F121D7D"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20130527検査結果サンプル（規定値初期設定）- 6点.xls"
+            "TargetName" = "8:20130527検査結果サンプル（規定値初期設定）- 6点.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9502F28B850D49708BFFBB5732E870F0"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\DaisyaBuhin.JPG"
+            "TargetName" = "8:DaisyaBuhin.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9630E69AE6AE416CB1D8D0048259710C"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\2tenkan.JPG"
+            "TargetName" = "8:2tenkan.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_99F2E59457D44E45B9C73C81FC3A0885"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RealP3D_CoordSetMonitor.csv"
+            "TargetName" = "8:RealP3D_CoordSetMonitor.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9C02D4FEFC6A4F2A8B6391AB494835D1"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\SurfaceAngle.jpg"
+            "TargetName" = "8:SurfaceAngle.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9C2E16E010F6415986E4B762CA512C51"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:MSDATASRC, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_9C2E16E010F6415986E4B762CA512C51"
+                    {
+                    "Name" = "8:MSDATASRC.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\MSDATASRC.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9CF960E22F8445ED9B0A92BD479A3A7E"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\全体傾向分析用.xls"
+            "TargetName" = "8:全体傾向分析用.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9D8554DBD00F49C482C7D2CB2BADED47"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20130527検査結果サンプル（規定値初期設定）- 配水管.xls"
+            "TargetName" = "8:20130527検査結果サンプル（規定値初期設定）- 配水管.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A0665FB490C94C67AC333455C9BE4A3F"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\SpPointAngle.jpg"
+            "TargetName" = "8:SpPointAngle.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A2E297C347DB47A6A79866AEDD8613D2"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\SurfaceLineAngle.jpg"
+            "TargetName" = "8:SurfaceLineAngle.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A32544FFA06E4F3881B8CFBF36B479BC"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\committest.txt"
+            "TargetName" = "8:committest.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A3D4EDD4C590473CBAE0D76D94436115"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\glut32.dll"
+            "TargetName" = "8:glut32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A4C162EE3CB0442DB1FDA538EF36F565"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Br_3.08_9.dll"
+            "TargetName" = "8:TD_Br_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A5DC1170F7C94AD6A37C3BE8D3494109"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20130612検査結果サンプル（規定値初期設定）- トラック.xls"
+            "TargetName" = "8:20130612検査結果サンプル（規定値初期設定）- トラック.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A658CFBBEB8DF85B630802C5F5C4C1A0"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:TRUE"
+            "AssemblyAsmDisplayName" = "8:ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_A658CFBBEB8DF85B630802C5F5C4C1A0"
+                    {
+                    "Name" = "8:ADODB.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:ADODB.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A7B19A98B58C44A5A86D83B4A82EF71E"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TargetThreshold.txt"
+            "TargetName" = "8:TargetThreshold.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A7CC1FC103AB45909188278D251B3205"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\基準座標.csv"
+            "TargetName" = "8:基準座標.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A7DEC42D529B4E59B27840734607A242"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\計測データ.mdb"
+            "TargetName" = "8:計測データ.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A8C8FD262ACA4B209587034A8C8656F5"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\横バリ測定表（T）.xls"
+            "TargetName" = "8:横バリ測定表（T）.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ABA21C5500D14EA6AB7FEAAD47D39C47"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Db_3.08_9.dll"
+            "TargetName" = "8:TD_Db_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AD11426DF00C4B909804E268DE8B946A"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TimeMonitor.txt"
+            "TargetName" = "8:TimeMonitor.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AF0CC8A5500A4CD0BEA11835771DF4AE"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\Daisya_TypeT.JPG"
+            "TargetName" = "8:Daisya_TypeT.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AF7265AD4F0D4E62A15B88A074DD700D"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RectangleCT_ID.tup"
+            "TargetName" = "8:RectangleCT_ID.tup"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AF93504A020B440681CC73D9D100DB56"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\20131009クレーン（MMI）.xls"
+            "TargetName" = "8:20131009クレーン（MMI）.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B0C028207F52BC685F9AD9803156CCFB"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:RibbonControlsLibrary, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_B0C028207F52BC685F9AD9803156CCFB"
+                    {
+                    "Name" = "8:RibbonControlsLibrary.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:RibbonControlsLibrary.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B14C4171707C4A7FB9CD52A830B40327"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CT_ScaleSetting.csv"
+            "TargetName" = "8:CT_ScaleSetting.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B167A450E9C748A78BF72C1CDC3BD8FB"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CT_offset_val.csv"
+            "TargetName" = "8:CT_offset_val.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B3B502F94665462AA576359E62B0119C"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RibbonControlsLibrary.pdb"
+            "TargetName" = "8:RibbonControlsLibrary.pdb"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B467AFA6EF5745518044227BF1E9A2CD"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\YCM.exe.config"
+            "TargetName" = "8:YCM.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B542D9309CA047FC9E1FE5D2E3BEAE48"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CTargetType.txt"
+            "TargetName" = "8:CTargetType.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B72598130AC84E9C8A2332C6D7826C55"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\mentoten_dist.JPG"
+            "TargetName" = "8:mentoten_dist.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B7AE9E8BB9324033AD9EBD5EA561CBA0"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_3DSolidHistory_3.08_9.tx"
+            "TargetName" = "8:TD_3DSolidHistory_3.08_9.tx"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B9596DA6354247E79D0F01AC23D29B3F"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\LineToPoint.jpg"
+            "TargetName" = "8:LineToPoint.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BDACF115F88B444688241C22EB159A5F"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\システム設定.mdb"
+            "TargetName" = "8:システム設定.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_ECC1E88FB00B4B438469335AD5CE6D5F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BF5C461BF0E84657A962B080F38DA835"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Ge_3.08_9.dll"
+            "TargetName" = "8:TD_Ge_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C3499F71E06140D4894D585D6063D436"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\CamParam\\camparamD300_DEMO_SxConst.cal"
+            "TargetName" = "8:camparamD300_DEMO_SxConst.cal"
+            "Tag" = "8:"
+            "Folder" = "8:_29937B528373438BA836A316AC6A58D5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C4C17B104FFF4E6A9B4757BF69722536"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\Daisya_TypeTc.JPG"
+            "TargetName" = "8:Daisya_TypeTc.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C5EEE0E602CBEBFECFD2BAE3EB440C5A"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.Excel, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C5EEE0E602CBEBFECFD2BAE3EB440C5A"
+                    {
+                    "Name" = "8:Interop.Excel.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Interop.Excel.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C762EB515CFF407A899583CBCA2DCA77"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C762EB515CFF407A899583CBCA2DCA77"
+                    {
+                    "Name" = "8:System.Data.DataSetExtensions.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\System.Data.DataSetExtensions.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C975D59360A94E698AA027F5982F6ADB"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\JikanMonitorYti.mon"
+            "TargetName" = "8:JikanMonitorYti.mon"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C9C7C62A7DE4880E7E2333DF66B71C27"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_C9C7C62A7DE4880E7E2333DF66B71C27"
+                    {
+                    "Name" = "8:Microsoft.VisualBasic.PowerPacks.Vs.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.VisualBasic.PowerPacks.Vs.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CC4711B87255459789E30BDEA53DD6AB"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\RibbonControlsLibrary.xml"
+            "TargetName" = "8:RibbonControlsLibrary.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CE553099697A474E8401D017A49AD64B"
+            {
+            "SourcePath" = "8:IcadAuto.dll"
+            "TargetName" = "8:IcadAuto.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D0015239B65F4BAEABF79BE94760BEC6"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_DbRoot_3.08_9.dll"
+            "TargetName" = "8:TD_DbRoot_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D0FBB0400D90499795EF35D5F92C05F0"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:YCM, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
+                "ScatterAssemblies"
+                {
+                    "_D0FBB0400D90499795EF35D5F92C05F0"
+                    {
+                    "Name" = "8:YCM.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\YCM.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D33D14A7CC2344B8B8A9CF5AD5F8FD75"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\MMM.txt"
+            "TargetName" = "8:MMM.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D3B1D5B79BF948B29B1661B28BC02D19"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\グラフテンプレート.xls"
+            "TargetName" = "8:グラフテンプレート.xls"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D929AD7C77144943AB86B083597B3D66"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\TralerFrame.JPG"
+            "TargetName" = "8:TralerFrame.JPG"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D9B3BC5791EF976846CAEC68FD760760"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.Office, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_D9B3BC5791EF976846CAEC68FD760760"
+                    {
+                    "Name" = "8:Interop.Office.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Interop.Office.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DB349C7F4102485780E869FA5A282D50"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\3PointCircle.jpg"
+            "TargetName" = "8:3PointCircle.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DC57666B88CA46FD8D4566C943569882"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.DAO, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_DC57666B88CA46FD8D4566C943569882"
+                    {
+                    "Name" = "8:Interop.DAO.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\Interop.DAO.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E03640D218E74214BB5778E9AA5CD781"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Temp_data\\計測データ.mdb"
+            "TargetName" = "8:計測データ.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_1077503A2B254559A5F0BA0F63D58AB5"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E2E5BCB1CF934F6998D78583D0C1F08A"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Gs_3.08_9.dll"
+            "TargetName" = "8:TD_Gs_3.08_9.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E39C0CE0F2174F4C9D12E4C512FCFF3F"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\casProtectLib.dll"
+            "TargetName" = "8:casProtectLib.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E845D6C611E843EDBDCB7F0513B2DB7D"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_DynBlocks_3.08_9.tx"
+            "TargetName" = "8:TD_DynBlocks_3.08_9.tx"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E9F1A0487ADD4C7D948D299169EA52B7"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\vform.ini"
+            "TargetName" = "8:vform.ini"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ECE54A1BC82E433D956F87662B7462B5"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\PointToPoint.jpg"
+            "TargetName" = "8:PointToPoint.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EE5269A217F44F28BB8E68CB6CC44598"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\CT_Bunrui.csv"
+            "TargetName" = "8:CT_Bunrui.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F08DF388AEC94B4CBBE61A749F5B1466"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TD_Ave_3.08_9.tx"
+            "TargetName" = "8:TD_Ave_3.08_9.tx"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F1E19E509BA148C8A6829D4BEE059EFB"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\Icon\\ico\\3_1.ico"
+            "TargetName" = "8:3_1.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_ECC1E88FB00B4B438469335AD5CE6D5F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F21D2C53F2404E6885EF10F360BCFCAE"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測データ.mdb"
+            "TargetName" = "8:計測データ.mdb"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F9A32C2686CD4C06ABF9A9F6450E1AFE"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\計測システムフォルダ\\Template\\SurfaceToPoint.jpg"
+            "TargetName" = "8:SurfaceToPoint.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_96638685E8094E15ACD4C8DD290D4F6F"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FACA3ADD97114D1998360A5131EEC219"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\STtoCT.txt"
+            "TargetName" = "8:STtoCT.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FB790D5EC7E8FE8241AE01CC9A237415"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.VBIDE, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FB790D5EC7E8FE8241AE01CC9A237415"
+                    {
+                    "Name" = "8:Interop.VBIDE.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Interop.VBIDE.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FC6E3A3BD3D2C4C347FBD9682B0B5606"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:BAlib, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64"
+                "ScatterAssemblies"
+                {
+                    "_FC6E3A3BD3D2C4C347FBD9682B0B5606"
+                    {
+                    "Name" = "8:BAlib.DLL"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:BAlib.DLL"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FE149C0DCE814FFE9B434CDB17032D76"
+            {
+            "SourcePath" = "8:\\\\ytisnap01\\CATS\\開発\\VFORM\\user\\桐生\\VFORM_64bit_ripCats_Copy\\trunk\\YCM\\bin\\Release\\TenGunTeigi.csv"
+            "TargetName" = "8:TenGunTeigi.csv"
+            "Tag" = "8:"
+            "Folder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+        }
+        "FileType"
+        {
+        }
+        "Folder"
+        {
+            "{1525181F-901A-416C-8A58-119130FE478E}:_9966412FD9344294AA21A6BBDFFB956B"
+            {
+            "Name" = "8:#1919"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:ProgramMenuFolder"
+                "Folders"
+                {
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_9D2F07C9532B4949B391A0FAA2ABA523"
+            {
+            "Name" = "8:#1914"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:SystemFolder"
+                "Folders"
+                {
+                }
+            }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_AD2AE13F112F42039975F4042C329B98"
+            {
+            "Name" = "8:#1916"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:DesktopFolder"
+                "Folders"
+                {
+                }
+            }
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            {
+            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
+            "Name" = "8:#1925"
+            "AlwaysCreate" = "11:TRUE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:TARGETDIR"
+                "Folders"
+                {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_ECC1E88FB00B4B438469335AD5CE6D5F"
+                    {
+                    "Name" = "8:計測システムフォルダ"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_A0D7D9ED5B30427A84D15CAB72588313"
+                        "Folders"
+                        {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_1077503A2B254559A5F0BA0F63D58AB5"
+                            {
+                            "Name" = "8:Temp_data"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_93BC79E40E684FE9AD1E6D1213F69795"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_29937B528373438BA836A316AC6A58D5"
+                            {
+                            "Name" = "8:CamParam"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_633287470D98420488FFB952FAC3237D"
+                                "Folders"
+                                {
+                                }
+                            }
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_96638685E8094E15ACD4C8DD290D4F6F"
+                            {
+                            "Name" = "8:Template"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_EA02D477DF9C479FA2DB64BA8422F685"
+                                "Folders"
+                                {
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        "LaunchCondition"
+        {
+        }
+        "Locator"
+        {
+        }
+        "MsiBootstrapper"
+        {
+        "LangId" = "3:1041"
+        "RequiresElevation" = "11:FALSE"
+        }
+        "Product"
+        {
+        "Name" = "8:Microsoft Visual Studio"
+        "ProductName" = "8:VFORM"
+        "ProductCode" = "8:{92FEE485-0511-40CD-9B18-F0A39922B821}"
+        "PackageCode" = "8:{2ABAF9A4-CB63-4528-A41D-F7BC53EC59B4}"
+        "UpgradeCode" = "8:{FB7F4C0E-AA74-4CAB-98ED-8C96B4B78182}"
+        "AspNetVersion" = "8:4.0.30319.0"
+        "RestartWWWService" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
+        "DetectNewerInstalledVersion" = "11:TRUE"
+        "InstallAllUsers" = "11:FALSE"
+        "ProductVersion" = "8:1.0.1"
+        "Manufacturer" = "8:YTI"
+        "ARPHELPTELEPHONE" = "8:"
+        "ARPHELPLINK" = "8:"
+        "Title" = "8:SetupProject"
+        "Subject" = "8:"
+        "ARPCONTACT" = "8:*"
+        "Keywords" = "8:"
+        "ARPCOMMENTS" = "8:"
+        "ARPURLINFOABOUT" = "8:"
+        "ARPPRODUCTICON" = "8:"
+        "ARPIconIndex" = "3:0"
+        "SearchPath" = "8:"
+        "UseSystemSearchPath" = "11:TRUE"
+        "TargetPlatform" = "3:1"
+        "PreBuildEvent" = "8:"
+        "PostBuildEvent" = "8:"
+        "RunPostBuildEvent" = "3:0"
+        }
+        "Registry"
+        {
+            "HKLM"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1BB474AAB782492D85737163B196A63B"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_E2C10898EE7F4C8F8656DBFDEE038AE0"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_04EAC625B973497DB87164AF5C3246C5"
+                                    {
+                                    "Name" = "8:CATS"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                        }
+                                        "Values"
+                                        {
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C58ACE78736F473DAC531292AF9A8322"
+                                            {
+                                            "Name" = "8:LicenseType"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0"
+                                            }
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCU"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_20E81353AC504E688D71E60EF731A597"
+                    {
+                    "Name" = "8:Software"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A6482AC98FDC4425809A22B75B199BCE"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKCR"
+            {
+                "Keys"
+                {
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_072E7A288DF349BE8711A64263ABE769"
+                    {
+                    "Name" = "8:.vform"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                        }
+                        "Values"
+                        {
+                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_27B28FE4971443B297BEBB57F69355F4"
+                            {
+                            "Name" = "8:"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "ValueTypes" = "3:1"
+                            "Value" = "8:vform_Run"
+                            }
+                        }
+                    }
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_363322B4825C4B9A8DA025C351412132"
+                    {
+                    "Name" = "8:vform_Run"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A5ED49E9FBDB4AF1BB33A2413EF35DCA"
+                            {
+                            "Name" = "8:shell"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_CE3343C14E4E40518E6149C51E61687B"
+                                    {
+                                    "Name" = "8:open"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_816AF8D818C2462AAD6E6FA771115CAB"
+                                            {
+                                            "Name" = "8:command"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                }
+                                                "Values"
+                                                {
+                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E2BAE8A078334180B1E166257F36ED82"
+                                                    {
+                                                    "Name" = "8:"
+                                                    "Condition" = "8:"
+                                                    "Transitive" = "11:FALSE"
+                                                    "ValueTypes" = "3:1"
+                                                    "Value" = "8:\"[TARGETDIR]YCM.exe\" \"%1\""
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_6BF3C7E2A9B6420BA258EA16F846AD7F"
+                                            {
+                                            "Name" = "8:"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:"
+                                            }
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_690E8E64D4344AD1A917A685F49CC3C7"
+                                    {
+                                    "Name" = "8:"
+                                    "Condition" = "8:"
+                                    "Transitive" = "11:FALSE"
+                                    "ValueTypes" = "3:1"
+                                    "Value" = "8:"
+                                    }
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_B1973A1F5DE744A78E1B07626AAF32FB"
+                    {
+                    "Name" = "8:Applications"
+                    "Condition" = "8:"
+                    "AlwaysCreate" = "11:FALSE"
+                    "DeleteAtUninstall" = "11:FALSE"
+                    "Transitive" = "11:FALSE"
+                        "Keys"
+                        {
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_F8DB217108FD4FA1B8C5916CF6B789AD"
+                            {
+                            "Name" = "8:YCM.exe"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_3F4FCFB681AB42F3A26B5ECC6BB20544"
+                                    {
+                                    "Name" = "8:shell"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_46D66DE726E44D95AC1540EA7514DAB0"
+                                            {
+                                            "Name" = "8:open"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_89618865B0AF4F1CAA84DDFF028AEC3F"
+                                                    {
+                                                    "Name" = "8:command"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                        }
+                                                        "Values"
+                                                        {
+                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_818AB8E027FE4C33A5415C149895B589"
+                                                            {
+                                                            "Name" = "8:"
+                                                            "Condition" = "8:"
+                                                            "Transitive" = "11:FALSE"
+                                                            "ValueTypes" = "3:1"
+                                                            "Value" = "8:\"[TARGETDIR]YCM.exe\" \"%1\""
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                        }
+                        "Values"
+                        {
+                        }
+                    }
+                }
+            }
+            "HKU"
+            {
+                "Keys"
+                {
+                }
+            }
+            "HKPU"
+            {
+                "Keys"
+                {
+                }
+            }
+        }
+        "Sequences"
+        {
+        }
+        "Shortcut"
+        {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_53C0CF6E61184D83A874514016C49F4C"
+            {
+            "Name" = "8:VFORM"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_D0FBB0400D90499795EF35D5F92C05F0"
+            "Folder" = "8:_AD2AE13F112F42039975F4042C329B98"
+            "WorkingFolder" = "8:_EA5CF444D720483F9F3A6CF2F2D13ED1"
+            "Icon" = "8:_F1E19E509BA148C8A6829D4BEE059EFB"
+            "Feature" = "8:"
+            }
+        }
+        "UserInterface"
+        {
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_2E7EEC06E00F45F1A07D79AA4EFAA719"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:1"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3C013FD688CF4F7FAFC35AFF0C671FE6"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:完了"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "UpdateText"
+                            {
+                            "Name" = "8:UpdateText"
+                            "DisplayName" = "8:#1058"
+                            "Description" = "8:#1158"
+                            "Type" = "3:15"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1258"
+                            "DefaultValue" = "8:#1258"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_35A8A26E3E1840E5AA2587EA34D6FDEB"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:2"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2BF69D8FD6564AC48139814DD5110B7D"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:ようこそ"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2F37764736E44ABEA8D9523038366908"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:インストール フォルダー"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BCF7377901314114A1B79B320DCF384E"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:インストールの確認"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_450D4C92D4C44C54999605968B52D1A1"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_471869071B7B4402AB84C291FA42CF3C"
+            {
+            "Name" = "8:#1902"
+            "Sequence" = "3:2"
+            "Attributes" = "3:3"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_52F19084BBCB47E58F6FAF8A69400E2D"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:完了"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminFinishedDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_76DAAA5CEB4D457990CB732A4F1705A4"
+            {
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_92C4E6B8089C475DA3281E1CD86F84CB"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F82F921F09564A25BCE900DC4BBAB3BE"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:進行状況"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_CACDE100384B4EDAA6F7A96006B6488D"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:1"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_2435348F24724346B46E06B3D334A215"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:インストールの確認"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_65D3479171BF4293866CC1138C358548"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:ようこそ"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_9E399A67D7554F959A9691CAE188E341"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:インストール フォルダー"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "InstallAllUsersVisible"
+                            {
+                            "Name" = "8:InstallAllUsersVisible"
+                            "DisplayName" = "8:#1059"
+                            "Description" = "8:#1159"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_CDF7ED78264C492DA3E4663CDEB062B1"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:2"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_23563958F8DE4F13B75984E6E87ACA43"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:進行状況"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        "MergeModule"
+        {
+        }
+        "ProjectOutput"
+        {
+        }
+    }
+}

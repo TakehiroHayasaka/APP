@@ -1,0 +1,1212 @@
+﻿Imports System.Windows
+Imports ADODB
+Imports System.Data
+
+Imports HALCONXLib
+Imports System.Threading
+Imports Microsoft.Win32
+Imports FBMlib
+
+Class ReconstructionWindow
+
+    Private _settings_data As SettingsTable
+    Public Property SettingsData() As SettingsTable
+        Get
+            Return _settings_data
+        End Get
+        Set(ByVal value As SettingsTable)
+            _settings_data = value
+        End Set
+    End Property
+
+    Public Const SamplingFactor As Double = 0.03
+
+    Private selectedImageSet As List(Of ImageSet) = New List(Of ImageSet)
+
+    Public Const FileName3D As String = "Reconstructed.obj"
+
+
+
+    Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+        ReconstructionWindow.DataContext = Me
+        SettingsData = New SettingsTable
+        SettingsData.m_dbClass = New CDBOperateOLE
+        SettingsData.m_dbClass.Connect("TGless.mdb")
+        SettingsData.GetLatest()
+        SettingsData.m_dbClass.DisConnect()
+        SettingsData.KoujiPath = MainFrm.objFBM.ProjectPath
+    End Sub
+
+
+    ' Main procedure 
+    '    Protected Function ReconstructScene()
+    '        ReconstructScene = True
+    '#If True Then
+    '        Dim currentDate = System.DateTime.Now.ToString("yyyyMMddHHmmss")
+    '        If Not System.IO.Directory.Exists(MainFrm.objFBM.ProjectPath & "\Pdata\" & currentDate) Then
+    '            System.IO.Directory.CreateDirectory(MainFrm.objFBM.ProjectPath & "\Pdata\" & currentDate)
+    '        End If
+    '        Dim savePath = MainFrm.objFBM.ProjectPath & "\Pdata\" & currentDate & "\"
+    '        Dim fileName = "ReconstructionResult.obj"
+    '        SettingsData.OutputPath = savePath & fileName
+
+    '        MainFrm.StartReconstructScene(SettingsData.OutputPath)
+    '#Else
+    '        Dim hv_T0 As New HTupleX, hv_T1 As New HTupleX, numPoints As New HTupleX
+    '        Dim hv_CameraSetupModelID As New HTupleX, hv_CameraParam As New HTupleX, hv_StereoModelID As New HTupleX
+    '        Dim ho_Images As New HUntypedObjectX
+    '        Dim hv_ObjectModel3D As New HTupleX, hv_BoundingBoxObject As New HTupleX, hv_ObjectModel3DNormals As New HTupleX, HM3D As New HTupleX, HM3DI As New HTupleX
+    '        Dim hv_PoseIn As HTupleX = New HTupleX, hv_PoseOut = New HTupleX
+
+    '        ROp.GenEmptyObj(ho_Images)
+    '        Try
+    '            ROp.ReadCamPar(SettingsData.camera_param, hv_CameraParam)
+    '        Catch ex As Exception
+    '            ROp.ReadTuple(SettingsData.camera_param, hv_CameraParam)
+    '        End Try
+
+    '        If Tuple.TupleLength(hv_CameraParam) <= 0 Then
+    '            MsgBox("Invalid Camera Parameters")
+    '            ReconstructScene = False
+    '            Exit Function
+    '        End If
+
+    '        Try
+    '            ROp.CreateCameraSetupModel(selectedImageSet.Count, hv_CameraSetupModelID)
+    '            For index As Integer = 0 To selectedImageSet.Count - 1
+    '                ROp.SetCameraSetupCamParam(hv_CameraSetupModelID, index, "area_scan_polynomial", hv_CameraParam, GenPose(selectedImageSet(index).ImagePose.Pose))
+    '            Next
+    '            ROp.CreateStereoModel(hv_CameraSetupModelID, "surface_pairwise", Nothing, Nothing, hv_StereoModelID)
+    '            SetStereoModel(hv_StereoModelID)
+
+    '            ROp.CountSeconds(hv_T0)
+    '            ReadMultiViewStereoImages(ho_Images, hv_CameraParam)
+    '            ROp.CountSeconds(hv_T1)
+    '            SettingsData.ImageHenkanTime = Tuple.TupleSub(hv_T1, hv_T0).ToString()
+
+    '            CalculateBoundingBox(hv_CameraParam, hv_StereoModelID, hv_BoundingBoxObject)
+    '            SetImagePair(ho_Images, hv_StereoModelID)
+
+    '            ROp.CountSeconds(hv_T0)
+    '            ROp.ReconstructSurfaceStereo(ho_Images, hv_StereoModelID, hv_ObjectModel3D)
+    '            ROp.CountSeconds(hv_T1)
+    '            SettingsData.ReconstructTime = Tuple.TupleSub(hv_T1, hv_T0).ToString()
+    '            ROp.ClearStereoModel(hv_StereoModelID)
+
+    '            ho_Images.Dispose()
+
+    '            ROp.CountSeconds(hv_T0)
+    '            ROp.PoseToHomMat3d(GenPose(selectedImageSet(0).ImagePose.Pose), HM3D)
+    '            ROp.HomMat3dInvert(HM3D, HM3DI)
+    '            ROp.HomMat3dToPose(HM3DI, hv_PoseIn)
+
+    '            ROp.CountSeconds(hv_T0)
+    '            ROp.GetObjectModel3DParams(hv_ObjectModel3D, "num_points", numPoints)
+    '            If Tuple.TupleInt(numPoints) <= 0 Then
+    '                Save3DModel(hv_ObjectModel3D)
+    '                ROp.CountSeconds(hv_T1)
+    '                SettingsData.OutputTime = Tuple.TupleSub(hv_T1, hv_T0).ToString()
+    '                ObjectModel3D = hv_ObjectModel3D
+    '            Else
+    '                MsgBox("Not Enough Points To Visualize")
+    '                ReconstructScene = False
+    '            End If
+    '            ROp.ClearObjectModel3D(hv_BoundingBoxObject)
+    '        Catch ex As Exception
+    '            MsgBox("Reconstruction Failed")
+    '            ReconstructScene = False
+    '            Exit Function
+    '        End Try
+    '#End If
+    '    End Function
+
+    'Private Sub Save3DModel(ByRef hv_ObjectModel3D As Object)
+
+    '    Dim currentDate = System.DateTime.Now.ToString("yyyyMMddHHmmss")
+    '    If Not System.IO.Directory.Exists(MainFrm.objFBM.ProjectPath & "\Pdata\" & currentDate) Then
+    '        System.IO.Directory.CreateDirectory(MainFrm.objFBM.ProjectPath & "\Pdata\" & currentDate)
+    '    End If
+    '    Dim savePath = MainFrm.objFBM.ProjectPath & "\Pdata\" & currentDate & "\"
+    '    Dim fileName = "ReconstructionResult.obj"
+    '    SettingsData.OutputPath = savePath & fileName
+    '    Op.WriteObjectModel3D(hv_ObjectModel3D, "obj", savePath & fileName, Nothing, Nothing)
+    '    If Not System.IO.File.Exists(savePath & fileName) Then
+    '        MsgBox("Failed to write 3d object model")
+    '    End If
+    '    Op.ClearObjectModel3D(hv_ObjectModel3D)
+    'End Sub
+
+    'Private Function GenPose(ByVal Pose As Object) As HTupleX
+    '    Dim hv_Pose As New HTupleX
+    '    hv_Pose = Pose
+    '    hv_Pose = Tuple.TupleConcat(hv_Pose, 0)
+    '    GenPose = hv_Pose
+    'End Function
+
+    'Private Sub SetStereoModel(ByRef hv_StereoModelID As HTupleX)
+    '    Dim ROp As New HOperatorSetX
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "persistence", IIf(SettingsData.persistence, 1, 0))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "rectif_interpolation", SettingsData.rectif_interpolation)
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "rectif_sub_sampling", Convert.ToDouble(SettingsData.rectif_sub_sampling))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "sub_sampling_step", Convert.ToInt32(SettingsData.sub_sampling_step))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "disparity_method", SettingsData.disparity_method)
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_method", SettingsData.binocular_method)
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_num_levels", Convert.ToInt32(SettingsData.binocular_num_levels))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_mask_width", Convert.ToInt32(SettingsData.binocular_mask_width))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_mask_height", Convert.ToInt32(SettingsData.binocular_mask_height))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_texture_thresh", Convert.ToDouble(SettingsData.binocular_texture_thresh))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_score_thresh", Convert.ToDouble(SettingsData.binocular_score_thresh))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_filter", SettingsData.binocular_filter)
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "binocular_sub_disparity", SettingsData.binocular_sub_disparity)
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "point_meshing", SettingsData.point_meshing)
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "poisson_depth", Convert.ToInt32(SettingsData.poisson_depth))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "poisson_solver_divide", Convert.ToInt32(SettingsData.poisson_solver_divide))
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "poisson_samples_per_node", Convert.ToInt32(SettingsData.poisson_samples_per_node))
+    'End Sub
+
+    'Private Sub ReadMultiViewStereoImages(ByRef ho_Images As HUntypedObjectX, ByVal hv_CameraParam As HTupleX)
+    '    Dim ROp As New HOperatorSetX
+    '    Dim OTemp(10) As HUntypedObjectX
+    '    Dim ho_Img As HUntypedObjectX = Nothing, ho_ZImg As HUntypedObjectX = Nothing
+    '    ROp.GenEmptyObj(ho_Images)
+    '    ROp.GenEmptyObj(ho_Img)
+    '    ROp.GenEmptyObj(ho_ZImg)
+    '    Try
+    '        ROp.ClearObj(ho_Images)
+    '        ROp.ReadImage(ho_Images, selectedImageSet(0).ImageFullPath)
+    '        ROp.ZoomImageSize(ho_Images, ho_Images, Tuple.TupleSelect(hv_CameraParam, 10), Tuple.TupleSelect(hv_CameraParam, 11), "constant")
+    '        For i As Integer = 1 To selectedImageSet.Count - 1
+    '            ROp.ReadImage(ho_Img, selectedImageSet(i).ImageFullPath)
+    '            ROp.ZoomImageSize(ho_Img, ho_ZImg, Tuple.TupleSelect(hv_CameraParam, 10), Tuple.TupleSelect(hv_CameraParam, 11), "constant")
+    '            ROp.ConcatObj(ho_Images, ho_ZImg, OTemp(0))
+    '            ROp.ClearObj(ho_Images)
+    '            ho_Images = OTemp(0)
+    '            ROp.ClearObj(ho_Img)
+    '            ROp.ClearObj(ho_ZImg)
+    '        Next
+    '    Catch ex As Exception
+    '        Throw ex
+    '    End Try
+    'End Sub
+
+    'Private Sub SetImagePair(ByVal ho_Images As HUntypedObjectX, ByRef hv_StereoModelID As HTupleX)
+    '    Dim ROp As New HOperatorSetX
+    '    Dim imagesCount As Int32 = 0
+    '    imagesCount = ho_Images.CountObj()
+    '    For i As Integer = 0 To imagesCount - 2 Step 1
+    '        ROp.SetStereoModelImagePairs(hv_StereoModelID, i, i + 1)
+    '    Next
+    'End Sub
+
+    'Private Sub CalculateBoundingBox(ByVal hv_CameraParam As HTupleX, ByRef hv_StereoModelID As HTupleX, ByRef BoundingBoxObject As HTupleX)
+    '    Dim ROp As New HOperatorSetX
+    '    Dim ImageRegion As New HUntypedObjectX, DirectBoundingBox As New HTupleX, ReducedImageRegion As New HUntypedObjectX
+    '    Dim ReducedBox As New HTupleX, TempBox As New HTupleX, ConvexBox As New HTupleX, SampleBox As New HTupleX, TriangulatedBox As New HTupleX
+    '    Dim HM3D As New HTupleX, HM3DI As New HTupleX, hv_PoseIn As New HTupleX, Diameter As New HTupleX
+
+    '    ROp.GenRectangle1(ImageRegion, 0, 0, Tuple.TupleSelect(hv_CameraParam, 11), Tuple.TupleSelect(hv_CameraParam, 10))
+    '    ReducedImageRegion = selectedImageSet(0).Region
+    '    Dim LOSObject = GenHomMatPyramid(hv_CameraParam, GenPose(selectedImageSet(0).ImagePose.Pose), Convert.ToDouble(SettingsData.bounding_box), ReducedImageRegion)
+    '    ROp.ClearObj(ReducedImageRegion)
+    '    ROp.CopyObjectModel3D(LOSObject, "all", ConvexBox)
+    '    ROp.ClearObjectModel3D(LOSObject)
+    '    hv_CameraParam = Tuple.TupleReplace(hv_CameraParam, New Integer() {1, 2, 3, 4, 5}, 0)
+    '    For i As Integer = 1 To selectedImageSet.Count - 1
+    '        ROp.CopyObjectModel3D(ConvexBox, "all", TempBox)
+    '        ROp.ClearObjectModel3D(ConvexBox)
+    '        ROp.PoseToHomMat3d(GenPose(selectedImageSet(i).ImagePose.Pose), HM3D)
+    '        ROp.HomMat3dInvert(HM3D, HM3DI)
+    '        ROp.HomMat3dToPose(HM3DI, hv_PoseIn)
+    '        If selectedImageSet(i).Region Is Nothing Then
+    '            ROp.ReduceObjectModel3DByView(ImageRegion, TempBox, hv_CameraParam, hv_PoseIn, ReducedBox)
+    '        Else
+    '            ReducedImageRegion = selectedImageSet(i).Region
+    '            ROp.ReduceObjectModel3DByView(ReducedImageRegion, TempBox, hv_CameraParam, hv_PoseIn, ReducedBox)
+    '            ROp.ClearObj(ReducedImageRegion)
+    '        End If
+    '        ROp.ClearObjectModel3D(TempBox)
+    '        ROp.ConvexHullObjectModel3D(ReducedBox, ConvexBox)
+    '        ROp.ClearObjectModel3D(ReducedBox)
+    '        ROp.GetObjectModel3DParams(ConvexBox, "diameter_axis_aligned_bounding_box", Diameter)
+    '        ROp.SampleObjectModel3D(ConvexBox, "fast", Tuple.TupleMult(SamplingFactor, Diameter), Nothing, Nothing, SampleBox)
+    '        ROp.ClearObjectModel3D(ConvexBox)
+    '        ROp.TriangulateObjectModel3D(SampleBox, "greedy", Nothing, Nothing, TriangulatedBox, Nothing)
+    '        ROp.ClearObjectModel3D(SampleBox)
+    '        ROp.CopyObjectModel3D(TriangulatedBox, "all", ConvexBox)
+    '        ROp.ClearObjectModel3D(TriangulatedBox)
+    '    Next
+
+    '    ROp.ClearObj(ImageRegion)
+    '    ROp.GetObjectModel3DParams(ConvexBox, "bounding_box1", DirectBoundingBox)
+
+    '    ROp.SetStereoModelParam(hv_StereoModelID, "bounding_box", DirectBoundingBox)
+    '    If Not BoundingBoxObject Is Nothing Then
+    '        Dim BBX As HTupleX = Nothing, BBY As HTupleX = Nothing, BBZ As HTupleX = Nothing
+    '        Dim BBPose As HTupleX = Nothing, BBObjectModel As HTupleX = Nothing, BoundingBox As HTupleX = Nothing
+    '        ROp.SmallestBoundingBoxObjectModel3D(ConvexBox, "axis_aligned", BBPose, BBX, BBY, BBZ)
+    '        ROp.GenBoxObjectModel3D(BBPose, BBX, BBY, BBZ, BBObjectModel)
+    '        BoundingBoxObject = BBObjectModel
+    '    End If
+    '    ROp.ClearObjectModel3D(ConvexBox)
+    'End Sub
+
+    'Private Function GenHomMatPyramid(ByVal hv_CameraParam As HTupleX, ByVal hv_Pose As HTupleX, ByVal Scale As Double, ByVal hv_DefaultRegion As HUntypedObjectX) As HTupleX
+    '    Dim ROp As New HOperatorSetX
+    '    Dim PX As HTupleX = Nothing, PY As HTupleX = Nothing, PZ As HTupleX = Nothing
+    '    Dim QX As HTupleX = Nothing, QY As HTupleX = Nothing, QZ As HTupleX = Nothing
+    '    Dim XX As HTupleX = Nothing, XY As HTupleX = Nothing, XZ As HTupleX = Nothing
+
+    '    Dim LineOfSightRow As New HTupleX
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, 0.0)
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, 0.0)
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, Tuple.TupleSelect(hv_CameraParam, 11))
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, Tuple.TupleSelect(hv_CameraParam, 11))
+    '    Dim LineOfSightCol As New HTupleX
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, 0.0)
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, Tuple.TupleSelect(hv_CameraParam, 10))
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, Tuple.TupleSelect(hv_CameraParam, 10))
+    '    LineOfSightRow = Tuple.TupleConcat(LineOfSightRow, 0.0)
+
+    '    Dim HomMat3D As HTupleX = Nothing, HomMat3DIdentity As HTupleX = Nothing, HomMat3DScale As HTupleX = Nothing, Diameter As HTupleX = Nothing
+    '    Dim LineOfSightPoints As HTupleX = Nothing, LineOfSightObject As HTupleX = Nothing
+    '    Dim LineOfSightObjectSample As HTupleX = Nothing, LineOfSightObjectTriangulated As HTupleX = Nothing, LineOfSightObjectScaled As HTupleX = Nothing
+
+    '    If Not hv_DefaultRegion Is Nothing Then 'TODO
+    '        Dim r_Rows = New HTupleX, r_Cols = New HTupleX
+    '        ROp.GetRegionConvex(hv_DefaultRegion, r_Rows, r_Cols)
+    '        LineOfSightRow = r_Rows
+    '        LineOfSightCol = r_Cols
+    '    End If
+
+    '    ROp.GetLineOfSight(LineOfSightRow, LineOfSightCol, hv_CameraParam, PX, PY, PZ, QX, QY, QZ)
+    '    ROp.TupleConcat(QX, 0.0, QX)
+    '    ROp.TupleConcat(QY, 0.0, QY)
+    '    ROp.TupleConcat(QZ, 0.0, QZ)
+    '    ROp.PoseToHomMat3d(hv_Pose, HomMat3D)
+    '    ROp.AffineTransPoint3D(HomMat3D, QX, QY, QZ, XX, XY, XZ)
+    '    ROp.GenObjectModel3DFromPoints(XX, XY, XZ, LineOfSightPoints)
+    '    ROp.ConvexHullObjectModel3D(LineOfSightPoints, LineOfSightObject)
+    '    ROp.ClearObjectModel3D(LineOfSightPoints)
+    '    ROp.GetObjectModel3DParams(LineOfSightObject, "diameter_axis_aligned_bounding_box", Diameter)
+    '    ROp.SampleObjectModel3D(LineOfSightObject, "fast", Tuple.TupleMult(SamplingFactor, Diameter), Nothing, Nothing, LineOfSightObjectSample)
+    '    ROp.ClearObjectModel3D(LineOfSightObject)
+    '    ROp.TriangulateObjectModel3D(LineOfSightObjectSample, "greedy", Nothing, Nothing, LineOfSightObjectTriangulated, Nothing)
+    '    ROp.ClearObjectModel3D(LineOfSightObjectSample)
+    '    ROp.HomMat3dIdentity(HomMat3DIdentity)
+    '    ROp.HomMat3dScale(HomMat3DIdentity, Scale, Scale, Scale, Tuple.TupleSelect(hv_Pose, 0), Tuple.TupleSelect(hv_Pose, 1), Tuple.TupleSelect(hv_Pose, 2), HomMat3DScale)
+    '    ROp.AffineTransObjectModel3D(LineOfSightObjectTriangulated, HomMat3DScale, LineOfSightObjectScaled)
+    '    ROp.ClearObjectModel3D(LineOfSightObjectTriangulated)
+    '    GenHomMatPyramid = LineOfSightObjectScaled
+    'End Function
+
+    Private Sub Button_Run_Click(sender As Object, e As RoutedEventArgs)
+        Try
+            If Validation() Then
+                MsgBox("Invalid Reconstruction Parameters")
+                Exit Sub
+            End If
+            If Not MainFrm.StartReconstructScene(SettingsData, selectedImageSet) Then
+                Exit Sub
+            End If
+            SettingsData.SelectedImageIDs = ""
+            Dim comma As String = ""
+            For i As Integer = 0 To selectedImageSet.Count - 1
+                SettingsData.SelectedImageIDs = SettingsData.SelectedImageIDs & comma & selectedImageSet(i).ImageId
+                comma = ","
+            Next
+            If SettingsData.m_dbClass.Connect("TGless.mdb") Then
+                SettingsData.InsertData()
+                SettingsData.GetLatest()
+                SettingsData.m_dbClass.DisConnect()
+                MsgBox("Save complete")
+            Else
+                MsgBox("Save failed")
+            End If
+            Call Command_previewreconstruct()
+            'MainFrm.PreviewReconstructObject()
+        Catch ex As Exception
+
+        End Try
+        'Dim thread As New Thread(AddressOf Command_previewreconstruct)
+        'thread.Start()
+    End Sub
+
+    Private Sub Button_Draw_Region_Click(sender As Object, e As RoutedEventArgs)
+        Me.Hide()
+        Dim imageIndex As Integer = -1
+        IOUtil.GetDrawRegion(imageIndex)
+        If Not imageIndex = -1 Then
+            selectedImageSet.Add(MainFrm.objFBM.lstImages(imageIndex))
+            MsgBox(imageIndex + 1 & ": " & MainFrm.objFBM.lstImages(imageIndex).ImageName & " Selected")
+        End If
+        Me.ShowDialog()
+    End Sub
+
+    Private Sub Button_OK_Click(sender As Object, e As RoutedEventArgs)
+        Dim dbClass = New CDBOperate()
+        If dbClass.ConnectDB("TGLess.mdb") Then
+            Try
+                Dim recordSet = dbClass.CreateRecordset("SELECT TOP 1 * FROM 設定値及び結果 WHERE KoujiPath='" & MainFrm.objFBM.ProjectPath & "' ORDER BY ID DESC")
+                If recordSet.RecordCount = 1 Then
+                    Dim outputPath As String = recordSet(24).Value
+                    If Not IsDBNull(outputPath) Then
+                        If Not MainFrm.StartUnionScene(outputPath) Then
+                            Throw New Exception("Union Scene Failed")
+                        End If
+                    End If
+                Else
+                    MsgBox("No scenes to union. Please run reconstruct scene again")
+                End If
+            Finally
+                dbClass.DisConnectDB()
+            End Try
+        End If
+        Call Command_loadreconstruct()
+        Me.Close()
+    End Sub
+
+    Private Sub CameraParamSelect_Click(sender As Object, e As RoutedEventArgs)
+        Dim fileDialog = New OpenFileDialog()
+        'fileDialog.InitialDirectory = Environment.CurrentDirectory & "\SystemFolder\CamParam\"
+        Dim result = fileDialog.ShowDialog()
+        Select Case result
+            Case True
+                Dim file = fileDialog.FileName
+                SettingsData.camera_param = file
+            Case False
+                'SettingsData.camera_param = ""
+            Case Else
+                'SettingsData.camera_param = ""
+        End Select
+        camera_param.GetBindingExpression(Controls.TextBox.TextProperty).UpdateTarget()
+        camera_param.Focus()
+        camera_param.CaretIndex = camera_param.Text.Length
+        camera_param.ScrollToEnd()
+    End Sub
+
+    Private Sub binocular_num_levels_plus_Click(sender As Object, e As RoutedEventArgs)
+        SettingsData.binocular_num_levels = Convert.ToString(Convert.ToDecimal(SettingsData.binocular_num_levels) + 1)
+        binocular_num_levels.GetBindingExpression(Controls.TextBox.TextProperty).UpdateTarget()
+    End Sub
+
+    Private Sub binocular_num_levels_minus_Click(sender As Object, e As RoutedEventArgs)
+        SettingsData.binocular_num_levels = Convert.ToString(Convert.ToDecimal(SettingsData.binocular_num_levels) - 1)
+        binocular_num_levels.GetBindingExpression(Controls.TextBox.TextProperty).UpdateTarget()
+    End Sub
+
+    Private Sub binocular_mask_width_LostFocus(sender As Object, e As RoutedEventArgs)
+        Dim textBox As System.Windows.Controls.TextBox = sender
+        If textBox.Text <> "" And Not Integer.TryParse(textBox.Text, New Integer()) = False Then
+            Dim val = Convert.ToInt32(textBox.Text)
+            If val Mod 2 = 0 Then
+                val = val - 1
+                SettingsData.binocular_mask_width = Convert.ToString(val)
+                textBox.Text = Convert.ToString(val)
+                'binocular_mask_width.GetBindingExpression(textBox.TextProperty).UpdateTarget()
+            End If
+        End If
+    End Sub
+
+    Private Sub binocular_mask_height_LostFocus(sender As Object, e As RoutedEventArgs)
+        Dim textBox As TextBox = sender
+        If textBox.Text <> "" And Not Integer.TryParse(textBox.Text, New Integer()) = False Then
+            Dim val = Convert.ToInt32(textBox.Text)
+            If val Mod 2 = 0 Then
+                val = val - 1
+                SettingsData.binocular_mask_height = Convert.ToString(val)
+                textBox.Text = Convert.ToString(val)
+                'binocular_mask_height.GetBindingExpression(textBox.TextProperty).UpdateTarget()
+            End If
+        End If
+    End Sub
+
+    Public Function Validation()
+        Dim Failed = False
+        If String.IsNullOrEmpty(SettingsData.camera_param) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.bounding_box) Or Not Double.TryParse(SettingsData.bounding_box, New Double()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.rectif_sub_sampling) Or Not Double.TryParse(SettingsData.rectif_sub_sampling, New Double()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.sub_sampling_step) Or Not Integer.TryParse(SettingsData.sub_sampling_step, New Int32()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.disparity_method) Then
+            Failed = True
+        ElseIf Not SettingsData.disparity_method = "binocular" Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.binocular_num_levels) Or Not Integer.TryParse(SettingsData.binocular_num_levels, New Int32()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.binocular_mask_width) Or Not Integer.TryParse(SettingsData.binocular_mask_width, New Int32()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.binocular_mask_height) Or Not Integer.TryParse(SettingsData.binocular_mask_height, New Int32()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.binocular_texture_thresh) Or Not Double.TryParse(SettingsData.binocular_texture_thresh, New Double()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.binocular_score_thresh) Or Not Double.TryParse(SettingsData.binocular_score_thresh, New Double()) Then
+            Failed = True
+        End If
+        If String.IsNullOrEmpty(SettingsData.poisson_depth) Or Not Integer.TryParse(SettingsData.poisson_depth, New Int32()) Then
+            Failed = True
+        Else
+            Dim poisson_depth = Integer.Parse(SettingsData.poisson_depth)
+            If poisson_depth < 3 Or poisson_depth > 12 Then
+                Failed = True
+            End If
+        End If
+        If String.IsNullOrEmpty(SettingsData.poisson_solver_divide) Or Not Integer.TryParse(SettingsData.poisson_solver_divide, New Int32()) Then
+            Failed = True
+        Else
+            Dim poisson_solver_divide = Integer.Parse(SettingsData.poisson_solver_divide)
+            Dim poisson_depth = Integer.Parse(SettingsData.poisson_depth)
+            If poisson_solver_divide < 3 Or poisson_solver_divide > poisson_depth Then
+                Failed = True
+            End If
+        End If
+        If String.IsNullOrEmpty(SettingsData.poisson_samples_per_node) Or Not Integer.TryParse(SettingsData.poisson_samples_per_node, New Int32()) Then
+            Failed = True
+        End If
+        Validation = Failed
+    End Function
+
+    Private Sub Window_Closed(sender As Object, e As EventArgs)
+        'Dim ROp As New HOperatorSetX
+        'ROp.ClearObjectModel3D(ObjectModel3D)
+    End Sub
+End Class
+
+
+Public Class SettingsTable
+
+    Public ReadOnly m_strTableName As String = "設定値及び結果"
+
+
+    Private ReadOnly S_ID As String() = {"ID"}
+    Private ReadOnly S_image_size_width As String() = {"image_size_width"}
+    Private ReadOnly S_image_size_height As String() = {"image_size_height"}
+    Private ReadOnly S_camera_param As String() = {"camera_param"}
+    Private ReadOnly S_bounding_box As String() = {"bounding_box"}
+    Private ReadOnly S_persistence As String() = {"persistence"}
+    Private ReadOnly S_rectif_interpolation As String() = {"rectif_interpolation"}
+    Private ReadOnly S_rectif_sub_sampling As String() = {"rectif_sub_sampling"}
+    Private ReadOnly S_sub_sampling_step As String() = {"sub_sampling_step"}
+    Private ReadOnly S_disparity_method As String() = {"disparity_method"}
+    Private ReadOnly S_binocular_method As String() = {"binocular_method"}
+    Private ReadOnly S_binocular_num_levels As String() = {"binocular_num_levels"}
+    Private ReadOnly S_binocular_mask_width As String() = {"binocular_mask_width"}
+    Private ReadOnly S_binocular_mask_height As String() = {"binocular_mask_height"}
+    Private ReadOnly S_binocular_texture_thresh As String() = {"binocular_texture_thresh"}
+    Private ReadOnly S_binocular_score_thresh As String() = {"binocular_score_thresh"}
+    Private ReadOnly S_binocular_filter As String() = {"binocular_filter"}
+    Private ReadOnly S_binocular_sub_disparity As String() = {"binocular_sub_disparity"}
+    Private ReadOnly S_point_meshing As String() = {"point_meshing"}
+    Private ReadOnly S_poisson_depth As String() = {"poisson_depth"}
+    Private ReadOnly S_poisson_solver_divide As String() = {"poisson_solver_divide"}
+    Private ReadOnly S_poisson_samples_per_node As String() = {"poisson_samples_per_node"}
+    Private ReadOnly S_KoujiPath As String() = {"KoujiPath"}
+    Private ReadOnly S_SelectedImageIDs As String() = {"SelectedImageIDs"}
+    Private ReadOnly S_OutputPath As String() = {"OutputPath"}
+    Private ReadOnly S_ImageHenkanTime As String() = {"ImageHenkanTime"}
+    Private ReadOnly S_ReconstructTime As String() = {"ReconstructTime"}
+    Private ReadOnly S_OutputTime As String() = {"OutputTime"}
+    Private ReadOnly S_CreateDate As String() = {"CreateDate"}
+
+    Private _ID As String = ""
+    Public Property ID() As String
+        Get
+            Return _ID
+        End Get
+        Set(ByVal value As String)
+            _ID = value
+        End Set
+    End Property
+
+    Private _image_size_width As String = ""
+    Public Property image_size_width() As String
+        Get
+            Return _image_size_width
+        End Get
+        Set(ByVal value As String)
+            _image_size_width = value
+        End Set
+    End Property
+
+    Private _image_size_height As String = ""
+    Public Property image_size_height() As String
+        Get
+            Return _image_size_height
+        End Get
+        Set(ByVal value As String)
+            _image_size_height = value
+        End Set
+    End Property
+
+    Private _camera_param As String = ""
+    Public Property camera_param() As String
+        Get
+            Return _camera_param
+        End Get
+        Set(ByVal value As String)
+            _camera_param = value
+        End Set
+    End Property
+
+    Private _bounding_box As String = ""
+    Public Property bounding_box() As String
+        Get
+            Return _bounding_box
+        End Get
+        Set(ByVal value As String)
+            _bounding_box = value
+        End Set
+    End Property
+
+    Private _persistence As Boolean = False
+
+    Public Property persistence() As Boolean
+        Get
+            Return _persistence
+        End Get
+        Set(ByVal value As Boolean)
+            _persistence = value
+        End Set
+    End Property
+
+    Private _rectif_interpolation As String = ""
+    Public Property rectif_interpolation() As String
+        Get
+            Return _rectif_interpolation
+        End Get
+        Set(ByVal value As String)
+            _rectif_interpolation = value
+        End Set
+    End Property
+
+    Private _rectif_sub_sampling As String = ""
+    Public Property rectif_sub_sampling() As String
+        Get
+            Return _rectif_sub_sampling
+        End Get
+        Set(ByVal value As String)
+            _rectif_sub_sampling = value
+        End Set
+    End Property
+
+    Private _sub_sampling_step As String = ""
+    Public Property sub_sampling_step() As String
+        Get
+            Return _sub_sampling_step
+        End Get
+        Set(ByVal value As String)
+            _sub_sampling_step = value
+        End Set
+    End Property
+
+    Private _disparity_method As String = ""
+    Public Property disparity_method() As String
+        Get
+            Return _disparity_method
+        End Get
+        Set(ByVal value As String)
+            _disparity_method = value
+        End Set
+    End Property
+
+    Private _binocular_method As String = ""
+    Public Property binocular_method() As String
+        Get
+            Return _binocular_method
+        End Get
+        Set(ByVal value As String)
+            _binocular_method = value
+        End Set
+    End Property
+
+    Private _binocular_num_levels As String = ""
+    Public Property binocular_num_levels() As String
+        Get
+            Return _binocular_num_levels
+        End Get
+        Set(ByVal value As String)
+            _binocular_num_levels = value
+        End Set
+    End Property
+
+    Private _binocular_mask_width As String = ""
+    Public Property binocular_mask_width() As String
+        Get
+            Return _binocular_mask_width
+        End Get
+        Set(ByVal value As String)
+            _binocular_mask_width = value
+        End Set
+    End Property
+
+    Private _binocular_mask_height As String = ""
+    Public Property binocular_mask_height() As String
+        Get
+            Return _binocular_mask_height
+        End Get
+        Set(ByVal value As String)
+            _binocular_mask_height = value
+        End Set
+    End Property
+
+    Private _binocular_texture_thresh As String = ""
+    Public Property binocular_texture_thresh() As String
+        Get
+            Return _binocular_texture_thresh
+        End Get
+        Set(ByVal value As String)
+            _binocular_texture_thresh = value
+        End Set
+    End Property
+
+    Private _binocular_score_thresh As String = ""
+    Public Property binocular_score_thresh() As String
+        Get
+            Return _binocular_score_thresh
+        End Get
+        Set(ByVal value As String)
+            _binocular_score_thresh = value
+        End Set
+    End Property
+
+    Private _binocular_filter As String = ""
+    Public Property binocular_filter() As String
+        Get
+            Return _binocular_filter
+        End Get
+        Set(ByVal value As String)
+            _binocular_filter = value
+        End Set
+    End Property
+
+    Private _binocular_sub_disparity As String = ""
+    Public Property binocular_sub_disparity() As String
+        Get
+            Return _binocular_sub_disparity
+        End Get
+        Set(ByVal value As String)
+            _binocular_sub_disparity = value
+        End Set
+    End Property
+
+    Private _point_meshing As String = ""
+    Public Property point_meshing() As String
+        Get
+            Return _point_meshing
+        End Get
+        Set(ByVal value As String)
+            _point_meshing = value
+        End Set
+    End Property
+
+    Private _poisson_depth As String = ""
+    Public Property poisson_depth() As String
+        Get
+            Return _poisson_depth
+        End Get
+        Set(ByVal value As String)
+            _poisson_depth = value
+        End Set
+    End Property
+
+    Private _poisson_solver_divide As String = ""
+    Public Property poisson_solver_divide() As String
+        Get
+            Return _poisson_solver_divide
+        End Get
+        Set(ByVal value As String)
+            _poisson_solver_divide = value
+        End Set
+    End Property
+
+    Private _poisson_samples_per_node As String = ""
+    Public Property poisson_samples_per_node() As String
+        Get
+            Return _poisson_samples_per_node
+        End Get
+        Set(ByVal value As String)
+            _poisson_samples_per_node = value
+        End Set
+    End Property
+
+    Private _KoujiPath As String = ""
+    Public Property KoujiPath() As String
+        Get
+            Return _KoujiPath
+        End Get
+        Set(ByVal value As String)
+            _KoujiPath = value
+        End Set
+    End Property
+
+    Private _SelectedImageIDs As String = ""
+    Public Property SelectedImageIDs() As String
+        Get
+            Return _SelectedImageIDs
+        End Get
+        Set(ByVal value As String)
+            _SelectedImageIDs = value
+        End Set
+    End Property
+
+    Private _OutputPath As String = ""
+    Public Property OutputPath() As String
+        Get
+            Return _OutputPath
+        End Get
+        Set(ByVal value As String)
+            _OutputPath = value
+        End Set
+    End Property
+
+    Private _ImageHenkanTime As String = ""
+    Public Property ImageHenkanTime() As String
+        Get
+            Return _ImageHenkanTime
+        End Get
+        Set(ByVal value As String)
+            _ImageHenkanTime = value
+        End Set
+    End Property
+
+    Private _ReconstructTime As String = ""
+    Public Property ReconstructTime() As String
+        Get
+            Return _ReconstructTime
+        End Get
+        Set(ByVal value As String)
+            _ReconstructTime = value
+        End Set
+    End Property
+
+    Private _OutputTime As String = ""
+    Public Property OutputTime() As String
+        Get
+            Return _OutputTime
+        End Get
+        Set(ByVal value As String)
+            _OutputTime = value
+        End Set
+    End Property
+
+    Private _CreateDate As String = ""
+    Public Property CreateDate() As String
+        Get
+            Return _CreateDate
+        End Get
+        Set(ByVal value As String)
+            _CreateDate = value
+        End Set
+    End Property
+
+
+    Public strFieldNames() As String
+    Public strFieldTexts() As String
+    Public m_dbClass As CDBOperateOLE
+
+
+
+    Public Function GetLatest()
+        Dim IDR As IDataReader = CreateRecordset("SELECT TOP 1 * FROM " + m_strTableName + " ORDER BY ID DESC")
+        If Not IDR Is Nothing Then
+            Do While IDR.Read
+                _ID = IDR.GetInt32(0)
+
+                If Not IDR.IsDBNull(1) Then
+                    _image_size_width = IDR.GetInt32(1)
+                End If
+
+                If Not IDR.IsDBNull(2) Then
+                    _image_size_height = IDR.GetInt32(2)
+                End If
+
+                If Not IDR.IsDBNull(3) Then
+                    _camera_param = IDR.GetString(3)
+                End If
+
+                If Not IDR.IsDBNull(4) Then
+                    _bounding_box = IDR.GetDouble(4)
+                End If
+
+                If Not IDR.IsDBNull(5) Then
+                    _persistence = If(IDR.GetInt32(5) = 0, False, True)
+                End If
+
+                If Not IDR.IsDBNull(6) Then
+                    _rectif_interpolation = IDR.GetString(6)
+                End If
+
+                If Not IDR.IsDBNull(7) Then
+                    _rectif_sub_sampling = IDR.GetDouble(7)
+                End If
+
+                If Not IDR.IsDBNull(8) Then
+                    _sub_sampling_step = IDR.GetInt32(8)
+                End If
+
+                If Not IDR.IsDBNull(9) Then
+                    _disparity_method = IDR.GetString(9)
+                End If
+
+                If Not IDR.IsDBNull(10) Then
+                    _binocular_method = IDR.GetString(10)
+                End If
+
+                If Not IDR.IsDBNull(11) Then
+                    _binocular_num_levels = IDR.GetInt32(11)
+                End If
+
+                If Not IDR.IsDBNull(12) Then
+                    _binocular_mask_width = IDR.GetInt32(12)
+                End If
+
+                If Not IDR.IsDBNull(13) Then
+                    _binocular_mask_height = IDR.GetInt32(13)
+                End If
+
+                If Not IDR.IsDBNull(14) Then
+                    _binocular_texture_thresh = IDR.GetDouble(14)
+                End If
+
+                If Not IDR.IsDBNull(15) Then
+                    _binocular_score_thresh = IDR.GetDouble(15)
+                End If
+
+                If Not IDR.IsDBNull(16) Then
+                    _binocular_filter = IDR.GetString(16)
+                End If
+
+                If Not IDR.IsDBNull(17) Then
+                    _binocular_sub_disparity = IDR.GetString(17)
+                End If
+
+                If Not IDR.IsDBNull(18) Then
+                    _point_meshing = IDR.GetString(18)
+                End If
+
+                If Not IDR.IsDBNull(19) Then
+                    _poisson_depth = IDR.GetInt32(19)
+                End If
+
+                If Not IDR.IsDBNull(20) Then
+                    _poisson_solver_divide = IDR.GetInt32(20)
+                End If
+
+                If Not IDR.IsDBNull(21) Then
+                    _poisson_samples_per_node = IDR.GetInt32(21)
+                End If
+
+                If Not IDR.IsDBNull(22) Then
+                    _KoujiPath = IDR.GetString(22)
+                End If
+
+                If Not IDR.IsDBNull(23) Then
+                    _SelectedImageIDs = IDR.GetString(23)
+                End If
+
+                If Not IDR.IsDBNull(24) Then
+                    _OutputPath = IDR.GetString(24)
+                End If
+
+                If Not IDR.IsDBNull(25) Then
+                    _ImageHenkanTime = IDR.GetDouble(25)
+                End If
+
+                If Not IDR.IsDBNull(26) Then
+                    _ReconstructTime = IDR.GetDouble(26)
+                End If
+
+                If Not IDR.IsDBNull(27) Then
+                    _OutputTime = IDR.GetDouble(27)
+                End If
+
+                If Not IDR.IsDBNull(28) Then
+                    _CreateDate = IDR.GetDateTime(28)
+                End If
+
+            Loop
+            IDR.Close()
+        End If
+
+        GetLatest = True
+    End Function
+
+
+
+    Public Function CreateRecordset( _
+    Optional ByVal strSQL As String = "" _
+    ) As IDataReader
+
+        Dim IDR As IDataReader
+        IDR = m_dbClass.DoSelect(strSQL)
+        CreateRecordset = IDR
+    End Function
+
+    Public Function InsertData(Optional ByRef flg_trans As Boolean = True) As Boolean
+
+        InsertData = True
+
+        Dim strWhere As String = "ID = " & _ID
+
+        'CreateFieldText()
+        CreateField()
+
+        Dim lRet As Long = 0
+
+        lRet = m_dbClass.DoInsert(strFieldNames, m_strTableName, strFieldTexts)
+        If lRet = 1 Then
+        Else
+            m_dbClass.RollbackTrans()
+            InsertData = False
+        End If
+
+    End Function
+
+
+
+    Public Sub CreateField()
+
+        Dim IDX As Integer = 0
+
+        If _image_size_width <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "image_size_width"
+            strFieldTexts(IDX) = "'" & _image_size_width & "'"
+            IDX += 1
+
+        End If
+        If _image_size_height <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "image_size_height"
+            strFieldTexts(IDX) = "'" & _image_size_height & "'"
+            IDX += 1
+
+        End If
+        If _camera_param <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "camera_param"
+            strFieldTexts(IDX) = "'" & _camera_param & "'"
+            IDX += 1
+
+        End If
+        If _bounding_box <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "bounding_box"
+            strFieldTexts(IDX) = "'" & _bounding_box & "'"
+            IDX += 1
+
+        End If
+        If _persistence = True Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "persistence"
+            strFieldTexts(IDX) = "'" & "1" & "'"
+            IDX += 1
+
+        End If
+        If _rectif_interpolation <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "rectif_interpolation"
+            strFieldTexts(IDX) = "'" & _rectif_interpolation & "'"
+            IDX += 1
+
+        End If
+        If _rectif_sub_sampling <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "rectif_sub_sampling"
+            strFieldTexts(IDX) = "'" & _rectif_sub_sampling & "'"
+            IDX += 1
+
+        End If
+        If _sub_sampling_step <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "sub_sampling_step"
+            strFieldTexts(IDX) = "'" & _sub_sampling_step & "'"
+            IDX += 1
+
+        End If
+        If _disparity_method <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "disparity_method"
+            strFieldTexts(IDX) = "'" & _disparity_method & "'"
+            IDX += 1
+
+        End If
+        If _binocular_method <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_method"
+            strFieldTexts(IDX) = "'" & _binocular_method & "'"
+            IDX += 1
+
+        End If
+        If _binocular_num_levels <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_num_levels"
+            strFieldTexts(IDX) = "'" & _binocular_num_levels & "'"
+            IDX += 1
+
+        End If
+        If _binocular_mask_width <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_mask_width"
+            strFieldTexts(IDX) = "'" & _binocular_mask_width & "'"
+            IDX += 1
+
+        End If
+        If _binocular_mask_height <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_mask_height"
+            strFieldTexts(IDX) = "'" & _binocular_mask_height & "'"
+            IDX += 1
+
+        End If
+        If _binocular_texture_thresh <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_texture_thresh"
+            strFieldTexts(IDX) = "'" & _binocular_texture_thresh & "'"
+            IDX += 1
+
+        End If
+        If _binocular_score_thresh <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_score_thresh"
+            strFieldTexts(IDX) = "'" & _binocular_score_thresh & "'"
+            IDX += 1
+
+        End If
+        If _binocular_filter <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_filter"
+            strFieldTexts(IDX) = "'" & _binocular_filter & "'"
+            IDX += 1
+
+        End If
+        If _binocular_sub_disparity <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "binocular_sub_disparity"
+            strFieldTexts(IDX) = "'" & _binocular_sub_disparity & "'"
+            IDX += 1
+
+        End If
+        If _point_meshing <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "point_meshing"
+            strFieldTexts(IDX) = "'" & _point_meshing & "'"
+            IDX += 1
+
+        End If
+        If _poisson_depth <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "poisson_depth"
+            strFieldTexts(IDX) = "'" & _poisson_depth & "'"
+            IDX += 1
+
+        End If
+        If _poisson_solver_divide <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "poisson_solver_divide"
+            strFieldTexts(IDX) = "'" & _poisson_solver_divide & "'"
+            IDX += 1
+
+        End If
+        If _poisson_samples_per_node <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "poisson_samples_per_node"
+            strFieldTexts(IDX) = "'" & _poisson_samples_per_node & "'"
+            IDX += 1
+
+        End If
+        If _KoujiPath <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "KoujiPath"
+            strFieldTexts(IDX) = "'" & _KoujiPath & "'"
+            IDX += 1
+
+        End If
+        If _SelectedImageIDs <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "SelectedImageIDs"
+            strFieldTexts(IDX) = "'" & _SelectedImageIDs & "'"
+            IDX += 1
+
+        End If
+        If _OutputPath <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "OutputPath"
+            strFieldTexts(IDX) = "'" & _OutputPath & "'"
+            IDX += 1
+
+        End If
+        If _ImageHenkanTime <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "ImageHenkanTime"
+            strFieldTexts(IDX) = "'" & _ImageHenkanTime & "'"
+            IDX += 1
+
+        End If
+        If _ReconstructTime <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "ReconstructTime"
+            strFieldTexts(IDX) = "'" & _ReconstructTime & "'"
+            IDX += 1
+
+        End If
+        If _OutputTime <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "OutputTime"
+            strFieldTexts(IDX) = "'" & _OutputTime & "'"
+            IDX += 1
+
+        End If
+        If _CreateDate <> "" Then
+            ReDim Preserve strFieldNames(IDX)
+            ReDim Preserve strFieldTexts(IDX)
+            strFieldNames(IDX) = "CreateDate"
+            strFieldTexts(IDX) = "'" & _CreateDate & "'"
+            IDX += 1
+
+        End If
+
+
+    End Sub
+
+End Class
+
+

@@ -1,0 +1,475 @@
+﻿<Window x:Class="TargetSetting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ターゲット設定" Height="544" Width="1217" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="DataListColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="#FF696969"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+        </Style>
+    </Window.Resources>
+    <Grid Height="510" Width="1199" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+        <TabControl Height="425" TabStripPlacement="Left" HorizontalAlignment="Left" Margin="10,10,0,0" Name="Tab_TargetSetting" VerticalAlignment="Top" Width="1169">
+            <TabItem Header="ターゲット" Name="tabTarget" Height="50" Width="140">
+                <Grid Width="1020" HorizontalAlignment="Center" VerticalAlignment="Top" Height="420">
+                    <DataGrid AutoGenerateColumns="False" Height="352" HorizontalAlignment="Left" 
+                              Margin="8,6,0,0" Name="Grid_Target" VerticalAlignment="Top" Width="700" 
+                              HorizontalContentAlignment="Left" DataContext="{Binding}"
+                              ColumnHeaderStyle="{StaticResource DataListColumnHeaderStyle}" RowHeight="40">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn MinWidth="1" Width="1" />
+                            <DataGridTextColumn Header="TG番号" x:Name="Target_Number" Binding="{Binding TargetNumber, UpdateSourceTrigger=PropertyChanged}" CanUserResize="True" Width="75" IsReadOnly="False"> 
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="オフセットX" x:Name="Offset_X" Binding="{Binding TargetOffsetX, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" CanUserResize="True" Width="110" >
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="オフセットY" x:Name="Offset_Y" Binding="{Binding TargetOffsetY, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="110" >
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="オフセットZ" x:Name="Offset_Z" Binding="{Binding TargetOffsetZ, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="110" >
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="説明" Width="*" Binding="{Binding TargetInfo}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="追加" Height="50" HorizontalAlignment="Left" Margin="6,364,0,0" Name="Button_ADD" VerticalAlignment="Top" Width="100" />
+                    <Button Content="削除" Height="50" HorizontalAlignment="Left" Margin="126,364,0,0" Name="Button_DEL" VerticalAlignment="Top" Width="100" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="スケール・座標系" Name="tabScale" Height="50">
+                <Grid Height="420" Name="Grid1" Width="1020" HorizontalAlignment="Left" VerticalAlignment="Top" OverridesDefaultStyle="False" UseLayoutRounding="False">
+                    <Label Content="[スケール]" Height="28" HorizontalAlignment="Left" Margin="10,0,0,0" Name="Label_Kijun" VerticalAlignment="Top" Width="150" FontWeight="Bold" FontSize="14"/>
+                    <DataGrid AutoGenerateColumns="False" Height="332" HorizontalAlignment="Left" 
+                              Margin="9,25,0,0" Name="Grid_Kijun" VerticalAlignment="Top" Width="521"
+                              ColumnHeaderStyle="{StaticResource DataListColumnHeaderStyle}" RowHeight="40" IsHitTestVisible="True"
+                              ToggleButton.Checked="Scale_Checked" 
+                              ToggleButton.Unchecked="Scale_Unchecked"
+                              TextBoxBase.TextChanged="Scale_TextChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn MinWidth="1" Width="1" />
+                            <DataGridTextColumn Header="寸法名" Width="*" Binding="{Binding SunpoName}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="寸法マーク" MaxWidth="80" Width="80" Binding="{Binding SunpoMark}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="長さ" Width="80" Binding="{Binding KiteiVal, StringFormat={}{0:N2}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTemplateColumn Header="始点TG番号" Width="80" >
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding StartTarget, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding CoordTargets}" 
+                                                  IsEditable="True" IsReadOnly="False" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding StartTarget, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                   HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="終点TG番号" Width="80" >
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding EndTarget, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding CoordTargets}" 
+                                                  IsEditable="True" IsReadOnly="False"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding EndTarget, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                   HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn IsReadOnly="True" Width="80" Header="基準スケール">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding flgScale, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                                        </CheckBox>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Content="[座標系]" Height="28" HorizontalAlignment="Left" Margin="550,0,0,0" Name="Label_zahyou" VerticalAlignment="Top" Width="101" FontWeight="Bold" FontSize="14"/>
+                    <Button Content="追加" Height="50" HorizontalAlignment="Left" Margin="11,363,0,0" Name="Button_Kijun_ADD" VerticalAlignment="Top" Width="100" />
+                    <Button Content="削除" Height="50" HorizontalAlignment="Left" Margin="131,363,531,0" Name="Button_Kijun_DEL" VerticalAlignment="Top" Width="100" />
+                    <ComboBox Height="24" HorizontalAlignment="Right" Margin="0,29,6,0" Name="Combo_Zahyou" VerticalAlignment="Top" Width="377">
+                        <ComboBoxItem Content="①原点TG,X軸TG(正),Y方向TG(正)" VerticalContentAlignment="Center" />
+                        <ComboBoxItem Content="②原点TG,X軸TG①,X軸TG②,平面TG①,平面TG②,平面TG③,高さ補正" VerticalContentAlignment="Center" />
+                        <ComboBoxItem Content="③原点TG,X軸TG①,X軸TG②,平面TG①,平面TG②,平面TG③" VerticalContentAlignment="Center" />
+                        <ComboBoxItem Content="④原点TG,X軸TG(正),Z軸TG(始点),Z軸TG(終点)" VerticalContentAlignment="Center" />
+                        <ComboBoxItem Content="⑤原点TG,X軸TG(正),Y方向TG(負)" VerticalContentAlignment="Center" />
+                        <ComboBoxItem Content="⑥平面TG①(原点),平面TG②,平面TG③,X軸TG(始点),X軸TG(終点)" VerticalContentAlignment="Center" />
+                        <ComboBoxItem Content="⑦平面TG①,平面TG②,平面TG③,原点TG,X方向TG" />
+                    </ComboBox>
+                    <Label Content="座標定義方法:" Height="28" HorizontalAlignment="Left" Margin="550,28,0,0" Name="Label1" VerticalAlignment="Top" />
+                    <Image Height="200" HorizontalAlignment="Left" Margin="805,64,0,0" Name="Image_Zahyou" Stretch="Fill" VerticalAlignment="Top" Width="200" />
+                    <DataGrid AutoGenerateColumns="False" Height="270" HorizontalAlignment="Left" Margin="554,64,0,0" Name="Grid_zahyou" VerticalAlignment="Top" Width="221" ColumnHeaderStyle="{StaticResource DataListColumnHeaderStyle}" RowHeight="40">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="TG種類" Width="*" Binding="{Binding CT_Type}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center" />
+                                        <Setter Property="VerticalAlignment" Value="Center" />
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTemplateColumn Header="TG番号" Width="80">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding CT_No, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding CoordTargets}" IsEditable="True" IsReadOnly="False" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding CT_No, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Height="48" HorizontalAlignment="Left" Margin="248,364,0,0" Name="Label_note" VerticalAlignment="Top" Width="295" Foreground="#FFBE2C2C" Content="aaa" />
+                    <Label Content="高さ補正：" Height="33" HorizontalAlignment="Left" Margin="585,337,0,0" Name="Label_Height" VerticalAlignment="Top" Width="98" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" />
+                    <Label Content="(mm)" Height="29" HorizontalAlignment="Right" Margin="0,341,243,0" Name="Label_Unit" VerticalAlignment="Top" Width="46" FontSize="10" />
+                    <TextBox Height="25" HorizontalAlignment="Left" Margin="678,341,0,0" Name="Text_Height" VerticalAlignment="Top" Width="55" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Text="0.0" BorderBrush="#73000000" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="２点による線分・長さ" Name="tabLine" Height="50">
+                <Grid Height="420" Name="Grid2" Width="1020" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <DataGrid AutoGenerateColumns="False" Height="350" HorizontalAlignment="Left" 
+                              Margin="11,6,0,0" Name="Grid_Line" VerticalAlignment="Top" Width="900" 
+                              ColumnHeaderStyle="{StaticResource DataListColumnHeaderStyle}" RowHeight="40">
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Setter Property="Height" Value="Auto" />
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Height" Value="Auto" />
+                            </Style>
+                        </DataGrid.CellStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn MinWidth="1" Width="1" />
+                            <DataGridTextColumn Header="寸法マーク" Width="100" Binding="{Binding SunpoMark}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="寸法名" Width="*" Binding="{Binding SunpoName}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTemplateColumn Header="始点TG番号" Width="85">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding StartTarget, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding CoordTargets}" 
+                                                  IsEditable="True" IsReadOnly="False"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding StartTarget, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="終点TG番号" Width="85">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding EndTarget, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding CoordTargets}" 
+                                                  IsEditable="True" IsReadOnly="False"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding EndTarget, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="次元" Width="50">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding Dimension}" ItemsSource="{Binding Dimensions}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Dimension}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="画層" Width="100" Binding="{Binding Layer}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding LineColor}" ItemsSource="{Binding LineColors}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding LineColor}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="150">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding LineType}" ItemsSource="{Binding LineTypes}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding LineType}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="追加" Height="50" HorizontalAlignment="Left" Margin="11,363,0,0" Name="Button_Line_ADD" VerticalAlignment="Top" Width="100" />
+                    <Button Content="削除" Height="50" HorizontalAlignment="Left" Margin="131,363,531,0" Name="Button_Line_DEL" VerticalAlignment="Top" Width="100" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="ポリライン" Name="tabPolyLine" Height="50">
+                <Grid Height="418" Name="Grid3" Width="1020" VerticalAlignment="Top" HorizontalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="225*" />
+                        <RowDefinition Height="193*" />
+                    </Grid.RowDefinitions>
+                    <DataGrid AutoGenerateColumns="False" Height="350" HorizontalAlignment="Left" Margin="11,6,0,0" 
+                                  Name="Grid_PolyLine" VerticalAlignment="Top" Width="900"
+                                  ColumnHeaderStyle="{StaticResource DataListColumnHeaderStyle}" RowHeight="40" Grid.RowSpan="2">
+                            <DataGrid.Columns>
+                            <DataGridTextColumn MinWidth="1" Width="1" />
+                            <DataGridTextColumn Header="寸法マーク" Width="100" Binding="{Binding SunpoMark}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="寸法名" Width="*" Binding="{Binding SunpoName}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="頂点TG番号リスト" Binding="{Binding VertexTarget, UpdateSourceTrigger=PropertyChanged}" Width="195" >
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="TextWrapping" Value="Wrap"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTemplateColumn Header="次元" Width="50">
+                                    <DataGridTemplateColumn.CellEditingTemplate>
+                                        <DataTemplate>
+                                            <ComboBox SelectedItem="{Binding Dimension}" ItemsSource="{Binding Dimensions}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Dimension}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTextColumn Header="画層" Width="100" Binding="{Binding Layer}">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style TargetType="TextBlock">
+                                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTemplateColumn Header="線色" Width="100">
+                                    <DataGridTemplateColumn.CellEditingTemplate>
+                                        <DataTemplate>
+                                            <ComboBox SelectedItem="{Binding LineColor}" ItemsSource="{Binding LineColors}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding LineColor}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn Header="線種" Width="150">
+                                    <DataGridTemplateColumn.CellEditingTemplate>
+                                        <DataTemplate>
+                                            <ComboBox SelectedItem="{Binding LineType}" ItemsSource="{Binding LineTypes}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding LineType}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    <Button Content="追加" Height="50" HorizontalAlignment="Left" Margin="11,138,0,0" Name="Button_PolyLine_ADD" VerticalAlignment="Top" Width="100" Grid.Row="1" />
+                    <Button Content="削除" Height="50" HorizontalAlignment="Left" Margin="131,138,0,0" Name="Button_PolyLine_DEL" VerticalAlignment="Top" Width="100" Grid.Row="1" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="１点による円"  Name="tabCircle" Height="50">
+                <Grid Height="420" Name="Grid5" Width="1020" VerticalAlignment="Top" HorizontalAlignment="Center">
+                    <DataGrid AutoGenerateColumns="False" Height="350" HorizontalAlignment="Left" Margin="11,6,0,0" 
+                              Name="Grid_Circle" VerticalAlignment="Top" Width="900"
+                              ColumnHeaderStyle="{StaticResource DataListColumnHeaderStyle}" RowHeight="40">
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Setter Property="Height" Value="Auto" />
+                            </Style>
+                        </DataGrid.RowStyle>
+                        <DataGrid.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Height" Value="Auto" />
+                            </Style>
+                        </DataGrid.CellStyle>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn MinWidth="1" Width="1" />
+                            <DataGridTextColumn Header="寸法マーク" Width="100" Binding="{Binding SunpoMark}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="寸法名" Width="*" Binding="{Binding SunpoName}" IsReadOnly="False">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="中心点TG番号リスト" Binding="{Binding CenterTarget, UpdateSourceTrigger=PropertyChanged}" Width="195" >
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                        <Setter Property="TextWrapping" Value="Wrap"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="直径" Binding="{Binding Diameter, UpdateSourceTrigger=PropertyChanged}" Width="50" >
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Right"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTextColumn Header="画層" Width="100" Binding="{Binding Layer}">
+                                <DataGridTextColumn.ElementStyle>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="HorizontalAlignment" Value="Center"/>
+                                        <Setter Property="VerticalAlignment" Value="Center"/>
+                                    </Style>
+                                </DataGridTextColumn.ElementStyle>
+                            </DataGridTextColumn>
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding LineColor}" ItemsSource="{Binding LineColors}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding LineColor}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="150">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding LineType}" ItemsSource="{Binding LineTypes}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding LineType}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="追加" Height="50" HorizontalAlignment="Left" Margin="11,363,0,0" Name="Button_Circle_ADD" VerticalAlignment="Top" Width="100" />
+                    <Button Content="削除" Height="50" HorizontalAlignment="Left" Margin="131,363,0,0" Name="Button_Circle_DEL" VerticalAlignment="Top" Width="100" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="更新" Height="50" HorizontalAlignment="Right" Margin="0,0,157,12" Name="Button_OK" VerticalAlignment="Bottom" Width="100" />
+        <Button Content="キャンセル" Height="50" HorizontalAlignment="Right" Margin="0,0,37,12" Name="Button_Cancel" VerticalAlignment="Bottom" Width="100" />
+    </Grid>
+</Window>

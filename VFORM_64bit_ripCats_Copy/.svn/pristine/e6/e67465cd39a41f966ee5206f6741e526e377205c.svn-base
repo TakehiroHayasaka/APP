@@ -1,0 +1,79 @@
+[MENU]
+M_ZAHYOU	= 0
+M_SUNPO		= 0
+M_ZUKEI 	= 0
+
+
+[Command]
+CT_offset	= 1
+B_3DOUT 	= 1
+
+B_DXFOUT	= 1
+
+D_URAOMOTE	= 0
+B_KENSAOUT 	= 0
+NINITEN		= 1
+POLYLINE	= 1
+
+
+
+
+[Kaiseki]
+KaisekiSetting	= 0		; 一眼：0 据置：1
+PairByBasePoint	= 0		; 一眼：0 据置：2
+
+TargetThreshold	= -1
+STtoCT		= 0
+CTsize		= 5
+CommonCTnum	= 3
+CTargetType	= 0
+AllParamTarget	= 0
+PolylineConnect	= 1 
+Edge2dPointMax  =10000
+mult 		= 5.0
+alpha 		= 1
+low 		= 2
+hi 		= 25
+CalcPoseByBasePoint = 1
+PatternDispMode = 1
+
+
+
+[DesignValueCapture]
+Kugiru 		= ,
+CSV_FORMAT 	= LABEL,X,Y,Z
+MAX_X		= 3.0
+MAX_Y		= 3.0
+MAX_Z		= 3.0
+MAX_L		= 3.0
+MIN_X		= -3.0
+MIN_Y		= -3.0
+MIN_Z		= -3.0
+MIN_L		= -3.0
+LABEL_SARCH_LENGE	= 10.0
+
+[Sueoki]
+CSVOUTKIJUN     = 0
+
+[TargetDetectParam]
+DispMismatchCT = 1
+
+;ターゲットタイプ選択  ○新型：NewTG　○：旧型TG：OldTG ○自由設定:FreeTG
+TagetType 	= FreeTG
+
+SSAreaThreshold = 15
+
+;射影変換用4点抽出用パラメータ 	;TG内枠輪郭の分割モードを指定○lines ○lines_circles ○lines_ellipses
+Mode		= lines
+SmoothCont 	=3;       = 5	;TG内枠輪郭を平均化するのに使われた点の数
+MaxLineDist1	=4.5; = 2.5	;TG内枠輪郭と近似するライン間の最大距離[pix]（繰り返し1回目）
+MaxLineDist2	=2.0; = 1.0	;TG内枠輪郭と近似するライン間の最大距離[pix]（繰り返し2回目）
+
+;FreeTG設定時に有効
+TargetUchiWakuSize = 500
+PaternGrid = 66
+PaternGridInterval = 88
+
+[ReconstParam]
+Sampling = 2
+Mesh     = 1

@@ -1,0 +1,473 @@
+﻿<Window x:Class="KentouKihonInfoTabDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+    Title="VFORM" Height="598" Width="1103" xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" xmlns:my1="clr-namespace;assembly=YCM" WindowStyle="SingleBorderWindow">
+    <Grid>
+        <TabControl Name="TabControl1" TabStripPlacement="Left" Margin="186,100,0,0">
+            <TabItem Header="基本情報" Name="TabKihonInfo" Width="100" Height="46">
+                <Grid>
+                    <Label Content="工番データ保存先：" Height="38" FontSize ="16"  HorizontalAlignment="Left" Margin="25,13,0,0" Name="Label6" VerticalAlignment="Top" />
+                    <TextBox Height="29" FontSize ="16" Margin="178,13,260,0" Name="TxtKojiData" VerticalAlignment="Top" Text="C:\工事データ" />
+                    <Button Content="参照" Height="34" Margin="0,10,179,0" Name="BtnKojiData" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" />
+                    <CheckBox Content="自動" Height="34" HorizontalAlignment="Right" Margin="0,19,85,0" Name="CheckBox1" VerticalAlignment="Top" Width="80" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" FlowDirection="LeftToRight" />
+                    <GroupBox Header="以下の項目を入力してください。" Height="317" HorizontalAlignment="Left" Margin="6,99,0,0" Name="GroupBox6" VerticalAlignment="Top" Width="648">
+                        <Grid Name="TLP4" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="25*" />
+                                <ColumnDefinition Width="75*" />
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </GroupBox>
+                    <Button Content="他計測データから参照" HorizontalAlignment="Left" Margin="6,0,0,0" Name="BtnT2KojiSansyou" Width="126" Height="38" VerticalAlignment="Bottom" />
+                    <Button Content="ターゲット設定" Height="38" HorizontalAlignment="Left" Margin="150,0,0,0" Name="Button_TargetSetting" VerticalAlignment="Bottom" Width="110" Visibility="Visible"  />
+                    <Button Content="次へ" Margin="0" Name="BtnT2Next" Height="38" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="86" />
+                    <Button Content="前へ" Margin="0,0,98,0" Name="BtnT2Back" Height="38" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="86" />
+                    <Label Content="工番：" Height="38" FontSize ="16"  HorizontalAlignment="Left" Margin="25,47,0,0" Name="Label7" VerticalAlignment="Top" />
+                    <TextBox Height="29" FontSize ="16" Margin="178,51,260,0" Name="TxtKojiDataFolder" VerticalAlignment="Top" Text="計測N" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="規定値" Name="TabKiteiti" Width="100" Height="46">
+                <Grid>
+                    <DataGrid AutoGenerateColumns="False" Name="DataGridView6" ColumnHeaderHeight="22" SelectionMode="Extended" Margin="0,30,0,40" 
+                              HorizontalGridLinesBrush="#FFECE9D8" VerticalGridLinesBrush="#FFECE9D8">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="No" Binding="{Binding No}" Width="35" CellStyle="{StaticResource DataGrid_Cell_Right}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="計測セット" Binding="{Binding MeasurementSet}" Width="100" CellStyle="{StaticResource DataGrid_Cell_Right}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="記号" Binding="{Binding Bui}" Width="90" IsReadOnly="True" />
+                            <DataGridTextColumn Header="寸法名称" Binding="{Binding Path=KensaItem}" Width="100" IsReadOnly="True" />
+                            <DataGridTextColumn Header="規定値" Binding="{Binding KiteiVal}" Width="100" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                            <DataGridTextColumn Header="最小許容値" Binding="{Binding KiteiMin}" Width="100" CellStyle="{StaticResource DataGrid_Cell_Right}" ClipboardContentBinding="{Binding}" />
+                            <DataGridTextColumn Header="最大許容値" Binding="{Binding KiteiMax}" Width="100" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                            <DataGridTextColumn Header="Targettype" Binding="{Binding Targettype}" Width="100" Visibility="Hidden" />
+                            <DataGridTemplateColumn IsReadOnly="True" Width="40" Header="図化">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding flgOutZu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding ZU_color1}" ItemsSource="{Binding ZU_colors1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ZU_color1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding ZU_LineType1}" ItemsSource="{Binding ZU_LineTypes1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ZU_LineType1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="レイヤ" Width="80" Binding="{Binding ZU_layer}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+
+                            <DataGridTemplateColumn IsReadOnly="True" Width="40" Header="図化">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding sek_flgOutZu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>                
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding sek_ZU_color1}" ItemsSource="{Binding sek_ZU_colors1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding sek_ZU_color1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding sek_ZU_LineType1}" ItemsSource="{Binding sek_ZU_LineTypes1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding sek_ZU_LineType1}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="レイヤ" Width="80" Binding="{Binding sek_ZU_layer}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Content="計測セット" Height="24" HorizontalAlignment="Left" Name="Label"  Margin="50,0,0,0" VerticalAlignment="Top" FontSize="12" />
+                    <ComboBox Height="24" HorizontalAlignment="Left" Name="ComboBox" Margin ="120,0,0,0" VerticalAlignment="Top" Width="50" FontSize="12" />
+                    <Button Content="他計測データから参照" Height="38" HorizontalAlignment="Left" Margin="6,0,0,0" Name="BtnT3KojiSansyou" VerticalAlignment="Bottom" Width="126" />
+                    <Button Content="次へ" Height="38" HorizontalAlignment="Right" Name="BtnT3Next" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="前へ" Height="38" HorizontalAlignment="Right" Margin="0,0,98,0" Name="BtnT3Back" VerticalAlignment="Bottom" Width="86" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="画像" Name="TabGazou" Width="100" Height="46">
+                <Grid>
+                    <GroupBox Header="画像" Margin="10,3,0,110" Name="GroupBox8">
+                        <Grid>
+                            <ListView Margin="8,87,0,0" Name="ListView2">
+                            </ListView>
+                            <RadioButton Content="メモリカードから読み込む" Height="16" HorizontalAlignment="Left" Margin="30,28,0,0" Name="RbtnMemoryCard" VerticalAlignment="Top" FontSize="16" IsChecked="True" />
+                            <RadioButton Content="画像フォルダを指定する" Height="16" HorizontalAlignment="Left" Margin="30,59,0,0" Name="RbtnGazou" VerticalAlignment="Top" FontSize="16" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="221,25,0,0" Name="TxtMemoryCard" VerticalAlignment="Top" Width="346" FontSize="16" Text="E:\Image" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="221,57,0,0" Name="TxtGazouFolder" VerticalAlignment="Top" Width="346" FontSize="16" Text="C:\Image" />
+                            <Button Content="参照" Height="24" HorizontalAlignment="Left" Margin="575,25,0,0" Name="BtnMemoryCard" VerticalAlignment="Top" Width="75" FontSize="16" />
+                            <Button Content="参照" FontSize="16" Height="24" HorizontalAlignment="Left" Margin="575,57,0,0" Name="BtnGazouFolder" VerticalAlignment="Top" Width="75" />
+                            <Button Content="画像取得" FontSize="16" Height="48" HorizontalAlignment="Left" Margin="675,25,0,0" Name="BtnCameraInput" VerticalAlignment="Top" Width="75" />
+
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="カメラ" Margin="9,0,0,49" Name="GroupBox3" Height="64" VerticalAlignment="Bottom">
+                        <Grid>
+                            <ComboBox Height="24" HorizontalAlignment="Left" Margin="130,4,0,0" Name="CmbCamera" VerticalAlignment="Top" Width="343" FontSize="16">
+                                <ComboBoxItem Content="aaa" />
+                                <ComboBoxItem Content="bbb" />
+                                <ComboBoxItem Content="ccc" />
+                            </ComboBox>
+                            <Label Content="カメラ機種名：" Height="28" HorizontalAlignment="Left" Margin="27,4,0,0" Name="Label1" VerticalAlignment="Top" FontSize="16" />
+                            <DataGrid AutoGenerateColumns="False" Height="24" HorizontalAlignment="Left" Margin="520,4,0,0" Name="DataGridView7" VerticalAlignment="Top" Width="49" Visibility="Hidden" />
+                            <TextBox FontSize="16" Height="23" HorizontalAlignment="Left" Margin="575,4,0,0" Name="TxtCamera" Text="カメラ１" VerticalAlignment="Top" Width="49" Visibility="Hidden" />
+                            <!--Button Content="カメラパラメータ読込" Height="37" HorizontalAlignment="Left" Margin="374,0,0,6" Name="BtnReadCamParam" VerticalAlignment="Bottom" Width="121" FontFamily="カメラパラメータ読込" /-->
+
+                        </Grid>
+                    </GroupBox>
+                    <Button Content="検査表出力" Height="38" Margin="0,0,197,0" Name="BtnT4_FrmOut" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="86" />
+                    <Button Content="次へ" Height="38" HorizontalAlignment="Right" Name="BtnT4Next" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="前へ" Height="38" HorizontalAlignment="Right" Margin="0,0,98,0" Name="BtnT4Back" VerticalAlignment="Bottom" Width="86" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="解析" Name="TabKaiseki" Width="100" Height="46" >
+                <Grid Name="Grid_Analysis">
+                    <DataGrid AutoGenerateColumns="False" Name="DataGridView8"  
+                              VerticalAlignment="Top" IsReadOnly="True" Margin="0,0,-1,40" 
+                              HorizontalGridLinesBrush="#FFECE9D8" VerticalGridLinesBrush="#FFECE9D8">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="測点名" Width="70" Binding="{Binding SokutenName}"/>
+                            <DataGridTextColumn Header="X" Width="110" CellStyle="{StaticResource DataGrid_Cell_Right}" Binding="{Binding X}"/>
+                            <DataGridTextColumn Header="Y" Width="110" CellStyle="{StaticResource DataGrid_Cell_Right}" Binding="{Binding Y}"/>
+                            <DataGridTextColumn Header="Z" Width="110" CellStyle="{StaticResource DataGrid_Cell_Right}" Binding="{Binding Z}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="解析実行" Height="38" HorizontalAlignment="Left" Margin="6,0,0,0" Name="BtnT5Run" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="次へ" Height="38" HorizontalAlignment="Right" Name="BtnT5Next" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="前へ" Height="38" HorizontalAlignment="Right" Margin="0,0,98,0" Name="BtnT5Back" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="詳細確認" Height="38" HorizontalAlignment="Left" Margin="105,0,0,0" Name="BtnT5Kakunin" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="DXF出力" HorizontalAlignment="Left" Margin="400,0,0,0" Name="Button2" Width="75" FontSize="16" Height="38" VerticalAlignment="Bottom" />
+                    <Button Content="３次元座標出力（CSV)" Height="38" HorizontalAlignment="Left" Margin="250,0,0,0" Name="Btn3DOut" VerticalAlignment="Bottom" Width="90" />
+                    <!--<wfi:WindowsFormsHost Name="Grid_MainFrame">
+                    </wfi:WindowsFormsHost>-->
+                </Grid>
+            </TabItem>
+            <TabItem Header="寸法確認"  Name="TabKakunin" Width="100" Height="46">
+                <Grid Name="GridKakunin">
+                    <!--DataGrid AutoGenerateColumns="False" Name="
+                    " ItemsSource="{Binding m_KakuninItems}" Margin="0,0,-1,40" HorizontalGridLinesBrush="#FFECE9D8" VerticalGridLinesBrush="#FFECE9D8" DataContext="{Binding}"-->
+                    <DataGrid AutoGenerateColumns="False" Margin="0,30,-1,40" Name="DataGridView9" DataContext="{Binding}" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="No" Width="35" Binding="{Binding No}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                            <DataGridTextColumn Header="計測セット" Binding="{Binding MeasurementSet}" Width="100" CellStyle="{StaticResource DataGrid_Cell_Right}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="部位" Width="70" Binding="{Binding Bui}"/>
+                            <DataGridTextColumn Header="検査項目" Width="150" Binding="{Binding KensaItem}"/>
+                            <DataGridTextColumn Header="規定値" Width="85" Binding="{Binding KiteiVal}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                            <DataGridTextColumn Header="設計値" Width="85" Binding="{Binding sek_Val}" CellStyle="{StaticResource DataGrid_Cell_Right}"/> <!-- 20161110 baluu ADD -->
+                            <DataGridTextColumn Header="最小許容値" Width="80" Binding="{Binding KiteiMin}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                            <DataGridTextColumn Header="最大許容値" Width="80" Binding="{Binding KiteiMax}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                            <DataGridTextColumn Header="計測値" Width="85" Binding="{Binding SunpoVal}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+                            <DataGridTextColumn Header="差（計測値-設計値）" Width="85" Binding="{Binding sek_sunpo_Val}" CellStyle="{StaticResource DataGrid_Cell_Right}"/> <!-- 20161110 baluu ADD -->
+                            <DataGridTextColumn Header="合否" Width="50" Binding="{Binding flg_gouhi2}" CellStyle="{StaticResource DataGrid_Cell_Center}"/>
+                            <!--<DataGridTextColumn.CellStyle>
+                                    <Style TargetType="DataGridCell">
+                                        <Setter Property="Background" Value="{Binding flg_gouhiBrush}"></Setter>
+                                    </Style>
+                                </DataGridTextColumn.CellStyle>-->
+                            <DataGridTextColumn Header="参照ターゲット" Width="100" Binding="{Binding CTIDs}" CellStyle="{StaticResource DataGrid_Cell_Center}"/>
+                            <!--DataGridCheckBoxColumn Header="図化" Width="40" Binding="{Binding flgOutZu}"/-->
+                            <DataGridTemplateColumn IsReadOnly="True" Width="40" Header="図化">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding flgOutZu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!--DataGridComboBoxColumn  Header="線色" Width="100" CellStyle="{StaticResource DataGrid_Cell_Center}" SelectedValueBinding="{Binding ZU_colors2}"
+                                            DisplayMemberPath="{Binding ZU_color2}"
+                                                SelectedValuePath="{Binding ZU_color2}" SelectedItemBinding="{Binding}">
+                            </DataGridComboBoxColumn-->
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding ZU_color2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding ZU_colors2}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ZU_color2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding ZU_LineType2}" ItemsSource="{Binding ZU_LineTypes2}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ZU_LineType2}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="レイヤ" Width="80" Binding="{Binding ZU_layer}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+
+                            <DataGridTemplateColumn IsReadOnly="True" Width="40" Header="図化">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding sek_flgOutZu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <!--DataGridComboBoxColumn  Header="線色" Width="100" CellStyle="{StaticResource DataGrid_Cell_Center}" SelectedValueBinding="{Binding ZU_colors2}"
+                                            DisplayMemberPath="{Binding ZU_color2}"
+                                                SelectedValuePath="{Binding ZU_color2}" SelectedItemBinding="{Binding}">
+                            </DataGridComboBoxColumn-->
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding sek_ZU_color2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding sek_ZU_colors2}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding sek_ZU_color2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding sek_ZU_LineType2}" ItemsSource="{Binding sek_ZU_LineTypes2}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding sek_ZU_LineType2}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="レイヤ" Width="80" Binding="{Binding sek_ZU_layer}" CellStyle="{StaticResource DataGrid_Cell_Right}"/>
+
+                        </DataGrid.Columns>
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Setter Property="Background" Value="{Binding flg_gouhiBrush}" />
+                            </Style>
+                        </DataGrid.RowStyle>
+                    </DataGrid>
+                    <DataGrid AutoGenerateColumns="False" Margin="0,30,183,40" Name="DGW_KekkaKakunin" DataContext="{Binding}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="No" Width="35" Binding="{Binding SunpoID}"/>
+                            <DataGridTextColumn Header="計測セット" Binding="{Binding MeasurementSet}" Width="100" CellStyle="{StaticResource DataGrid_Cell_Right}" IsReadOnly="True" />
+                            <DataGridTextColumn Header="項目名" Width="90" Binding="{Binding SunpoName}"/>
+                            <DataGridTextColumn Header="種類" Width="95" Binding="{Binding Calcname}"/>
+                            <DataGridTextColumn Header="参照ターゲット" Width="120" Binding="{Binding CTIDs}"/>
+                            <DataGridTemplateColumn Header="XYZ成分" Width="80">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding seibunXYZ}" ItemsSource="{Binding seibunXYZs}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding seibunXYZ}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTextColumn Header="値" Width="90" Binding="{Binding SunpoVal}"/>
+                            <!--DataGridCheckBoxColumn Header="図化" Width="40" Binding="{Binding flgOutZu}"/-->
+                            <DataGridTemplateColumn IsReadOnly="True" Width="40" Header="図化">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding flgOutZu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding ZU_color}" ItemsSource="{Binding ZU_colors}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ZU_color}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding ZU_LineType}" ItemsSource="{Binding ZU_LineTypes}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ZU_LineType}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn IsReadOnly="True" Width="40" Header="図化">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="{Binding sek_flgOutZu, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                            <DataGridTemplateColumn Header="線色" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding sek_ZU_color}" ItemsSource="{Binding sek_ZU_colors}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding sek_ZU_color}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="線種" Width="100">
+                                <DataGridTemplateColumn.CellEditingTemplate>
+                                    <DataTemplate>
+                                        <ComboBox SelectedItem="{Binding sek_ZU_LineType}" ItemsSource="{Binding sek_ZU_LineTypes}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellEditingTemplate>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding sek_ZU_LineType}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Border Name="PictureBox3_Border" HorizontalAlignment="Right" Width="184" Background="White" Margin="0,30,0,40">
+                        <Image Stretch="Fill" Name="PictureBox3"></Image>
+                    </Border>
+                    <!--<Label Content="出力先：" HorizontalAlignment="Left" Margin="8,0,0,0" Name="Label2" FontSize="16" Width="Auto" VerticalContentAlignment="Top" Height="32" VerticalAlignment="Bottom" />-->
+                    <!--<TextBox HorizontalAlignment="Left" Margin="87,0,0,8" Name="TextBox1" Width="346" Text="C:\工事データ" FontSize="16" Height="23" VerticalAlignment="Bottom" />-->
+                    <Label Content="計測セット" Height="24" HorizontalAlignment="Left" Name="Label11"  Margin="50,0,0,0" VerticalAlignment="Top" FontSize="12" />
+                    <ComboBox Height="24" HorizontalAlignment="Left" Name="ComboBox1" Margin ="120,0,0,0" VerticalAlignment="Top" Width="50" FontSize="12" />
+                    <Button Content="次へ" Height="38" HorizontalAlignment="Right" Name="BtnT6_Next" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="前へ" Height="38" HorizontalAlignment="Right" Margin="0,0,98,0" Name="BtnT6_Back" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="DXF出力" Height="38" HorizontalAlignment="Right" Margin="0,0,196,0" Name="BtnT6_DXF" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="次へ" Height="38" HorizontalAlignment="Right" Margin="0,0,-142,193" Name="BtnT6Next" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="前へ" Height="38" HorizontalAlignment="Right" Margin="0,0,-142,0" Name="BtnT6Back" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="３次元座標出力" Height="38" HorizontalAlignment="Left" Margin="250,0,0,0" Name="Btn3DOut2" VerticalAlignment="Bottom" Width="90" />
+					<Button Content="検査表出力" Height="38" HorizontalAlignment="Right" Margin="0,0,300,0" Name="BtnKensaHyo" VerticalAlignment="Bottom" Width="86" />
+                    <!--<Button Content="設計値/計測値比較" Height="38" HorizontalAlignment="Right" Margin="0,0,400,0" Name="BtnSekkei" VerticalAlignment="Bottom" Width="86" />-->
+                </Grid>
+            </TabItem>
+            <TabItem Header="検査表出力"  Name="TabOut" Width="100" Height="46">
+                <Grid>
+                    <GroupBox Header="出力先" Height="101" HorizontalAlignment="Left" Margin="5,0,0,0" Name="GroupBox1" VerticalAlignment="Top" Width="699">
+                        <Grid>
+                            <Label Content="ファイル名：" Height="28" HorizontalAlignment="Left" Margin="64,21,0,0" Name="Label3" VerticalAlignment="Top" FontSize="16" />
+                            <Label Content="出力先：" Height="28" HorizontalAlignment="Left" Margin="77,48,0,0" Name="Label4" VerticalAlignment="Top" FontSize="16" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="156,21,0,0" Name="TxtOutFileName" VerticalAlignment="Top" Width="346" FontSize="16" Text="チェックシート１" />
+                            <TextBox Height="23" Margin="156,51,0,0" Name="TxtExcelFolder" VerticalAlignment="Top" FontSize="16" Text="C:\工事データ" HorizontalAlignment="Left" Width="346" />
+                            <Button Content="参照" Height="24" HorizontalAlignment="Left" Margin="524,51,0,0" Name="BtnExcelFolder" VerticalAlignment="Top" Width="75" FontSize="16" />
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="テンプレート" Height="67" HorizontalAlignment="Left" Margin="5,107,0,0" Name="GroupBox2" VerticalAlignment="Top" Width="699">
+                        <Grid>
+                            <Label Content="テンプレート名：" Height="28" HorizontalAlignment="Left" Margin="32,10,0,0" Name="Label5" VerticalAlignment="Top" FontSize="16" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="560,10,0,0" Name="TextBox14" VerticalAlignment="Top" Width="55" FontSize="16" Text="製缶チェックシート１" Visibility="Hidden" />
+                            <DataGrid AutoGenerateColumns="False" Height="25" HorizontalAlignment="Left" Margin="621,10,0,0" Name="DataGridView10" VerticalAlignment="Top" Width="43" Visibility="Hidden" />
+                            <ComboBox Height="24" HorizontalAlignment="Left" Margin="156,10,0,0" Name="CmbExcelTemplate" VerticalAlignment="Top" Width="346" FontSize="16" />
+                        </Grid>
+                    </GroupBox>
+                    <Button Content="出力" Height="38" HorizontalAlignment="Left" Margin="6,0,0,0" Name="BtnExcelOut" VerticalAlignment="Bottom" Width="86" />
+                    <Button Content="前へ" Height="38" HorizontalAlignment="Right" Name="BtnT7Back" VerticalAlignment="Bottom" Width="86" Margin="0,0,6,0" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid HorizontalAlignment="Left" Name="GridLeftView" Width="287" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="96" />
+                <RowDefinition Height="363*" />
+            </Grid.RowDefinitions>
+            <Grid.Resources>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="ListViewItem">
+                                <Border Height="64">
+                                    <Grid x:Name="ItemGrid">
+                                        <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                        <Border x:Name="ItemImageBorder" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Green">
+                                            <Image x:Name="ItemImage" Height="60"  HorizontalAlignment="Left" Stretch="Uniform" Source="{Binding Img}" />
+                                        </Border>
+                                        <TextBlock x:Name="ItemText" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"
+                                           TextAlignment="Right" FontSize="18" FontWeight="Bold" 
+                                           Foreground="{StaticResource LightForegroundBrush}" 
+                                           Text="{Binding Text}" />
+                                    </Grid>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="ItemText" Property="Foreground">
+                                            <Setter.Value>
+                                                <SolidColorBrush Color="White">
+                                                </SolidColorBrush>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter TargetName="ItemImageBorder" Property="Background" Value="{StaticResource LightForegroundBrush}" />
+                                        <Setter TargetName="ItemImage" Property="Source" Value="{Binding ImgSeleted}" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="ItemText" Property="Foreground" Value="{StaticResource LightForegroundBrush}" />
+                                        <Setter TargetName="ItemImageBorder" Property="Background" Value="{StaticResource LightBackgroundBrush}" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Grid.Resources>
+            <Image Name="Image1" Stretch="Fill" Height="96" VerticalAlignment="Top" Source="/YCM;component/Image2/PictureBox1.Image.jpg" />
+            <ListView HorizontalAlignment="Center" 
+                      Margin="31,0" Width="225" 
+                      Grid.Row="1" BorderBrush="{x:Null}" 
+                      ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                      ScrollViewer.CanContentScroll="False"
+                      Name="ListViewTabItems">
+                <ListView.Style>
+                    <Style TargetType="ListView">
+                        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                    </Style>
+                </ListView.Style>
+            </ListView>
+        </Grid>
+        <Grid Margin="286,1,0,0" Name="Grid_MainFrame" SnapsToDevicePixels="False">
+            <Border Margin="-1,-1,-1,-1" BorderThickness="1" >
+                <wfi:WindowsFormsHost Name="Host_MainFrame" Margin="-1,-1,-1,47" >
+                </wfi:WindowsFormsHost>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

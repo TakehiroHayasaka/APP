@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings name="ローカル" id="45340f0e-0451-47ae-981c-f1c0ac32bc31" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description>これらはローカル テスト実行用の既定のテスト設定です。</Description>
+  <Deployment>
+    <DeploymentItem filename="YCM\bin\Debug\Interop.IntelliCAD.dll.r132" />
+    <DeploymentItem filename="YCM\bin\Debug\Interop.IntelliCAD.dll.r131" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.exe" />
+    <DeploymentItem filename="YCM\bin\Debug\Microsoft.Windows.Shell.xml" />
+    <DeploymentItem filename="YCM\bin\Debug\CT_SunpoSetting.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\RectangleCT_ID.tup" />
+    <DeploymentItem filename="YCM\bin\Debug\ReakP3D_kekkaMonitor.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\RealP3D_ScaleSetMonitor.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\JikanMonitor.mon" />
+    <DeploymentItem filename="YCM\bin\Debug\RelPoseMonitor.txt" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.exe.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\Interop.HALCONXLib.dll.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\RibbonControlsLibrary.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.exe.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\Interop.HALCONXLib.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\RealP3D_CoordSetMonitor12.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\RibbonControlsLibrary.pdb" />
+    <DeploymentItem filename="YCM\bin\Debug\RibbonControlsLibrary.xml" />
+    <DeploymentItem filename="YCM\bin\Debug\Interop.HALCONXLib.dll.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\AxInterop.HALCONXLib.dll.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\System.Data.DataSetExtensions.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\RealP3D_CoordSetMonitor.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\CT_CoordSetting.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\PointsParam.xml" />
+    <DeploymentItem filename="YCM\bin\Debug\計測システムフォルダ\" />
+    <DeploymentItem filename="YCM\bin\Debug\FBMlib.pdb.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.vshost.exe.manifest" />
+    <DeploymentItem filename="YCM\bin\Debug\FBMlib.dll.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\BAlib.pdb" />
+    <DeploymentItem filename="YCM\bin\Debug\AxInterop.HALCONXLib.dll.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\MSDATASRC.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.pdb.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\dbFBM.mdb" />
+    <DeploymentItem filename="YCM\bin\Debug\BAlib.dll.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\FBMlib.pdb.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.pdb.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\JikanMonitorYti.mon" />
+    <DeploymentItem filename="YCM\bin\Debug\Microsoft.Windows.Shell.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\AxInterop.HALCONXLib.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\CT_ScaleSetting.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\adodb.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\BAlib.pdb.r125" />
+    <DeploymentItem filename="YCM\bin\Debug\FBMlib.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.pdb" />
+    <DeploymentItem filename="YCM\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\Interop.IntelliCAD.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\BAlib.pdb.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\RealP3D_OffsetMonitor.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\CommonCTnum.txt" />
+    <DeploymentItem filename="YCM\bin\Debug\Microsoft.Windows.Shell.pdb" />
+    <DeploymentItem filename="YCM\bin\Debug\OpenGLLib.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\Microsoft.StdFormat.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\stdole.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\CT_Bunrui.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\FBMlib.dll.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.vshost.exe.config" />
+    <DeploymentItem filename="YCM\bin\Debug\FBMlib.pdb" />
+    <DeploymentItem filename="YCM\bin\Debug\BAlib.dll.r128" />
+    <DeploymentItem filename="YCM\bin\Debug\BAlib.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\casProtectLib.dll" />
+    <DeploymentItem filename="YCM\bin\Debug\SunpoKekka.csv" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.exe.config" />
+    <DeploymentItem filename="YCM\bin\Debug\YCM.vshost.exe" />
+  </Deployment>
+  <Execution>
+    <TestTypeSpecific>
+      <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+        <AssemblyResolution>
+          <TestDirectory useLoadContext="true" />
+        </AssemblyResolution>
+      </UnitTestRunConfig>
+    </TestTypeSpecific>
+    <AgentRule name="Execution Agents">
+    </AgentRule>
+  </Execution>
+</TestSettings>

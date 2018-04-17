@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA533025-96FC-4A47-A969-8A03923B131B}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>YCM</RootNamespace>
+    <AssemblyName>YCM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <MyType>Custom</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DefineConstants>IJCAD=7 , HALCON=11 , WPF = 1 ,Anchor =0 ,CT_offset=1,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE", B_KENSAOUT="FALSE", USER="FALSE"</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DefineConstants>IJCAD=7 , WPF = 1,HALCON=11 ,Anchor =0 ,CT_offset=0,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE",B_KENSAOUT="FALSE",USER="FALSE"</DefineConstants>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>3_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Ichigan_Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Win7_Ichigan_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , WPF = 1,HALCON=11 ,Anchor =0 ,CT_offset=0,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE",B_KENSAOUT="FALSE",USER="FALSE"</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Ichigan_Release|x86'">
+    <OutputPath>bin\x86\Win7_Ichigan_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Normal_Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Win7_Sueoki_Normal_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , WPF = 1,HALCON=11 ,Anchor =0 ,CT_offset=0,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE",B_KENSAOUT="FALSE",USER="FALSE"</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Normal_Release|x86'">
+    <OutputPath>bin\x86\Win7_Sueoki_Normal_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_SpecificUser_Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Win7_Sueoki_SpecificUser_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , HALCON=11 , WPF = 1 ,Anchor =0 ,CT_offset=1,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE", B_KENSAOUT="FALSE", USER="FALSE"</DefineConstants>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_SpecificUser_Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Win7_Sueoki_SpecificUser_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_SpecificUser_Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\win10_Sueoki_SpecificUser_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , HALCON=11 , WPF = 1 ,Anchor =0 ,CT_offset=1,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE", B_KENSAOUT="FALSE", USER="FALSE"</DefineConstants>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_SpecificUser_Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\win10_Sueoki_SpecificUser_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Normal_Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\win10_Sueoki_Normal_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , HALCON=11 , WPF = 1 ,Anchor =0 ,CT_offset=1,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE", B_KENSAOUT="FALSE", USER="FALSE"</DefineConstants>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Normal_Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\win10_Sueoki_Normal_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Ichigan_Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\win10_Ichigan_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , WPF = 1,HALCON=11 ,Anchor =0 ,CT_offset=0,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE",B_KENSAOUT="FALSE",USER="FALSE"</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Ichigan_Release|x86'">
+    <OutputPath>bin\x86\win10_Ichigan_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\win10_Sueoki_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , HALCON=11 , WPF = 1 ,Anchor =0 ,CT_offset=1,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE", B_KENSAOUT="FALSE", USER="FALSE"</DefineConstants>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\win10_Sueoki_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Win7_Sueoki_Release\</OutputPath>
+    <DefineConstants>IJCAD=7 , HALCON=11 , WPF = 1 ,Anchor =0 ,CT_offset=1,M_ZAHYOU="FALSE" ,M_SUNPO="FALSE" ,M_ZUKEI="TRUE" ,B_3DOUT="TRUE" ,B_DXFOUT="TRUE" ,D_URAOMOTE="FALSE", B_KENSAOUT="FALSE", USER="FALSE"</DefineConstants>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Win7_Sueoki_Release\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="halcondotnet, Version=11.0.2.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MVTec\HALCON-11.0\bin\dotnet35\halcondotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\DLL\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.IntelliCAD, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\DLL\Interop.IntelliCAD.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Office, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\DLL\Interop.Office.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.VBIDE, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\DLL\Interop.VBIDE.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenGLLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\OpenGLLib.dll</HintPath>
+    </Reference>
+    <Reference Include="RibbonControlsLibrary, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TD_SwigCoreMgd, Version=3.8.2.0, Culture=neutral, PublicKeyToken=8e28356228e490a2, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Teigha3.08\Teigha.NET_vc9dll\exe\vc9dll\TD_SwigCoreMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="TD_SwigDbMgd, Version=3.8.2.0, Culture=neutral, PublicKeyToken=5ccc28765cdf0a88, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Teigha3.08\Teigha.NET_vc9dll\exe\vc9dll\TD_SwigDbMgd.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CDBOperate.vb" />
+    <Compile Include="Common\BTuple.vb" />
+    <Compile Include="Dialog\Data_Vertex.designer.vb">
+      <DependentUpon>Data_Vertex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Data_Vertex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmAutoCalcOffset.Designer.vb">
+      <DependentUpon>frmAutoCalcOffset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmAutoCalcOffset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmNinniTenHenkou.Designer.vb">
+      <DependentUpon>frmNinniTenHenkou.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmNinniTenHenkou.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\KensaHyoOutput.xaml.vb">
+      <DependentUpon>KensaHyoOutput.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\KentouKihonInfoTabDialog.xaml.vb">
+      <DependentUpon>KentouKihonInfoTabDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\KojiDataConf.xaml.vb">
+      <DependentUpon>KojiDataConf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\KojiDataConfUserControl.xaml.vb">
+      <DependentUpon>KojiDataConfUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\MMainGamen.xaml.vb">
+      <DependentUpon>MMainGamen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmResultOutput.Designer.vb">
+      <DependentUpon>frmResultOutput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmResultOutput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\Reconstruction.xaml.vb">
+      <DependentUpon>Reconstruction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\TargetSetting.xaml.vb">
+      <DependentUpon>TargetSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Sekkei_Keisoku.xaml.vb">
+      <DependentUpon>Sekkei_Keisoku.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_3DView.designer.vb">
+      <DependentUpon>YCM_3DView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_3DView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_MainFrame.designer.vb">
+      <DependentUpon>YCM_MainFrame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_MainFrame.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ObjDataStore.vb" />
+    <Compile Include="ObjLoader.vb" />
+    <Compile Include="ObjMaterialLibrary.vb" />
+    <Compile Include="ObjMesh.vb" />
+    <Compile Include="ObjModel.vb" />
+    <Compile Include="ObjTool.vb" />
+    <Compile Include="ObjTypeParsers.vb" />
+    <Compile Include="OD\OD.vb" />
+    <Compile Include="OutputCAD\OutputCAD.vb" />
+    <Compile Include="Ribbon\RibbonMenuControl1.xaml.vb">
+      <DependentUpon>RibbonMenuControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Setting\Sys_Setting.vb" />
+    <Compile Include="TableClass\CameraInfoTable.vb" />
+    <Compile Include="TableClass\ExcelTemplateTable.vb" />
+    <Compile Include="TableClass\KihonInfoTable.vb" />
+    <Compile Include="TableClass\SubInfoTable.vb" />
+    <Compile Include="TableClass\SunpoCalcHouhouTable.vb" />
+    <Compile Include="TableClass\SunpoKaisekiTable.vb" />
+    <Compile Include="TableClass\SunpoSetTable.vb" />
+    <Compile Include="TableClass\TenGunTeigiTable.vb" />
+    <Compile Include="TableClass\TypeInfoTable.vb" />
+    <Compile Include="TableClass\Works.vb" />
+    <Compile Include="TableClass\WorksKihonTable.vb" />
+    <Compile Include="TableClass\WorksTable.vb" />
+    <Compile Include="TestFriends.vb" />
+    <Compile Include="WPF\DispatcherHelper.vb" />
+    <Page Include="Dialog\KensaHyoOutput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialog\KentouKihonInfoTabDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialog\KojiDataConf.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialog\KojiDataConfUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialog\MMainGamen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\Common.vb" />
+    <Compile Include="Common\CommonDB.vb" />
+    <Compile Include="Common\CreateDxf.vb" />
+    <Compile Include="Common\CToffset.vb" />
+    <Compile Include="Common\IOLib.vb" />
+    <Compile Include="Common\KanriModule.vb" />
+    <Compile Include="Common\MatLib.vb" />
+    <Compile Include="Common\MDrawCircle.vb" />
+    <Compile Include="Common\MyHostAppServ.vb" />
+    <Compile Include="Common\YCM_CmdIF.vb" />
+    <Compile Include="Common\YCM_Command.vb" />
+    <Compile Include="Common\YCM_FileIO.vb" />
+    <Compile Include="Common\YCM_LabelCommand.vb" />
+    <Compile Include="Common\YCM_Sunpo.vb" />
+    <Compile Include="Common\YCM_UserPointCommand.vb" />
+    <Compile Include="Dialog\ExtraMainForm.Designer.vb">
+      <DependentUpon>ExtraMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ExtraMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\frmProgressBar.Designer.vb">
+      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\frmProgressBar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\InfoDialog.Designer.vb">
+      <DependentUpon>InfoDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\InfoDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\KiteitiInput.Designer.vb">
+      <DependentUpon>KiteitiInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\KiteitiInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_CADCoordSetting.Designer.vb">
+      <DependentUpon>YCM_CADCoordSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_CADCoordSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_CADOutOption.Designer.vb">
+      <DependentUpon>YCM_CADOutOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_CADOutOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_Coordsetting.Designer.vb">
+      <DependentUpon>YCM_Coordsetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_Coordsetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_CreateMovePos.Designer.vb">
+      <DependentUpon>YCM_CreateMovePos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_CreateMovePos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_CreateMovePosAll.Designer.vb">
+      <DependentUpon>YCM_CreateMovePosAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_CreateMovePosAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_DrawCricle.Designer.vb">
+      <DependentUpon>YCM_DrawCricle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_DrawCricle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_DrawSetting.Designer.vb">
+      <DependentUpon>YCM_DrawSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_DrawSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_ElmSelectFilter.Designer.vb">
+      <DependentUpon>YCM_ElmSelectFilter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_ElmSelectFilter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_LabelResult.designer.vb">
+      <DependentUpon>YCM_LabelResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_LabelResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_LabelSetting.Designer.vb">
+      <DependentUpon>YCM_LabelSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_LabelSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_MovePosList.Designer.vb">
+      <DependentUpon>YCM_MovePosList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_MovePosList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_ScaleSetting.Designer.vb">
+      <DependentUpon>YCM_ScaleSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_ScaleSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_UserPointBatchListResult.Designer.vb">
+      <DependentUpon>YCM_UserPointBatchListResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_UserPointBatchListResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\YCM_UserPointBatchListSelect.Designer.vb">
+      <DependentUpon>YCM_UserPointBatchListSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\YCM_UserPointBatchListSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Element\CCamera.vb" />
+    <Compile Include="Element\Ccircle.vb" />
+    <Compile Include="Element\CcirclePoint.vb" />
+    <Compile Include="Element\CElment.vb" />
+    <Compile Include="Element\CLabelText.vb" />
+    <Compile Include="Element\CLookPoint.vb" />
+    <Compile Include="Element\CRay.vb" />
+    <Compile Include="Element\CUserEnt.vb" />
+    <Compile Include="Element\CUserLine.vb" />
+    <Compile Include="Geo\CObjectArray.vb" />
+    <Compile Include="Geo\GeoCommon.vb" />
+    <Compile Include="Geo\GeoCurve.vb" />
+    <Compile Include="Geo\GeoLine.vb" />
+    <Compile Include="Geo\GeoMatrix.vb" />
+    <Compile Include="Geo\GeoModule.vb" />
+    <Compile Include="Geo\GeoPlane.vb" />
+    <Compile Include="Geo\GeoPoint.vb" />
+    <Compile Include="Geo\GeoVector.vb" />
+    <Compile Include="Geo\MathModule.vb" />
+    <Compile Include="Geo\Math_Circle.vb" />
+    <Compile Include="IJCAD\IJCAD7.vb" />
+    <Compile Include="IJCAD\StringArray.vb" />
+    <Compile Include="IJCAD\test1.vb" />
+    <Compile Include="IJCAD\Test2.vb" />
+    <Compile Include="IJCAD\UtilModule.vb" />
+    <Compile Include="IJCAD\UtilProc.vb" />
+    <Page Include="Dialog\Reconstruction.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Dialog\TargetSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dialog\Sekkei_Keisoku.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dictionary1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ribbon\RibbonMenuControl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="ADODB" />
+    <Import Include="OpenGLLib" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Runtime" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Dialog\Data_Vertex.resx">
+      <DependentUpon>Data_Vertex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ExtraMainForm.resx">
+      <DependentUpon>ExtraMainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmAutoCalcOffset.resx">
+      <DependentUpon>frmAutoCalcOffset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmNinniTenHenkou.resx">
+      <DependentUpon>frmNinniTenHenkou.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmProgressBar.resx">
+      <DependentUpon>frmProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\InfoDialog.resx">
+      <DependentUpon>InfoDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\KiteitiInput.resx">
+      <DependentUpon>KiteitiInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\frmResultOutput.resx">
+      <DependentUpon>frmResultOutput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_3DView.resx">
+      <DependentUpon>YCM_3DView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_CADCoordSetting.resx">
+      <DependentUpon>YCM_CADCoordSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_CADOutOption.resx">
+      <DependentUpon>YCM_CADOutOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_Coordsetting.resx">
+      <DependentUpon>YCM_Coordsetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_CreateMovePos.resx">
+      <DependentUpon>YCM_CreateMovePos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_CreateMovePosAll.resx">
+      <DependentUpon>YCM_CreateMovePosAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_DrawCricle.resx">
+      <DependentUpon>YCM_DrawCricle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_DrawSetting.resx">
+      <DependentUpon>YCM_DrawSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_ElmSelectFilter.resx">
+      <DependentUpon>YCM_ElmSelectFilter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_LabelResult.resx">
+      <DependentUpon>YCM_LabelResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_LabelSetting.resx">
+      <DependentUpon>YCM_LabelSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_MainFrame.resx">
+      <DependentUpon>YCM_MainFrame.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_MovePosList.resx">
+      <DependentUpon>YCM_MovePosList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_ScaleSetting.resx">
+      <DependentUpon>YCM_ScaleSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_UserPointBatchListResult.resx">
+      <DependentUpon>YCM_UserPointBatchListResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\YCM_UserPointBatchListSelect.resx">
+      <DependentUpon>YCM_UserPointBatchListSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Image2\KentouKihonInfoTabDialog\Thumbs.db" />
+    <None Include="Image2\MMainGamen\Thumbs.db" />
+    <None Include="Image2\Thumbs.db" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\057_camera.png" />
+    <Resource Include="images\1352699403_table_48.png" />
+    <Resource Include="images\1352699915_3floppy_unmount.png" />
+    <Resource Include="images\1352966970_stock_edit-points.png" />
+    <Resource Include="images\1353984240_idea.png" />
+    <Resource Include="images\1353984260_bulb red.png" />
+    <Resource Include="images\1353984272_bulb blue.png" />
+    <Resource Include="images\1353986904_bulb yellow.png" />
+    <Resource Include="images\1354252723_Delete.png" />
+    <Resource Include="images\1354253003_folder_close.png" />
+    <Resource Include="images\1354253017_folder_with_file.png" />
+    <Resource Include="images\1354253955_close.png" />
+    <Resource Include="images\1354256662_table_green_48.png" />
+    <Resource Include="images\1354256917_table.png" />
+    <Resource Include="images\3axis.png" />
+    <Resource Include="images\3D.bmp" />
+    <Resource Include="images\3DCreate.png" />
+    <Resource Include="images\3DDelete.png" />
+    <Resource Include="images\3D_C-1.gif" />
+    <Resource Include="images\3D_D-1.gif" />
+    <Resource Include="images\Analysis-1.gif" />
+    <Resource Include="images\application_exit.png" />
+    <Resource Include="images\arrow_refresh.png" />
+    <Resource Include="images\B-1.gif" />
+    <Resource Include="images\CAD2.gif" />
+    <Resource Include="images\CADExp-1.gif" />
+    <Resource Include="images\CADInp-1.gif" />
+    <Resource Include="images\camera.png" />
+    <Resource Include="images\camera_add.png" />
+    <Resource Include="images\camera_big.png" />
+    <Resource Include="images\camera_delete.png" />
+    <Resource Include="images\camera_onoff.png" />
+    <Resource Include="images\camera_small.png" />
+    <Resource Include="images\csv.png" />
+    <Resource Include="images\csv_text.png" />
+    <Resource Include="images\D300_body_l.jpg" />
+    <Resource Include="images\dragger.png" />
+    <Resource Include="images\draw_circle3.ico" />
+    <Resource Include="images\draw_circleR.ico" />
+    <Resource Include="images\dxf.png" />
+    <Resource Include="images\filesaveas.png" />
+    <Resource Include="images\file_manager.png" />
+    <Resource Include="images\file_vault.png" />
+    <Resource Include="images\folder_open.png" />
+    <Resource Include="images\folder_open_16.png" />
+    <Resource Include="images\home.png" />
+    <Resource Include="images\icon_Delete.BMP" />
+    <Resource Include="images\label_add_32.png" />
+    <Resource Include="images\Label_All.png" />
+    <Resource Include="images\label_big.png" />
+    <Resource Include="images\label_onoff.png" />
+    <Resource Include="images\label_remove_32.png" />
+    <Resource Include="images\label_small.png" />
+    <Resource Include="images\Label_User.png" />
+    <Resource Include="images\LargeIcon.png" />
+    <Resource Include="images\layer_label_add.png" />
+    <Resource Include="images\layer_shape_line.png" />
+    <Resource Include="images\length_measure.png" />
+    <Resource Include="images\magnifier_zoom_fit.png" />
+    <Resource Include="images\magnifier_zoom_in.png" />
+    <Resource Include="images\magnifier_zoom_out.png" />
+    <Resource Include="images\new_document.png" />
+    <Resource Include="images\ooo_writer.png" />
+    <Resource Include="images\P-1-3D.bmp" />
+    <Resource Include="images\P-1.bmp" />
+    <Resource Include="images\P-4-3D.bmp" />
+    <Resource Include="images\P-4.bmp" />
+    <Resource Include="images\P1-2.gif" />
+    <Resource Include="images\P1_3D-3.gif" />
+    <Resource Include="images\P4-1.gif" />
+    <Resource Include="images\P4_3D-1.gif" />
+    <Resource Include="images\POINTS-1.bmp" />
+    <Resource Include="images\POINTS-1.gif" />
+    <Resource Include="images\Point_big.png" />
+    <Resource Include="images\Point_onoff.png" />
+    <Resource Include="images\Point_small.png" />
+    <Resource Include="images\preferences_system.png" />
+    <Resource Include="images\Ray_onoff.png" />
+    <Resource Include="images\reload.png" />
+    <Resource Include="images\save_dark_labled.png" />
+    <Resource Include="images\scale_ruler.png" />
+    <Resource Include="images\SmallIcon.png" />
+    <Resource Include="images\stock_chart_scale_text.png" />
+    <Resource Include="images\stock_draw_circle_arc.png" />
+    <Resource Include="images\stock_draw_circle_unfilled.png" />
+    <Resource Include="images\target_minus.png" />
+    <Resource Include="images\target_plus.png" />
+    <Resource Include="images\user_onoff.png" />
+    <Resource Include="images\VBM.png" />
+    <Resource Include="images\X-Y-3.ico" />
+    <Resource Include="images\X-Z-3.ico" />
+    <Resource Include="images\XY.png" />
+    <Resource Include="images\XZ.png" />
+    <Resource Include="images\Y-Z-3.ico" />
+    <Resource Include="images\YZ.png" />
+    <Resource Include="images\zoom_ext.png" />
+    <Resource Include="images\zoom_extent.png" />
+    <Resource Include="images\zoom_in.png" />
+    <Resource Include="images\zoom_out.png" />
+    <Resource Include="images\zoom_win.png" />
+    <Resource Include="images\抽出-１.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image2\PictureBox1.Image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image2\MMainGamen\1_1.png" />
+    <Resource Include="Image2\MMainGamen\1_2.png" />
+    <Resource Include="Image2\MMainGamen\2_1.png" />
+    <Resource Include="Image2\MMainGamen\2_2.png" />
+    <Resource Include="Image2\MMainGamen\3_1.png" />
+    <Resource Include="Image2\MMainGamen\3_2.png" />
+    <Resource Include="Image2\MMainGamen\n_1.png" />
+    <Resource Include="Image2\MMainGamen\n_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image2\KentouKihonInfoTabDialog\1_1.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\1_2.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\2_1.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\2_2.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\3_1.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\3_2.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\4_1.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\4_2.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\5_1.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\5_2.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\6_1.png" />
+    <Resource Include="Image2\KentouKihonInfoTabDialog\6_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\back.png" />
+    <Resource Include="images\ic_hand_clicked.png" />
+    <Resource Include="images\ic_hand_default.png" />
+    <Resource Include="images\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LIB\FBMlib\FBMlib.vbproj">
+      <Project>{b036bace-cd7a-43cf-aea0-629ad050a495}</Project>
+      <Name>FBMlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo copy $(ProjectDir)..\Teigha3.08\Teigha.NET_vc9dll_mini\* $(ProjectDir)$(OutputPath)
+if exist $(ProjectDir)..\Teigha3.08\Teigha.NET_vc9dll_mini copy $(ProjectDir)..\Teigha3.08\Teigha.NET_vc9dll_mini\* $(ProjectDir)$(OutputPath)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

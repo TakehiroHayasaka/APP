@@ -1,0 +1,175 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TestDiagram
+</name>
+</assembly>
+<members>
+<member name="M:TestDiagram.TenGunTeigiForm.SetInitForm">
+	<summary>
+ 初期設定
+ 2013/06/10 作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.GetTypeIDData">
+	<summary>
+ TenGunDataデータ取得
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.GetTenGunData">
+	<summary>
+ TenGunDataデータ取得
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.SetDataToTreeView">
+	<summary>
+ ツリー表示
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.m_item_tree_view_copy_Click">
+	<summary>
+ コンテキストメニュー　コピー
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.m_item_tree_view_past_Click">
+	<summary>
+ コンテキストメニュー　貼り付け
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.m_item_tree_view_add_Click">
+	<summary>
+ コンテキストメニュー追加
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.m_item_tree_delete_Click">
+	<summary>
+ コンテキストメニュー削除
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.DeleteTenGunTeigi">
+	<summary>
+ ツリー削除
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.SetDeleteList(System.Int32,TestDiagram.TenGunTeigiTable@)">
+	<summary>
+ 削除対象データのflgDeleteにtrueを設定する
+ 2013/06/10 作成
+ </summary>
+	<param name="iTenGunID"></param>
+	<param name="T"></param>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.SetDeleteData">
+	<summary>
+ TenGunTeigiデータを削除する
+ 2013/06/10 作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.SetListData">
+	<summary>
+ TenGunTeigiリストを再作成する
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ 表示ボタン
+ 2013/06/10 作成
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.Button3_Click(System.Object,System.EventArgs)">
+	<summary>
+ 更新ボタン
+ 2103/06/10 作成
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.GetDataFromControl">
+	<summary>
+ 画面の入力値を取得する
+ 2013/06/10 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.SaveData(TestDiagram.TenGunTeigiTable)">
+	<summary>
+ 入力値を更新する
+ 2013/06/10 作成
+ </summary>
+	<param name="TGD"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.GetListIndex">
+	<summary>
+ TenGunTeigiListのインデックスを取得する
+ 2013/06/10 作成
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+ 閉じるボタン
+ 2013/06/10 作成
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.TreeView1_ItemDrag(System.Object,System.Windows.Forms.ItemDragEventArgs)">
+	<summary>
+ ItemDrag
+ 2013/06/10 作成
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.TreeView1_DragOver(System.Object,System.Windows.Forms.DragEventArgs)">
+	<summary>
+ DragOver
+ 2013/06/10 作成
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.TreeView1_DragDrop(System.Object,System.Windows.Forms.DragEventArgs)">
+	<summary>
+ DragDrop
+ 2013/06/10 作成
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.TenGunTeigiForm.IsChildNode(System.Windows.Forms.TreeNode,System.Windows.Forms.TreeNode)">
+	<summary>
+ あるTreeNodeが別のTreeNodeの子ノードか調べる
+ </summary>
+	<param name="parentNode">親ノードか調べるTreeNode</param>
+	<param name="childNode">子ノードか調べるTreeNode</param>
+	<returns>子ノードの時はTrue</returns>
+</member><member name="M:TestDiagram.TenGunTeigiForm.MotoGunIDUpdate(System.Int32,System.Int32)">
+	<summary>
+ 元群IDを更新する
+ 2013/06/10 作成
+ </summary>
+	<param name="iMotoGunID">更新元の元群ID</param>
+	<param name="oMotoGunID">更新先の元群ID</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:TestDiagram.CommonDB.ConnectSystemDB(TestDiagram.CDBOperateOLE@)">
+ システム設定mdb接続
+
+</member>
+</members>
+</doc>

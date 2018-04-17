@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+YCM
+</name>
+</assembly>
+<members>
+<member name="M:YCM.RibbonMenuControl1.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.RibbonMenuControl1">
+	<summary>
+RibbonMenuControl1
+</summary>
+</member><member name="P:YCM.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:YCM.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:YCM.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:YCM.MyProcess.ShowPrevProcess">
+ ------------------------------------------------------------------------------------
+ <summary>
+     同名のプロセスが起動中の場合、メイン ウィンドウをアクティブにします。</summary>
+	<returns>
+     既に起動中であれば True。それ以外は False。</returns>
+ ------------------------------------------------------------------------------------
+
+</member>
+</members>
+</doc>

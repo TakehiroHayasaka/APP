@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>
+    </StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Ichigan_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Normal_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_SpecificUser_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_SpecificUser_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Normal_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Ichigan_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Release|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Normal_Release|AnyCPU'">
+    <StartArguments>
+    </StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Release|AnyCPU'">
+    <StartArguments>C:\01_VFORM_Projects\SUEOKI\Data130864152410012581_CASE26KIJYUN</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>
+    </StartArguments>
+    <StartAction>Project</StartAction>
+    <StartProgram>C:\01_VFORM_Projects\TEST_DATA\TEST_DATA.vform</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_SpecificUser_Release|AnyCPU'">
+    <StartArguments>C:\01_VFORM_Projects\SUEOKI\Data20170722_164400 1</StartArguments>
+    <StartAction>Project</StartAction>
+    <StartProgram>C:\VFORM_64bit_ripCats_Copy\trunk\FRAMEGRAB\bin\Win7_Sueoki_SpecificUser_Release\VFORMS.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debugx32|x86'">
+    <StartWorkingDirectory>C:\01_VFORM_Projects</StartWorkingDirectory>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,322 @@
+﻿<UserControl x:Class="RibbonMenuControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="800" xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" xmlns:my1="clr-namespace:Microsoft.Windows.Controls.Ribbon.Primitives;assembly=RibbonControlsLibrary">
+      <Grid>
+        <my:Ribbon HorizontalAlignment="Stretch" Name="Ribbon1" VerticalAlignment="Top"   ShowQuickAccessToolBarOnTop="True" >
+            
+            <my:Ribbon.ApplicationMenu>
+                
+            <my:RibbonApplicationMenu Height="23">
+                  
+                    <my:RibbonApplicationMenuItem Header="新規作成" Click="RbnFileNew" 
+                                                  ImageSource="/YCM;component/Images/new_document.png">
+                    </my:RibbonApplicationMenuItem>
+                    <my:RibbonApplicationMenuItem Header="開く" Click="RbnFileOpen"  
+                                                  ImageSource="/YCM;component/Images/1354253017_folder_with_file.png">
+                    </my:RibbonApplicationMenuItem>
+                    <my:RibbonApplicationMenuItem Header="閉じる" Click="RbnFileClose"
+                                                  ImageSource="/YCM;component/Images/1354253003_folder_close.png ">
+                    </my:RibbonApplicationMenuItem>
+                    <my:RibbonApplicationMenuItem Header="上書き保存"  Click="RbnFileSave"
+                                                  ImageSource="/YCM;component/Images/1352699915_3floppy_unmount.png">
+                    </my:RibbonApplicationMenuItem>
+                    <my:RibbonApplicationMenuItem Header="名前を付けて保存" Click="RbnFileSaveAs"
+                                                  ImageSource="/YCM;component/Images/filesaveas.png">
+                    </my:RibbonApplicationMenuItem>
+                    <!--<my:RibbonSeparator />
+                    <my:RibbonApplicationMenuItem Header="座標値CSV" Click="RbnFileCSVOut"
+                                                  ImageSource="/YCM;component/Images/csv_text.png">
+                    </my:RibbonApplicationMenuItem>
+                    <my:RibbonSeparator />-->
+                    <my:RibbonApplicationMenuItem Header="終了" Click="RbnFileEnd"
+                                                  ImageSource="/YCM;component/Images/1354253955_close.png">
+                    </my:RibbonApplicationMenuItem>
+                </my:RibbonApplicationMenu>
+              </my:Ribbon.ApplicationMenu>
+                           
+            <my:RibbonTab Header="画像操作">
+                <my:RibbonGroup  Header="解析">
+                    <my:RibbonButton Label="解析(2D->3D)" Click="RbnBtnAnaBatch"
+                                     SmallImageSource="/YCM;component/Images/Analysis-1.gif" 
+                                     LargeImageSource="/YCM;component/Images/Analysis-1.gif" ToolTip="2D(ターゲット解析）　3D(3次元解析)"/>
+                    <!--<my:RibbonSplitButton Label="オプション"
+                                     SmallImageSource="/YCM;component/Images/icon_Delete.BMP" 
+                                     LargeImageSource="/YCM;component/Images/icon_Delete.BMP" />-->
+                    <!--<my:RibbonButton Label="抽出" Click="RbnBtnAnaTargetExt"
+                                     SmallImageSource="/YCM;component/Images/抽出-１.gif" 
+                                     LargeImageSource="/YCM;component/Images/抽出-１.gif" />-->
+                    <my:RibbonButton Label="解析(3D)" Click="RbnBtnAnaBundle" 
+                                     SmallImageSource="/YCM;component/Images/B-1.gif" 
+                                     LargeImageSource="/YCM;component/Images/B-1.gif" ToolTip="3D(3次元解析)" />
+                </my:RibbonGroup>
+                <my:RibbonGroup  Header="3D点" Name="RbnGrpGazou3DPoint">
+                    <my:RibbonButton Label="作成"
+                                     Name="Sakusei3DPoint"
+                                     Click="RbnBtnAnaCreat3DPoint"
+                                     SmallImageSource="/YCM;component/Images/3DCreate.png" 
+                                     LargeImageSource="/YCM;component/Images/3DCreate.png" />
+                    <my:RibbonButton Label="削除"
+                                     Name="Sakujyo3DPoint"
+                                     Click="RbnBtnAnaDel3DPoint"
+                                     SmallImageSource="/YCM;component/Images/3DDelete.png" 
+                                     LargeImageSource="/YCM;component/Images/3DDelete.png" />
+                    <my:RibbonButton Label="DelFrom3D"
+                                     Name="DelFrom3D"
+                                     Click="RbnBtnAnaDelFrom3D"
+                                     SmallImageSource="/YCM;component/Images/3DDelete.png" 
+                                     LargeImageSource="/YCM;component/Images/3DDelete.png" />
+                </my:RibbonGroup>
+                <my:RibbonGroup  Header="画像輝度調整">
+                    <my:RibbonButton Label="明るく" Click="RbnBtnAnaBright" 
+                                    PreviewMouseDown="RbnBtnAnaBrightPrevMouDown"
+                                    PreviewMouseUp="RbnBtnAnaBrightPrevMouUp"
+                                    MouseLeave="RbnBtnAnaBrightMouseLeave"
+                                    SmallImageSource="/YCM;component/Images/1353986904_bulb yellow.png" 
+                                    LargeImageSource="/YCM;component/Images/1353986904_bulb yellow.png" />
+                    <my:RibbonButton Label="暗く" Click="RbnBtnAnaDark"
+                                    PreviewMouseDown="RbnBtnAnaDarkPrevMouDown"
+                                    PreviewMouseUp="RbnBtnAnaDarkPrevMouUp"
+                                    MouseLeave="RbnBtnAnaDarkMouseLeave"
+                                    SmallImageSource="/YCM;component/Images/1353984272_bulb blue.png" 
+                                    LargeImageSource="/YCM;component/Images/1353984272_bulb blue.png" />                    
+                </my:RibbonGroup >
+                <my:RibbonGroup  Header="任意点" Name="RbnGrpArbitraryPoint" >
+
+                    <my:RibbonButton Label="ターゲット点算出" Click="未実装ボタン3"
+                                    SmallImageSource="/YCM;component/Images/1353986904_bulb yellow.png" 
+                                    LargeImageSource="/YCM;component/Images/1353986904_bulb yellow.png" />
+                    <my:RibbonButton Label="フリー点算出" Click="未実装ボタン4"
+                                    SmallImageSource="/YCM;component/Images/1353986904_bulb yellow.png" 
+                                    LargeImageSource="/YCM;component/Images/1353986904_bulb yellow.png" />
+                    <my:RibbonButton Label="エッジ算出" Click="未実装ボタン1"
+                                    SmallImageSource="/YCM;component/Images/1353986904_bulb yellow.png" 
+                                    LargeImageSource="/YCM;component/Images/1353986904_bulb yellow.png" />
+                    <!--<my:RibbonButton Label="未実装2" Click="未実装ボタン2"
+                                    SmallImageSource="/YCM;component/Images/1353984272_bulb blue.png" 
+                                    LargeImageSource="/YCM;component/Images/1353984272_bulb blue.png" />-->
+                </my:RibbonGroup>
+                <my:RibbonGroup  Header="Show">
+
+                    <my:RibbonButton Name="Button_UserLine" Label="UserLine" Click="ToggleUserLineButton" 
+                                    SmallImageSource="/YCM;component/Images/1353986904_bulb yellow.png" 
+                                    LargeImageSource="/YCM;component/Images/1353986904_bulb yellow.png" />
+                    <my:RibbonButton Name="Button_SunpoLine" Label="Sunpo" Click="ToggleSunpoLineButton"
+                                    SmallImageSource="/YCM;component/Images/1353986904_bulb yellow.png" 
+                                    LargeImageSource="/YCM;component/Images/1353986904_bulb yellow.png" />
+                    <my:RibbonButton Name="Button_SekkeiLine" Label="Sekkei" Click="ToggleSekkeiLineButton"
+                                    SmallImageSource="/YCM;component/Images/1353986904_bulb yellow.png" 
+                                    LargeImageSource="/YCM;component/Images/1353986904_bulb yellow.png" />
+                </my:RibbonGroup>
+            </my:RibbonTab>
+            <my:RibbonTab Header="3D操作">
+                <my:RibbonGroup Header="表示サイズ">
+                    <my:RibbonButton Label="全体表示" Click="RbnBtnDispZoomAll"
+                                    SmallImageSource="/YCM;component/Images/zoom_ext.png" 
+                                    LargeImageSource="/YCM;component/Images/zoom_ext.png" />
+                    <my:RibbonButton Label="範囲指定(窓)" Click="RbnBtnDispZoomWin"
+                                    SmallImageSource="/YCM;component/Images/zoom_win.png" 
+                                    LargeImageSource="/YCM;component/Images/zoom_win.png" />
+                    <my:RibbonButton Label="拡大" Click="RbnBtnDispZoomIn"
+                                    SmallImageSource="/YCM;component/Images/zoom_in.png" 
+                                    LargeImageSource="/YCM;component/Images/zoom_in.png" />
+                    <my:RibbonButton Label="縮小" Click="RbnBtnDispZoomOut"
+                                    SmallImageSource="/YCM;component/Images/zoom_out.png" 
+                                    LargeImageSource="/YCM;component/Images/zoom_out.png" />
+                </my:RibbonGroup>
+                <my:RibbonGroup Header="画面移動">
+                    <my:RibbonButton Label="画面移動" Click="RbnBtnDispScroll"
+                                    SmallImageSource="/YCM;component/Images/dragger.png" 
+                                    LargeImageSource="/YCM;component/Images/dragger.png" />
+                    <my:RibbonButton Label="3D回転" Click="RbnBtnDispRot3D"
+                                    SmallImageSource="/YCM;component/Images/reload.png" 
+                                    LargeImageSource="/YCM;component/Images/reload.png" />
+                    <!--<my:RibbonButton Label="カメラ視点" Click="RbnBtnDispCameraView"
+                                    SmallImageSource="/YCM;component/Images/D300_body_l.jpg" 
+                                    LargeImageSource="/YCM;component/Images/D300_body_l.jpg" />-->
+                </my:RibbonGroup>
+                <my:RibbonGroup Header="プリセット">
+                    <my:RibbonButton Click="RbnBtnDispXYPlane" 
+                                    SmallImageSource="/YCM;component/Images/X-Y-3.ico" 
+                                    LargeImageSource="/YCM;component/Images/X-Y-3.ico" />
+                    <my:RibbonButton Click="RbnBtnDispXZPlane" 
+                                    SmallImageSource="/YCM;component/Images/X-Z-3.ico" 
+                                    LargeImageSource="/YCM;component/Images/X-Z-3.ico" />
+                    <my:RibbonButton Click="RbnBtnDispYZPlane"
+                                    SmallImageSource="/YCM;component/Images/Y-Z-3.ico" 
+                                    LargeImageSource="/YCM;component/Images/Y-Z-3.ico" />
+                </my:RibbonGroup>
+                <my:RibbonGroup Header="表示/非表示" >
+                    <my:RibbonCheckBox Label="計測点" Name="RbnChkBoxDispMeasPoint" 
+                                       Click="RbnChkBoxDispMeasPointOnOff"/>
+                    <my:RibbonCheckBox Label ="コードターゲット" Name="RbnChkBoxDispCordPoint"
+                                       />
+                    <my:RibbonCheckBox Label="追加計測点" Name="RbnChkBoxDispAddMeasPoint"
+                                       Click="RbnChkBoxDispAddMeasPointOnOff"/>
+                    <my:RibbonCheckBox Label="カメラ"  Name="RbnChkBoxDispCamera"
+                                       Click="RbnChkBoxDispCameraOnOff"/>
+                    <my:RibbonCheckBox Label="レイ" Name="RbnChkBoxDispRay"
+                                       Click="RbnChkBoxDispRayOnOff"/>
+                    <my:RibbonCheckBox Label="ラベル" Name="RbnChkBoxDispLabel"
+                                       Click="RbnChkBoxDispLabelOnOff"/>
+                    <!--<my:RibbonCheckBox Label="任意図形" Name="RbnChkBoxDispFig"
+                                       Click="RbnChkBoxDispFigOnOff"/>-->
+                    <my:RibbonCheckBox Label ="線分(任意)" Name="RbnChkBoxDispFigLine"
+                                       />                    
+                    <my:RibbonCheckBox Label ="円(任意)" Name="RbnChkBoxDispFigCircle"
+                                       />
+                    <my:RibbonCheckBox Label ="線分(CAD)" Name="RbnChkBoxDispCadLine"
+                                       />
+                    <my:RibbonCheckBox Label ="円(CAD)" Name="RbnChkBoxDispCadCircle"
+                                       />                                   
+                </my:RibbonGroup>
+                <my:RibbonGroup Header="サイズ">
+                    <my:RibbonButton Click="RbnBtnDispMarkerBig"                                                                
+                                    SmallImageSource="/YCM;component/Images/Point_big.png" 
+                                    LargeImageSource="/YCM;component/Images/Point_big.png" />
+                    <my:RibbonButton Click="RbnBtnDispMarkerSmall"
+                                    SmallImageSource="/YCM;component/Images/Point_small.png" 
+                                    LargeImageSource="/YCM;component/Images/Point_small.png" />
+                    <my:RibbonButton Click="RbnBtnDispCameraBig"
+                                    SmallImageSource="/YCM;component/Images/camera_big.png" 
+                                    LargeImageSource="/YCM;component/Images/camera_big.png" />
+                    <my:RibbonButton Click="RbnBtnDispCameraSmall"
+                                    SmallImageSource="/YCM;component/Images/camera_small.png" 
+                                    LargeImageSource="/YCM;component/Images/camera_small.png" />
+                    <!--<my:RibbonButton Click="RbnBtnDispLabelBig"
+                                    SmallImageSource="/YCM;component/Images/label_big.png" 
+                                    LargeImageSource="/YCM;component/Images/label_big.png" />
+                    <my:RibbonButton Click="RbnBtnDispLabelSmall"
+                                    SmallImageSource="/YCM;component/Images/label_small.png"
+                                    LargeImageSource="/YCM;component/Images/label_small.png" />-->
+                </my:RibbonGroup>
+               　　
+                <!--<my:RibbonGroup Header="座標値リスト">
+                    <my:RibbonButton  Click="RbnBtnDispCoordList"
+                                    SmallImageSource="/YCM;component/Images/1354256917_table.png" 
+                                    LargeImageSource="/YCM;component/Images/1354256917_table.png" />
+                </my:RibbonGroup>-->
+            </my:RibbonTab>
+
+            <my:RibbonTab Header="ツール">
+                <my:RibbonGroup  Header="設定">
+                    <my:RibbonButton Label="スケール" Click="RbnBtnToolScaleSet"
+                                    SmallImageSource="/YCM;component/Images/scale_ruler.png" 
+                                    LargeImageSource="/YCM;component/Images/scale_ruler.png" />
+                    <my:RibbonButton Label="座標変換" Click="RbnBtnToolCoordConvSet"
+                                    SmallImageSource="/YCM;component/Images/3axis.png" 
+                                    LargeImageSource="/YCM;component/Images/3axis.png" />
+                </my:RibbonGroup>
+
+                <my:RibbonGroup  Header="ラべリング">
+                    <my:RibbonButton Label="設計値/計測値比較"
+                                    Name="AutoLabeling"
+                                    Click="RbnBtnToolAutoLabeling"
+                                    SmallImageSource="/YCM;component/Images/Label_All.png" 
+                                    LargeImageSource="/YCM;component/Images/Label_All.png" />
+                    <my:RibbonButton Label="計測点名変更"
+                                    Name="Labeling"
+                                    Click="RbnBtnToolManuLabeling"
+                                    SmallImageSource="/YCM;component/Images/Label_User.png" 
+                                    LargeImageSource="/YCM;component/Images/Label_User.png" />
+                </my:RibbonGroup>
+
+                <my:RibbonGroup  Header="情報">
+                    <my:RibbonButton Label="2点間距離" Click="RbnBtnToolDistance2Point"
+                                    SmallImageSource="/YCM;component/Images/length_measure.png" 
+                                    LargeImageSource="/YCM;component/Images/length_measure.png" />
+                </my:RibbonGroup>
+
+                <my:RibbonGroup  Header="点作成" Name="RbnGrpCreatPointBatch">
+                    <!--<my:RibbonButton Label="点作成(2点)"
+                                     LargeImageSource="/YCM;component/Images/icon_Delete.BMP" />
+                    <my:RibbonButton Label="点作成(3点)"
+                                     LargeImageSource="/YCM;component/Images/icon_Delete.BMP" />
+                    <my:RibbonButton Label="点作成(相互)"
+                                     LargeImageSource="/YCM;component/Images/icon_Delete.BMP" />-->
+                    <my:RibbonButton Label="点オフセット"
+                                    Name="OffSet"
+                                    Click="RbnBtnToolCreatPointBatch"
+                                    SmallImageSource="/YCM;component/Images/POINTS-1.bmp" 
+                                    LargeImageSource="/YCM;component/Images/POINTS-1.bmp" />
+                </my:RibbonGroup>
+
+                <my:RibbonGroup  Header="任意図形作成">
+                    <my:RibbonButton Label="線分" Click="RbnBtnToolCreatLine"
+                                    SmallImageSource="/YCM;component/Images/layer_shape_line.png" 
+                                    LargeImageSource="/YCM;component/Images/layer_shape_line.png" />
+                    <my:RibbonButton Label="円" Click="RbnBtnToolCreatCircle"
+                                    SmallImageSource="/YCM;component/Images/draw_circle3.ico" 
+                                    LargeImageSource="/YCM;component/Images/draw_circle3.ico" />
+                    <my:RibbonButton Label="中心円" Click="RbnBtnToolCreatCentralCircle"
+                                    SmallImageSource="/YCM;component/Images/draw_circleR.ico" 
+                                    LargeImageSource="/YCM;component/Images/draw_circleR.ico" />
+                </my:RibbonGroup>
+
+                <my:RibbonGroup  Header="CAD" Name="RbnGrpCAD">
+                    <my:RibbonButton Label="起動" Click="RbnBtnToolCadStart"
+                                    SmallImageSource="/YCM;component/Images/CAD2.gif" 
+                                    LargeImageSource="/YCM;component/Images/CAD2.gif" />
+                    <my:RibbonButton Label="図読込み" Click="RbnBtnToolCadRead"
+                                    SmallImageSource="/YCM;component/Images/CADInp-1.gif" 
+                                    LargeImageSource="/YCM;component/Images/CADInp-1.gif" />
+                    <my:RibbonButton Label="図書出し" Click="RbnBtnToolCadWrite"
+                                    SmallImageSource="/YCM;component/Images/CADExp-1.gif" 
+                                    LargeImageSource="/YCM;component/Images/CADExp-1.gif" />
+                </my:RibbonGroup>
+
+                <my:RibbonGroup  Header="作図属性">
+                    <my:RibbonButton Click="RbnBtnToolDrawAttrSet"
+                                SmallImageSource="/YCM;component/Images/preferences_system.png" 
+                                LargeImageSource="/YCM;component/Images/preferences_system.png" />
+                </my:RibbonGroup  >
+
+                <my:RibbonGroup  Header="Offset" Name="RbnGrpOffset" >
+                    <my:RibbonButton Click="RbnBtnToolAutoOffsetCalc"
+                                SmallImageSource="/YCM;component/Images/preferences_system.png" 
+                                LargeImageSource="/YCM;component/Images/preferences_system.png" />
+                </my:RibbonGroup>
+                <my:RibbonGroup  Header="Reconstruct">
+                    <my:RibbonButton Click="RbnBtnToolReconstruct"
+                                SmallImageSource="/YCM;component/Images/preferences_system.png" 
+                                LargeImageSource="/YCM;component/Images/preferences_system.png" />
+                </my:RibbonGroup>
+            </my:RibbonTab>
+
+            <my:RibbonTab Header="画面切り替え" Background="{x:Null}">
+                <my:RibbonGroup Header="画面切り替え">
+                    <my:RibbonButton Label="(1画像操作)"
+                                     Click="RbnChgViewImage1"
+                                     SmallImageSource="/YCM;component/Images/P-1.bmp"
+                                     LargeImageSource="/YCM;component/Images/P-1.bmp" />
+                    <my:RibbonButton Label="(4画像操作)"
+                                     Click="RbnChgViewImage4"
+                                     SmallImageSource="/YCM;component/Images/P-4.bmp" 
+                                     LargeImageSource="/YCM;component/Images/P-4.bmp" />
+                    <my:RibbonButton Label="(1画像操作)+(3D操作)"
+                                     Click="RbnChgViewImage1_3DView"
+                                     SmallImageSource="/YCM;component/Images/P-1-3D.bmp" 
+                                     LargeImageSource="/YCM;component/Images/P-1-3D.bmp" />
+                    <my:RibbonButton Label="(4画像操作)+(3D操作)"
+                                     Click="RbnChgViewImage4_3DView"
+                                     SmallImageSource="/YCM;component/Images/P-4-3D.bmp" 
+                                     LargeImageSource="/YCM;component/Images/P-4-3D.bmp" />
+                    <my:RibbonButton Label="(3D操作)"
+                                     Click="RbnChgView3DView"
+                                     SmallImageSource="/YCM;component/Images/3D.bmp" 
+                                     LargeImageSource="/YCM;component/Images/3D.bmp" />
+                </my:RibbonGroup>
+                 <my:RibbonGroup Header="座標値リスト" Name="ZahyoList">
+                    <my:RibbonButton Click="RbnBtnDispCoordList"
+                                    SmallImageSource="/YCM;component/Images/1354256917_table.png" 
+                                    LargeImageSource="/YCM;component/Images/1354256917_table.png" />
+                </my:RibbonGroup>
+
+            </my:RibbonTab>
+            
+        </my:Ribbon>
+    </Grid>
+</UserControl>

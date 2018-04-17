@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="strLastProjPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">""</Value>
+    </Setting>
+    <Setting Name="strGazouPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\TestImage</Value>
+    </Setting>
+    <Setting Name="blnCTonly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DefaultSavePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\01_VFORM_Projects</Value>
+    </Setting>
+    <Setting Name="GazouSaveType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="OffsetMin" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="OffsetMax" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="OffsetOutput" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BuildNo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">20170331_rev9 x64</Value>
+    </Setting>
+    <Setting Name="strCamparam" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\計測システムフォルダ\CamParam\YTI_camparamD7200_Mid_SxConst.cal</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

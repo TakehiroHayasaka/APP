@@ -1,0 +1,455 @@
+﻿Public Class YCM_DrawSetting
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        Me.Close()
+    End Sub
+
+    Private Sub YCM_DrawSetting_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        '★20121115計測点
+        For i As Integer = 0 To ncolor - 1
+            CobBPoint.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_point.color.strName <> "" Then
+            CobBPoint.Text = entset_point.color.strName
+        Else
+            CobBPoint.SelectedIndex = 0
+        End If
+
+        '================================================================================================20121115
+        ''★20121114追加計測点(ターゲット面)
+        'For i As Integer = 0 To ncolor - 1
+        '    CobBPoint1.Items.Add(sys_color(i).strColorName)
+        'Next
+        'If entset_point1.color.strName <> "" Then
+        '    CobBPoint1.Text = entset_point1.color.strName
+        'Else
+        '    CobBPoint1.SelectedIndex = 0
+        'End If
+        '================================================================================================20121115
+
+        '★20121114計測点(中心円)
+        For i As Integer = 0 To ncolor - 1
+            CobBPoint2.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_point.color2.strName <> "" Then
+            CobBPoint2.Text = entset_point.color2.strName
+        Else
+            CobBPoint2.SelectedIndex = 0
+        End If
+        '★20121114計測点(十字線)
+        For i As Integer = 0 To ncolor - 1
+            CobBPoint3.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_point.color3.strName <> "" Then
+            CobBPoint3.Text = entset_point.color3.strName
+        Else
+            CobBPoint3.SelectedIndex = 0
+        End If
+
+        '計測点(任意追加点)
+        For i As Integer = 0 To ncolor - 1
+            CobBPointUser.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_pointUser.color.strName <> "" Then
+            CobBPointUser.Text = entset_pointUser.color.strName
+        Else
+            CobBPointUser.SelectedIndex = 0
+        End If
+        'カメラ
+        For i As Integer = 0 To ncolor - 1
+            CobBCamera.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_camera.color.strName <> "" Then
+            CobBCamera.Text = entset_camera.color.strName
+        Else
+            CobBCamera.SelectedIndex = 0
+        End If
+        'カメラレンズ
+        For i As Integer = 0 To ncolor - 1
+            CobBCamera2.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_camera.color2.strName <> "" Then
+            CobBCamera2.Text = entset_camera.color2.strName
+        Else
+            CobBCamera2.SelectedIndex = 0
+        End If
+        'カメラシャッター
+        For i As Integer = 0 To ncolor - 1
+            CobBCamera3.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_camera.color3.strName <> "" Then
+            CobBCamera3.Text = entset_camera.color3.strName
+        Else
+            CobBCamera3.SelectedIndex = 0
+        End If
+        'レイ
+        For i As Integer = 0 To ncolor - 1
+            CobBRay.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_ray.color.strName <> "" Then
+            CobBRay.Text = entset_ray.color.strName
+        Else
+            CobBRay.SelectedIndex = 0
+        End If
+
+        'ラベル
+        For i As Integer = 0 To ncolor - 1
+            CobBLaber.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_label.color.strName <> "" Then
+            CobBLaber.Text = entset_label.color.strName
+        Else
+            CobBLaber.SelectedIndex = 0
+        End If
+        '任意線分
+        For i As Integer = 0 To ncolor - 1
+            cmb_LineColor.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_line.color.strName <> "" Then
+            cmb_LineColor.Text = entset_line.color.strName
+        Else
+            cmb_LineColor.SelectedIndex = 0
+        End If
+        '任意円
+        For i As Integer = 0 To ncolor - 1
+            cmb_circleColor.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_circle.color.strName <> "" Then
+            cmb_circleColor.Text = entset_circle.color.strName
+        Else
+            cmb_circleColor.SelectedIndex = 0
+        End If
+
+        For i As Integer = 0 To nLineType - 1
+            cmb_rayLinetype.Items.Add(sys_LineType(i).strLineTypeName)
+        Next
+        If entset_ray.linetype.strName <> "" Then
+            cmb_rayLinetype.Text = entset_ray.linetype.strName
+        Else
+            cmb_rayLinetype.SelectedIndex = 0
+        End If
+
+        For i As Integer = 0 To nLineType - 1
+            cmb_LineLineType.Items.Add(sys_LineType(i).strLineTypeName)
+        Next
+        If entset_line.linetype.strName <> "" Then
+            cmb_LineLineType.Text = entset_line.linetype.strName
+        Else
+            cmb_LineLineType.SelectedIndex = 0
+        End If
+
+        For i As Integer = 0 To nLineType - 1
+            cmb_circleLineType.Items.Add(sys_LineType(i).strLineTypeName)
+        Next
+        If entset_circle.linetype.strName <> "" Then
+            cmb_circleLineType.Text = entset_circle.linetype.strName
+        Else
+            cmb_circleLineType.SelectedIndex = 0
+        End If
+        '★20121115計測点
+        Me.txt_pointsize.Text = CStr(entset_point.screensize)
+        Me.txt_pointmin.Text = CStr(entset_point.minscale)
+        Me.txt_pointmax.Text = CStr(entset_point.maxscale)
+        Me.txt_pointkonomi.Text = CStr(entset_point.konomi)
+
+        '================================================================================================20121115
+        ''★20121114計測点(ターゲット面)/カメラを参考にすべきか?(レンズ、シャッターがない)
+        'Me.txt_pointsize.Text = CStr(entset_point1.screensize)
+        'Me.txt_pointmin.Text = CStr(entset_point1.minscale)
+        'Me.txt_pointmax.Text = CStr(entset_point1.maxscale)
+        'Me.txt_pointkonomi.Text = CStr(entset_point1.konomi)
+        ''★20121114計測点(中心円)
+        'Me.txt_pointsize.Text = CStr(entset_point2.screensize)
+        'Me.txt_pointmin.Text = CStr(entset_point2.minscale)
+        'Me.txt_pointmax.Text = CStr(entset_point2.maxscale)
+        'Me.txt_pointkonomi.Text = CStr(entset_point2.konomi)
+        ''★20121114計測点(十字線)
+        'Me.txt_pointsize.Text = CStr(entset_point3.screensize)
+        'Me.txt_pointmin.Text = CStr(entset_point3.minscale)
+        'Me.txt_pointmax.Text = CStr(entset_point3.maxscale)
+        'Me.txt_pointkonomi.Text = CStr(entset_point3.konomi)
+        '================================================================================================20121115
+
+        '計測点（任意追加点）
+        Me.txt_pointsizeUser.Text = CStr(entset_pointUser.screensize)
+        Me.txt_pointminUser.Text = CStr(entset_pointUser.minscale)
+        Me.txt_pointmaxUser.Text = CStr(entset_pointUser.maxscale)
+        Me.txt_pointkonomiUser.Text = CStr(entset_pointUser.konomi)
+
+        'カメラ
+        Me.txt_camerasize.Text = CStr(entset_camera.screensize)
+        Me.txt_cameramin.Text = CStr(entset_camera.minscale)
+        Me.txt_cameramax.Text = CStr(entset_camera.maxscale)
+        Me.txt_camerakonami.Text = CStr(entset_camera.konomi)
+        'ラベル
+        Me.txt_labelsize.Text = CStr(entset_label.screensize)
+        Me.txt_labelmin.Text = CStr(entset_label.minscale)
+        Me.txt_labelmax.Text = CStr(entset_label.maxscale)
+        Me.txt_labelkonami.Text = CStr(entset_label.konomi)
+        '線幅
+        Me.cmb_LineLineWidth.Text = CStr(LineWidth_Line)
+        Me.cmb_circleLineWidth.Text = CStr(LineWidth_Line)
+        Me.cmb_rayLineWidth.Text = CStr(LineWidth_Ray)
+
+        '★20121115計測点
+        chkLookPoint.Checked = entset_point.blnVisiable
+        chkLookPointUser.Checked = entset_pointUser.blnVisiable
+
+        '================================================================================================20121115
+        ''★20121114計測点(ターゲット面)/カメラを参考にすべきか(レンズ、シャッターがない)
+        'chkLookPoint.Checked = entset_point1.blnVisiable
+        ''★20121114entset_Point2も必要か？
+        'chkLookPoint.Checked = entset_point2.blnVisiable
+        ''★20121114entset_Point3も必要か？
+        'chkLookPoint.Checked = entset_point3.blnVisiable
+        '================================================================================================20121115
+
+        chkCamera.Checked = entset_camera.blnVisiable
+        chkLabel.Checked = entset_label.blnVisiable
+        chkRay.Checked = entset_ray.blnVisiable
+        chkLine.Checked = entset_line.blnVisiable
+        chkCircle.Checked = entset_circle.blnVisiable
+
+        'CAD図形分の追加
+        chkLine_CAD.Checked = entset_line_CAD.blnVisiable
+        chkCircle_CAD.Checked = entset_circle_CAD.blnVisiable
+        Me.cmb_LineLineWidth_CAD.Text = CStr(LineWidth_Line)
+        Me.cmb_circleLineWidth_CAD.Text = CStr(LineWidth_Line)
+        Txt_LineLayerName.Text = entset_line.layerName
+        Txt_CircleLayerName.Text = entset_circle.layerName
+        Txt_LineLayerName_CAD.Text = entset_line_CAD.layerName
+        Txt_CircleLayerName_CAD.Text = entset_circle_CAD.layerName
+        'CAD図形：色
+        For i As Integer = 0 To ncolor - 1
+            cmb_LineColor_CAD.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_line_CAD.color.strName <> "" Then
+            cmb_LineColor_CAD.Text = entset_line_CAD.color.strName
+        Else
+            cmb_LineColor_CAD.SelectedIndex = 0
+        End If
+        For i As Integer = 0 To ncolor - 1
+            cmb_circleColor_CAD.Items.Add(sys_color(i).strColorName)
+        Next
+        If entset_circle_CAD.color.strName <> "" Then
+            cmb_circleColor_CAD.Text = entset_circle_CAD.color.strName
+        Else
+            cmb_circleColor_CAD.SelectedIndex = 0
+        End If
+        'CAD図形：線種
+        For i As Integer = 0 To nLineType - 1
+            cmb_LineLineType_CAD.Items.Add(sys_LineType(i).strLineTypeName)
+        Next
+        If entset_line_CAD.linetype.strName <> "" Then
+            cmb_LineLineType_CAD.Text = entset_line_CAD.linetype.strName
+        Else
+            cmb_LineLineType_CAD.SelectedIndex = 0
+        End If
+
+        For i As Integer = 0 To nLineType - 1
+            cmb_circleLineType_CAD.Items.Add(sys_LineType(i).strLineTypeName)
+        Next
+        If entset_circle_CAD.linetype.strName <> "" Then
+            cmb_circleLineType_CAD.Text = entset_circle_CAD.linetype.strName
+        Else
+            cmb_circleLineType_CAD.SelectedIndex = 0
+        End If
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        '★20121114計測点(ターゲット面)の作図情報を更新する
+        entset_point.screensize = CDbl(txt_pointsize.Text)
+        entset_point.color = YCM_GetColorInfoByName(CobBPoint.Text) '計測点(ターゲット面)
+        entset_point.color2 = YCM_GetColorInfoByName(CobBPoint2.Text) '計測点(中心円)
+        entset_point.color3 = YCM_GetColorInfoByName(CobBPoint3.Text) '計測点(十字線)
+        entset_point.minscale = CDbl(txt_pointmin.Text)
+        entset_point.maxscale = CDbl(txt_pointmax.Text)
+        entset_point.konomi = CDbl(txt_pointkonomi.Text)
+        entset_point.blnVisiable = chkLookPoint.Checked
+
+        '================================================================================================20121115
+        ''★カメラの作図情報を更新する
+        'entset_camera.screensize = CDbl(txt_camerasize.Text)
+        'entset_camera.color = YCM_GetColorInfoByName(CobBCamera.Text)
+        'entset_camera.color2 = YCM_GetColorInfoByName(CobBCamera2.Text)
+        'entset_camera.color3 = YCM_GetColorInfoByName(CobBCamera3.Text)
+        'entset_camera.minscale = CDbl(txt_cameramin.Text)
+        'entset_camera.maxscale = CDbl(txt_cameramax.Text)
+        'entset_camera.konomi = CDbl(txt_camerakonami.Text)
+        'entset_camera.blnVisiable = chkCamera.Checked
+
+        ''★20121114計測点(ターゲット面)の作図情報を更新する/下部のカメラを参考にすべきか?(レンズ、シャッター統一?)
+        'entset_point1.screensize = CDbl(txt_pointsize.Text)
+        'entset_point1.color = YCM_GetColorInfoByName(CobBPoint1.Text)
+        'entset_point1.minscale = CDbl(txt_pointmin.Text)
+        'entset_point1.maxscale = CDbl(txt_pointmax.Text)
+        'entset_point1.konomi = CDbl(txt_pointkonomi.Text)
+        'entset_point1.blnVisiable = chkLookPoint.Checked
+        ''★20121114計測点(中心円)の作図情報を更新する
+        'entset_point2.screensize = CDbl(txt_pointsize.Text)
+        'entset_point2.color = YCM_GetColorInfoByName(CobBPoint1.Text)
+        'entset_point2.minscale = CDbl(txt_pointmin.Text)
+        'entset_point2.maxscale = CDbl(txt_pointmax.Text)
+        'entset_point2.konomi = CDbl(txt_pointkonomi.Text)
+        'entset_point2.blnVisiable = chkLookPoint.Checked
+        ''★20121114計測点(十字線)の作図情報を更新する
+        'entset_point3.screensize = CDbl(txt_pointsize.Text)
+        'entset_point3.color = YCM_GetColorInfoByName(CobBPoint1.Text)
+        'entset_point3.minscale = CDbl(txt_pointmin.Text)
+        'entset_point3.maxscale = CDbl(txt_pointmax.Text)
+        'entset_point3.konomi = CDbl(txt_pointkonomi.Text)
+        'entset_point3.blnVisiable = chkLookPoint.Checked
+        '================================================================================================20121115
+
+        '計測点（任意追加点）の作図情報を更新する
+        entset_pointUser.screensize = CDbl(txt_pointsizeUser.Text)
+        entset_pointUser.color = YCM_GetColorInfoByName(CobBPointUser.Text)
+        entset_pointUser.minscale = CDbl(txt_pointminUser.Text)
+        entset_pointUser.maxscale = CDbl(txt_pointmaxUser.Text)
+        entset_pointUser.konomi = CDbl(txt_pointkonomiUser.Text)
+        entset_pointUser.blnVisiable = chkLookPointUser.Checked
+
+        'レイの作図情報を更新する
+        entset_ray.color = YCM_GetColorInfoByName(CobBRay.Text)
+        entset_ray.linetype = YCM_GetLineTypeInfoByName(cmb_rayLinetype.Text)
+        entset_ray.blnVisiable = chkRay.Checked
+        entset_ray.linewidth = cmb_rayLineWidth.Text
+        LineWidth_Ray = entset_ray.linewidth
+        'ラインの作図情報を更新する
+        entset_line.color = YCM_GetColorInfoByName(cmb_LineColor.Text)
+        entset_line.linetype = YCM_GetLineTypeInfoByName(cmb_LineLineType.Text)
+        entset_line.blnVisiable = chkLine.Checked
+        entset_line.linewidth = cmb_LineLineWidth.Text
+        LineWidth_Line = entset_line.linewidth
+        entset_line.layerName = Txt_LineLayerName.Text
+        '円の作図情報を更新する
+        entset_circle.color = YCM_GetColorInfoByName(cmb_circleColor.Text)
+        entset_circle.linetype = YCM_GetLineTypeInfoByName(cmb_circleLineType.Text)
+        entset_circle.blnVisiable = chkCircle.Checked
+        entset_circle.linewidth = cmb_circleLineWidth.Text
+        entset_circle.layerName = Txt_CircleLayerName.Text
+
+        'CAD図形分
+        'ラインの作図情報を更新する
+        entset_line_CAD.color = YCM_GetColorInfoByName(cmb_LineColor_CAD.Text)
+        entset_line_CAD.linetype = YCM_GetLineTypeInfoByName(cmb_LineLineType_CAD.Text)
+        entset_line_CAD.blnVisiable = chkLine_CAD.Checked
+        entset_line_CAD.linewidth = cmb_LineLineWidth_CAD.Text
+        entset_line_CAD.layerName = Txt_LineLayerName_CAD.Text
+        '円の作図情報を更新する
+        entset_circle_CAD.color = YCM_GetColorInfoByName(cmb_circleColor_CAD.Text)
+        entset_circle_CAD.linetype = YCM_GetLineTypeInfoByName(cmb_circleLineType_CAD.Text)
+        entset_circle_CAD.blnVisiable = chkCircle_CAD.Checked
+        entset_circle_CAD.linewidth = cmb_circleLineWidth_CAD.Text
+        entset_circle_CAD.layerName = Txt_CircleLayerName_CAD.Text
+
+        'ラベルの作図情報を更新する
+        entset_label.screensize = CDbl(txt_labelsize.Text)
+        entset_label.color = YCM_GetColorInfoByName(CobBLaber.Text)
+        entset_label.minscale = CDbl(txt_labelmin.Text)
+        entset_label.maxscale = CDbl(txt_labelmax.Text)
+        entset_label.konomi = CDbl(txt_labelkonami.Text)
+        entset_label.blnVisiable = chkLabel.Checked
+
+        '★カメラの作図情報を更新する
+        entset_camera.screensize = CDbl(txt_camerasize.Text)
+        entset_camera.color = YCM_GetColorInfoByName(CobBCamera.Text)
+        entset_camera.color2 = YCM_GetColorInfoByName(CobBCamera2.Text)
+        entset_camera.color3 = YCM_GetColorInfoByName(CobBCamera3.Text)
+        entset_camera.minscale = CDbl(txt_cameramin.Text)
+        entset_camera.maxscale = CDbl(txt_cameramax.Text)
+        entset_camera.konomi = CDbl(txt_camerakonami.Text)
+        entset_camera.blnVisiable = chkCamera.Checked
+
+
+        '--del.rep.start-------------------------12.10.17
+        ' リボンメニューに表示／非表示の状態を反映
+        Call setRibbonMenuChkOnOff()
+
+#If 0 Then
+        '★2012115計測点
+        If entset_point.blnVisiable Then
+            MainFrm.MM_V_9_1.Checked = True
+        Else
+            MainFrm.MM_V_9_1.Checked = False
+        End If
+        '================================================================================================20121115
+        ''★2012114計測点(ターゲット面)
+        'If entset_point1.blnVisiable Then
+        '    MainFrm.MM_V_9_1.Checked = True
+        'Else
+        '    MainFrm.MM_V_9_1.Checked = False
+        'End If
+        ' '★2012114計測点(中心円)
+        'If entset_point2.blnVisiable Then
+        '    MainFrm.MM_V_9_1.Checked = True
+        'Else
+        '    MainFrm.MM_V_9_1.Checked = False
+        'End If
+        ' '★2012114計測点(十字線)
+        'If entset_point3.blnVisiable Then
+        '    MainFrm.MM_V_9_1.Checked = True
+        'Else
+        '    MainFrm.MM_V_9_1.Checked = False
+        'End If
+        '================================================================================================20121115
+        If entset_pointUser.blnVisiable Then
+            MainFrm.MM_V_9_1User.Checked = True     '---任意計測点の表示／非表示を追加する必要あり！！！
+        Else
+            MainFrm.MM_V_9_1User.Checked = False
+        End If
+
+        If entset_camera.blnVisiable Then
+            MainFrm.MM_V_9_2.Checked = True
+        Else
+            MainFrm.MM_V_9_2.Checked = False
+        End If
+
+        If entset_ray.blnVisiable Then
+            MainFrm.MM_V_9_3.Checked = True
+        Else
+            MainFrm.MM_V_9_3.Checked = False
+        End If
+
+        If entset_label.blnVisiable Then
+            MainFrm.MM_V_9_4.Checked = True
+        Else
+            MainFrm.MM_V_9_4.Checked = False
+        End If
+
+        If entset_line.blnVisiable And entset_circle.blnVisiable Then
+            MainFrm.MM_V_9_5.Checked = True
+        Else
+            MainFrm.MM_V_9_5.Checked = False
+        End If
+#End If
+        '--del.rep.end---------------------------12.10.17
+
+        YCM_UpdateEntSetting(m_strDataBasePath)
+        Me.Close()
+    End Sub
+
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub Label32_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label32.Click
+
+    End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+
+    End Sub
+
+    Private Sub CobBPoint1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CobBPoint.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub cmb_LineLineWidth_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmb_LineLineWidth.TextChanged
+
+    End Sub
+
+    Private Sub cmb_LineColor_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles cmb_LineColor.SelectedIndexChanged
+
+    End Sub
+End Class

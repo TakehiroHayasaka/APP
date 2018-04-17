@@ -1,0 +1,56 @@
+[MENU]
+M_ZAHYOU	= 0
+M_SUNPO		= 0
+M_ZUKEI 	= 0
+
+ 
+[Command]
+CT_offset	= 1
+B_3DOUT 	= 1
+
+B_DXFOUT	= 1
+
+D_URAOMOTE	= 0
+B_KENSAOUT 	= 1
+NINITEN		= 1
+POLYLINE	= 1
+
+
+
+
+[Kaiseki]
+KaisekiSetting	= 0
+PairByBasePoint	= 0
+
+TargetThreshold	= -1
+STtoCT		= 0
+CTsize		= 5
+CommonCTnum	= 3
+CTargetType	= 0
+AllParamTarget	= 0
+PolylineConnect	= 1 
+Edge2dPointMax  =10000
+mult 		= 5.0
+alpha 		= 1
+low 		= 2
+hi 		= 25
+CalcPoseByBasePoint = 0
+
+[DesignValueCapture]
+Kugiru 		= ,
+CSV_FORMAT 	= LABEL,X,Y,Z
+MAX_X		= 1.0
+MAX_Y		= 1.0
+MAX_Z		= 1.0
+MAX_L		= 1.0
+MIN_X		= -1.0
+MIN_Y		= -1.0
+MIN_Z		= -1.0
+MIN_L		= -1.0
+LABEL_SARCH_LENGE	= 10.0
+
+[Sueoki]
+CSVOUTKIJUN     = 0
+
+
+

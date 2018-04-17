@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="WindowsApplication1.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="WindowsApplication1.My.MySettings.db1ConnectionString"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\db1.mdb"
+            providerName="System.Data.OleDb" />
+        <add name="WindowsApplication1.My.MySettings.dbFBMConnectionString"
+            connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\dbFBM.mdb"
+            providerName="System.Data.OleDb" />
+    </connectionStrings>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+    </startup>
+    <userSettings>
+        <WindowsApplication1.My.MySettings>
+            <setting name="KoujiRootFolder" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI</value>
+            </setting>
+            <setting name="shareFolder" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\shareFolder</value>
+            </setting>
+            <setting name="localFolder" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\localFolder</value>
+            </setting>
+            <setting name="BasePointFile" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\BasePoint.csv</value>
+            </setting>
+            <setting name="MeasurePointFile" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\MeasurePoint.csv</value>
+            </setting>
+            <setting name="BaseCoordFile" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\BaseCoordinates.csv</value>
+            </setting>
+            <setting name="MeasPointMove_x" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="MeasPointBase_x" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="MeasPointMove_y" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="MeasPointBase_y" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="AlartGosa" serializeAs="String">
+                <value>10</value>
+            </setting>
+            <setting name="YCMFolder" serializeAs="String">
+                <value>C:\VFORM_64bit_ripCats_Copy\trunk\YCM\bin\Win7_Sueoki_SpecificUser_Release</value>
+            </setting>
+            <setting name="Dx1" serializeAs="String">
+                <value>-17</value>
+            </setting>
+            <setting name="Lx1" serializeAs="String">
+                <value>7650</value>
+            </setting>
+            <setting name="Zx1" serializeAs="String">
+                <value>1400</value>
+            </setting>
+            <setting name="Dx2" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="Lx2" serializeAs="String">
+                <value>1000</value>
+            </setting>
+            <setting name="Zx2" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="Dy1" serializeAs="String">
+                <value>-11</value>
+            </setting>
+            <setting name="Ly1" serializeAs="String">
+                <value>2335</value>
+            </setting>
+            <setting name="Zy1" serializeAs="String">
+                <value>3390</value>
+            </setting>
+            <setting name="Dy2" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="Ly2" serializeAs="String">
+                <value>1000</value>
+            </setting>
+            <setting name="Zy2" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="BuildNo" serializeAs="String">
+                <value>20151111</value>
+            </setting>
+        </WindowsApplication1.My.MySettings>
+    </userSettings>
+</configuration>

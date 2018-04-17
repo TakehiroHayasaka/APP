@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FBMlib
+</name>
+</assembly>
+<members>
+<member name="M:FBMlib.FeatureImage.AddtoCommon3DSingleTargets(FBMlib.SingleTarget@,FBMlib.SingleTarget@)">
+	<summary>
+ ST1の属している共通３次元ターゲットにST2を追加する。
+ </summary>
+	<param name="ST1"></param>
+	<param name="ST2"></param>
+	<remarks></remarks>
+</member><member name="P:FBMlib.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:FBMlib.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:FBMlib.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member>
+</members>
+</doc>

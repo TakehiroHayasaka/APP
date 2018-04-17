@@ -1,0 +1,27 @@
+﻿<Window x:Class="KensaHyoOutput"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="帳票出力" Height="300" Width="728.358" Closing="Window_Closing">
+    <Grid>
+        <GroupBox Header="出力先" Height="101" HorizontalAlignment="Left" Margin="5,0,0,0" Name="GroupBox1" VerticalAlignment="Top" Width="699">
+            <Grid>
+                <Label Content="ファイル名：" Height="28" HorizontalAlignment="Left" Margin="64,21,0,0" Name="Label3" VerticalAlignment="Top" FontSize="16" />
+                <Label Content="出力先：" Height="28" HorizontalAlignment="Left" Margin="77,48,0,0" Name="Label4" VerticalAlignment="Top" FontSize="16" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="156,21,0,0" Name="TxtOutFileName" VerticalAlignment="Top" Width="346" FontSize="16" Text="チェックシート１" />
+                <TextBox Height="23" Margin="156,51,0,0" Name="TxtExcelFolder" VerticalAlignment="Top" FontSize="16" Text="C:\工事データ" HorizontalAlignment="Left" Width="346" />
+                <Button Content="参照" Height="24" HorizontalAlignment="Left" Margin="524,51,0,0" Name="BtnExcelFolder" VerticalAlignment="Top" Width="75" FontSize="16" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="テンプレート" Height="67" HorizontalAlignment="Left" Margin="5,107,0,0" Name="GroupBox2" VerticalAlignment="Top" Width="699">
+            <Grid>
+                <Label Content="テンプレート名：" Height="28" HorizontalAlignment="Left" Margin="32,10,0,0" Name="Label5" VerticalAlignment="Top" FontSize="16" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="560,10,0,0" Name="TextBox14" VerticalAlignment="Top" Width="55" FontSize="16" Text="製缶チェックシート１" Visibility="Hidden" />
+                <DataGrid AutoGenerateColumns="False" Height="25" HorizontalAlignment="Left" Margin="621,10,0,0" Name="DataGridView10" VerticalAlignment="Top" Width="43" Visibility="Hidden" />
+                <ComboBox Height="24" HorizontalAlignment="Left" Margin="156,10,0,0" Name="CmbExcelTemplate" VerticalAlignment="Top" Width="346" FontSize="16" />
+            </Grid>
+        </GroupBox>
+        <Button Content="OK" Height="38" HorizontalAlignment="Right" Margin="0,0,100,0" Name="BtnExcelOut" VerticalAlignment="Bottom" Width="86" />
+        <Button Content="キャンセル" Height="38" HorizontalAlignment="Right" Name="BtnT7Back" VerticalAlignment="Bottom" Width="86" Margin="0,0,6,0" />
+
+    </Grid>
+</Window>

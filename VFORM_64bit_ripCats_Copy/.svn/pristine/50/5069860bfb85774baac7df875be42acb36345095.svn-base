@@ -1,0 +1,71 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--Color-->
+    <Color x:Key="LightForegroundColor">#FF4BBCFE</Color>
+    <Color x:Key="LightBackgroundColor">#FFF1F7FA</Color>
+
+    <!--Brush-->
+    <Brush x:Key="LightForegroundBrush">#FF4BBCFE</Brush>
+    <Brush x:Key="LightBackgroundBrush">#FFF1F7FA</Brush>
+
+    <!--Style for the DataGrid Header.-->
+    <Style x:Key="DataGrid_Header_Center" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="DataGrid_Header_Right" TargetType="{x:Type DataGridColumnHeader}">
+        <Setter Property="HorizontalContentAlignment" Value="Right" />
+    </Style>
+
+    <!--Style for the DataGrid cell.-->
+    <Style x:Key="DataGrid_Cell_Center" TargetType="{x:Type DataGridCell}">
+        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+    </Style>
+    <Style x:Key="DataGrid_Cell_Right" TargetType="{x:Type DataGridCell}">
+        <Setter Property="TextBlock.TextAlignment" Value="Right" />
+    </Style>
+
+    <!--Style for the DataGrid.-->
+    <Style TargetType="DataGrid">
+        <Setter Property="RowHeight" Value="32" />
+        <Setter Property="ColumnHeaderStyle">
+            <Setter.Value>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Height" Value="32" />
+                    <!--<Setter Property="HorizontalContentAlignment" Value="Center" />-->
+                    <Setter Property="VerticalContentAlignment" Value="Center" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="CanUserSortColumns" Value="False" />
+    </Style>
+
+    <!--DataTemplate for ListView.ItemTemplate.-->
+    <DataTemplate x:Key="myListViewTemplate">
+        <Border Width="200" Height="Auto">
+            <Grid>
+                <Image Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center"  Source="{Binding Img}" />
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"  
+                       TextAlignment="Right" FontSize="18" FontWeight="Bold" 
+                       Foreground="{StaticResource LightForegroundBrush}" 
+                       Text="{Binding Text}" />
+            </Grid>
+        </Border>
+    </DataTemplate>
+    <Style x:Key="myListViewTemplatexx" TargetType="ListViewItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem">
+                    <Grid>
+                        <Image HorizontalAlignment="Left" VerticalAlignment="Center"  Source="{Binding Img}" />
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"  
+                       TextAlignment="Right" FontSize="18" FontWeight="Bold" 
+                       Foreground="{StaticResource LightForegroundBrush}" 
+                       Text="{Binding Text}" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

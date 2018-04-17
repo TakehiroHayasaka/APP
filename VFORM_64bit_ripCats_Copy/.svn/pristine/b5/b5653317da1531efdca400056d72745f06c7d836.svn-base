@@ -1,0 +1,346 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+YCM
+</name>
+</assembly>
+<members>
+<member name="M:YCM.KentouKihonInfoTabDialog.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.KentouKihonInfoTabDialog">
+	<summary>
+KentouKihonInfoTabDialog
+</summary>
+</member><member name="M:YCM.RibbonMenuControl1.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.RibbonMenuControl1">
+	<summary>
+RibbonMenuControl1
+</summary>
+</member><member name="M:YCM.Sekkei_Keisoku.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.Sekkei_Keisoku">
+	<summary>
+Sekkei_Keisoku
+</summary>
+</member><member name="M:YCM.KensaHyoOutput.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.KensaHyoOutput">
+	<summary>
+KensaHyoOutput
+</summary>
+</member><member name="M:YCM.Application.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:YCM.Application.Main">
+	<summary>
+Application Entry Point.
+</summary>
+</member><member name="T:YCM.Application">
+	<summary>
+Application
+</summary>
+</member><member name="M:YCM.KojiDataConfUserControl.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.KojiDataConfUserControl">
+	<summary>
+KojiDataConfUserControl
+</summary>
+</member><member name="M:YCM.MMainGamen.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.MMainGamen">
+	<summary>
+MMainGamen
+</summary>
+</member><member name="M:YCM.ReconstructionWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.ReconstructionWindow">
+	<summary>
+ReconstructionWindow
+</summary>
+</member><member name="M:YCM.KojiDataConf.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.KojiDataConf">
+	<summary>
+KojiDataConf
+</summary>
+</member><member name="M:YCM.TargetSetting.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:YCM.TargetSetting">
+	<summary>
+TargetSetting
+</summary>
+</member><member name="P:YCM.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:YCM.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="T:YCM.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="M:YCM.CommonDB.ConnectSystemDB(FBMlib.CDBOperateOLE@)">
+ システム設定mdb接続
+
+</member><member name="M:YCM.KojiDataConf.SetInitForm">
+</member><member name="M:YCM.KojiDataConf.GetData">
+</member><member name="M:YCM.KojiDataConf.SetGridHeadder">
+</member><member name="M:YCM.KojiDataConf.SetDataToGrid(System.Boolean@)">
+</member><member name="M:YCM.KojiDataConf.Button1_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KojiDataConf.SearchSyori">
+</member><member name="M:YCM.KojiDataConf.QuerySerach(System.Collections.ArrayList)">
+</member><member name="M:YCM.KojiDataConf.ListSearch">
+</member><member name="M:YCM.KojiDataConf.Button2_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KojiDataConf.Button3_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KojiDataConf.Button4_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KojiDataConf.Button5_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KojiDataConf.GetSunpouBunsekiList">
+</member><member name="M:YCM.KojiDataConf.SunpouCsvOut">
+</member><member name="M:YCM.KojiDataConf.SunpouExcelOut">
+</member><member name="M:YCM.KojiDataConf.GetFileSelect">
+</member><member name="M:YCM.KojiDataConf.ButtonTanpinKalc_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KojiDataConf.GetBunsekiList">
+</member><member name="M:YCM.KojiDataConf.TanpinExcelOut">
+</member><member name="M:YCM.KojiDataConf.ZentaiBunsekiBtn_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KojiDataConf.ZentaiExcelOut">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetInitForm">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetInitFormKitei">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetButtonControl">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetCustumButtonControl(System.Windows.Controls.Button@,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32@)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKoujiSansyou">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKoujiSansyou(FBMlib.CDBOperateOLE)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetGridHeaddderKitei">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKiteiDataToGrid(System.String)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetDataKitei">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.rbtn_Check(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.rbtn_MouseMove(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetTLP4">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetYomikomiData">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetYomikomiData(YCM.WorksTable@)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKeisokuData(System.String)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKeisokuData(System.String,System.String)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetSystemData(System.String,System.String)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.GetDataFromToControl">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SaveKeisokuData">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SaveSystemData">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.Button2_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SaveSunpo">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.GetDataFromGrid">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SaveSunpoData(System.Boolean@)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetCameraTab">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.Button18_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.Button21_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.GamenUpdateCheck(System.Int32)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKihon">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKiteiti">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetGazou">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKaiseki(System.Boolean)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetSunpouKakunin">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetSunpoDataToGrid(System.String)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetOut">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT1New">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT1Kaishi">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.ViewForm">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT1Next_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnKojiData_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT2KojiSansyou_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT2Back_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT2Next_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT2Next_New">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT2Next_Open">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT3KojiSansyou_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT3Back_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT3Next_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT3Next_New">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT3Next_Open">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnMemoryCard_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnGazouFolder_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT4Back_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT4Next_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.UpdateCameraInfo">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.RbtnMemoryCard_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.RbtnGazou_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.GazouView(System.String)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.GazouListView(System.String[])">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.ListView2_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.GetMemoryCardFolder">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT5Run_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT5Run_MouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT5Kakunin_MouseUp(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT5Back_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT5Next_Click(System.Object,System.EventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.SetKaisekiDataToGrid">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT6Back_Click(System.Object,System.Windows.RoutedEventArgs)">
+</member><member name="M:YCM.KentouKihonInfoTabDialog.BtnT6Next_Click(System.Object,System.Windows.RoutedEventArgs)">
+</member><member name="M:YCM.MyProcess.ShowPrevProcess">
+ ------------------------------------------------------------------------------------
+ <summary>
+     同名のプロセスが起動中の場合、メイン ウィンドウをアクティブにします。</summary>
+	<returns>
+     既に起動中であれば True。それ以外は False。</returns>
+ ------------------------------------------------------------------------------------
+
+</member><member name="P:YCM.My.MyWpfExtension.Application">
+	<summary>
+ Returns the application object for the running application
+ </summary>
+</member><member name="P:YCM.My.MyWpfExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:YCM.My.MyWpfExtension.User">
+	<summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member><member name="P:YCM.My.MyWpfExtension.Log">
+	<summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member><member name="P:YCM.My.MyWpfExtension.Windows">
+	<summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member><member name="T:YCM.My.MyWpfExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.WorksTable.GetSunpoDataToList">
+	<summary>
+ SunpoSetテーブルリストのみ取得
+ 2015/03/13 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.SetDataToGrid(System.Boolean@)">
+	<summary>
+ Grid表示
+ 2013/05/29 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.ListSearch">
+	<summary>
+ 絞り込み
+ メモリ内を検索する
+ 2013/05/30 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ OKボタン
+ 2013/05/21 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.Button3_Click(System.Object,System.EventArgs)">
+	<summary>
+ Cancelボタン
+ 2013/05/21 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.Button4_Click(System.Object,System.EventArgs)">
+	<summary>
+ 条件クリアボタン
+ 2013/05/30 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.Button5_Click(System.Object,System.EventArgs)">
+	<summary>
+ CSV出力ボタン
+ テスト的に作成するので、本機能はメインの機能に影響しないようにする
+ 2013/05/31 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.ButtonTanpinKalc_Click(System.Object,System.EventArgs)">
+	<summary>
+ 単品分析用ボタン
+ 2013/11/13 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KojiDataConfUserControl.ZentaiBunsekiBtn_Click(System.Object,System.EventArgs)">
+	<summary>
+ 全体傾向分析用ボタン
+ 2013/11/13 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.mdlJupCatsLog.log_CommandStartus(System.String,System.String,System.String)">
+	<summary>
+     ログファイルにコマンドステータスを出力する
+ </summary>
+	<param name="strAppName">引数1：処理名</param>
+	<param name="status">引数2：ステータス
+ "Start"=実行開始
+ "End"=正常終了
+ "Fail"=異常終了
+ "Cancel"=コマンドキャンセル </param>
+	<param name="sysName">引数3：システム(J:Jupiter、C:Cats、 V:VFORM)</param>
+	<remarks></remarks>
+</member><member name="M:YCM.mdlJupCatsLog.log_Print(System.String,System.String)">
+	<summary>
+       ログファイルに文字列を出力する
+ </summary>
+	<param name="str">引数1：出力する文字列</param>
+	<param name="sysName">引数2：システム(J:Jupiter、C:Cats、V:VFORM)</param>
+	<remarks></remarks>
+</member><member name="M:YCM.mdlJupCatsLog.log_GetStatusStr(System.String)">
+	<summary>
+ status: Start=0, End=1, fail=2
+ </summary>
+	<param name="status"></param>
+	<returns></returns>
+</member><member name="M:YCM.KiteitiInput.SetDataKitei">
+	<summary>
+ データを取得してグリッドに表示
+ 2013/05/15 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KiteitiInput.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+ 保存ボタン
+ 2013/05/15 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KiteitiInput.SaveSunpoData">
+	<summary>
+ 規定値データ(SunpoSet)更新
+ 2013/05/15 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KiteitiInput.Button3_Click(System.Object,System.EventArgs)">
+	<summary>
+ 工事データ一覧ボタン
+ 2013/05/15 作成
+ </summary>
+	<remarks></remarks>
+</member><member name="M:YCM.KiteitiInput.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ 閉じるボタン
+ 2013/05/15 作成
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

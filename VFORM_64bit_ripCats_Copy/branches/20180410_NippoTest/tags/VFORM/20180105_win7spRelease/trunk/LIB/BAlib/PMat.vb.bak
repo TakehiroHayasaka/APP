@@ -1,0 +1,132 @@
+﻿Public Class PMat
+    Public P11 As Double = 0.0
+    Public P12 As Double = 0.0
+    Public P13 As Double = 0.0
+    Public P14 As Double = 0.0
+    Public P21 As Double = 0.0
+    Public P22 As Double = 0.0
+    Public P23 As Double = 0.0
+    Public P24 As Double = 0.0
+    Public P31 As Double = 0.0
+    Public P32 As Double = 0.0
+    Public P33 As Double = 0.0
+    Public P34 As Double = 0.0
+
+    Public Sub New()
+
+    End Sub
+
+    Public Sub SetDataByHomMat2(ByVal HomMat As Object, ByVal CMat() As Double)
+        Dim PMatID As Object = Nothing
+        Dim PMatValue As Object = Nothing
+        Dim tmpMatID As Object = Nothing
+        Dim tmpCMatID As Object = Nothing
+        Dim RTmat(8) As Double
+        Dim Tmat(2) As Double
+        Dim RTmatid As Object = Nothing
+        Dim Tmatid As Object = Nothing
+        Dim RT_x_Tmatid As Object = Nothing
+        RTmat(0) = Tuple.TupleSelect(HomMat, 0)
+        RTmat(1) = Tuple.TupleSelect(HomMat, 4)
+        RTmat(2) = Tuple.TupleSelect(HomMat, 8)
+        RTmat(3) = Tuple.TupleSelect(HomMat, 1)
+        RTmat(4) = Tuple.TupleSelect(HomMat, 5)
+        RTmat(5) = Tuple.TupleSelect(HomMat, 9)
+        RTmat(6) = Tuple.TupleSelect(HomMat, 2)
+        RTmat(7) = Tuple.TupleSelect(HomMat, 6)
+        RTmat(8) = Tuple.TupleSelect(HomMat, 10)
+        Tmat(0) = Tuple.TupleSelect(HomMat, 3) * (-1)
+        Tmat(1) = Tuple.TupleSelect(HomMat, 7) * (-1)
+        Tmat(2) = Tuple.TupleSelect(HomMat, 11) * (-1)
+        Op.CreateMatrix(3, 3, RTmat, RTmatid)
+        Op.CreateMatrix(3, 1, Tmat, Tmatid)
+        Op.MultMatrix(RTmatid, Tmatid, "AB", RT_x_Tmatid)
+
+
+        Op.CreateMatrix(3, 4, 0, tmpMatID)
+        Op.SetSubMatrix(tmpMatID, RTmatid, 0, 0)
+        Op.SetSubMatrix(tmpMatID, RT_x_Tmatid, 0, 3)
+
+        Op.CreateMatrix(3, 3, CMat, tmpCMatID)
+
+        Op.MultMatrix(tmpCMatID, tmpMatID, "AB", PMatID)
+        Op.GetFullMatrix(PMatID, PMatValue)
+        Op.ClearMatrix(tmpMatID)
+        Op.ClearMatrix(PMatID)
+        Op.ClearMatrix(tmpCMatID)
+
+        Op.ClearMatrix(RTmatid)
+        Op.ClearMatrix(RT_x_Tmatid)
+        Op.ClearMatrix(Tmatid)
+
+        P11 = PMatValue(0)
+        P12 = PMatValue(1)
+        P13 = PMatValue(2)
+        P14 = PMatValue(3)
+        P21 = PMatValue(4)
+        P22 = PMatValue(5)
+        P23 = PMatValue(6)
+        P24 = PMatValue(7)
+        P31 = PMatValue(8)
+        P32 = PMatValue(9)
+        P33 = PMatValue(10)
+        P34 = PMatValue(11)
+   
+    End Sub
+
+    Public Sub SetDataByHomMat(ByVal HomMat As Object, ByVal CMat() As Double)
+
+        Dim Concat As Object = Nothing
+        Dim PMatID As Object = Nothing
+        Dim PMatValue As Object = Nothing
+        Dim Val1 As Object = Nothing
+        Dim Selected As Object = Nothing
+        Dim tmpMatID As Object = Nothing
+        Dim tmpCMatID As Object = Nothing
+
+        Op.TupleConcat(HomMat, Tuple.TupleConcat(Tuple.TupleConcat(Tuple.TupleConcat(0, 0), 0), 1), Concat)
+        Op.CreateMatrix(4, 4, Concat, tmpMatID)
+        Op.InvertMatrixMod(tmpMatID, "general", 0)
+        Op.GetFullMatrix(tmpMatID, Val1)
+        Op.TupleFirstN(Val1, 11, Selected)
+        Op.ClearMatrix(tmpMatID)
+        Op.CreateMatrix(3, 4, Selected, tmpMatID)
+        Op.CreateMatrix(3, 3, CMat, tmpCMatID)
+
+        Op.MultMatrix(tmpCMatID, tmpMatID, "AB", PMatID)
+        Op.GetFullMatrix(PMatID, PMatValue)
+        Op.ClearMatrix(tmpMatID)
+        Op.ClearMatrix(PMatID)
+        Op.ClearMatrix(tmpCMatID)
+
+        P11 = PMatValue(0)
+        P12 = PMatValue(1)
+        P13 = PMatValue(2)
+        P14 = PMatValue(3)
+        P21 = PMatValue(4)
+        P22 = PMatValue(5)
+        P23 = PMatValue(6)
+        P24 = PMatValue(7)
+        P31 = PMatValue(8)
+        P32 = PMatValue(9)
+        P33 = PMatValue(10)
+        P34 = PMatValue(11)
+    End Sub
+
+    Public Sub CopyToMe(ByVal objP As PMat)
+
+        P11 = objP.P11
+        P12 = objP.P12
+        P13 = objP.P13
+        P14 = objP.P14
+        P21 = objP.P21
+        P22 = objP.P22
+        P23 = objP.P23
+        P24 = objP.P24
+        P31 = objP.P31
+        P32 = objP.P32
+        P33 = objP.P33
+        P34 = objP.P34
+
+    End Sub
+End Class

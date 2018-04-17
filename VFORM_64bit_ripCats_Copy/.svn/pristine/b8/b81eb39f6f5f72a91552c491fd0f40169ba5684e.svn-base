@@ -1,0 +1,607 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VFORMS
+</name>
+</assembly>
+<members>
+<member name="F:WindowsApplication1.ImageSet.ImageName">
+	<summary>
+ 画像名
+ </summary>
+</member><member name="F:WindowsApplication1.ImageSet.ImageTransName">
+	<summary>
+ カメラレンズのひずみ補正をした画像の名前（現在未使用）
+ </summary>
+</member><member name="F:WindowsApplication1.ImageSet.ImageFullPath">
+	<summary>
+ 画像のフルパス
+ </summary>
+</member><member name="F:WindowsApplication1.ImageSet.ImageTransPath">
+	<summary>
+ カメラレンズのひずみ補正をした画像のパス（現在未使用）
+ </summary>
+</member><member name="F:WindowsApplication1.ImageSet.ImageTransFullPath">
+	<summary>
+ カメラレンズのひずみ補正をした画像のフルパス（現在未使用）
+ </summary>
+</member><member name="F:WindowsApplication1.ImageSet.ImageSmallFullPath">
+	<summary>
+ サムネイル画像のフルパス
+ </summary>
+</member><member name="F:WindowsApplication1.ImageSet.ImageId">
+	<summary>
+ 画像ID
+ </summary>
+	<remarks>重複しない</remarks>
+</member><member name="P:WindowsApplication1.ImageSet.hx_Image">
+	<summary>
+ 読み込む画像
+ </summary>
+ Private _hx_Image As HALCONXLib.HUntypedObjectX
+
+</member><member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+	<summary>
+  このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.Culture">
+	<summary>
+  厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
+  現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.オフセット座標系イラスト">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.トラック">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.トラック1">
+	<summary>
+  型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+</summary>
+</member><member name="T:WindowsApplication1.My.Resources.Resources">
+	<summary>
+  ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
+</summary>
+</member><member name="F:WindowsApplication1.SingleTarget.P2D">
+	<summary>
+ STの2次元画像上の座標値
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.P2ID">
+	<summary>
+ STの2次元画像上のID
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.P3ID">
+	<summary>
+ STの3次元ID（3D操作ビュー）
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.ImageID">
+	<summary>
+ 画像ID
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.flgUsed">
+	<summary>
+ STが使えるかどうか
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.RayP1">
+	<summary>
+ レイの始点（）
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.RayP2">
+	<summary>
+ レイの終点（）
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.Dist">
+	<summary>
+ rayと3Dポイント間の距離
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.ReProjectionError">
+	<summary>
+ 再投影のエラー
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.currentLabel">
+	<summary>
+ 画像上のSTのラベル
+ </summary>
+</member><member name="M:WindowsApplication1.SingleTarget.SaveData(System.String)">
+	<summary>
+ 未使用
+ </summary>
+</member><member name="F:WindowsApplication1.SingleTarget.MaxFieldCnt">
+	<summary>
+ 作成するSTの配列の最大数（14）
+ </summary>
+</member><member name="M:WindowsApplication1.SingleTarget.SaveData">
+	<summary>
+ レコードへSTの測点情報を書き込む
+ </summary>
+</member><member name="M:WindowsApplication1.SingleTarget.ReadData(System.Data.IDataReader@)">
+	<summary>
+ レコードからSTの測点情報を読み取る
+ </summary>
+</member><member name="M:WindowsApplication1.SingleTarget.IsSamePoint(WindowsApplication1.SingleTarget)">
+	<summary>
+ 同じSTがあるかどうか
+ </summary>
+</member><member name="F:WindowsApplication1.Common3DSingleTarget.PID">
+	<summary>
+ STのラベル（数値のみ）
+ </summary>
+</member><member name="F:WindowsApplication1.Common3DSingleTarget.tmpImgPnt">
+	<summary>
+ STの画像上（2次元）の座標値
+ </summary>
+</member><member name="F:WindowsApplication1.Common3DSingleTarget.AllDist">
+	<summary>
+ 1計測点に対する全計測点要素
+ </summary>
+</member><member name="F:WindowsApplication1.Common3DSingleTarget.meanerror">
+	<summary>
+ STの3次元座標値のズレ（距離）の平均
+ </summary>
+</member><member name="F:WindowsApplication1.Common3DSingleTarget.deverror">
+	<summary>
+ STの3次元座標値の標準偏差を返す。
+ </summary>
+</member><member name="M:WindowsApplication1.Common3DSingleTarget.#ctor">
+	<summary>
+ 初期化
+ </summary>
+</member><member name="P:WindowsApplication1.Common3DSingleTarget.currentLabel">
+	<summary>
+ _currentLabelに番号を振る
+ </summary>
+</member><member name="P:WindowsApplication1.Common3DSingleTarget.systemlabel">
+	<summary>
+ 「ST」+番号を振る
+ </summary>
+</member><member name="M:WindowsApplication1.Common3DSingleTarget.Calc3dPoints">
+	<summary>
+ STを計算する
+ </summary>
+</member><member name="M:WindowsApplication1.Common3DSingleTarget.CheckAndRemoveBadSingleTarget(System.Double)">
+	<summary>
+ STを削除するかどうか
+ </summary>
+</member><member name="M:WindowsApplication1.Common3DSingleTarget.RemoveSTByIndex(System.Int32)">
+	<summary>
+ 指定したIndexからSTを削除する
+ </summary>
+</member><member name="M:WindowsApplication1.Common3DSingleTarget.RemoveSTByST(WindowsApplication1.SingleTarget)">
+	<summary>
+ 指定したSTからSTを削除する
+ </summary>
+</member><member name="M:WindowsApplication1.Common3DSingleTarget.SamePointAri(WindowsApplication1.SingleTarget)">
+	<summary>
+ 同じSTがあるかどうか
+ </summary>
+</member><member name="M:WindowsApplication1.Common3DSingleTarget.SameImagePointAri(WindowsApplication1.SingleTarget)">
+	<summary>
+ 未使用
+ </summary>
+</member><member name="T:WindowsApplication1.db1DataSet.BBBDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet.BBBRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet.BBBRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSetTableAdapters.BBBTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.db1DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.db1DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.db1DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.db1DataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:WindowsApplication1.TargetDetect.lstCT">
+	<summary>
+ CTのLIST
+ </summary>
+</member><member name="F:WindowsApplication1.TargetDetect.lstST">
+	<summary>
+ STのLIST
+ </summary>
+</member><member name="M:WindowsApplication1.TargetDetect.#ctor">
+	<summary>
+ 初期化
+ </summary>
+</member><member name="M:WindowsApplication1.TargetDetect.#ctor(System.Int32)">
+	<summary>
+ 未使用
+ </summary>
+</member><member name="M:WindowsApplication1.TargetDetect.SaveData">
+	<summary>
+ TargetDetectクラスのlstCTのCT測点情報を、CodedTargetクラスのリストへ書き込む。また、TargetDetectクラスのlstSTのST測点情報を、SingleTargetクラスのリストへ書き込む。
+ </summary>
+</member><member name="M:WindowsApplication1.TargetDetect.DeleteData(System.String,System.Boolean)">
+	<summary>
+ Targetsテーブルの重複したレコードを削除する
+ </summary>
+</member><member name="M:WindowsApplication1.TargetDetect.ReadData(System.String,System.Int32)">
+	<summary>
+ 画像のパスと画像IDを読み込む
+ </summary>
+</member><member name="M:WindowsApplication1.TargetDetect.DetectCT_old(HALCONXLib.HUntypedObjectX,System.Object,System.Int32)">
+	<summary>
+ 未使用
+ </summary>
+</member><member name="M:WindowsApplication1.TargetDetect.DetectTargets(System.Int32,HALCONXLib.HUntypedObjectX,System.Object,System.Int32)">
+	<summary>
+ ST，CTの抽出（一括処理の実行プログラム）
+ </summary>
+ Main procedure 
+
+</member><member name="M:WindowsApplication1.TargetDetect.DetectTargetsOther(System.Int32,HALCONXLib.HUntypedObjectX,System.Object,System.Int32,System.Int32)">
+	<summary>
+ ST，CTの抽出（枠の外枠の4頂点ではなく内枠の4頂点を抽出するように変更）
+ </summary>
+ Main procedure 
+ 枠の外枠の4頂点ではなく内枠の4頂点を抽出するように変更　20120404
+
+</member><member name="M:WindowsApplication1.TargetDetect.GetFirstRegion(HALCONXLib.HUntypedObjectX@,HALCONXLib.HUntypedObjectX@)">
+	<summary>
+ 未使用
+ </summary>
+ 3チャンネル画像に対してBinThresholdを掛け3つの領域を結合する。
+
+</member><member name="M:WindowsApplication1.TargetDetect.GetFirstRegionG(HALCONXLib.HUntypedObjectX@,HALCONXLib.HUntypedObjectX@,HALCONXLib.HUntypedObjectX@,System.Int32)">
+	<summary>
+ '3チャンネル画像のGreen画像のみに対してBinThresholdを掛けて領域を抽出する。
+ </summary>
+</member><member name="F:WindowsApplication1.Point3D.X">
+	<summary>
+ X座標
+ </summary>
+</member><member name="F:WindowsApplication1.Point3D.Y">
+	<summary>
+ Y座標
+ </summary>
+</member><member name="F:WindowsApplication1.Point3D.Z">
+	<summary>
+ Z座標
+ </summary>
+</member><member name="F:WindowsApplication1.Point3D.MyDist">
+	<summary>
+ 各レイから自分の3次元座標までの距離の和
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.#ctor">
+	<summary>
+ FBMlib.Point3Dの初期化①（X,Y,Z,MyDist）
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.#ctor(WindowsApplication1.Point3D)">
+	<summary>
+ FBMlib.Point3Dの初期化②（X,Y,Z,MyDist）
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.#ctor(System.Object,System.Object,System.Object)">
+	<summary>
+ BestPlaneNormalVectorの初期化（X,Y,Z）
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.GetDisttoOtherPose(WindowsApplication1.Point3D,System.Object@)">
+	<summary>
+ 2点間の距離を算出
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.GetMult3D(WindowsApplication1.Point3D,WindowsApplication1.Point3D@)">
+	<summary>
+ X,Y,Z座標値にある値を掛ける①
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.GetSumXYZ">
+	<summary>
+ X+Y+Zの合計
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.SetScale(System.Double)">
+	<summary>
+ X,Y,Z座標値にスケール値を掛ける（FBMlibにのみ使用/未使用? ）
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.SetScale2(System.Double)">
+	<summary>
+ X,Y,Z座標値にスケール値を掛ける
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.SubPoint3d(WindowsApplication1.Point3D)">
+	<summary>
+ X,Y,Z座標値にある値を引く
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.AddPoint3d(WindowsApplication1.Point3D)">
+	<summary>
+ X,Y,Z座標値にある値を足す
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.ScalarPoint3d(WindowsApplication1.Point3D)">
+	<summary>
+ FBMlibにのみ使用
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.VectorMult(WindowsApplication1.Point3D)">
+	<summary>
+ 未使用
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.SetScaleByMatrix(System.Object)">
+	<summary>
+ FeatureImage.vbに使用（FBMlibにのみ ）
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.Save3dPoints(System.String)">
+	<summary>
+ 3次元座標値を任意のパスに保存（FBMlibにのみ使用/未使用?）
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.Read3dPoints(System.String)">
+	<summary>
+ 任意のパスを返す(FBMlibにのみ使用/未使用?)
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.ConcatToMe(WindowsApplication1.Point3D)">
+	<summary>
+ 2つの座標値を連結
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.CalcScale(WindowsApplication1.Point3D,System.Object@)">
+	<summary>
+ スケールを計算
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.GetMean">
+	<summary>
+ 平均値を算出
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.GetSummary">
+	<summary>
+ 全要素の合計を算出
+ </summary>
+</member><member name="M:WindowsApplication1.Point3D.GetMultedByTuple(System.Object)">
+	<summary>
+ X,Y,Z座標値にある値を掛ける②
+ </summary>
+</member><member name="F:WindowsApplication1.ImagePoints.Row">
+	<summary>
+ 2次元画像の行の要素（Row：縦に進む）
+ </summary>
+</member><member name="F:WindowsApplication1.ImagePoints.Col">
+	<summary>
+ 2次元画像の列の要素（Column：横に進む）
+ </summary>
+</member><member name="P:WindowsApplication1.ImagePoints.CountPoints">
+	<summary>
+ 測点数
+ </summary>
+</member><member name="M:WindowsApplication1.ImagePoints.#ctor">
+	<summary>
+ Row，Colの初期化
+ </summary>
+</member><member name="M:WindowsApplication1.ImagePoints.GetPointsByCoord(System.Object,System.Object,System.Object@)">
+	<summary>
+ ※わからない（H25.4.8 山田）（？）
+ </summary>
+</member><member name="M:WindowsApplication1.ImagePoints.CalcDistToInputPoint(System.Object,System.Object,System.Object@)">
+	<summary>
+ 2点間の距離を計算
+ </summary>
+</member><member name="M:WindowsApplication1.ImagePoints.SaveData(System.String)">
+	<summary>
+ ※データの書き込み（？）
+ </summary>
+</member><member name="M:WindowsApplication1.ImagePoints.ReadData(System.String)">
+	<summary>
+ ※データの読込み（？）
+ </summary>
+</member><member name="M:WindowsApplication1.ImagePoints.ConcatToMe(WindowsApplication1.ImagePoints)">
+	<summary>
+ ※2つの配列や要素を連結する（？）
+ </summary>
+</member><member name="T:WindowsApplication1.db1DataSet1.TTTDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet1.TTTRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet1.TTTRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet1TableAdapters.TTTTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.db1DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.db1DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.db1DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.db1DataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:WindowsApplication1.db1DataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSet.ShootParamDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSet.ShootParamRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSet.ShootParamRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSetTableAdapters.ShootParamTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApplication1.dbFBMDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApplication1.dbFBMDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApplication1.dbFBMDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApplication1.dbFBMDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:WindowsApplication1.dbFBMDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:WindowsApplication1.CodedTarget.CT_ID">
+	<summary>
+ CTのsystemlabel()のID（番号）
+ </summary>
+</member><member name="F:WindowsApplication1.CodedTarget.ImageID1">
+	<summary>
+ 画像ID
+ </summary>
+</member><member name="F:WindowsApplication1.CodedTarget.CT_Points">
+	<summary>
+ CTの2次元座標（画像）
+ </summary>
+</member><member name="F:WindowsApplication1.CodedTarget.lstCTtoST">
+	<summary>
+ CT内のSTのLIST
+ </summary>
+ Public CT_3dPoint As Point3D
+
+</member><member name="F:WindowsApplication1.CodedTarget.CTnoSTnum">
+	<summary>
+ CT内のSTの数（Constで4）
+ </summary>
+</member><member name="F:WindowsApplication1.CodedTarget.flgUsable">
+	<summary>
+ CTが使えるかどうか
+ </summary>
+</member><member name="F:WindowsApplication1.CodedTarget.CurrentLabel">
+	<summary>
+ 画像上のCTのラベル
+ </summary>
+</member><member name="M:WindowsApplication1.CodedTarget.#ctor">
+	<summary>
+ 初期化
+ </summary>
+</member><member name="P:WindowsApplication1.CodedTarget.CenterPoint">
+	<summary>
+ 画像上のCTの座標値（2次元）
+ </summary>
+</member><member name="P:WindowsApplication1.CodedTarget.systemlabel">
+	<summary>
+ 『CT』+ CT_ID
+ </summary>
+</member><member name="M:WindowsApplication1.CodedTarget.SaveData(System.String)">
+	<summary>
+ 未使用
+ </summary>
+</member><member name="F:WindowsApplication1.CodedTarget.MaxFieldCnt">
+	<summary>
+ 作成する配列の最大数（14）
+ </summary>
+</member><member name="M:WindowsApplication1.CodedTarget.CreateFieldText(System.Int32)">
+	<summary>
+ CT内のSTのフィールドを作成する
+ </summary>
+</member><member name="M:WindowsApplication1.CodedTarget.SaveData">
+	<summary>
+ ST(CT内の)測点情報をレコードへ書き込む
+ </summary>
+</member><member name="M:WindowsApplication1.CodedTarget.DeleteData">
+	<summary>
+	</summary>
+</member><member name="M:WindowsApplication1.CodedTarget.ReadData(System.String)">
+	<summary>
+ 未使用
+ </summary>
+</member><member name="M:WindowsApplication1.CodedTarget.ReadData(System.Data.IDataReader@)">
+	<summary>
+ レコードからCTの測点情報を読み込む
+ </summary>
+</member><member name="F:WindowsApplication1.Common3DCodedTarget._pid">
+	<summary>
+ コードターゲットのラベル（数値のみ）
+ </summary>
+</member><member name="F:WindowsApplication1.Common3DCodedTarget._currentLabel">
+	<summary>
+ コードターゲットのラベル（CT + 数値）
+ </summary>
+</member>
+</members>
+</doc>

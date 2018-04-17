@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ProjectFiles</ProjectView>
+    <PublishUrlHistory>publish\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>ja-JP</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>strNewKoujiFolder = "C:\01_VFORM_Projects\SUEOKI\Data130864152410012581_CASE26KIJYUN"
+</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_SpecificUser_Release|AnyCPU'">
+    <StartArguments>
+    </StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_SpecificUser_Release|AnyCPU'">
+    <StartArguments>
+    </StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Normal_Release|AnyCPU'">
+    <StartArguments>strNewKoujiFolder = "C:\01_VFORM_Projects\SUEOKI\Data130834985822746552"
+</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'win10_Sueoki_Release|AnyCPU'">
+    <StartArguments>strNewKoujiFolder = "C:\01_VFORM_Projects\SUEOKI\Data130834985822746552"
+</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Win7_Sueoki_Release|AnyCPU'">
+    <StartArguments>strNewKoujiFolder = "C:\01_VFORM_Projects\SUEOKI\Data130834985822746552"
+</StartArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debugx32|AnyCPU'">
+    <StartArguments>strNewKoujiFolder = "C:\01_VFORM_Projects\SUEOKI\Data130864152410012581_CASE26KIJYUN"
+</StartArguments>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="WindowsApplication1.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="WindowsApplication1.My.MySettings.db1ConnectionString"
+            connectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\db1.mdb"
+            providerName="System.Data.OleDb" />
+        <add name="WindowsApplication1.My.MySettings.dbFBMConnectionString"
+            connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\dbFBM.mdb"
+            providerName="System.Data.OleDb" />
+    </connectionStrings>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+    </startup>
+    <userSettings>
+        <WindowsApplication1.My.MySettings>
+            <setting name="KoujiRootFolder" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI</value>
+            </setting>
+            <setting name="YCMFolder" serializeAs="String">
+                <value>C:\YCM_VFORM_Sueoki\YCM\bin\Debug</value>
+            </setting>
+            <setting name="shareFolder" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\shareFolder</value>
+            </setting>
+            <setting name="localFolder" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\localFolder</value>
+            </setting>
+            <setting name="BasePointFile" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\BasePoint.csv</value>
+            </setting>
+            <setting name="MeasurePointFile" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\MeasurePoint.csv</value>
+            </setting>
+            <setting name="BaseCoordFile" serializeAs="String">
+                <value>C:\01_VFORM_Projects\SUEOKI\BaseCoordinates.csv</value>
+            </setting>
+            <setting name="MeasPointMove_x" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="MeasPointBase_x" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="MeasPointMove_y" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="MeasPointBase_y" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="BasePointMove_x" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="BasePointBase_x" serializeAs="String">
+                <value>1</value>
+            </setting>
+            <setting name="BasePointMove_y" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="BasePointBase_y" serializeAs="String">
+                <value>1</value>
+            </setting>
+        </WindowsApplication1.My.MySettings>
+    </userSettings>
+</configuration>

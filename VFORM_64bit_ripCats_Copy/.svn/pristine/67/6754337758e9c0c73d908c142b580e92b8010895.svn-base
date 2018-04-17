@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="YCM.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+            <section name="YCM.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+    <system.diagnostics>
+        <sources>
+            <!-- このセクションでは、My.Application.Log のログ構成を定義します。 -->
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                    <!-- アプリケーション イベント ログに書き込むには、以下のセクションのコメントを解除します -->
+                    <!--<add name="EventLog"/>-->
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information"/>
+        </switches>
+        <sharedListeners>
+            <add name="FileLog" type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" initializeData="FileLogWriter"/>
+            <!-- アプリケーション イベント ログに書き込むには、以下のセクションのコメントを解除して、APPLICATION_NAME をアプリケーション名に置き換えます -->
+            <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+        </sharedListeners>
+    </system.diagnostics>
+    <userSettings>
+        <YCM.MySettings>
+            <setting name="strLastProjPath" serializeAs="String">
+                <value>""</value>
+            </setting>
+            <setting name="strGazouPath" serializeAs="String">
+                <value>C:\TestImage</value>
+            </setting>
+            <setting name="blnCTonly" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="DefaultSavePath" serializeAs="String">
+                <value>C:\01_VFORM_Projects</value>
+            </setting>
+            <setting name="GazouSaveType" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="OffsetMin" serializeAs="String">
+                <value>5</value>
+            </setting>
+            <setting name="OffsetMax" serializeAs="String">
+                <value>50</value>
+            </setting>
+            <setting name="OffsetOutput" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="BuildNo" serializeAs="String">
+                <value>20170331_rev9 x64</value>
+            </setting>
+            <setting name="strCamparam" serializeAs="String">
+                <value>.\計測システムフォルダ\CamParam\YTI_camparamD7200_Mid_SxConst.cal</value>
+            </setting>
+        </YCM.MySettings>
+        <YCM.My.MySettings>
+            <setting name="strCamparam" serializeAs="String">
+                <value>.\計測システムフォルダ\CamParam\Niitsu_camparamD7000_SxConst.cal</value>
+            </setting>
+            <setting name="strLastProjPath" serializeAs="String">
+                <value>""</value>
+            </setting>
+            <setting name="strGazouPath" serializeAs="String">
+                <value>C:\TestImage</value>
+            </setting>
+            <setting name="blnCTonly" serializeAs="String">
+                <value>False</value>
+            </setting>
+        </YCM.My.MySettings>
+    </userSettings>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5"/></startup></configuration>

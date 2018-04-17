@@ -1,0 +1,4 @@
+﻿
+Class XYZseibun
+
+End Class
