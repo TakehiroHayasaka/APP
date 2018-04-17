@@ -26,4 +26,5 @@
         a = 1
 
     End Sub
+
 End Class
