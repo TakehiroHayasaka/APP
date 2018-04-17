@@ -888,46 +888,7 @@ Public Class KentouKihonInfoTabDialog
 
     '''' 2013/05/20 作成
     '''' 
-
-    '''' 
-    'Private Sub SetKoujiSansyou()
-
-    '    WorksD = New WorksTable
-    '    WorksD.m_dbClass = m_system_dbclass
-    '    WorksD.GetDataToList()
-    '    If WorksD.KihonL Is Nothing Then
-    '        Exit Sub
-    '    End If
-
-    '    Dim WorksT As Works
-    '    WorksT = New Works(m_system_dbclass)
-    '    WorksT.WKihonL = New List(Of KihonInfoTable)
-    '    WorksT.KihonInfoCopy(WorksD.KihonL)
-    '    WorksT.GetDataToList()
-    '    If WorksT.WorksL.Count = 0 Then
-    '        BtnT2KojiSansyou.Enabled = False
-    '    Else
-    '        BtnT2KojiSansyou.Enabled = True
-    '    End If
-
-    'End Sub
-
-    ''' 
-
-    ''' 他工事データからの参照ボタン設定
-
-    ''' 2013/05/23 作成
-    ''' 
-
-    ''' 
     Private Sub SetKoujiSansyou()
-
-        'WorksD = New WorksTable
-        'WorksD.m_dbClass = m_system_dbclass
-        'WorksD.GetDataToList()
-        'If WorksD.KihonL Is Nothing Then
-        '    Exit Sub
-        'End If
 
         Dim WorksT As Works
         WorksT = New Works(m_system_dbclass)
@@ -1361,125 +1322,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Sub
 
-    ''' 
-
-    ''' 2013/05/21 作成
-    ''' 
-
-    ''' 
-    'Private Sub SetTLP1()
-
-    '    '挿入位置
-    '    Dim insertRow As Integer = 0
-    '    Dim insertColumn As Integer = 0
-
-    '    Dim iCols As Integer = 0
-    '    Dim iRows As Integer = 0
-
-    '    Dim iTabIndex As Long = 0
-
-    '    Dim TypeInfoD As New TypeInfoTable
-    '    TypeInfoD.m_dbClass = m_system_dbclass
-    '    TypeInfoDL = TypeInfoD.GetDataToList
-    '    If TypeInfoDL Is Nothing Then
-    '        Exit Sub
-    '    End If
-
-    '    With TLP1
-
-    '        .Controls.Clear()
-
-    '        .RowCount = 0
-
-    '        '.ColumnCount = 2
-    '        .ColumnCount = 1
-
-    '        .CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetPartial
-
-    '        .Visible = True
-    '        .Location = New System.Drawing.Point(23, 50)
-
-    '        '.Size = New System.Drawing.Size(400, 145)
-
-    '        '.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 15))
-    '        '.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 85))
-
-    '        .GrowStyle = TableLayoutPanelGrowStyle.AddRows
-
-    '        For iRows = 0 To TypeInfoDL.Count - 1
-
-    '            'ラジオボタン
-    '            Dim newRadio As New RadioButton
-    '            newRadio.Size = New Size(GroupBox1.Size.Width - 15, newRadio.Size.Height)
-    '            newRadio.Text = TypeInfoDL(iRows).type_name.Trim
-    '            newRadio.Name = "R" & iRows
-    '            newRadio.Font = New System.Drawing.Font("ＭＳ ゴシック", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-    '            If iRows = 0 Then
-    '                newRadio.Checked = True
-    '            End If
-
-    '            'newRadio.Anchor = AnchorStyles.Left
-    '            .Controls.Add(newRadio, 0, iRows)
-    '            .Controls(.Controls.Count - 1).Anchor = AnchorStyles.Left
-    '            '動的にラジオボタンイベントを関連付ける
-
-    '            AddHandler newRadio.Click, AddressOf rbtn_Check
-    '            'AddHandler newRadio.MouseMove, AddressOf rbtn_MouseMove
-
-    '            '''Type名
-
-    '            ''Dim newLabel As New Label
-    '            ''newLabel.Text = TypeInfoDL(iRows).type_name.Trim
-    '            ''newLabel.Size = New Size(350, 28)
-    '            ''newLabel.Name = "T" & iRows
-    '            ''newLabel.TabIndex = iTabIndex
-    '            ''newLabel.Font = New System.Drawing.Font("ＭＳ ゴシック", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-    '            '''newLabel.Anchor = AnchorStyles.Left
-    '            ''Type名
-
-    '            'Dim newLabel As New TextBox
-    '            'newLabel.Text = TypeInfoDL(iRows).type_name.Trim
-    '            'newLabel.Size = New Size(350, 28)
-    '            'newLabel.Name = "T" & iRows
-    '            'newLabel.TabIndex = iTabIndex
-    '            'newLabel.Font = New System.Drawing.Font("ＭＳ ゴシック", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-    '            'newLabel.TabStop = False
-    '            'newLabel.ReadOnly = True
-    '            'newLabel.BorderStyle = BorderStyle.None
-    '            'newLabel.Anchor = AnchorStyles.Left
-
-    '            'iTabIndex += 1
-    '            '.Controls.Add(newLabel, 1, iRows)
-    '            '.Controls(.Controls.Count - 1).Dock = DockStyle.Fill
-    '            '.Controls(.Controls.Count - 1).Anchor = AnchorStyles.Left
-
-    '        Next
-
-    '        .RowStyles.Item(0).SizeType = SizeType.AutoSize
-
-    '    End With
-
-    '    'Me.GroupBox1.Size = New Size(500, (55 + ((TypeInfoDL.Count - 1) * 32)))
-
-    '    Dim iHeight As Integer = (55 + ((TypeInfoDL.Count - 1) * 32))
-    '    With GroupBox1
-    '        If iHeight < 375 Then
-    '            .Size = New Size(392, iHeight)
-    '            TLP1.AutoScroll = False
-    '            Panel1.AutoScroll = False
-    '        Else
-    '            .Size = New Size(392, 384)
-    '            TLP1.AutoScroll = True
-    '            Panel1.AutoScroll = True
-    '        End If
-    '    End With
-    '    TLP1.Refresh()
-    '    Me.Refresh()
-
-    'End Sub
-
-    ''' 
-
     ''' TableLayoutPanelのRadioButtonチェックイベント
 
     ''' 2013/05/27 作成
@@ -1519,143 +1361,6 @@ Public Class KentouKihonInfoTabDialog
     End Sub
 
     '''' 
-
-    '''' 2013/05/13 作成
-    '''' 
-
-    '''' 
-    'Private Sub SetTLP4()
-
-    '    '挿入位置
-    '    Dim insertRow As Integer = 0
-    '    Dim insertColumn As Integer = 0
-
-    '    Dim iCols As Integer = 0
-    '    Dim iRows As Integer = 0
-
-    '    'If Me.Tag Is Nothing Then
-    '    '    '
-    '    WorksD = New WorksTable
-    '    WorksD.m_dbClass = m_system_dbclass
-    '    WorksD.GetDataToList()
-    '    If WorksD.KihonL Is Nothing Then
-    '        Exit Sub
-    '    End If
-    '    'Else
-    '    '    '読込から
-    '    '    WorksD = New WorksTable
-    '    '    WorksD.m_dbClass = m_system_dbclass
-    '    '    WorksD.copy(CType(Me.Tag, WorksTable))
-    '    'End If
-
-    '    With TLP4
-
-    '        .Controls.Clear()
-
-    '        .RowCount = 0
-
-    '        .ColumnCount = 2
-
-    '        .CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetPartial
-
-    '        .Visible = True
-    '        .Location = New System.Drawing.Point(23, 50)
-    '        '.Size = New System.Drawing.Size(200, 200)
-
-    '        '.Size = New System.Drawing.Size(500, 120)
-
-    '        .ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 25))
-    '        .ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 75))
-
-    '        '.ColumnCount = 2
-
-    '        .GrowStyle = TableLayoutPanelGrowStyle.AddRows
-
-    '        Dim iTabIndex As Long = 0
-
-    '        For iRows = 0 To WorksD.KihonL.Count - 1
-
-    '            '項目名
-
-    '            Dim newLabel As New Label
-    '            newLabel.Text = WorksD.KihonL(iRows).item_name
-    '            .Controls.Add(newLabel, insertColumn, iRows)
-    '            .Controls(.Controls.Count - 1).Dock = DockStyle.Fill
-    '            .Controls(.Controls.Count - 1).Anchor = AnchorStyles.Left
-
-    '            '項目タイプ
-
-    '            Select Case WorksD.KihonL(iRows).value_type
-    '                Case "TEXT"
-    '                    Dim newTextBox As New TextBox()
-    '                    newTextBox.Text = WorksD.KihonL(iRows).item_value
-    '                    newTextBox.Size = New Size(200, 28)
-    '                    newTextBox.Name = WorksD.KihonL(iRows).item_cell_name
-    '                    newTextBox.TabIndex = iTabIndex
-    '                    iTabIndex += 1
-    '                    .Controls.Add(newTextBox, insertColumn + 1, iRows)
-    '                    .Controls(.Controls.Count - 1).Anchor = AnchorStyles.Left
-    '                    Dim objS1 As New Object
-    '                    objS1 = newTextBox
-    '                    WorksD.KihonL(iRows).objControl = objS1
-    '                    WorksD.KihonL(iRows).SetDefaultValueToControl()
-    '                    Exit Select
-    '                Case "COMBOBOX"
-    '                    Dim newCombobox As New ComboBox
-    '                    newCombobox.Size = New Size(150, 28)
-    '                    newCombobox.Name = WorksD.KihonL(iRows).item_cell_name
-    '                    newCombobox.TabIndex = iTabIndex
-    '                    iTabIndex += 1
-    '                    For Each CTEXT As String In WorksD.KihonL(iRows).item_value.Split("|")
-    '                        newCombobox.Items.Add(CTEXT)
-    '                    Next
-    '                    .Controls.Add(newCombobox, insertColumn + 1, iRows)
-    '                    .Controls(.Controls.Count - 1).Anchor = AnchorStyles.Left
-    '                    Dim objS1 As New Object
-    '                    objS1 = newCombobox
-    '                    WorksD.KihonL(iRows).objControl = objS1
-    '                    WorksD.KihonL(iRows).SetDefaultValueToControl()
-    '                    Exit Select
-    '                Case "DATETIME"
-    '                    Dim newDateTimePicker As New DateTimePicker
-    '                    newDateTimePicker.Size = New Size(210, 28)
-    '                    newDateTimePicker.Name = WorksD.KihonL(iRows).item_cell_name
-    '                    newDateTimePicker.TabIndex = iTabIndex
-    '                    iTabIndex += 1
-    '                    If IsDate(WorksD.KihonL(iRows).item_value) = True Then
-    '                        newDateTimePicker.Value = CDate(WorksD.KihonL(iRows).item_value)
-    '                    End If
-    '                    .Controls.Add(newDateTimePicker, insertColumn + 1, iRows)
-    '                    .Controls(.Controls.Count - 1).Anchor = AnchorStyles.Left
-    '                    Dim objS1 As New Object
-    '                    objS1 = newDateTimePicker
-    '                    WorksD.KihonL(iRows).objControl = objS1
-    '                    WorksD.KihonL(iRows).SetDefaultValueToControl()
-    '                    Exit Select
-    '            End Select
-
-    '        Next
-
-    '        .RowStyles.Item(0).SizeType = SizeType.AutoSize
-
-    '    End With
-
-    '    ''Me.GroupBox6.Size = New Size(500, TLP4.Height + 10)
-    '    ''Me.GroupBox6.Size = New Size(500, (WorksD.KihonL.Count * 30) + 13)
-    '    ''Me.GroupBox6.Size = New Size(500, (WorksD.KihonL.Count * 28) + (WorksD.KihonL.Count + 1) + 8)
-    '    'Me.GroupBox6.Size = New Size(500, (WorksD.KihonL.Count * 28) + (WorksD.KihonL.Count + 1) + 8)
-    '    ''Me.GroupBox6.Size = New Size(500, TLP4.Controls(0).Size.Height * WorksD.KihonL.Count)
-    '    ''Me.Panel9.Size = New Size(500, (TLP4.Size.Height + 8))
-
-    '    Me.GroupBox6.Size = New Size(500, (WorksD.KihonL.Count * 30))
-    '    Me.Refresh()
-
-    '    '他工事データからの参照
-    '    SetKoujiSansyou()
-
-    'End Sub
-
-    ''' 
 
     ''' 2013/05/13 作成
     ''' 
@@ -1859,111 +1564,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Sub
 
-    '''' 
-
-    '''' 次へボタン
-    '''' 2013/05/13 作成
-    '''' 
-
-    '''' 
-    'Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    '    Dim strdatabasefile As String = ""
-    '    m_strDataBasePath = ""
-    '    m_strDataBasePath = ComSel_SelectFolderByShell("工事データフォルダを指定して下さい。", True)
-    '    If m_strDataBasePath <> Nothing Then
-    '        If System.IO.File.Exists(m_strDataBasePath & "\" & m_Keisoku_mdb_name) = False Then
-    '            '計測データ.mdbが無い場合、コピーする
-    '            System.IO.File.Copy(m_KeisokuTempMdbPath, m_strDataBasePath & "\" & m_Keisoku_mdb_name)
-    '        Else
-    '            If MsgBox("既に計測データが存在します。" & vbCrLf & "上書きしますか？", MsgBoxStyle.YesNo, "確認") = MsgBoxResult.Yes Then
-    '                System.IO.File.Delete(m_strDataBasePath & "\" & m_Keisoku_mdb_name)
-    '                System.IO.File.Copy(m_KeisokuTempMdbPath, m_strDataBasePath & "\" & m_Keisoku_mdb_name)
-    '            End If
-    '        End If
-
-    '        '規定値入力
-
-    '        'コピーした計測データ.mdbに寸法算出テーブルの規定値・最小許容値・最大許容値を設定する
-
-    '        m_Keisoku_mdb_path = m_strDataBasePath & "\" & m_Keisoku_mdb_name
-    '        ' KiteitiInput.ShowDialog()
-
-    '        '画面の入力値を取得する
-
-    '        GetDataFromToControl()
-
-    '        '計測データ.mdbに入力値を書き込む
-    '        'KihonInfoの更新
-    '        If SetKeisokuData(m_strDataBasePath & "\" & m_Keisoku_mdb_name) = False Then
-    '            DisConnectDB(m_keisoku_dbclass)
-    '            MsgBox("計測データ更新に失敗しました。", MsgBoxStyle.OkOnly, "確認")
-    '            Exit Sub
-    '        End If
-
-    '        'システム設定.mdbを更新する
-    '        'Works, WorksInfoの更新
-    '        If SetSystemData(m_SystemMdbFullPath, m_strDataBasePath) = False Then
-    '            MsgBox("システム設定データ更新に失敗しました。", MsgBoxStyle.OkOnly, "確認")
-    '            Exit Sub
-    '        End If
-    '    Else
-    '        Exit Sub
-    '    End If
-
-    '    '計測データ.mdbを切断する
-    '    DisConnectDB(m_keisoku_dbclass)
-    '    'システム設定.mdbを切断する
-    '    DisConnectDB(m_system_dbclass)
-    '    'Me.Dispose()
-    '    'Me.Close()
-
-    '    '初期設定
-
-    '    If SetInitFormKitei() = False Then
-    '        Exit Sub
-    '    End If
-
-    '    'グリッドヘッダ設定
-
-    '    SetGridHeaddderKitei()
-
-    '    'データを取得してグリッドに表示
-    '    SetDataKitei()
-
-    'End Sub
-
-    '''' 
-
-    '''' 次へボタン
-    '''' 2013/05/16 作成
-    '''' 
-
-    '''' 
-    'Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    '    If CType(sender, Button).Name = "Button5" Then
-    '        RadioButton1.Checked = True
-    '    End If
-
-    '    'Me.TabControl1.SelectedIndex += 1
-
-    'End Sub
-
-    '''' 
-
-    '''' 戻るボタン
-    '''' 2013/05/16 作成
-    '''' 
-
-    '''' 
-    'Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    '    'Me.TabControl1.SelectedIndex -= 1
-
-    'End Sub
-
-    ''' 
 
     ''' 計測データ.mdbに入力値を書き込む
     ''' 2013/05/14 作成
@@ -2099,33 +1699,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Function
 
-    '''' 
-
-    '''' 入力値を書き込む
-    '''' システム設定.mdbに書き込む
-    '''' 2013/05/13 作成
-    '''' 
-
-    '''' 
-    'Private Function SetInputData() As Boolean
-
-    '    Dim bRet As Boolean = True
-
-    '    '画面の入力値を取得する
-
-    '    GetDataFromToControl()
-
-
-
-    '    SaveKeisokuData()
-
-    '    '項目値を更新する
-    '    bRet = SaveSystemData()
-
-    'End Function
-
-    ''' 
-
     ''' 画面の項目を取得する
 
     ''' 2013/05/13 作成
@@ -2137,31 +1710,6 @@ Public Class KentouKihonInfoTabDialog
         For Each III As KihonInfoTable In WorksD.KihonL
             III.GetDataFromControl()
         Next
-
-        'With KIO
-
-        '    For i As Long = 0 To .iControls.Count - 1
-
-        '        Try
-        '            If KInfoD.KihonL(i).item_value <> .iControls(i).text.trim Then
-        '                KInfoD.KihonL(i).flgSyusei = True       '修正フラグ true
-        '                KInfoD.KihonL(i).update_date = Now      '更新日
-        '            Else
-        '                KInfoD.KihonL(i).flgSyusei = False      '修正フラグ false
-        '            End If
-        '            KInfoD.KihonL(i).item_value = .iControls(i).text.trim
-        '        Catch ex As Exception
-        '            If KInfoD.KihonL(i).item_value <> .iControls(i).value.trim Then
-        '                KInfoD.KihonL(i).flgSyusei = True       '修正フラグ true
-        '                KInfoD.KihonL(i).update_date = Now      '更新日
-        '            Else
-        '                KInfoD.KihonL(i).flgSyusei = False      '修正フラグ false
-        '            End If
-        '            KInfoD.KihonL(i).item_value = .iControls(i).value
-        '        End Try
-        '    Next
-
-        'End With
 
     End Sub
 
@@ -2228,24 +1776,6 @@ Public Class KentouKihonInfoTabDialog
     Private Sub KentouKihonInfoTabDialog_LocationChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.LocationChanged
 
     End Sub
-
-    'Private Sub KihonInfoTabDialog_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
-
-    '    ''Formが最少化
-    '    'If Me.WindowState = FormWindowState.Minimized Then
-    '    '    For Each f As Form In My.Application.OpenForms
-    '    '        If Me.Name.ToString <> f.Name.ToString Then
-    '    '            f.Visible = False
-    '    '        End If
-    '    '    Next
-
-    '    'End If
-
-    '    'TLP4.SuspendLayout()
-
-    '    'TLP4.ResumeLayout()
-
-    'End Sub
 
 #Region "工事データ一覧画面"
 
@@ -2536,46 +2066,6 @@ Public Class KentouKihonInfoTabDialog
 
         Dim iRowNo As Integer = 0
 
-        'Dim CameraD As New CameraInfoTable
-        'CameraD.m_dbClass = m_system_dbclass
-        'WorksD.CameraL = CameraD.GetDataToList
-
-        'With DataGridView7
-
-        '    .AllowUserToAddRows = False
-
-        '    'ヘッダを中央
-        '    .ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-
-        '    '並び替え禁止
-        '    For Each T As DataGridViewColumn In .Columns
-        '        T.SortMode = DataGridViewColumnSortMode.NotSortable
-        '    Next
-
-        '    .Rows.Clear()
-
-        '    .Rows.Add(WorksD.CameraL.Count)
-
-        '    flg_camera_grid = False
-
-        '    For iRowNo = 0 To WorksD.CameraL.Count - 1
-
-        '        If WorksD.CameraL(iRowNo).flg_use = "1" Then
-        '            .Rows(iRowNo).Cells(0).Value = True
-        '            TxtCamera.Text = WorksD.CameraL(iRowNo).camera_name             'カメラ名
-
-        '        Else
-        '            .Rows(iRowNo).Cells(0).Value = False
-        '        End If
-
-        '        .Rows(iRowNo).Cells(1).Value = WorksD.CameraL(iRowNo).camera_name   'カメラ名
-
-        '    Next
-
-        '    flg_camera_grid = True
-
-        'End With
-
         With CmbCamera
 
             .Items.Clear()
@@ -2598,36 +2088,6 @@ Public Class KentouKihonInfoTabDialog
         End With
 
     End Sub
-
-    'Private Sub SetTemplateGrid()
-
-    '    Dim iRowNo As Integer = 0
-
-    '    With DataGridView10
-
-    '        .AllowUserToAddRows = False
-
-    '        'ヘッダを中央
-    '        .ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
-
-    '        '並び替え禁止
-    '        For Each T As DataGridViewColumn In .Columns
-    '            T.SortMode = DataGridViewColumnSortMode.NotSortable
-    '        Next
-
-    '        .Rows.Clear()
-
-    '        .Rows.Add(2)
-    '        iRowNo = 0
-    '        .Rows(iRowNo).Cells(0).Value = True                     'No
-    '        .Rows(iRowNo).Cells(1).Value = "製缶チェックシート１"     'テンプレート名
-    '        iRowNo = 1
-    '        .Rows(iRowNo).Cells(0).Value = False                     'No
-    '        .Rows(iRowNo).Cells(1).Value = "製缶チェックシート２"     'テンプレート名
-
-    '    End With
-
-    'End Sub
 
 
 #Region "実行ボタン"
@@ -7214,26 +6674,6 @@ Public Class KentouKihonInfoTabDialog
     'Private Sub DGW_KekkaKakunin_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DGW_KekkaKakunin.CellClick
     Private Sub DGW_KekkaKakunin_CurrentCellChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DGW_KekkaKakunin.CurrentCellChanged
 
-        'Select Case e.RowIndex
-        '    Case 0
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-        '    Case 1
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-        '    Case 2
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-        '    Case 3
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-        '    Case 4
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\mentoten_dist.JPG"
-        '    Case 5
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\GentenKyori.JPG"
-        '    Case 6
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\3tenEn.JPG"
-        '    Case 7
-        '        PictureBox3.ImageLocation = m_TemplatePath & "\3tenEn.JPG"
-
-        'End Select
-
         ' init OldKekkaKakuninViewItem and OldColumnIndex
         Static OldKekkaKakuninViewItem As KekkaKakuninViewItem = Nothing
         Static OldColumnIndex As Integer = -1
@@ -7284,47 +6724,6 @@ Public Class KentouKihonInfoTabDialog
         End If
     End Sub
 
-    'Private Sub DGW_KekkaKakunin_RowValidated(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DGW_KekkaKakunin.RowValidated
-    '    Static Dim ss As Integer = 0
-    '    'ss += 1
-    '    'If ss Mod 3 = 0 Then
-    '    '    'PictureBox3.Image.FromFile(".\計測システムフォルダ\template\mentoten_dist.JPG")
-    '    '    PictureBox3.ImageLocation = m_TemplatePath & "\mentoten_dist.JPG"
-    '    'End If
-
-    '    'If ss Mod 3 = 1 Then
-    '    '    'PictureBox3.Image.FromFile(".\計測システムフォルダ\template\mentoten_dist.JPG")
-    '    '    PictureBox3.ImageLocation = m_TemplatePath & "\angle.JPG"
-    '    'End If
-    '    'If ss Mod 3 = 2 Then
-    '    '    'PictureBox3.Image.FromFile(".\計測システムフォルダ\template\mentoten_dist.JPG")
-    '    '    PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-    '    'End If
-
-
-
-    '    'Select Case e.RowIndex
-    '    '    Case 1
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-    '    '    Case 2
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-    '    '    Case 3
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-    '    '    Case 4
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\2tenkan.JPG"
-    '    '    Case 5
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\mentoten_dist.JPG"
-    '    '    Case 6
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\GentenKyori.JPG"
-    '    '    Case 7
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\3tenEn.JPG"
-    '    '    Case 8
-    '    '        PictureBox3.ImageLocation = m_TemplatePath & "\3tenEn.JPG"
-
-    '    'End Select
-
-
-    'End Sub
 
     Private Sub BtnT6_Back_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnT6_Back.Click
         m_CellChange = 0
@@ -7700,194 +7099,6 @@ Public Class KentouKihonInfoTabDialog
         End If
     End Sub
 
-    'Private Sub DGW_KekkaKakunin_CurrentCellDirtyStateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DGW_KekkaKakunin.CurrentCellDirtyStateChanged
-    '    If DGW_KekkaKakunin.IsCurrentCellDirty Then
-    '        DGW_KekkaKakunin.CommitEdit(DataGridViewDataErrorContexts.Commit)
-    '    End If
-    'End Sub
-
-
-    'ljj add sta 2014/01/15
-
-    'Rep By Yamada 20140919 Sat ------------------------------------------------------------------------------------日本車輌
-    'Private Sub Button2_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-
-    '    Dim bln_cadOpen As Boolean = False
-
-    '    '(20140605 Tezuka ADD) ３D画像が表示されていない時はメッセージ出力して終わる
-    '    If bln_KaisekiOpened = False Then
-    '        MsgBox("３Ｄ画像が表示されていません。" + vbCrLf + "解析を実行するか詳細表示ボタンを押して、" + vbCrLf + _
-    '               "３Ｄ画像を表示してから再実行してください", MsgBoxStyle.OkOnly Or MsgBoxStyle.Exclamation, "ＤＸＦ出力エラー")
-    '        Exit Sub
-    '    End If
-
-    '    Dim cadOutFrm As New YCM_CADOutOption
-    '    cadOutFrm.CheckBox_LookPoint.Checked = False
-    '    cadOutFrm.CheckBox_Ray.Checked = False
-    '    cadOutFrm.CheckBox_LabelText.Checked = False
-    '    cadOutFrm.CheckBox_UserElm.Checked = True
-    '    cadOutFrm.ComboBox_OutDim.SelectedIndex = 0
-    '    cadOutFrm.CheckBox_Information.Checked = True
-    '    'SUURI UPDATE 20140914
-    '    Dim strDXFdefaultName As String = WorksD.GetDefaultDXGFileName
-    '    cadOutFrm.TextBox_CADFileName.Text = MainFrm.objFBM.ProjectPath & "\" & strDXFdefaultName
-    '    'SUURI UPDATE 20140914
-    '    cadOutFrm.TextBox_TextH.Text = "10"
-    '    cadOutFrm.isDwgFilter(False)
-    '    cadOutFrm.ShowDialog()
-
-    '    Dim iOutCoord As Integer  '--出力次元
-
-
-    '    If (cadOutFrm.DialogResult = System.Windows.Forms.DialogResult.OK) Then
-
-    '        '=======================================================================
-    '        ' read and check the information in Dialog
-    '        '=======================================================================
-    '        Dim bLookPos As Boolean, bRay As Boolean, bLabelText As Boolean, bUserElm As Boolean
-    '        Dim dSize As Double, dTextH As Double
-    '        Dim strDxfName As String
-    '        Try
-    '            bLookPos = cadOutFrm.CheckBox_LookPoint.Checked
-    '            bRay = cadOutFrm.CheckBox_Ray.Checked
-    '            bLabelText = cadOutFrm.CheckBox_LabelText.Checked()
-    '            bUserElm = cadOutFrm.CheckBox_UserElm.Checked
-
-    '            dSize = entset_point.screensize '★20121115計測点
-    '            '========================================================================================================20121115
-    '            'dSize = entset_point1.screensize '★20121114計測点(ターゲット面)
-    '            'dSize = entset_point2.screensize '★20121114計測点(中心円)
-    '            'dSize = entset_point3.screensize '★20121114計測点(十字線)
-    '            '========================================================================================================20121115
-    '            dTextH = CDbl(cadOutFrm.TextBox_TextH.Text)
-    '            iOutCoord = (cadOutFrm.ComboBox_OutDim.SelectedIndex)
-    '            strDxfName = cadOutFrm.TextBox_CADFileName.Text
-    '        Catch ex As Exception
-    '            MsgBox("The input date are incorrect." + vbCrLf + ex.Message)
-    '            Return
-    '        End Try
-
-
-    '        '=======================================================================
-    '        ' Initialize Teigha.
-    '        '=======================================================================
-    '        Dim Serv As Teigha.Core.ExSystemServices
-    '        Dim _hostApp As MyHostAppServ
-    '        Try
-    '            Serv = New Teigha.Core.ExSystemServices()
-    '            _hostApp = New MyHostAppServ()
-    '            Teigha.TD.TD_Db.odInitialize(Serv)
-    '        Catch ex As Exception
-    '            MsgBox("Failed to initialize Teigha.")
-    '            Return
-    '        End Try
-
-    '        Try
-    '            'Dim pDb As Teigha.TD.OdDbDatabase = _hostApp.createDatabase(True, Teigha.TD.MeasurementValue.kEnglish)
-    '            Using pDb As Teigha.TD.OdDbDatabase = _hostApp.createDatabase(True, Teigha.TD.MeasurementValue.kEnglish)
-
-    '            'add by liwei.z 20140527 start
-    '            SetStandardTextStyleFont(pDb)
-    '            'add by liwei.z 20140527 end
-
-    '            Dim cad As New ODOperator(pDb)
-
-    '            '' 2014-5-26 str by Ljj
-    '                ' loadData()
-    '            ' 2014-5-26 end by Ljj
-
-    '            ' loadData()
-
-    '            '--計測点の書き出し
-
-    '            If (bLookPos = True) Then exportLookPoints(cad, iOutCoord)
-
-    '            '--レイの書き出し
-
-    '            If (bRay = True) Then Call exportRay(cad, iOutCoord)
-
-    '            '--計測ラベルの書き出し
-
-    '            If (bLabelText = True) Then Call exportLabelText(cad, dTextH, iOutCoord)
-
-    '            '--ユーザ作成図形の書き出し
-
-    '            If (bUserElm = True) Then Call exportUserElm(cad, iOutCoord)
-
-    '            '--作成したCAD図の保存
-
-
-
-    '            ' 2014-5-26 str by Ljj
-    '            '出力情報
-    '                Dim ij As Integer
-    '                Dim pt As New GeoPoint
-    '                Dim ihd As Integer = 10
-    '                ' 2014-5-30 str by Ljj
-    '                Dim pRS As New GeoPoint
-    '                Dim pRE As New GeoPoint
-    '                Dim pRMaxX As Integer
-    '                Dim pRMaxY As Integer
-    '                Dim pRMinX As Integer  'SUURI ADD 20140913
-    '                Dim pPminY As Integer
-
-    '                'SUURI ADD 20140914
-    '                GetBoundingBox_OutZU(iOutCoord, pRMaxX, pRMaxY, pRMinX, pPMinY)
-
-
-    '                'SUURI UPDATE START 20140913
-    '                'Dim iX As Integer = pRMaxX + 200
-    '                'Dim iY As Integer = (pRMaxY + pPminY) / 2
-    '                Dim iX As Integer = pRMinX
-    '                Dim iY As Integer = pRMaxY + (WorksD.KihonL.Count * 20)
-    '                'SUURI UPDATE END 20140913
-    '                Dim iZ As Integer = 0
-    '                ' 2014-5-30 end by Ljj
-
-    '                If cadOutFrm.CheckBox_Information.Checked = True Then
-    '                    Try
-    '                        cad.CreateLayer(entset_label.layerName) ' "LABELTEXT")
-    '                        cad.CreateLayerEntSet(entset_label)
-    '                        For ij = 0 To WorksD.KihonL.Count - 1
-    '                            Call pt.setXYZ(iX, iY - ij * 20, iZ)
-    '                            'cad.AddText(WorksD.KihonL(ij).item_name + " : " + WorksD.KihonL(ij).item_value, pt, ihd, entset_label.layerName)
-    '                            cad.AddText_Information(WorksD.KihonL(ij).item_name + " : " + WorksD.KihonL(ij).item_value, pt, ihd, entset_label.layerName)
-    '                        Next
-    '                    Catch ex As Exception
-    '                        MsgBox("CAD図形の情報出しを失敗しました" + ex.Message)
-    '                    End Try
-    '                End If
-    '            ' 2014-5-26 end by Ljj
-
-
-
-    '            pDb.writeFile(strDxfName, _
-    '                          Teigha.TD.SaveType.kDxf, Teigha.Core.DwgVersion.vAC15)
-
-    '            If MsgBox("CAD図形の書き出しを終了しました。開きますか？", MsgBoxStyle.YesNo, "確認") = MsgBoxResult.Yes Then
-    '                bln_cadOpen = True
-    '                End If
-    '            End Using
-    '        Catch ex As Exception
-    '            MsgBox("CAD図形の書き出しを失敗しました。" + vbCrLf + ex.Message)
-    '        Finally
-    '            '=======================================================================
-    '            ' Uninitialize Teigha.
-    '            '=======================================================================
-    '            Try
-    '                ' start : crash in writeFile without this codes
-    '                _hostApp.Dispose()
-    '                ' end   : crash in writeFile without this codes
-    '                Teigha.TD.TD_Db.odUninitialize()
-    '            Catch ex As Exception
-    '                MsgBox("Failed to uninitialize Teigha.")
-    '            End Try
-    '        End Try
-    '    End If
-    '    If bln_cadOpen = True Then
-    '        System.Diagnostics.Process.Start(cadOutFrm.TextBox_CADFileName.Text)
-    '    End If
-    'End Sub
     Private Sub BtnT6_DXF_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnT6_DXF.Click
         DXFOUT()
     End Sub
@@ -8969,7 +8180,7 @@ Public Class KentouKihonInfoTabDialog
             SetKiteiDataToGrid(groupValue)
         End If
     End Sub
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As Object, _
+    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As Object,
        ByVal e As System.EventArgs) Handles ComboBox1.SelectionChanged
         groupValue = ComboBox1.SelectedValue
         If groupValue = "" Then
@@ -8978,31 +8189,5 @@ Public Class KentouKihonInfoTabDialog
             SetSunpoDataToGrid(groupValue)
         End If
     End Sub
-    'Private Sub BtnSekkei_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSekkei.Click
-    '    Dim sekkeiKeisoku As New Sekkei_Keisoku
-    '    sekkeiKeisoku.ShowDialog()
-    'End Sub
-    '20160823 byambaa ADD End
-
-    'Private Sub BtnReadCamParam_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles BtnReadCamParam.Click
-
-    '    Dim ofd As New OpenFileDialog()
-
-    '    ofd.FileName = ""
-    '    ofd.InitialDirectory = IO.Path.GetDirectoryName(My.Settings.strCamparam)
-    '    ofd.Filter = "calファイル(*.cal;)|*.cal;|すべてのファイル(*.*)|*.*"
-    '    ofd.FilterIndex = 3
-    '    ofd.Title = "開くファイルを選択してください"
-    '    ofd.RestoreDirectory = True
-    '    ofd.CheckFileExists = True
-    '    ofd.CheckPathExists = True
-
-    '    'ダイアログを表示する
-    '    If ofd.ShowDialog() = Windows.Forms.DialogResult.OK Then
-    '        'OKボタンがクリックされたとき、選択されたファイル名を表示する
-    '        My.Settings.strCamparam = ofd.FileName
-    '    End If
-
-    'End Sub
 
 End Class

@@ -182,6 +182,8 @@
             </TabItem>
             <TabItem Header="寸法確認"  x:Name="TabKakunin" Width="100" Height="46">
                 <Grid x:Name="GridKakunin">
+                    <!--<Label Content="出力先：" HorizontalAlignment="Left" Margin="8,0,0,0" Name="Label2" FontSize="16" Width="Auto" VerticalContentAlignment="Top" Height="32" VerticalAlignment="Bottom" />-->
+                    <!--<Button Content="設計値/計測値比較" Height="38" HorizontalAlignment="Right" Margin="0,0,400,0" Name="BtnSekkei" VerticalAlignment="Bottom" Width="86" />-->
                     <!--DataGrid AutoGenerateColumns="False" Name="
                     " ItemsSource="{Binding m_KakuninItems}" Margin="0,0,-1,40" HorizontalGridLinesBrush="#FFECE9D8" VerticalGridLinesBrush="#FFECE9D8" DataContext="{Binding}"-->
                     <DataGrid AutoGenerateColumns="False" Margin="0,30,-1,40" x:Name="DataGridView9" DataContext="{Binding}" VirtualizingStackPanel.IsVirtualizing="True" VirtualizingStackPanel.VirtualizationMode="Standard">
@@ -378,7 +380,6 @@
                     <Border x:Name="PictureBox3_Border" HorizontalAlignment="Right" Width="184" Background="White" Margin="0,30,0,40">
                         <Image Stretch="Fill" x:Name="PictureBox3"/>
                     </Border>
-                    <!--<Label Content="出力先：" HorizontalAlignment="Left" Margin="8,0,0,0" Name="Label2" FontSize="16" Width="Auto" VerticalContentAlignment="Top" Height="32" VerticalAlignment="Bottom" />-->
                     <!--<TextBox HorizontalAlignment="Left" Margin="87,0,0,8" Name="TextBox1" Width="346" Text="C:\工事データ" FontSize="16" Height="23" VerticalAlignment="Bottom" />-->
                     <Label Content="計測セット" Height="24" HorizontalAlignment="Left" x:Name="Label11"  Margin="50,0,0,0" VerticalAlignment="Top" FontSize="12" />
                     <ComboBox Height="24" HorizontalAlignment="Left" x:Name="ComboBox1" Margin ="120,0,0,0" VerticalAlignment="Top" Width="50" FontSize="12" />
@@ -389,7 +390,6 @@
                     <Button Content="前へ" Height="38" HorizontalAlignment="Right" Margin="0,0,-142,0" x:Name="BtnT6Back" VerticalAlignment="Bottom" Width="86" />
                     <Button Content="３次元座標出力" Height="38" HorizontalAlignment="Left" Margin="250,0,0,0" x:Name="Btn3DOut2" VerticalAlignment="Bottom" Width="90" />
                     <Button Content="検査表出力" Height="38" HorizontalAlignment="Right" Margin="0,0,300,0" x:Name="BtnKensaHyo" VerticalAlignment="Bottom" Width="86" />
-                    <!--<Button Content="設計値/計測値比較" Height="38" HorizontalAlignment="Right" Margin="0,0,400,0" Name="BtnSekkei" VerticalAlignment="Bottom" Width="86" />-->
                 </Grid>
             </TabItem>
             <TabItem Header="検査表出力"  x:Name="TabOut" Width="100" Height="46">
@@ -470,7 +470,7 @@
             </ListView>
         </Grid>
         <Grid Margin="286,1,0,0" x:Name="Grid_MainFrame" SnapsToDevicePixels="False">
-            <Border Margin="-1,-1,-1,-1" BorderThickness="1" Visibility="Visible">
+            <Border Margin="-1,-1,-1,-1" BorderThickness="1" Visibility="Hidden">
                 <WindowsFormsHost x:Name="Host_MainFrame" Margin="-1,-1,-1,47" />
             </Border>
         </Grid>
