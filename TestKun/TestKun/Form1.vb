@@ -25,6 +25,8 @@
 
         a = 2
 
+        a = 3
+
     End Sub
 
 End Class
