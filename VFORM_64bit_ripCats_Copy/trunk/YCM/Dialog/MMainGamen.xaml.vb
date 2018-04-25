@@ -61,7 +61,6 @@ Public Class MMainGamen
 
         'Me.Visibility = System.Windows.Visibility.Hidden
         Try
-
             frmkihon = New KentouKihonInfoTabDialog
             frmkihon.WindowState = Windows.WindowState.Maximized
             frmkihon.IsNew = True

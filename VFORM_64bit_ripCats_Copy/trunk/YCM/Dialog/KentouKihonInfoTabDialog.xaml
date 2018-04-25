@@ -4,8 +4,16 @@
     xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
     xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" xmlns:my1="clr-namespace:YCM" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="KentouKihonInfoTabDialog"
     Title="VFORM" Height="598" Width="1103" WindowStyle="SingleBorderWindow">
-    <Grid>
-        <TabControl x:Name="TabControl1" TabStripPlacement="Left" Margin="186,100,0,0">
+    <Grid Margin="0,0,2,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="96"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="259"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="TabControl1" TabStripPlacement="Left" Margin="155,13,198,2" RenderTransformOrigin="0.049,0.335" Grid.ColumnSpan="2" Grid.Row="1">
             <TabItem Header="基本情報" x:Name="TabKihonInfo" Width="100" Height="46">
                 <Grid>
                     <Label Content="工番データ保存先：" Height="38" FontSize ="16"  HorizontalAlignment="Left" Margin="25,13,0,0" x:Name="Label6" VerticalAlignment="Top" />
@@ -119,12 +127,7 @@
                 <Grid>
                     <GroupBox Header="画像" Margin="10,3,0,110" x:Name="GroupBox8">
                         <Grid>
-                            <ListView Margin="8,87,0,0" x:Name="ListView2"/>
-                            <RadioButton Content="メモリカードから読み込む" Height="16" HorizontalAlignment="Left" Margin="30,28,0,0" x:Name="RbtnMemoryCard" VerticalAlignment="Top" FontSize="16" IsChecked="True" />
-                            <RadioButton Content="画像フォルダを指定する" Height="16" HorizontalAlignment="Left" Margin="30,59,0,0" x:Name="RbtnGazou" VerticalAlignment="Top" FontSize="16" />
-                            <TextBox Height="23" HorizontalAlignment="Left" Margin="221,25,0,0" x:Name="TxtMemoryCard" VerticalAlignment="Top" Width="346" FontSize="16" Text="E:\Image" />
                             <TextBox Height="23" HorizontalAlignment="Left" Margin="221,57,0,0" x:Name="TxtGazouFolder" VerticalAlignment="Top" Width="346" FontSize="16" Text="C:\Image" />
-                            <Button Content="参照" Height="24" HorizontalAlignment="Left" Margin="575,25,0,0" x:Name="BtnMemoryCard" VerticalAlignment="Top" Width="75" FontSize="16" />
                             <Button Content="参照" FontSize="16" Height="24" HorizontalAlignment="Left" Margin="575,57,0,0" x:Name="BtnGazouFolder" VerticalAlignment="Top" Width="75" />
                             <Button Content="画像取得" FontSize="16" Height="48" HorizontalAlignment="Left" Margin="675,25,0,0" x:Name="BtnCameraInput" VerticalAlignment="Top" Width="75" />
                         </Grid>
@@ -139,13 +142,11 @@
                                 <ComboBoxItem Content="bbb" />
                                 <ComboBoxItem Content="ccc" />
                             </ComboBox>
-                            <!--Button Content="カメラパラメータ読込" Height="37" HorizontalAlignment="Left" Margin="374,0,0,6" Name="BtnReadCamParam" VerticalAlignment="Bottom" Width="121" FontFamily="カメラパラメータ読込" /-->
 
                         </Grid>
                     </GroupBox>
                     <GroupBox Header="閾値" Margin="510,0,0,49" x:Name="GroupBoxTT" Padding="0,0,0,0" VerticalAlignment="Bottom" Height="64" HorizontalAlignment="Right" Width="300">
                         <Grid >
-                            <!-- Label Content="閾値：" Height="28" Margin="553,359,181,0" Name="Label2" VerticalAlignment="Top" FontSize="16" /-->
                             <TextBox Height="28" HorizontalAlignment="Right" x:Name="TxtTrgtThreshold" VerticalAlignment="Top" Width="51" FontSize="16" Text="128" TextAlignment="Right" Margin="0,6,28,0" />
                             <RadioButton Content="自動" Height="25" HorizontalAlignment="Left" Margin="34,9,0,0" x:Name="RadioAout" VerticalAlignment="Top" Width="58" />
                             <RadioButton Content="手動" Height="26" HorizontalAlignment="Left" Margin="117,9,0,0" x:Name="RadioNonAout" VerticalAlignment="Top" IsChecked="True" Width="50" />
@@ -416,63 +417,23 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Grid HorizontalAlignment="Left" x:Name="GridLeftView" Width="287" Background="White">
-            <Grid.Resources>
-                <Style TargetType="{x:Type ListViewItem}">
-                    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type ListViewItem}">
-                                <Border Height="64">
-                                    <Grid x:Name="ItemGrid">
-                                        <TextBlock HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-                                        <Border x:Name="ItemImageBorder" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="Green">
-                                            <Image x:Name="ItemImage" Height="60"  HorizontalAlignment="Left" Stretch="Uniform" Source="{Binding Img}" />
-                                        </Border>
-                                        <TextBlock x:Name="ItemText" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"
-                                           TextAlignment="Right" FontSize="18" FontWeight="Bold" 
-                                           Foreground="{StaticResource LightForegroundBrush}" 
-                                           Text="{Binding Text}" />
-                                    </Grid>
-                                </Border>
-                                <ControlTemplate.Triggers>
-                                    <Trigger Property="IsSelected" Value="True">
-                                        <Setter TargetName="ItemText" Property="Foreground" Value="White"/>
-                                        <Setter TargetName="ItemImageBorder" Property="Background" Value="{StaticResource LightForegroundBrush}" />
-                                        <Setter TargetName="ItemImage" Property="Source" Value="{Binding ImgSeleted}" />
-                                    </Trigger>
-                                    <Trigger Property="IsSelected" Value="False">
-                                        <Setter TargetName="ItemText" Property="Foreground" Value="{StaticResource LightForegroundBrush}" />
-                                        <Setter TargetName="ItemImageBorder" Property="Background" Value="{StaticResource LightBackgroundBrush}" />
-                                    </Trigger>
-                                </ControlTemplate.Triggers>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                </Style>
-            </Grid.Resources>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="96" />
-                <RowDefinition Height="363*" />
-            </Grid.RowDefinitions>
-            <Image x:Name="Image1" Stretch="Fill" Height="96" VerticalAlignment="Top" Source="/YCM;component/Image2/PictureBox1.Image.jpg" />
-            <ListView HorizontalAlignment="Center" 
-                      Margin="31,0" Width="225" 
-                      Grid.Row="1" BorderBrush="{x:Null}" 
-                      ScrollViewer.VerticalScrollBarVisibility="Hidden"
-                      ScrollViewer.CanContentScroll="False"
-                      x:Name="ListViewTabItems">
-                <ListView.Style>
-                    <Style TargetType="{x:Type ListView}">
-                        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-                    </Style>
-                </ListView.Style>
-            </ListView>
-        </Grid>
-        <Grid Margin="286,1,0,0" x:Name="Grid_MainFrame" SnapsToDevicePixels="False">
+        <Grid Margin="0,1,0,0" x:Name="Grid_MainFrame" SnapsToDevicePixels="False" Grid.Column="1" Grid.RowSpan="2">
             <Border Margin="-1,-1,-1,-1" BorderThickness="1" Visibility="Hidden">
                 <WindowsFormsHost x:Name="Host_MainFrame" Margin="-1,-1,-1,47" />
             </Border>
         </Grid>
+        <Image x:Name="Image1_Copy" Stretch="Fill" Height="96" VerticalAlignment="Top" Source="/YCM;component/Image2/PictureBox1.Image.jpg" RenderTransformOrigin="0.274,0.641" Margin="1,1,0,0" Grid.RowSpan="2" />
+        <ListView HorizontalAlignment="Center" 
+                      Margin="16,0,17,0" Width="226" 
+                      BorderBrush="{x:Null}" 
+                      ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                      ScrollViewer.CanContentScroll="False"
+                      x:Name="ListViewTabItems" RenderTransformOrigin="0.978,0.482" Grid.Row="1">
+            <ListView.Style>
+                <Style TargetType="{x:Type ListView}">
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                </Style>
+            </ListView.Style>
+        </ListView>
     </Grid>
 </Window>

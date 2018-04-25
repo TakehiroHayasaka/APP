@@ -83,14 +83,8 @@ Public Class KentouKihonInfoTabDialog
 
 
     Dim m_TemplatePath As String = System.Environment.CurrentDirectory & "\計測システムフォルダ\Template"
-    'Dim m_TemplatePath As String = My.Application.Info.DirectoryPath & "\計測システムフォルダ\Template"
-    'Dim m_TemplateExcelFile As String
-
-    'Dim m_db_path As String = System.Environment.CurrentDirectory & "\" & m_Keisoku_mdb_name
-    'Dim m_db_path As String = My.Application.Info.DirectoryPath & "\" & m_Keisoku_mdb_name
 
     Dim m_KeisokuTempMdbPath As String = System.Environment.CurrentDirectory & "\計測システムフォルダ\Template\" & m_Keisoku_mdb_name
-    'Dim m_KeisokuTempMdbPath As String = My.Application.Info.DirectoryPath & "\計測システムフォルダ\Template\" & m_Keisoku_mdb_name
 
     Public m_gazou_path As String           '画像フォルダ
 
@@ -642,7 +636,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Sub
 
-    ''' 
 
     ''' 初期設定
 
@@ -651,24 +644,6 @@ Public Class KentouKihonInfoTabDialog
 
     ''' 
     Private Function SetInitForm() As Boolean
-
-        'Temolateフォルダのシステム設定.mdbを開く
-
-
-        ''システム設定.mdbに接続する
-
-        'If ConnectDB(m_SystemMdbFullPath, m_system_dbclass) = False Then
-        '    MsgBox("データベースを開くことができません。")
-        '    SetInitForm = False
-        '    Exit Function
-        'End If
-
-        'With TabControl1
-        '    'タブのサイズを変更できるようにする
-        '    .SizeMode = TabSizeMode.Fixed
-        '    'タブのサイズを 80x30 にする
-        '    .ItemSize = New Size(100, 46)
-        'End With
 
         '各ボタンを制御する
         SetButtonControl()
@@ -925,7 +900,6 @@ Public Class KentouKihonInfoTabDialog
         End If
 
     End Sub
-
 
 
     ''' 
@@ -1322,44 +1296,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Sub
 
-    ''' TableLayoutPanelのRadioButtonチェックイベント
-
-    ''' 2013/05/27 作成
-    ''' 
-
-    ''' 
-    Private Sub rbtn_Check(ByVal sender As Object, ByVal e As System.EventArgs)
-
-        'Dim irbtn As RadioButton = sender
-        ''PictureBox1.ImageLocation = m_TemplatePath & "\" & TypeInfoDL(CInt(irbtn.Name.Replace("R", ""))).picture_name
-        'If TypeInfoDL(CInt(irbtn.Name.Replace("R", ""))).picture_name <> "" Then
-        '    PictureBox1.ImageLocation = m_TemplatePath & "\" & TypeInfoDL(CInt(irbtn.Name.Replace("R", ""))).picture_name
-        'Else
-        '    PictureBox1.ImageLocation = ""
-        'End If
-
-    End Sub
-
-    ''' 
-
-    ''' TableLayoutPanelのRadioButtonマウスムーブイベント
-
-    ''' 2013/05/28 作成
-    ''' 
-
-    ''' 
-    Private Sub rbtn_MouseMove(ByVal sender As Object, ByVal e As System.EventArgs)
-
-        'Dim irbtn As RadioButton = sender
-        ''PictureBox1.ImageLocation = m_TemplatePath & "\" & TypeInfoDL(CInt(irbtn.Name.Replace("R", ""))).picture_name
-        'If TypeInfoDL(CInt(irbtn.Name.Replace("R", ""))).picture_name <> "" Then
-        '    PictureBox1.ImageLocation = m_TemplatePath & "\" & TypeInfoDL(CInt(irbtn.Name.Replace("R", ""))).picture_name
-        'Else
-        '    PictureBox1.ImageLocation = ""
-        'End If
-
-    End Sub
-
     '''' 
 
     ''' 2013/05/13 作成
@@ -1383,20 +1319,8 @@ Public Class KentouKihonInfoTabDialog
 
             .RowDefinitions.Clear()
 
-            '.ColumnCount = 2
-
-            '.CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetPartial
-
             .Visibility = System.Windows.Visibility.Visible
-            '.Location = New System.Drawing.Point(23, 50)
-            '.Size = New System.Drawing.Size(200, 200)
 
-            '.Size = New System.Drawing.Size(500, 120)
-
-            '.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 25))
-            '.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 75))
-
-            '.GrowStyle = TableLayoutPanelGrowStyle.AddRows
 
             For iRows = 0 To WorksD.KihonL.Count - 1
                 Dim newRow As New System.Windows.Controls.RowDefinition
@@ -1479,8 +1403,6 @@ Public Class KentouKihonInfoTabDialog
 
             Next
 
-            '.RowStyles.Item(0).SizeType = SizeType.AutoSize
-
         End With
 
         'タブインデックスの設定
@@ -1496,8 +1418,6 @@ Public Class KentouKihonInfoTabDialog
         Me.GroupBox6.FontSize = 16
         Me.GroupBox6.Width = 500
         Me.GroupBox6.Height = 65 + ((WorksD.KihonL.Count - 1) * 38)
-
-        'Me.Refresh()
 
     End Sub
 
@@ -1573,12 +1493,6 @@ Public Class KentouKihonInfoTabDialog
     Private Function SetKeisokuData(ByVal strPath As String) As Boolean
 
         ''計測データDBに接続する
-
-        'If ConnectDB(strPath, m_keisoku_dbclass) = False Then
-        '    MsgBox("計測データ.mdbを開くことができません。")
-        '    SetKeisokuData = False
-        '    Exit Function
-        'End If
 
         Dim bRet As Boolean = True
 
@@ -1853,23 +1767,8 @@ Public Class KentouKihonInfoTabDialog
     Private Sub GetDataFromGrid()
 
         With m_KiteitiItems
-            '.Rows.Clear() 'H25.5.25 Yamada
-            'H25.5.25 Yamada
-            'If WorksD.SunpoSetL.Count < 20 Then
-            '    .Rows.Add(20)
-            'Else
-            '    .Rows.Add(WorksD.SunpoSetL.Count)
-            'End If
 
-            'For i As Integer = 0 To WorksD.SunpoSetL.Count - 1
             For i As Integer = 0 To m_KiteitiItems.Count - 1
-                '規定値
-                'm_KiteitiItems.Item(i).KiteiVal = dblField(.Item(i).KiteiVal)
-                ''最小許容値
-                'm_KiteitiItems.Item(i).KiteiMin = dblField(.Item(i).KiteiMin)
-                ''最大許容値
-                'm_KiteitiItems.Item(i).KiteiMax = dblField(.Item(i).KiteiMax)
-
 
                 If WorksD.SunpoSetL.Count > i Then '20161114 baluu add start
                     '規定値
@@ -1928,33 +1827,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Sub
 
-    '''' 
-
-    '''' 規定値データ(SunpoSet)更新
-    '''' 2013/05/15 作成
-    '''' 
-
-    '''' 
-    'Private Function SaveSunpoData() As Boolean
-
-    '    m_keisoku_dbclass.BeginTrans()
-
-    '    For i As Integer = 0 To WorksD.SunpoSetL.Count - 1
-
-    '        WorksD.SunpoSetL(i).m_dbClass = m_keisoku_dbclass
-    '        If WorksD.SunpoSetL(i).SaveData(False) = False Then
-    '            m_keisoku_dbclass.RollbackTrans()
-    '            SaveSunpoData = False
-    '            Exit For
-    '        End If
-
-    '    Next
-
-    '    m_keisoku_dbclass.CommitTrans()
-
-    '    SaveSunpoData = True
-
-    'End Function
     Private Function SaveTenGunTeigiData(Optional ByRef flg_connect As Boolean = True) As Boolean
 
         SaveTenGunTeigiData = True
@@ -2158,9 +2030,6 @@ Public Class KentouKihonInfoTabDialog
 
 #End Region
 
-
-
-
 #Region "メニューボタン制御"
 
     Private Shared Function SystemColorBrush() As System.Windows.Media.Brush
@@ -2316,14 +2185,7 @@ Public Class KentouKihonInfoTabDialog
         End If
         Me.TabControl1.Tag = False
         BtnT4_FrmOut.Visibility = System.Windows.Visibility.Visible
-        'Else
-        '    Me.TabControl1.Tag = True
-        '    TabControl1.SelectedIndex = 1
-        '    Me.TabControl1.Tag = False
-        '    BtnT4_FrmOut.Visibility = System.Windows.Visibility.Hidden
-        'End If
 
-        ' change listview selected index
         Dim header As String = TabGazou.Header
         Dim idx As Integer = -1
         For i As Integer = 0 To m_ListViewTabItemsItems.Count - 1
@@ -2352,19 +2214,6 @@ Public Class KentouKihonInfoTabDialog
 
         'カメラ関連を表示する
         'SetCameraGrid()
-
-        '(20141031 Tezuka ADD) テキストボックス、参照ボタンの制御
-        If RbtnGazou.IsChecked = True Then
-            BtnGazouFolder.IsEnabled = True
-            TxtGazouFolder.IsEnabled = True
-            BtnMemoryCard.IsEnabled = False
-            TxtMemoryCard.IsEnabled = False
-        ElseIf RbtnMemoryCard.IsChecked = True Then
-            BtnGazouFolder.IsEnabled = False
-            TxtGazouFolder.IsEnabled = False
-            BtnMemoryCard.IsEnabled = True
-            TxtMemoryCard.IsEnabled = True
-        End If
 
         SetCameraTab()
         'ADD BY Kiryu 20160609　Sta 画像画面の検査表出力ボタンを常に非表示
@@ -2922,39 +2771,8 @@ Public Class KentouKihonInfoTabDialog
     End Sub
 
 
-    ''' 
-
-    ''' 検査表出力画面ExcelTemplate設定
-
-    ''' 2013/05/27 作成
-    ''' 
-
-    ''' 
-    'Public Sub SetOutTemplate()
-
-    '    With CmbExcelTemplate
-
-    '        .Items.Clear()
-
-    '        For i As Integer = 0 To WorksD.ExcelTemplateL.Count - 1
-
-    '            .Items.Add(WorksD.ExcelTemplateL(i).TemplateFileName)
-    '            If i = 0 Then
-    '                .SelectedItem = WorksD.ExcelTemplateL(i).TemplateFileName
-    '            End If
-
-    '        Next
-
-    '    End With
-
-
-    'End Sub
 
 #End Region
-
-
-
-
 
 
 #Region "始めに画面"
@@ -3020,18 +2838,6 @@ Public Class KentouKihonInfoTabDialog
 
         '工事データの保存先
         TxtKojiData.Text = m_koji_kanri_path
-
-        'メモリカード保存先
-        If My.Settings.GazouSaveType = 1 Then
-            If System.IO.Directory.Exists(My.Settings.strGazouPath) = True Then
-                TxtMemoryCard.Text = My.Settings.strGazouPath
-            Else
-                TxtMemoryCard.Text = GetMemoryCardFolder()
-                My.Settings.strGazouPath = GetMemoryCardFolder()
-            End If
-        Else
-            TxtMemoryCard.Text = GetMemoryCardFolder()
-        End If
 
         '画像フォルダ
         If My.Settings.GazouSaveType = 0 Then
@@ -3119,18 +2925,6 @@ Public Class KentouKihonInfoTabDialog
         DisConnectDB(m_system_dbclass)
 
         With kojiData
-            '.m_form = "基本情報"
-            '.m_SystemMdbPath = m_SystemMdbPath
-            '.m_SystemMdbFullPath = m_SystemMdbFullPath
-            '.m_keisoku_dbclass = m_keisoku_dbclass          '計測データ.mdb
-            '.m_system_dbclass = m_system_dbclass            'システム設定.mdb
-            'If .WorksD Is Nothing Then
-            '    .WorksD = New WorksTable
-            'End If
-            '.WorksD.copy(WorksD)
-            'sw.Stop()
-            'Trace.WriteLine(sw.Elapsed.TotalSeconds & "秒かかりました")
-            '.ShowDialog()
 
             If .Tag Is Nothing Then
                 Me.Close()
@@ -3173,8 +2967,6 @@ Public Class KentouKihonInfoTabDialog
         'WorksTableデータを取得する
 
         '計測データmdbから
-        'WorksD = New WorksTable
-        'WorksD.copy(WorksD1)
         WorksD.m_dbClass = m_keisoku_dbclass
         sw.Start()
         If WorksD.GetDataToList() = False Then
@@ -3227,12 +3019,6 @@ Public Class KentouKihonInfoTabDialog
         '*****************************************
         '規定値画面を表示する
         '*****************************************
-        'If WorksD.flg_Kiteiti = "1" Then
-        '    BtnKiteiti.BackColor = Color.Yellow
-        'Else
-        '    BtnKiteiti.BackColor = System.Drawing.SystemColors.Control
-        'End If
-
         If m_flg_Senyou = True Then
             'グリッドヘッダ設定
 
@@ -3245,13 +3031,6 @@ Public Class KentouKihonInfoTabDialog
         '*****************************************
         '画像画面を表示する
         '*****************************************
-        'If WorksD.flg_Gazou = "1" Then
-        '    BtnGazou.BackColor = Color.Yellow
-        'Else
-        '    BtnGazou.BackColor = System.Drawing.SystemColors.Control
-        'End If
-        'メモリカードフォルダ
-        TxtMemoryCard.Text = GetMemoryCardFolder()
         '画像フォルダ
         TxtGazouFolder.Text = m_koji_kanri_path
         '画像をチェックすると画像一覧に表示される
@@ -3261,9 +3040,7 @@ Public Class KentouKihonInfoTabDialog
         My.Settings.strLastProjPath = m_koji_kanri_path
         My.Settings.strGazouPath = m_koji_kanri_path
 
-        RbtnGazou.IsChecked = True
         m_gazou_path = m_koji_kanri_path & "\Pdata"
-        GazouView(m_gazou_path)
         'GazouListView1(m_koji_kanri_path)
         'カメラ関連を表示する
         SetCameraTab()
@@ -3279,21 +3056,10 @@ Public Class KentouKihonInfoTabDialog
 
         '*****************************************
         '寸法確認画面を表示する
-        '*****************************************
-        'If WorksD.flg_Kakunin = "1" Then
-        '    BtnSunpouKakunin.BackColor = Color.Yellow
-        'Else
-        '    BtnSunpouKakunin.BackColor = System.Drawing.SystemColors.Control
-        'End If
         If m_flg_Sunpo = True Or m_flg_Zukei = True Or m_flg_Senyou = True Then
             SetValueToComboBox1()  '20160822 Byambaa ADD
             SetSunpoDataToGrid("")
         End If
-
-        'テンプレートを表示する
-        'If m_flg_Senyou = True Then
-        '    SetOutTemplate()
-        'End If
 
     End Sub
 
@@ -3306,58 +3072,10 @@ Public Class KentouKihonInfoTabDialog
     ''' 
     Private Sub BtnT1Next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        'チェックされたTypeIDを取得する
-
-        'GetTypeID()
-
         '基本情報を表示する
         SetKihon()
 
     End Sub
-
-    ''' 
-
-    ''' チェックされたTypeIDを取得する
-
-    ''' 2013/05/24 作成
-    ''' 
-
-    ''' 
-    'Private Function GetTypeID() As Boolean
-
-    '    GetTypeID = True
-
-    '    CommonTypeID = 0
-
-    '    With TLP1
-
-    '        Dim iRow As Integer = 0
-    '        For i As Integer = 0 To .Controls.Count - 1
-
-    '            Try
-    '                If .Controls.Item(i).GetType.Name = "RadioButton" Then
-
-    '                    Dim RD2 As Object = CType(.Controls.Item(i), RadioButton)
-    '                    If RD2.checked = True Then
-    '                        CommonTypeID = TypeInfoDL(iRow).ID
-    '                        'm_TemplateExcelFile = TypeInfoDL(iRow).ExcelTemplateName
-    '                        Exit For
-    '                    End If
-    '                    iRow += 1
-    '                End If
-    '            Catch ex As Exception
-
-    '            End Try
-
-    '        Next
-
-    '    End With
-
-    '    If CommonTypeID = 0 Then
-    '        GetTypeID = False
-    '    End If
-
-    'End Function
 
 #End Region
 
@@ -3481,194 +3199,8 @@ Public Class KentouKihonInfoTabDialog
     ''' 
     Private Sub BtnT2Back_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnT2Back.Click
         Me.Close()
-        'gMMainGamen.Refresh()
-        '始めに
-        'SetHajimeni()
 
     End Sub
-
-    '''' 
-
-    '''' 次へボタン
-    '''' 2013/05/21 作成
-    '''' 「新規」と「開く」に対応するため一時削除
-    '''' 2013/05/24 削除
-    '''' 
-
-    '''' 
-    'Private Sub BtnT2Next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnT2Next.Click
-
-    '    If System.IO.Directory.Exists(TxtKojiData.Text.Trim) = True Then
-    '        If System.IO.File.Exists(TxtKojiData.Text.Trim & "\" & m_Keisoku_mdb_name) = True Then
-    '            MsgBox("既に計測データが存在します。" & vbCrLf & "別のフォルダを指定して下さい。", MsgBoxStyle.OkOnly)
-    '            Exit Sub
-    '        Else
-    '            '計測データ.mdbが無い場合、コピーする
-    '            m_koji_kanri_path = TxtKojiData.Text.Trim
-    '            System.IO.File.Copy(m_KeisokuTempMdbPath, m_koji_kanri_path & "\" & m_Keisoku_mdb_name)
-    '        End If
-    '    Else
-    '        MsgBox("工事データを指定して下さい。", MsgBoxStyle.YesNo)
-    '        Exit Sub
-    '    End If
-
-    '    '規定値入力
-
-    '    'コピーした計測データ.mdbに寸法算出テーブルの規定値・最小許容値・最大許容値を設定する
-
-    '    My.Settings.strLastProjPath = m_koji_kanri_path
-    '    My.Settings.Save()
-
-    '    m_Keisoku_mdb_path = m_koji_kanri_path & "\" & m_Keisoku_mdb_name
-
-    '    m_koji_kanri_path = m_koji_kanri_path
-
-    '    '検査表出力フォルダに設定する
-
-    '    TxtExcelFolder.Text = m_koji_kanri_path
-
-    '    '画面の入力値を取得する
-
-    '    GetDataFromToControl()
-
-    '    '計測データDBに接続する
-
-    '    If ConnectDB(m_koji_kanri_path & "\" & m_Keisoku_mdb_name, m_keisoku_dbclass) = False Then
-    '        MsgBox("計測データ.mdbを開くことができません。")
-    '        Exit Sub
-    '    End If
-
-    '    '計測データ.mdbに入力値を書き込む
-    '    'KihonInfoの更新
-    '    If SetKeisokuData(m_koji_kanri_path & "\" & m_Keisoku_mdb_name) = False Then
-    '        DisConnectDB(m_keisoku_dbclass)
-    '        MsgBox("計測データ更新に失敗しました。", MsgBoxStyle.OkOnly)
-    '        Exit Sub
-    '    End If
-
-    '    '計測データ.mdbのSunpouInfoに書き込む
-    '    If SetSunpouData() = False Then
-    '        DisConnectDB(m_keisoku_dbclass)
-    '        MsgBox("計測データ更新に失敗しました。", MsgBoxStyle.OkOnly)
-    '        Exit Sub
-    '    End If
-
-    '    '計測データ.mdbを切断する
-    '    DisConnectDB(m_keisoku_dbclass)
-
-    '    'システム設定mdbに接続する
-
-    '    If ConnectSystemDB(m_system_dbclass) = False Then
-    '        MsgBox(err_msg_systemdb_connect, MsgBoxStyle.OkOnly)
-    '        Exit Sub
-    '    End If
-
-    '    'システム設定.mdbを更新する
-    '    'Works, WorksInfoの更新
-    '    If SetSystemData(m_SystemMdbFullPath, m_koji_kanri_path) = False Then
-    '        MsgBox("システム設定データ更新に失敗しました。", MsgBoxStyle.OkOnly)
-    '        Exit Sub
-    '    End If
-
-    '    'システム設定.mdbを切断する
-    '    DisConnectDB(m_system_dbclass)
-
-    '    '初期設定
-
-    '    If SetInitFormKitei() = False Then
-    '        Exit Sub
-    '    End If
-
-    '    'グリッドヘッダ設定
-
-    '    SetGridHeaddderKitei()
-
-    '    'データを取得してグリッドに表示
-    '    SetDataKitei()
-
-    '    '規定値画面へ
-    '    SetKiteiti()
-
-
-
-
-    '    'Dim strdatabasefile As String = ""
-    '    'm_strDataBasePath = ""
-    '    'm_strDataBasePath = ComSel_SelectFolderByShell("工事データフォルダを指定して下さい。", True)
-    '    'If m_strDataBasePath <> Nothing Then
-    '    '    If System.IO.File.Exists(m_strDataBasePath & "\" & m_Keisoku_mdb_name) = False Then
-    '    '        '計測データ.mdbが無い場合、コピーする
-    '    '        System.IO.File.Copy(m_KeisokuTempMdbPath, m_strDataBasePath & "\" & m_Keisoku_mdb_name)
-    '    '    Else
-    '    '        'If MsgBox("既に計測データが存在します。" & vbCrLf & "上書きしますか？", MsgBoxStyle.YesNo, "確認") = MsgBoxResult.Yes Then
-    '    '        '    System.IO.File.Delete(m_strDataBasePath & "\" & m_Keisoku_mdb_name)
-    '    '        '    System.IO.File.Copy(m_KeisokuTempMdbPath, m_strDataBasePath & "\" & m_Keisoku_mdb_name)
-    '    '        'End If
-    '    '        '既に計測データが存在する場合は、別のフォルダを指定してもらう
-
-    '    '        MsgBox("既に計測データが存在します。" & vbCrLf & "別のフォルダを指定して下さい。", MsgBoxStyle.OkOnly)
-    '    '        Exit Sub
-    '    '    End If
-
-    '    '    '規定値入力
-
-    '    '    'コピーした計測データ.mdbに寸法算出テーブルの規定値・最小許容値・最大許容値を設定する
-
-    '    '    m_Keisoku_mdb_path = m_strDataBasePath & "\" & m_Keisoku_mdb_name
-
-    '    '    m_koji_kanri_path = m_strDataBasePath
-
-    '    '    '画面の入力値を取得する
-
-    '    '    GetDataFromToControl()
-
-    '    '    '計測データ.mdbに入力値を書き込む
-    '    '    'KihonInfoの更新
-    '    '    If SetKeisokuData(m_strDataBasePath & "\" & m_Keisoku_mdb_name) = False Then
-    '    '        DisConnectDB(m_keisoku_dbclass)
-    '    '        MsgBox("計測データ更新に失敗しました。", MsgBoxStyle.OkOnly, "確認")
-    '    '        Exit Sub
-    '    '    End If
-
-    '    '    '計測データ.mdbにSunpouInfoをシステム設定mdbから書き込む
-    '    '    SetSunpouData()
-
-    '    '    'システム設定.mdbを更新する
-    '    '    'Works, WorksInfoの更新
-    '    '    If SetSystemData(m_SystemMdbFullPath, m_strDataBasePath) = False Then
-    '    '        MsgBox("システム設定データ更新に失敗しました。", MsgBoxStyle.OkOnly, "確認")
-    '    '        Exit Sub
-    '    '    End If
-    '    'Else
-    '    '    Exit Sub
-    '    'End If
-
-    '    ''BtnKojiSansyo.Enabled = True
-
-    '    ''計測データ.mdbを切断する
-    '    'DisConnectDB(m_keisoku_dbclass)
-    '    '''システム設定.mdbを切断する
-    '    ''DisConnectDB(m_system_dbclass)
-
-    '    ''初期設定
-
-    '    'If SetInitFormKitei() = False Then
-    '    '    Exit Sub
-    '    'End If
-
-    '    ''グリッドヘッダ設定
-
-    '    'SetGridHeaddderKitei()
-
-    '    ''データを取得してグリッドに表示
-    '    'SetDataKitei()
-
-    '    ''規定値画面へ
-    '    'SetKiteiti()
-
-    'End Sub
-
-    ''' 
 
     ''' 次へボタン
     ''' 2013/05/21 作成
@@ -3678,59 +3210,11 @@ Public Class KentouKihonInfoTabDialog
     Private Sub BtnT2Next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnT2Next.Click
 
         If WorksD.flg_Kihon = "1" Then
-            ' 2014-5-27 str by Ljj
-            'If Me.CheckBox1.IsChecked = True Then
-            '    Dim strPathCp As String = ""
-
-            '    Try
-            '        Dim StrU As String = My.Settings.DefaultSavePath
-            '        Dim StrGetPath As String = TxtKojiData.Text
-            '        Dim strArr As String() = Split(StrGetPath, "\")
-            '        Dim strPath As String
-            '        Dim strP As String = ""
-            '        Dim ii As Integer
-
-            '        For ii = 0 To strArr.Length - 2
-            '            strP = strP + strArr(ii).ToString + "\"
-            '        Next
-            '        strPath = strP + StrU
-
-            '        strPathCp = strPath
-
-            '        MkDir(strPath)
-
-
-            '        'System.IO.File.Copy(m_KeisokuTempMdbPath, strPathCp & "\" & m_Keisoku_mdb_name)
-
-            '    Catch ex As Exception
-            '        'MsgBox("自動保存失敗" + ex.Message)
-            '    End Try
-
-            '    System.IO.File.Copy(m_KeisokuTempMdbPath, strPathCp & "\" & m_Keisoku_mdb_name)
-            'End If
-            ' 2014-5-27 end by Ljj
 
             '開く
             BtnT2Next_Open()
+
         Else
-            ' 2014-5-27 str by Ljj
-            'If Me.CheckBox1.IsChecked = True Then
-            '    Dim strPathCp As String = ""
-            '    Try
-            '        Dim StrU As String = My.Settings.DefaultSavePath
-            '        Dim strPath As String = "KeisokuFolder_" & DateTime.Now.ToString("yyyyMMddHHmmss")
-            '        strPathCp = StrU & "\" & strPath
-            '        If System.IO.Directory.Exists(strPathCp.Trim) = True Then
-            '            strPathCp = strPathCp & "00"
-            '        End If
-            '        MkDir(strPathCp)
-            '        TxtKojiData.Text = strPathCp
-            '        'System.IO.File.Copy(m_KeisokuTempMdbPath, strPathCp & "\" & m_Keisoku_mdb_name)
-            '    Catch ex As Exception
-            '        'MsgBox("自動保存失敗" + ex.Message)
-            '    End Try
-            '    'System.IO.File.Copy(m_KeisokuTempMdbPath, strPathCp & "\" & m_Keisoku_mdb_name)
-            'End If
 
             ' 2014-5-27 end by Ljj
             If TxtKojiDataFolder.Text = "" Then
@@ -3806,9 +3290,6 @@ Public Class KentouKihonInfoTabDialog
             Exit Sub
         End If
 
-        'If System.IO.File.Exists(TxtKojiData.Text.Trim & "\" & Me.TxtKojiDataFolder.Text & ".vform") = False Then
-        '    System.IO.File.Create(TxtKojiData.Text.Trim & "\" & Me.TxtKojiDataFolder.Text & ".vform").Dispose()
-        'End If
         If System.IO.File.Exists(TxtKojiData.Text.Trim & "\" & Me.TxtKojiDataFolder.Text & ".vform") = False Then
             System.IO.File.Create(TxtKojiData.Text.Trim & "\" & Me.TxtKojiDataFolder.Text & ".vform")
         End If
@@ -4005,7 +3486,6 @@ Public Class KentouKihonInfoTabDialog
             TabControl1.SelectedIndex = 2
             m_gazou_event = True
             TxtGazouFolder.Text = m_koji_kanri_path
-            RbtnGazou.IsChecked = True
 
             SetGazou()
 
@@ -4025,15 +3505,6 @@ Public Class KentouKihonInfoTabDialog
     'SUURI ADD 点群定義
     Private Function SetTengunTeigData() As Boolean
 
-        ''データ取得
-
-        'Dim SSD As New SunpoSetTable
-        'SSD.m_dbClass = m_system_dbclass
-        'WorksD.SunpoSetL = SSD.GetDataToList()
-        'If WorksD.SunpoSetL Is Nothing Then
-        '    Exit Sub
-        'End If
-
         SetTengunTeigData = True
 
         m_keisoku_dbclass.BeginTrans()
@@ -4052,15 +3523,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Function
     Private Function SetSunpouData() As Boolean
-
-        ''データ取得
-
-        'Dim SSD As New SunpoSetTable
-        'SSD.m_dbClass = m_system_dbclass
-        'WorksD.SunpoSetL = SSD.GetDataToList()
-        'If WorksD.SunpoSetL Is Nothing Then
-        '    Exit Sub
-        'End If
 
         SetSunpouData = True
 
@@ -4305,7 +3767,6 @@ Public Class KentouKihonInfoTabDialog
         TabControl1.SelectedIndex = 2
         m_gazou_event = True
         TxtGazouFolder.Text = m_koji_kanri_path
-        RbtnGazou.IsChecked = True
 
         ''画像画面へ
         SetGazou()
@@ -4318,99 +3779,6 @@ Public Class KentouKihonInfoTabDialog
 
     ''' 
 
-    ''' メモリカードフォルダを選択する
-
-    ''' 2013/05/17 作成
-    ''' 
-
-    ''' 
-    Private Sub BtnMemoryCard_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnMemoryCard.Click
-
-        ''FolderBrowserDialogクラスのインスタンスを作成
-        'Dim fbd As New FolderBrowserDialog
-
-        'With fbd
-
-        '    '上部に表示する説明テキストを指定する
-
-        '    .Description = "フォルダを指定してください。"
-        '    'ルートフォルダを指定する(デフォルトでDesktop)
-        '    .RootFolder = Environment.SpecialFolder.Desktop
-        '    '最初に選択するフォルダを指定する
-
-        '    'RootFolder以下にあるフォルダである必要がある
-        '    .SelectedPath = TxtMemoryCard.Text.Trim
-        '    'ユーザーが新しいフォルダを作成できるようにする(デフォルトでTrue)
-        '    .ShowNewFolderButton = False
-
-        '    'ダイアログを表示する
-        '    Dim iDialogResult As DialogResult
-        '    iDialogResult = .ShowDialog(Me)
-        '    If iDialogResult = DialogResult.OK Then
-        '        'OKボタン
-        '        '選択されたフォルダを設定する
-
-        '        TxtMemoryCard.Text = .SelectedPath
-        '    Else
-        '        Exit Sub
-        '    End If
-
-        'End With
-#If True Then
-        With m_fod
-            '.InitialDirectory = YCM_GetFolderPath_fromFullPath(TxtMemoryCard.Text.Trim)
-            If My.Settings.GazouSaveType = 1 Then
-                .InitialDirectory = My.Settings.strGazouPath
-            Else
-                .InitialDirectory = GetMemoryCardFolder()
-            End If
-
-            Dim iDialogResult As System.Windows.Forms.DialogResult
-            iDialogResult = .ShowDialog()
-            If iDialogResult = System.Windows.Forms.DialogResult.OK Then
-                'OKボタン
-                '選択されたフォルダを設定する
-                TxtMemoryCard.Text = YCM_GetFolderPath_fromFullPath(.FileName)
-                My.Settings.strGazouPath = YCM_GetFolderPath_fromFullPath(.FileName)
-                My.Settings.GazouSaveType = 1
-            Else
-                Exit Sub
-            End If
-        End With
-#Else
-           With m_fbd_s
-
-            '上部に表示する説明テキストを指定する
-
-            .Description = "フォルダを指定してください。"
-            '最初に選択するフォルダを指定する
-
-            'RootFolder以下にあるフォルダである必要がある
-            .SelectedPath = TxtMemoryCard.Text.Trim
-
-            'ダイアログを表示する
-            Dim iDialogResult As System.Windows.Forms.DialogResult
-            iDialogResult = .ShowDialog()
-            If iDialogResult = System.Windows.Forms.DialogResult.OK Then
-                'OKボタン
-                '選択されたフォルダを設定する
-
-                TxtMemoryCard.Text = .SelectedPath
-            Else
-                Exit Sub
-            End If
-
-        End With
-#End If
-     
-
-        '画像一覧に表示する
-        GazouView(TxtMemoryCard.Text)
-
-    End Sub
-
-    ''' 
-
     ''' 画像フォルダを選択する
 
     ''' 2013/05/17 作成
@@ -4419,36 +3787,6 @@ Public Class KentouKihonInfoTabDialog
     ''' 
     Private Sub BtnGazouFolder_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles BtnGazouFolder.Click
 
-        ''FolderBrowserDialogクラスのインスタンスを作成
-        'Dim fbd As New FolderBrowserDialog
-
-        'With fbd
-
-        '    '上部に表示する説明テキストを指定する
-
-        '    .Description = "フォルダを指定してください。"
-        '    'ルートフォルダを指定する(デフォルトでDesktop)
-        '    .RootFolder = Environment.SpecialFolder.Desktop
-        '    '最初に選択するフォルダを指定する
-
-        '    'RootFolder以下にあるフォルダである必要がある
-        '    .SelectedPath = TxtGazouFolder.Text.Trim
-        '    'ユーザーが新しいフォルダを作成できるようにする(デフォルトでTrue)
-        '    .ShowNewFolderButton = False
-
-        '    'ダイアログを表示する
-        '    Dim iDialogResult As DialogResult
-        '    iDialogResult = .ShowDialog(Me)
-        '    If iDialogResult = DialogResult.OK Then
-        '        'OKボタン
-        '        '選択されたフォルダを設定する
-
-        '        TxtGazouFolder.Text = .SelectedPath
-        '    Else
-        '        Exit Sub
-        '    End If
-
-        'End With
 #If True Then
         With m_fod
             .InitialDirectory = YCM_GetFolderPath_fromFullPath(TxtGazouFolder.Text.Trim)
@@ -4498,10 +3836,6 @@ Public Class KentouKihonInfoTabDialog
 
         End With
 #End If
-      
-
-        '画像一覧に表示する
-        GazouView(TxtGazouFolder.Text)
 
     End Sub
 
@@ -4522,10 +3856,6 @@ Public Class KentouKihonInfoTabDialog
             '規定値画面へ
             SetKiteiti()
         End If
-        'Else
-        ''基本画面へ
-        'SetKihon()
-        'End If
 
     End Sub
 
@@ -4537,21 +3867,6 @@ Public Class KentouKihonInfoTabDialog
 
     ''' 
     Private Sub BtnT4Next_Click(sender As System.Object, e As System.Windows.RoutedEventArgs) Handles BtnT4Next.Click
-
-        'End Sub
-
-        'Private Sub BtnT4Next_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnT4Next.Click
-
-        ''H25.7.3修正前 Yamada================
-        'If WorksD.flg_Gazou = "1" Then
-        '    '開く
-        '    BtnT4Next_Open()
-        'Else
-        '    '新規
-
-        '    BtnT4Next_New()
-        'End If
-        ''H25.7.3修正前 Yamada================
 
         Dim TrgtThreshold As Integer = 0
 
@@ -4595,19 +3910,12 @@ Public Class KentouKihonInfoTabDialog
     '(入力)blnFrmOut：「次へ」はFalse/「検査表出力」はTrue
 
     Private Sub BtnT4Next_New(ByVal blnFrmOut As Boolean) 'H26.6.28Yamada修正
-        'Private Sub BtnT4Next_New()
-        '画像
 
-        'MsgBox(System.Reflection.MethodBase.GetCurrentMethod.Name + " sta")
+        '20180418 add start hayasaka---------------------------------------------------------------------------------------------
+        '画像を選択してあるかどうかの判定
+        If TxtGazouFolder.Text <> "" Then
 
-
-        If ListView2.Items.Count > 0 Then
-
-            If RbtnMemoryCard.IsChecked = True Then
-                m_gazou_path = TxtMemoryCard.Text.Trim
-            Else
-                m_gazou_path = TxtGazouFolder.Text.Trim
-            End If
+            m_gazou_path = TxtGazouFolder.Text.Trim
 
             '(20141023 Tezuka ADD) ボタンを操作不可にする
             BtnT4_FrmOut.IsEnabled = False
@@ -4645,21 +3953,12 @@ Public Class KentouKihonInfoTabDialog
             BtnT4Next.IsEnabled = True
             BtnT4Back.IsEnabled = True
 
-            ''計測データmdbを接続する
-
-            'If ConnectDB(m_Keisoku_mdb_path, m_keisoku_dbclass) = False Then
-            '    MsgBox("計測データ.mdbを開くことができません。")
-            '    Exit Sub
-            'End If
-
             'カメラ情報を更新する
             If UpdateCameraInfo() = False Then
                 MsgBox("計測データ.mdbを開くことができません。")
                 Exit Sub
             End If
 
-            ''計測データmdbを接続解除する
-            'DisConnectDB(m_keisoku_dbclass)
 
             '画像処理フラグを更新する
             WorksD.SetGazouFlg(False)
@@ -4674,9 +3973,6 @@ Public Class KentouKihonInfoTabDialog
             MsgBox("画像一覧が選択されていません。", MsgBoxStyle.OkOnly)
             Exit Sub
         End If
-
-        'MsgBox(System.Reflection.MethodBase.GetCurrentMethod.Name)
-
 
     End Sub
 
@@ -4797,81 +4093,6 @@ Public Class KentouKihonInfoTabDialog
 
     End Sub
 
-    '''' 
-
-    '''' カメラ情報を更新する
-    '''' 2013/05/22 作成
-    '''' 
-
-    '''' 
-    'Private Function UpdateCameraInfo() As Boolean
-
-    '    'コントロールを設定する
-
-
-    '    'With DataGridView7
-
-    '    '    For iRow As Integer = 0 To WorksD.CameraL.Count - 1
-
-    '    '        WorksD.CameraL(iRow).objControl = DataGridView7.Rows(iRow).Cells(0)
-    '    '        WorksD.CameraL(iRow).GetDataFromControl()
-
-    '    '    Next
-
-    '    'End With
-
-    '    For iRow As Integer = 0 To WorksD.CameraL.Count - 1
-
-    '        'WorksD.CameraL(iRow).objControl = CmbCamera.Text
-    '        'WorksD.CameraL(iRow).GetDataFromControl()
-
-    '        If WorksD.CameraL(iRow).camera_name.Trim = CmbCamera.Text.Trim Then
-    '            WorksD.CameraL(iRow).flg_use = "1"
-    '        Else
-    '            WorksD.CameraL(iRow).flg_use = "0"
-    '        End If
-
-    '    Next
-
-    '    UpdateCameraInfo = True
-
-    '    Dim bRet As Boolean = True
-
-    '    '計測データmdbを接続する
-
-    '    ConnectDB(m_Keisoku_mdb_path, m_keisoku_dbclass)
-
-    '    '選択したカメラ情報を取得する
-
-    '    'カメラ情報を計測データmdbに更新する
-    '    For Each T As CameraInfoTable In WorksD.CameraL
-
-    '        'If T.objControl.selected = True Then
-    '        '    'チェックされたカメラ情報をWorksDにコピーする
-    '        '    WorksD.CameraD = New CameraInfoTable
-    '        '    WorksD.CameraD.copy(T)
-    '        'End If
-
-    '        If T.camera_name.Trim = CmbCamera.Text.Trim Then
-    '            '選択されたカメラ情報をWorksDにコピーする
-    '            WorksD.CameraD = New CameraInfoTable
-    '            WorksD.CameraD.copy(T)
-    '            T.flg_use = "1"
-    '        Else
-    '            T.flg_use = "0"
-    '        End If
-
-    '        '選択したカメラ情報のflg_useを更新する
-    '        T.m_dbClass = m_keisoku_dbclass
-    '        T.InsertData()
-
-    '    Next
-
-    '    '計測データmdbを接続解除する
-    '    DisConnectDB(m_keisoku_dbclass)
-
-    'End Function
-
     ''' 
 
     ''' カメラ情報を更新する
@@ -4921,338 +4142,23 @@ Public Class KentouKihonInfoTabDialog
 
     ''' 
 
-    ''' メモリーカード画像フォルダを指定する
-
-    ''' ラジオボタンチェック時の処理
-
-    ''' 2013/05/20 作成
-    ''' 
-
-    ''' 
-    Private Sub RbtnMemoryCard_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles RbtnMemoryCard.Click
-
-        'If m_gazou_event = False Then Exit Sub
-
-        If RbtnMemoryCard.IsChecked = True Then
-
-            '(20141031 Tezuka ADD) テキストエリア、参照ボタンの制限
-            BtnGazouFolder.IsEnabled = False
-            TxtGazouFolder.IsEnabled = False
-            BtnMemoryCard.IsEnabled = True
-            TxtMemoryCard.IsEnabled = True
-
-            m_gazou_path = TxtMemoryCard.Text
-
-            GazouView(m_gazou_path)
-
-        End If
-
-    End Sub
-
-    ''' 
-
     ''' 画像フォルダを指定する
 
-    ''' ラジオボタンチェック時の処理
-
-    ''' 2013/05/20 作成
+    ''' テキストボックスの値が変化した際
     ''' 
 
     ''' 
-    Private Sub RbtnGazou_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles RbtnGazou.Click
+    Private Sub TxtGazouFolder_TextChanged(sender As Object, e As Windows.Controls.TextChangedEventArgs) Handles TxtGazouFolder.TextChanged
 
-        'If m_gazou_path = TxtGazouFolder.Text Then Exit Sub
+        '(20141031 Tezuka ADD) テキストエリア、参照ボタンの制限
+        BtnGazouFolder.IsEnabled = True
+        TxtGazouFolder.IsEnabled = True
 
-        'If m_gazou_event = False Then Exit Sub
+        If m_gazou_path = TxtGazouFolder.Text Then Exit Sub
 
-        If RbtnGazou.IsChecked = True Then
-
-            '(20141031 Tezuka ADD) テキストエリア、参照ボタンの制限
-            BtnGazouFolder.IsEnabled = True
-            TxtGazouFolder.IsEnabled = True
-            BtnMemoryCard.IsEnabled = False
-            TxtMemoryCard.IsEnabled = False
-
-            If m_gazou_path = TxtGazouFolder.Text Then Exit Sub
-
-            m_gazou_path = TxtGazouFolder.Text
-
-            GazouView(m_gazou_path)
-
-        End If
+        m_gazou_path = TxtGazouFolder.Text
 
     End Sub
-
-    ''' 
-
-    ''' 画像一覧表示処理
-
-    ''' 2013/05/20 作成
-    ''' 
-
-    ''' 
-    Private Sub GazouView(ByVal iFolderName As String)
-
-        With ListView2
-
-            '.BackgroundImage = Nothing
-
-            .Items.Clear()
-
-            Dim imageDir As String = iFolderName.Trim        ' 画像ディレクトリ
-            If System.IO.Directory.Exists(imageDir) = True Then
-                Dim jpgFiles As String() = _
-                  System.IO.Directory.GetFiles(imageDir, "*.jpg")
-
-
-                ''H25.修正前==================================================================
-                'Dim width As Integer = 100
-                'Dim height As Integer = 80
-
-                'ImageList1.ImageSize = New Size(width, height)
-                'ImageList1.Images.Clear()
-
-                '.LargeImageList = ImageList1
-
-                'For i As Integer = 0 To jpgFiles.Length - 1
-                '    Dim original As Image = Bitmap.FromFile(jpgFiles(i))
-                '    Dim thumbnail As Image = createThumbnail(original, width, height)
-                '    ''_trans.jpgを表示する
-                '    Dim strFileName As String = System.IO.Path.GetFileName(jpgFiles(i))
-                '    If strFileName.Substring(12, strFileName.Length - 12) = "_trans.jpg" Then
-                '        strFileName = strFileName.Replace("_trans.jpg", "")
-                '    End If
-                '    Dim iImgFile As String = i + 1 & ": " & strFileName
-
-                '    ImageList1.Images.Add(thumbnail)
-                '    .Items.Add(iImgFile, i)
-
-                '    original.Dispose()
-                '    'thumbnail.Dispose()
-                'Next
-                ''H25.修正前==================================================================
-
-
-                For i As Integer = 0 To jpgFiles.Length - 1
-                    Dim strFileName As String = System.IO.Path.GetFileName(jpgFiles(i))
-                    Try
-                        If strFileName.Substring(12, strFileName.Length - 12) = "_trans.jpg" Then
-                            strFileName = strFileName.Replace("_trans.jpg", "")
-                        End If
-                    Catch ex As Exception
-
-                    End Try
-                
-                    Dim iImgFile As String = i + 1 & ": " & strFileName
-                    .Items.Add(iImgFile)
-                Next
-            End If
-        End With
-
-    End Sub
-
-    ''' 
-
-    ''' 画像一覧表示処理
-
-    ''' JPEGファイル指定
-
-    ''' 2013/05/20 作成
-    ''' 
-
-    ''' 
-    Private Sub GazouListView(ByVal iJpgFiles As String())
-
-        With ListView2
-
-            '.BackgroundImage = Nothing
-
-            .Items.Clear()
-
-            Dim width As Integer = 100
-            Dim height As Integer = 80
-
-            ImageList1.ImageSize = New Size(width, height)
-            ImageList1.Images.Clear()
-            '.LargeImageList = ImageList1
-
-            For i As Integer = 0 To iJpgFiles.Length - 1
-                Dim original As Image = Bitmap.FromFile(iJpgFiles(i))
-                Dim thumbnail As Image = createThumbnail(original, width, height)
-                'Dim iImgFile As String = i + 1 & ": " & System.IO.Path.GetFileName(iJpgFiles(i))
-                '_trans.jpgを表示する
-                Dim strFileName As String = System.IO.Path.GetFileName(iJpgFiles(i))
-                If strFileName.Substring(12, strFileName.Length - 12) = "_trans.jpg" Then
-                    strFileName = strFileName.Replace("_trans.jpg", "")
-                End If
-                Dim iImgFile As String = i + 1 & ": " & strFileName
-
-                ImageList1.Images.Add(thumbnail)
-                .Items.Add(iImgFile)
-
-                original.Dispose()
-                'thumbnail.Dispose()
-            Next
-
-        End With
-
-    End Sub
-
-    ' 幅w、高さhのImageオブジェクトを作成
-    Function createThumbnail(ByRef image As Image, ByVal w As Integer, ByVal h As Integer) As Image
-        Dim canvas As New Bitmap(w, h)
-
-        Dim g As Graphics = Graphics.FromImage(canvas)
-        g.FillRectangle(New SolidBrush(Color.White), 0, 0, w, h)
-
-        Dim fw As Double = CDbl(w) / CDbl(image.Width)
-        Dim fh As Double = CDbl(h) / CDbl(image.Height)
-        Dim scale As Double = Math.Min(fw, fh)
-
-        Dim w2 As Integer = CInt(image.Width * scale)
-        Dim h2 As Integer = CInt(image.Height * scale)
-
-        g.DrawImage(image, (w - w2) \ 2, (h - h2) \ 2, w2, h2)
-        g.Dispose()
-
-        Return canvas
-    End Function
-
-    '''テストの為作成
-    ''' あとで消す
-    'Private Sub GazouListView1(ByVal iFolderName As String)
-
-    '    With ListView2
-
-    '        .BackgroundImage = Nothing
-
-    '        .Items.Clear()
-
-
-    '        Dim dir As String = iFolderName  ' 画像のあるディレクトリ
-    '        Dim jpgFiles As String() = Directory.GetFiles(dir, "*.jpg")
-
-    '        Dim imgconv As New ImageConverter()
-
-    '        'Dim sw As Stopwatch = Stopwatch.StartNew()
-
-    '        Dim iNo As Integer = 0
-
-    '        For Each jpg As String In jpgFiles
-    '            Console.WriteLine(jpg)
-
-    '            Using fs As FileStream = File.OpenRead(jpg)
-
-    '                ' 画像オブジェクトの作成
-    '                Dim orig As Image = Image.FromStream(fs, False, False)
-
-    '                Dim pils As Integer() = orig.PropertyIdList
-    '                Dim index As Integer = Array.IndexOf(pils, &H501B) ' サムネイル・データ
-
-    '                If index = -1 Then
-    '                    Console.WriteLine("画像にサムネイルが含まれていません。")
-    '                Else
-    '                    ' サムネイル・データの取得
-
-    '                    Dim pi As PropertyItem = orig.PropertyItems(index)
-    '                    Dim jpgBytes As Byte() = pi.Value
-
-    '                    ' サムネイルの作成
-    '                    Dim thumbnail As Image _
-    '                        = CType(imgconv.ConvertFrom(jpgBytes), Image)
-
-    '                    Dim iImgFile As String = iNo + 1 & ": " & Path.GetFileName(jpg)
-    '                    ' サムネイルの保存
-
-    '                    thumbnail.Save(m_koji_kanri_path & "\tn_" + Path.GetFileName(jpg), _
-    '                      System.Drawing.Imaging.ImageFormat.Jpeg)
-
-    '                    ImageList1.Images.Add(thumbnail)
-    '                    .Items.Add("tn_" + Path.GetFileName(jpg), iNo)
-    '                    iNo += 1
-    '                    'thumbnail.Dispose()
-    '                End If
-    '                'orig.Dispose()
-    '            End Using
-    '        Next
-    '        'sw.Stop()
-    '    End With
-
-    'End Sub
-
-    ''' 
-
-    ''' 画像をダブルクリックしたら画像を開く
-    ''' 2013/05/30 作成
-    ''' 
-
-    ''' 
-    Private Sub ListView2_MouseDoubleClick(ByVal sender As System.Object, ByVal e As System.Windows.Input.MouseButtonEventArgs) Handles ListView2.MouseDoubleClick
-
-
-        '項目が１つも選択されていない場合
-
-        If ListView2.SelectedItems.Count = 0 Then
-            '処理を抜ける
-
-            Exit Sub
-        End If
-
-        Dim iSelectItem As String
-
-        '1番目に選択されれいるアイテムをitemxに格納
-
-        iSelectItem = ListView2.SelectedItems(0)
-        Try
-            Dim strPath As String = m_koji_kanri_path & "\" & iSelectItem.Split(" ")(1)
-            Process.Start(strPath)
-        Catch ex As Exception
-
-        End Try
-
-    End Sub
-
-
-    'Private Sub DataGridView7_CurrentCellDirtyStateChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DataGridView7.CurrentCellDirtyStateChanged
-
-    '    With DataGridView7
-
-    '        If .IsCurrentCellDirty = True Then
-    '            'CommitEdit メソッドを呼ぶ事によってCellValueChanged イベントを発生させます。
-
-    '            .CommitEdit(DataGridViewDataErrorContexts.Commit)
-    '        End If
-
-    '    End With
-
-    'End Sub
-
-    'Private Sub DataGridView7_CellValueChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView7.CellValueChanged
-
-    '    If flg_camera_grid = False Then
-
-    '    Else
-    '        If e.ColumnIndex = 0 Then
-    '            flg_camera_grid = False
-    '            If CBool(DataGridView7(e.ColumnIndex, e.RowIndex).Value) = True Then
-    '                'チェック
-    '                '全てのチェックを外す
-    '                For i As Integer = 0 To DataGridView7.RowCount - 1
-    '                    DataGridView7(0, i).Value = False
-    '                Next
-    '                'チェックをする
-
-    '                DataGridView7(e.ColumnIndex, e.RowIndex).Value = True
-    '                TxtCamera.Text = WorksD.CameraL(e.RowIndex).camera_name   'カメラ名
-
-    '            Else
-    '                'Noチェック
-    '            End If
-    '            flg_camera_grid = True
-    '        End If
-    '    End If
-
-    'End Sub
 
     ''' 
 
@@ -5837,9 +4743,6 @@ Public Class KentouKihonInfoTabDialog
 
 #If True Then
 
-
-
-
 #Region "デバイス認識"
 
     Private Const WM_DEVICECHANGE As Integer = &H219
@@ -5918,11 +4821,8 @@ Public Class KentouKihonInfoTabDialog
                                         'JPGファイルがあったら、画像を取り込む
                                         If iJpgFiles.Length > 0 Then
                                             If MsgBox("USBメモリが認識されました。" & vbCrLf & "画像を取り込みますか？", MsgBoxStyle.YesNo, "確認") = MsgBoxResult.Yes Then
-                                                GazouListView(iJpgFiles)
                                                 SetGazou()
-                                                RbtnMemoryCard.IsChecked = True
-                                                RbtnGazou.IsChecked = False
-                                                TxtMemoryCard.Text = Usb
+                                                TxtGazouFolder.Text = Usb
                                             End If
                                             'Else
                                             '    MsgBox("USBメモリが認識されました。", MsgBoxStyle.OkOnly, "確認")
@@ -6943,30 +5843,6 @@ Public Class KentouKihonInfoTabDialog
                     iFlg = 1
                 Case 2      '種類
 
-                    'If WorksD.SunpoCalcHouhouL.Count > 0 Then
-                    '    Dim ii As Integer
-                    '    For ii = 0 To WorksD.SunpoCalcHouhouL.Count - 1
-                    '        If DGW_KekkaKakunin.Rows(e.RowIndex).Cells(e.ColumnIndex).Value = WorksD.SunpoCalcHouhouL(ii).Calcname Then
-                    '            WorksD.SunpoSetL(e.RowIndex).SunpoCalcHouhou = WorksD.SunpoCalcHouhouL(ii).SchID
-                    '            Exit For
-                    '        End If
-                    '    Next
-                    'End If
-
-                    'Select Case DGW_KekkaKakunin.Rows(e.RowIndex).Cells(e.ColumnIndex).Value
-                    '    Case "点と点"
-                    '        WorksD.SunpoSetL(e.RowIndex).Targettype = 1
-                    '    Case "点と点"
-                    '        WorksD.SunpoSetL(e.RowIndex).Targettype = 2
-                    '    Case "点と点"
-                    '        WorksD.SunpoSetL(e.RowIndex).Targettype = 3
-                    '    Case "点群"
-                    '        WorksD.SunpoSetL(e.RowIndex).Targettype = 4
-                    '    Case "点群"
-                    '        WorksD.SunpoSetL(e.RowIndex).Targettype = 5
-                    '    Case "点群"
-                    '        WorksD.SunpoSetL(e.RowIndex).Targettype = 6
-                    'End Select
                     iFlg = 1
                 Case 4      'XYZ成分
                     Select Case item.seibunXYZ
@@ -8189,5 +7065,6 @@ Public Class KentouKihonInfoTabDialog
             SetSunpoDataToGrid(groupValue)
         End If
     End Sub
+
 
 End Class

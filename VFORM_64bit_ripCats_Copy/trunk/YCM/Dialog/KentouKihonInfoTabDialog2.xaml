@@ -1,0 +1,34 @@
+﻿<Window x:Class="KentouKihonInfoTabDialog2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YCM"
+        mc:Ignorable="d"
+        Title="VFORM" Height="598" Width="1103" xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" xmlns:my1="clr-namespace:YCM" WindowStyle="SingleBorderWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Image1_Copy" Stretch="Fill" Height="96" VerticalAlignment="Top" Source="/YCM;component/Image2/PictureBox1.Image.jpg" RenderTransformOrigin="0,0" Margin="0,0,0,0" Grid.ColumnSpan="2" />
+        <ListView HorizontalAlignment="Center" 
+            Margin="0,1,24,0" Width="226" 
+            BorderBrush="{x:Null}" 
+            ScrollViewer.VerticalScrollBarVisibility="Hidden"
+            ScrollViewer.CanContentScroll="False"
+            x:Name="ListViewTabItems" RenderTransformOrigin="0.978,0.482" Grid.Row="1" Grid.Column="1">
+            <ListView.Style>
+                <Style TargetType="{x:Type ListView}">
+                    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+                </Style>
+            </ListView.Style>
+        </ListView>
+
+    </Grid>
+</Window>
