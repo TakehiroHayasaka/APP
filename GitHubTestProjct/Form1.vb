@@ -6,7 +6,7 @@
         Dim i As Integer = 0
         Dim total As Integer = 0
 
-        total = i + i
+        total = i + 1
 
     End Sub
 
